@@ -1,0 +1,451 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[aps,floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+%\pagestyle{fancy}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat = newest}
+
+\begin{document}
+
+\title{\Large Quantum Mechanics}
+\author{이휘재}
+\email{hjlee6674@inha.ac.kr}
+\affiliation{Hadron Theory Group, Department of Physics, Inha University,
+Incheon 22212, Republic of Korea }
+\date{2022}
+
+\maketitle
+
+\section*{\large Problem Set 1}
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\noindent \textbf{Problem 1.}
+
+The wave function of this particle is,
+\begin{align}
+  \psi(x,0)=N \exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2\right)
+\end{align}
+\begin{itemize}
+
+  \item[(1)] From the normalization of the wave function,
+    \begin{align}
+      \int_{-\infty}^{\infty} |\psi(x,0)|^2\,dx=N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =1.
+    \end{align}
+  Since a range of integration is all space, the translation about $x$ can be ignored.
+  %\begin{align}
+  %         N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx
+  %\end{align} 
+  To make a compact form, it needs to change an integral variable.
+    \begin{align}
+      t \equiv \left(\frac{x-x_0}{\sqrt{2}\sigma}\right),\;\;\; dt = \frac{1}{\sqrt{2}\sigma} dx 
+    \end{align}
+  Then the wave function changes into more comfort form to integrate.
+    \begin{align}
+      N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx
+      %N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
+      =\sqrt{2}\sigma N^2\int_{-\infty}^{\infty} e^{-t^2} \,dt
+    \end{align}
+  To calcualte this integration, we use a idea of double integration,
+    \begin{align}
+      \int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy &= \int_{0}^{2\pi}\int_{0}^{\infty} e^{-r^2}r\,dr\,d\theta
+      \\   &= \int_{0}^{2\pi}\frac{1}{2}\,d\theta = \pi.
+    \end{align}
+  First double integration about coordinate space can be decomposed.
+    \begin{align}
+      \int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy 
+      = \int_{-\infty}^{\infty} e^{-x^2}\,dx\int_{-\infty}^{\infty}e^{-y^2}\,dy
+      = \left(\int_{-\infty}^{\infty} e^{-x^2}\,dx\right)^2
+    \end{align}
+  From this result,
+    \begin{align}
+      \int_{-\infty}^{\infty} e^{-x^2} \,dx = \sqrt{\pi},\quad \sqrt{2\pi}\sigma N^2 =1.
+    \end{align}
+  Finally we obtain the normalization constant,
+    \begin{align}
+      \,N = {\left(\frac{1}{2\pi\sigma^2}\right)}^{\frac{1}{4}}.
+    \end{align}
+
+  \item[(2)] We will find $\phi(p,0)$ first. It is a fourier transformation of $\psi$.
+    \begin{align}
+      \phi(p,0)=\frac{1}{\sqrt{2\pi\hbar}}\int\psi(x,0) e^{-\frac{i}{\hbar}px}\,dx
+      =\frac{N}{\sqrt{2\pi\hbar}}\int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) e^{-\frac{i}{\hbar}px}\,dx
+      \\=\frac{N}{\sqrt{2\pi\hbar}}\int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2-\frac{i}{\hbar}px\right)\,dx
+    \end{align}
+  To make it compact form, let us transform the variable.
+    \begin{align}
+      u \equiv \frac{x-x_0}{2\sigma},\;\;\; du = \frac{1}{2\sigma} dx 
+    \end{align}
+  Then, a $\phi(p,0)$ is,
+  \begin{align}
+    \phi(p,0)=\frac{N}{\sqrt{2\pi\hbar}}\int\exp\left(-{u}^2-\frac{i}{\hbar}p(2\sigma u+x_0)\right)\,du
+             =\frac{N}{\sqrt{2\pi\hbar}}e^{-\frac{i}{\hbar}px_0}\int\exp\left(-u^2-2\frac{i}{\hbar}\sigma pu\right)\,du
+  \end{align}
+  And transform a exponential of integrated function into the complete square one about $u$.
+    \begin{align}
+      -u^2-2\frac{i}{\hbar}\sigma pu = -{\left( u+\frac{i}{\hbar}\sigma p\right)}^2-\frac{\sigma^2}{\hbar^2}p^2
+    \end{align}
+  In term of integration of $x$, there is a translation term and it can be ignored. So,
+    \begin{align}
+      \phi(p,0) = \frac{2\sigma N}{\sqrt{2\pi\hbar}}\exp\left(-\frac{\sigma^2}{\hbar^2}p^2-\frac{i}{\hbar}x_0p\right)\int_{-\infty}^{\infty} e^{-x^2}\,dx
+                = {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}\exp\left(-\frac{\sigma^2}{\hbar^2}p^2-\frac{i}{\hbar}x_0p\right)
+    \end{align}
+  Then, $\phi(0,0)$ is,
+    \begin{align}
+      \phi(0,0)={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \end{align}
+
+  \item[(3)] Because it is a free particle, the time evolution of $\phi(x,0)$ is $\phi(x,t)=e^{-i\omega t}\phi(p,0)$ and $\omega = \frac{p^2}{2m\hbar}$.
+    \begin{align}
+      \phi (p,t) = \sqrt{\frac{2\sigma }{\hbar}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}}\exp\left(-\alpha{\left(p+\frac{ix_0}{2\alpha\hbar}\right)}^2 
+                  -\frac{x_0^2}{4\alpha\hbar^2}\right),
+      \quad \alpha = \frac{2m\sigma^2+i\hbar t}{2m\hbar^2}
+    \end{align} 
+
+  \item[(4)] $\psi(x,t)$ is a fourier transformation of $\phi(p,t)$,
+    \begin{align}
+      \psi(x,t)=\frac{1}{\sqrt{2\pi\hbar}}\int\int_{-\infty}^{\infty}\phi(p,t) e^{\frac{i}{\hbar}px}\,dp
+      =\frac{1}{\hbar} \sqrt{\frac{\sigma }{\pi}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}} \int\int_{-\infty}^{\infty} \exp\left(-\alpha{\left(p+\frac{ix_0}{2\alpha\hbar}\right)}^2 
+      -\frac{x_0^2}{4\alpha\hbar^2}+\frac{i}{\hbar}px\right)\,dp
+    \end{align} 
+  A exponential of a integrated function can be changed into the complete square form about $p$.
+    \begin{align}
+      -\alpha{\left(p+\frac{ix_0}{2\alpha\hbar}\right)}^2 
+      -\frac{x_0^2}{4\alpha\hbar^2}+\frac{i}{\hbar}px 
+      = -\alpha{\left(p+i\frac{x_0-x}{2\alpha\hbar}\right)}^2
+      -\frac{{(x_0-x)}^2}{4\alpha\hbar^2}
+    \end{align}
+  So,
+    \begin{align}
+      \psi(x,t)&=\frac{1}{\hbar} \sqrt{\frac{\sigma }{\pi}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}}\exp\left(-\frac{{(x_0-x)}^2}{4\alpha\hbar^2}\right)\int\int_{-\infty}^{\infty} e^{-\alpha p^2}\,dp
+      \\&= \frac{1}{\hbar} \sqrt{\frac{\sigma }{\alpha}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}}\exp\left(-\frac{{(x_0-x)}^2}{4\alpha\hbar^2}\right)
+    \end{align}
+
+  \item[(5)] From a (4),  $|\psi(x,\,t)|^2$ and $|\psi(0,\,t)|^2$ are, 
+    \begin{align}
+      &|\psi(x,t)|^2=\frac{1}{\hbar^2} \frac{\sigma }{\sqrt{\alpha^*\alpha}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{2}}\exp\left(-\frac{{(x_0-x)}^2}{4\alpha^*\hbar^2}
+                      -\frac{{(x_0-x)}^2}{4\alpha\hbar^2}\right)
+      \\&|\psi(0,t)|^2=\frac{1}{\hbar^2} \frac{\sigma }{\sqrt{\alpha^*\alpha}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{2}}\exp\left(-\frac{{x_0}^2}{4\alpha^*\hbar^2}
+                        -\frac{{x_0}^2}{4\alpha\hbar^2}\right)
+    \end{align}
+  Since coefficients are canceled, there remains only exponential term.
+    \begin{align}
+      \mathcal{S}(t) = \frac{|\psi(x,\,t)|^2}{|\psi(0,t)|^2}=\exp\left(-\frac{x^2-2xx_0}{4\hbar^2}\left(\frac{\alpha^*+\alpha}{{|\alpha|}^2}\right)\right)
+    \end{align} 
+  We want to know that is the spread increases with time $t$. Since only $\alpha$ is dependent to time and time is a imaginary part of $\alpha$, 
+  all of what is need to us is in $e^{-\frac{1}{|\alpha|^2}}$.
+    \begin{align}
+      \frac{1}{|\alpha|^2} = \frac{4m^2\hbar^4}{4m^2\sigma^4+\hbar^2t^2},\quad\mathcal{S}(t) = A \exp\left(-\frac{4m^2\hbar^4}{4m^2\sigma^4+\hbar^2t^2}\right)
+    \end{align}
+  $A$ is a constant about $t$. The form of $\mathcal{S}(t)$ is $\exp\left(-\frac{k_1}{k_2+t^2}\right)$. The derivative of $\mathcal{S}(t)$ 
+  is $\frac{2k_1t}{{\left(k_2+t^2\right)}^2}\mathcal{S}(t)$, 
+  being positive in all positive time $t$.
+  This is a graph of $\exp(-\frac{10}{1+x^2})$ with $4m^2\hbar^2=10,\, 4\frac{m^2\sigma^4}{\hbar^2}=1$.
+    \begin{center}
+      \begin{tikzpicture}
+
+        \begin{axis}[
+          xmin = 0, xmax = 10,
+          ymin = 0, ymax = 1]
+          \addplot[
+                    domain = 0:30,
+                    samples = 200,
+                    smooth,
+                    thick,
+                    blue,
+          ] {exp(-10/(1+x^2))};
+        \end{axis}
+
+      \end{tikzpicture}
+    \end{center}          
+  \end{itemize}
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\noindent \textbf{Problem 2.} The Hamiltonian of the free particle is,
+\begin{align}
+          H = \frac{p^2}{2m}.
+\end{align}
+\begin{itemize}
+
+  \item[(1)] $\langle p_x \rangle$ can be expanded about $t$.
+    \begin{align}
+      \langle p_x \rangle = \langle p_x \rangle_{t=0}+\frac{1}{1!}\frac{d}{dt}\langle p_x \rangle \Bigg|_{t=0}t+\cdots
+    \end{align}
+  Calculate $\frac{d}{dt}\langle p_x \rangle$ using Hamiltonian,
+    \begin{align}
+      i\hbar\frac{d}{dt}\langle p_x \rangle=\langle \left[p_x,H\right] \rangle+i\hbar \left\langle \frac{\partial p_x}{\partial t} \right\rangle
+      =\frac{1}{2m}\langle \left[p_x,p_x^2\right] \rangle = 0
+    \end{align}
+  So, there remains only $ \langle p_x \rangle_{t=0}$,
+    \begin{align}
+      \langle p_x\rangle = \langle p_x \rangle_{t=0}
+    \end{align}
+
+  \item[(2)] With the same method,
+   \begin{align}
+    \langle x\rangle=&\langle x\rangle_{t=0}+\frac{1}{1!}\frac{d}{dt}\langle x \rangle \Bigg|_{t=0}t+\frac{1}{2!}\frac{d^2}{dt^2}\langle x \rangle \Bigg|_{t=0}t^2+\cdots
+   \end{align}
+   We have to calculate two time derivatives.
+   \begin{align}          
+    \frac{d}{dt}\langle x \rangle =& \frac{1}{2im\hbar}\langle \left[x,p^2\right] \rangle+\left\langle \frac{\partial x}{\partial t} \right\rangle
+                                  =  \frac{1}{m}\langle p_x \rangle \\
+    \frac{d^2}{dt^2}\langle x \rangle =& \frac{1}{m}\frac{d}{dt}\langle p_x \rangle=0
+   \end{align}
+  Finally,
+    \begin{align}
+      \langle x\rangle=&\langle x\rangle_{t=0}+\frac{\langle p_x \rangle_{t=0}}{2m}t
+    \end{align}
+
+  \item[(3)]From the definition of the deviation,
+   \begin{align}
+    {(\Delta p_x)}^2 = \langle p_x^2\rangle - \langle p_x\rangle^2, \quad {(\Delta p_x)}^2_{t=0} = \langle p_x^2\rangle_{t=0} - \langle p_x\rangle^2_{t=0}
+   \end{align}
+  As we did, 
+    \begin{align}
+      \langle p_x^2\rangle = \frac{1}{2m}\langle \left[p^2,p^2\right] \rangle = 0 = \langle p_x^2\rangle_{t=0}
+    \end{align}
+  And we know that $\langle p_x\rangle^2 = \langle p_x\rangle^2_{t=0}$ by the result of (1).
+  Therefore, ${(\Delta p_x)}^2  = {(\Delta p_x)}^2_{t=0}$.
+
+  \item[(4)] From the (3),
+    \begin{align}
+      \frac{d}{dt}{(\Delta x)}^2 = \frac{d}{dt}\langle x^2\rangle - \frac{d}{dt}\langle x\rangle^2
+    \end{align}
+  We have to calculate two time derivatives.
+    \begin{align}
+      \frac{d}{dt}\langle x^2\rangle=&\frac{1}{2im\hbar}\langle\left[x^2,p^2_x\right]\rangle=\frac{2}{m}\langle xp_x \rangle \\
+      \frac{d}{dt}\langle x\rangle=&\frac{1}{2im\hbar}\langle\left[x,p^2_x\right]\rangle=\frac{1}{m}\langle p_x\rangle
+    \end{align}
+  $\langle xp_x \rangle$ can be approximated a series of time $t$.
+    \begin{align}
+      \langle xp_x \rangle = {\langle xp_x \rangle}_{t=0} + \frac{1}{1!}\frac{d}{dt}\langle xp_x \rangle \Bigg{|}_{t=0}t 
+      + \frac{1}{2!}\frac{d^2}{dt^2}\langle xp_x \rangle \Bigg{|}_{t=0}t^2+\cdots
+    \end{align}
+  Most derivative calculations about expectation value are using the Hamiltonian.
+    \begin{align}
+      \frac{d}{dt}\langle xp_x \rangle = \frac{1}{2im\hbar}\langle \left[ xp_x,p^2 \right] \rangle= \frac{1}{m}\langle p^2 \rangle
+    \end{align} 
+  Since $\frac{d}{dt}\langle xp_x \rangle$ is a multiple of $\langle p^2 \rangle$, the quadratic and higher term will be vansihed. So,
+    \begin{align}
+      \langle xp_x \rangle=\langle xp_x \rangle_{t=0}+\frac{1}{m}\langle p^2 \rangle_{t=0}t
+    \end{align}
+  Substitute these results in $\frac{d}{dt}{(\Delta x)}^2$,
+    \begin{align}
+      \frac{d}{dt}{(\Delta x)}^2=\frac{2}{m}\langle xp_x \rangle- \frac{2}{m}\langle x\rangle\langle p_x\rangle
+    \end{align}
+  We already know that $\langle x \rangle$ and $\langle p_x \rangle$ can be represented by initial conditions.
+   \begin{align}
+    \frac{d}{dt}{(\Delta x)}^2 = \frac{2}{m}\left(\langle xp_x \rangle_{t=0}+\frac{\langle p^2 \rangle_{t=0}}{m}t\right) 
+    -\frac{2}{m}\langle p_x\rangle_{t=0}\left(\langle x\rangle_{t=0}+\frac{\langle p_x \rangle_{t=0}}{2m}t\right)
+   \end{align}
+\end{itemize}
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\noindent \textbf{Problem 3.} In this problem, the wave function of a partcle is,
+\begin{align}
+  \psi(x) = C\exp\left[
+  i\frac{p_0 x}{\hbar} - \frac{{(x-x_0)}^2}{2\sigma^2} 
+  \right]
+  \end{align}
+  \begin{itemize}
+
+  \item[(1)] The normalization constant is calculable from the normalization.
+    \begin{align}
+      C^2\int_{-\infty}^{\infty} \exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
+      = C^2\int_{-\infty}^{\infty}\exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
+      = C^2\sigma \sqrt{\pi}
+    \end{align}
+  The result of the noramlizatoin is must be 1. So,
+    \begin{align}
+      C = {\left(\frac{1}{\sigma \sqrt{\pi}}\right)}^{\frac{1}{2}}
+    \end{align}
+  \item[(2)]First, let us find the mean value of $x$.
+    \begin{align}
+      &\langle x \rangle=\int_{-\infty}^{\infty}\psi^*x\psi\,dx 
+        = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} x \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx \\
+      &\int_{-\infty}^{\infty} x \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
+        = \int_{-\infty}^{\infty} x e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx 
+          + x_0\int_{-\infty}^{\infty} e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx
+    \end{align}
+  The first term of the right side is a zero, because $x e^{-{\left(\frac{x}{\sigma}\right)}^2}$ is a even function 
+  and this integration is from $-\infty$ to $\infty$. The calculation of the second term is simple.
+    \begin{align}
+      x_0\int_{-\infty}^{\infty} e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx = x_0\,\sigma\sqrt{\pi}
+    \end{align}
+  So, the mean value is a $x_0$.
+    \begin{align}
+      \langle x \rangle=\frac{1}{\sigma\sqrt{\pi}}\,x_0\,\sigma\sqrt{\pi} = x_0
+    \end{align}
+  The mean value of $p$ is,
+    \begin{align}
+      \langle p \rangle &= -i\hbar \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x}\,dx 
+                     = \frac{-i\hbar}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} \left(\frac{i}{\hbar}p_0-\frac{x-x_0}{\sigma^2}\right)\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx
+              \\    &= \frac{-i\hbar}{\sigma\sqrt{\pi}}\left[ \frac{i}{\hbar}p_0\int_{-\infty}^{\infty}\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx -\int_{-\infty}^{\infty}\left( \frac{x-x_0}{\sigma^2}\right)\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx\right] 
+                     = p_0    
+    \end{align}
+  Because the second term is a even function about $x=x_0$, it is a zero.
+
+  \item[(3)] From a (3) in problem 2, we use the definition of the deviation.
+    \begin{align}
+      {(\Delta x)}^2 = \langle x^2\rangle - \langle x\rangle^2 ,\quad {(\Delta p)}^2 = \langle p^2\rangle - \langle p\rangle^2 
+    \end{align}
+  First we calculate $\langle x^2\rangle$.
+    \begin{align}
+      \langle x^2\rangle = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} x^2 \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx
+                        = \frac{1}{\sigma\sqrt{\pi}}\left[\int_{-\infty}^{\infty} x^2 e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx
+                                                        +2x_0\int_{-\infty}^{\infty} xe^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx
+                                                        +x^2_0\int_{-\infty}^{\infty} e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx\right]
+    \end{align}
+  The middle term of the right side is zero from a (2) and the last term is $x^2_0\,\sigma\sqrt{\pi}$.
+    \begin{align}
+      \int_{-\infty}^{\infty} x^2 e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx = \sigma^3\int_{-\infty}^{\infty} x^2 e^{-x^2}\,dx 
+                                                            = -\frac{1}{2}\sigma^3{\left[xe^{-x^2}\right]}^{\infty}_{-\infty}
+                                                              +\frac{1}{2}\sigma^3\int_{-\infty}^{\infty} e^{-x^2}\,dx
+                                                            = \frac{1}{2}\sigma^3\sqrt{\pi}
+    \end{align}
+  So,
+    \begin{align}
+      \langle x^2 \rangle = \frac{1}{\sigma\sqrt{\pi}}\left[ x^2_0\,\sigma\sqrt{\pi}
+                            + \frac{1}{2}\sigma^3\sqrt{\pi} \right]
+                          = \frac{1}{2}\sigma^2+x_0^2
+    \end{align}
+  Then $\left(\Delta x\right)^2$ is,
+    \begin{align}
+      \left(\Delta x\right)^2 = \frac{1}{2}\sigma^2+x_0^2 - x_0^2 = \frac{1}{2}\sigma^2
+    \end{align}
+  the expectation value of $p^2$ is,
+    \begin{align}
+      \langle p^2 \rangle = -\hbar^2 \int_{-\infty}^{\infty} \psi^* \frac{\partial^2 \psi}{\partial x^2}\,dx 
+      = -\hbar^2\int_{-\infty}^{\infty} \left(\frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x}\right) - \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x}\right)\,dx
+    \end{align}
+  There are two terms that seem complicated. But, some of the integration in calculation will be canceled since these are even functions and the integration range is symmetric.
+    \begin{align}   
+         &\int_{-\infty}^{\infty} \frac{\partial}{\partial x}
+            \left(\psi^* \frac{\partial \psi}{\partial x}
+            \right) \,dx 
+            = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}\frac{\partial}{\partial x}
+              \left(
+                \left(\frac{i}{\hbar}p_0-\frac{x-x_0}{\sigma^2}
+                \right)\exp
+                  \left(-{
+                    \left(\frac{x-x_0}{\sigma}
+                    \right)}^2 
+                  \right)
+                \right)\,dx = 0
+     \\  &\int_{-\infty}^{\infty} \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x} \,dx 
+            = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}
+              \left(
+                \left(\frac{p_0}{\hbar}
+                                       \right)^2
+               +\left(\frac{x-x_0}{\sigma^2}
+                                            \right)^2
+                                                      \right)\exp
+              \left(-{
+                \left(\frac{x-x_0}{\sigma}
+                                          \right)}^2
+                                                    \right)\,dx 
+            = \left(\frac{p_0}{\hbar}
+                                      \right)^2+\frac{1}{\sigma^2\sqrt{\pi}}\int_{-\infty}^{\infty} x^2e^{-x^2}\,dx
+    \end{align}
+  It is a simple gaussian integration.
+    \begin{align}
+      \int_{-\infty}^{\infty} x^2e^{-x^2}\,dx = -\frac{1}{2}\left[xe^{-x^2}\right]^{\infty}_{-\infty}+\frac{1}{2}\int_{-\infty}^{\infty} e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}
+    \end{align}
+  From these results, we can calculate $\langle p^2 \rangle$.
+    \begin{align}
+      \langle p^2 \rangle = p_0^2 + \frac{\hbar^2}{2\sigma^2}
+    \end{align}
+  Finally, we can calculate $\left( \Delta p \right)^2$,
+    \begin{align}
+      \left( \Delta p \right)^2 = p_0^2 + \frac{\hbar^2}{2\sigma^2} - p_0^2 = \frac{\hbar^2}{2\sigma^2}
+    \end{align}
+  Confirm these result does satisfy Heisenberg's uncertainty principle.
+    \begin{align}
+      \Delta x \Delta p = \sqrt{\frac{\hbar^2}{2\sigma^2}\frac{\sigma^2}{2}} = \frac{\hbar}{2}
+    \end{align}
+  It is in the sense.
+\end{itemize}
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\noindent \textbf{Problem 4.}
+\begin{itemize}
+\item[(a)] The initial state is,
+  \begin{align}
+    \psi(\bm{x},0) = c_1\psi_1(\bm{x})+c_2\psi_2(\bm{x})
+  \end{align} 
+  Since this particle is in region $\Omega_1$, $c_1=1$ and $c_2=0$. The time evolutoin of this particle is,
+  \begin{align}
+    \psi(\bm{x},t) = c_1e^{-\frac{i}{\hbar}E_1t}\psi_1(\bm{x})+c_2e^{-\frac{i}{\hbar}E_2t}\psi_2(\bm{x}) = e^{-\frac{i}{\hbar}E_1t}\psi_1(\bm{x})
+  \end{align}
+  Since the time evolution is dependent to only $\psi_1(\bm{x})$, it will stay region $\Omega_1$, forever.
+\item[(b)]
+  The time evolution is,
+  \begin{align}
+    \psi(\bm{x},t) = \frac{1}{\sqrt{2}}\left[ e^{-\frac{i}{\hbar}E_1t}\psi_1(\bm{x})+e^{-\frac{i}{\hbar}E_2t}\psi_2(\bm{x}) \right]
+  \end{align}
+  Consider the probability density of this particle.
+  \begin{align}
+    |\psi(\bm{x},t)|^2 = \frac{1}{2}\left[|\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2+e^{-\frac{i}{\hbar}(E_2-E_1)t}\psi_1^*\psi_2+e^{-\frac{i}{\hbar}(E_1-E_2)t}\psi_1\psi_2^*  \right]
+  \end{align}
+  Suppose that $\Omega_3$ in $\mathbb{R}^3 $ satisfies that $\Omega_1 \cap \Omega_3 = \varnothing$ , $\Omega_2 \cap \Omega_3 = \varnothing$ and $\Omega_1\cup \Omega_2\cup \Omega_3 = \mathbb{R}$.
+  If $\bm{x}\notin\Omega_1$, then $\psi_1(\bm{x})=0$. If $\bm{x}\notin\Omega_2$, then $\psi_2(\bm{x})=0$. And $\psi_1^*\psi_2=\psi_1\psi_2^*=0$ any $\bm{x}\in \mathbb{R}$ because of following reasons.
+  \begin{itemize}
+    \item[(i)] $\bm{x}\in\Omega_1 \Longrightarrow \psi_2 = \psi^*_2 = 0$
+    \item[(ii)] $\bm{x}\in\Omega_2 \Longrightarrow \psi_1 = \psi^*_1 = 0$
+    \item[(iii)] $\bm{x}\in\Omega_3 \Longrightarrow \psi_1 = \psi_2 = 0$
+  \end{itemize}
+  Therefore, $|\psi(\bm{x},t)|^2 = \frac{1}{2}\left[ |\psi_1(\bm{x})|^2+|\psi_2(\bm{x})|^2 \right]$. And the probability density is time-independent.
+\item[(c)] From a (62), since $E_2-E_1=\hbar \Omega$,
+  \begin{align}
+    |\psi(\bm{x},t)|^2 &= \frac{1}{2}\left[|\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2+e^{-i\omega t}\psi_1^*\psi_2+e^{i\omega t}\psi_1\psi_2^*  \right]
+    \\                 &= \frac{1}{2}\left[ |\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2 + e^{-i\omega t}\psi_1^*\psi_2 + {\left(e^{-i\omega t}\psi_1^*\psi_2\right)}^* \right]
+  \end{align}
+  Imaginary parts of the last two terms are canceled.
+  \begin{align}  
+    |\psi(\bm{x},t)|^2 &= \frac{1}{2}\left[ |\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2 + \left(\psi_1^*\psi_2 + {\left(\psi_1^*\psi_2\right)}^*\right)\cos{\omega t} \right]
+  \end{align}
+  This result is a periodic function about time because the last term is a periodic function of time and other terms are constant about time.
+
+\item[(d)]
+  From the continuity equation, We use the integration of this equation because of the right term.
+    \begin{align}
+      \int_{\Omega_2}\frac{\partial \rho}{\partial t}\,dr^3 = \int_{\Omega_2}\nabla \cdot \bm{J}\,dr^3
+    \end{align}
+  The left term can be calculated using (c),
+    \begin{align}
+      \frac{\partial\rho}{\partial t} = \frac{\partial}{\partial t}|\psi(\bm{x},t)|^2 = -\omega \psi_1\psi_2\sin\omega t
+    \end{align}
+  If we integrate this, it will be a zero since $\psi_1$ and $\psi_2$ are orthogonal to each other. Consider the right term. This integration is changed into the surface integration following Green's Theorem.
+    \begin{align}
+      \int_{\Omega_2}\nabla \cdot \bm{J}\,dr^3 = \int_{\Omega_2} \bm{J} \cdot\,d\bm{S}
+    \end{align}
+  Because wave functions are isotropic, a current has the same value in a different direction. It means that this integration is replaced by the just inner product.
+    \begin{align}
+      \int_{\Omega_2} \bm{J} \cdot\,d\bm{S} = 4\pi R_2^2\bm{J}\cdot\hat{n}
+    \end{align}
+  $\hat{n}$ is a vector that is vertical to the surface of a sphere $\Omega_2$. Fianlly,
+    \begin{align}
+      0 = 4\pi R_2^2\bm{J}\cdot\hat{n}
+    \end{align}
+  This means that there is no probability current between region $\Omega_1$ and $\Omega_2$.
+  \end{itemize}
+\end{document}

@@ -1,0 +1,228 @@
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2}  
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage[utf]{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+ \usepackage{setspace}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large 2022년 1학기 물리학 I: Quiz 19}
+\author{김현철\footnote{Office: 5S-436D (면담시간 매주
+    화요일-16:00$\sim$20:00)}} 
+\email{hchkim@inha.ac.kr}
+\author{Lee Hui-Jae} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+Inha University, Incheon 22212, Republic of Korea }
+\date{Spring semester, 2022}
+
+
+\vspace{1.cm}
+
+\maketitle
+
+\vspace{1.cm}
+\noindent {\bf 문제 1. (60 pt)} 
+아래의 식과 같이 파동이 주어져 있다. 
+\begin{align}
+  \label{eq:2}
+\psi(x,t) = 0.00327 \sin(72.1x-2.72 t).  
+\end{align}
+\begin{itemize}
+\item[(가)] 파동의 진폭을 구하여라.
+\item[(나)] 파동의 파장, 주기, 진동수를 구하여라.
+\item[(다)] 파동의 속력은 얼마인가?
+\end{itemize}
+\vspace{1.cm}
+\noindent {\bf 풀이 :   }
+파동의 진폭을 $A$, 파수를 $k$, 각속도를 $\omega$라고 한다면 파동함수를
+\begin{align}
+  \psi(x,t) = A \sin(k(x-v t))   = A \sin(kx-\omega t)   
+\end{align}
+와 같이 나타낼 수 있다.
+\begin{itemize}
+  \item[(가)] 
+  파동의 진폭 $A$는 $ 0.00327$이다.
+  \item[(나)]
+  파장은 파수로부터, 주기는 각속도로부터, 진동수는 주기로부터 구할 수 있다.
+  파동의 파장 $\lambda$는 
+  \begin{align}
+    \begin{split}
+      \lambda &= \frac{2\pi}{k} = \frac{2\pi}{72.1} 
+      =0.0871
+    \end{split}
+  \end{align}
+  이고 파동의 주기 $T$는 
+  \begin{align}
+    \begin{split}
+      T = \frac{2\pi}{vk} = \frac{2\pi}{\omega}
+      = \frac{2\pi}{2.72} = 2.31
+    \end{split}
+  \end{align}
+  이다. 주기 $T$를 이용해 진동수 $f$를 구할 수 있다.
+  \begin{align}
+    f = \frac{1}{T} = 0.433.
+  \end{align}
+  \item[(다)]
+  파동의 속력 $v$는
+  \begin{align}
+    v = \frac{\omega}{k} = \frac{2.72}{72.1} = 0.0377
+  \end{align}
+  이다.
+\end{itemize}
+
+\vspace{1.cm}
+
+\noindent {\bf 문제 2. (150 pt) ({\color{red} 난이도 상})}
+각진동수 1200 rad/s와 진폭이 3.00 mm인 파동을 선밀도가 2.00 g/m이고,
+장력이 1200 N인 줄에 보냈다.
+\begin{itemize}
+\item[(가)] 줄의 반대끝으로 파동이 전달하는 에너지의 평균 전달률은
+  얼마인가?
+\item[(나)] 만약에 똑같은 다른 파동이 인접한 같은 종류의 줄을 따라
+  동시에 진행한다면 전달되는 총 에너지의 평균 전달률은 얼마인가? 만약
+  하나의 같은 줄에 두 파동을 동시에 보낸다면 위상차가
+\item[(다)] 0
+\item[(라)] 0.4 rad
+\item[(마)] $\pi$ rad일 때, 파동이 전달하는 평균에너지 전달률은 각각
+  얼마인가?   
+\end{itemize}
+\vspace{1.cm}
+\noindent {\bf 풀이 :   }
+\begin{itemize}
+  \item[(가)]
+  에너지의 평균 전달률 $P$는 다음과 같이 주어진다.
+  \begin{align}
+    P = \frac{1}{2}\mu v \omega^2y_m^2.
+  \end{align}
+  $\mu$는 선밀도, $v$는 파동의 속력, $\omega$는 각진동수이고 $y_m$은 진폭이다.
+  줄의 장력을 $F$라 하면 파동의 속력 $v$는
+  \begin{align}
+    v = \sqrt{\frac{F}{\mu}}
+  \end{align}
+  이므로 $P$는
+  \begin{align}
+    \begin{split}
+      P &= \frac{1}{2}\sqrt{\mu F}\omega^2y^2_m
+      = \frac{1}{2}\sqrt{(2.00\times 10^{-3}\,\mathrm{kg/m})(1\,200\,\mathrm{N})}
+      (1\,200\,\mathrm{rad/s})^2(3.00\times10^{-3}\,\mathrm{m})^2 \\
+      &=10.0\,\mathrm{W}
+    \end{split}
+  \end{align}
+  이다.
+  \item[(나)]
+  인접한 같은 종류의 줄을 따라 동시에 파동이 진행한다면 전달되는 총 에너지의 평균 전달률은 파동 하나의 평균
+  전달률의 2배이다. 따라서 이 경우 평균 전달률은 20 W이다.
+  \item[(다)]
+  같은 줄을 통해 보낸 두 파동의 위상차가 0 이면 두 파동은 보강간섭을 일으킨다. 따라서 전달되는 파동의 진폭이 2배가 되고
+  에너지의 평균 전달률을 4배가 된다. 즉, 위상차가 0인 경우 평균에너지 전달률은 10 W이다.
+  \item[(라)]
+  두 파동의 위상차를 $\phi$라 하자. 진폭이 같은 두 파동의 중첩은 다음과 같이 표현할 수 있다.
+  \begin{align}\label{eq:2-1}
+    \begin{split}
+      y_1(x,t)+y_2(x,t) &= A\sin{(kx-\omega t)}+A\sin{(kx-\omega t+\phi)}  \\
+      &=2A\cos{\frac{1}{2}\phi}\sin{\left(kx-\omega t+\frac{1}{2}\phi\right)}.
+    \end{split}
+  \end{align}
+  이를 통해 중첩된 파동의 진폭은 $2A\cos{\frac{1}{2}\phi}$임을 알 수 있다. $\phi = $ 0.4 rad이면,
+  새로운 진폭 $y'_m$은
+  \begin{align}
+    y'_m = 2y_m\cos(0.2\,\mathrm{rad})
+  \end{align}
+  이고 새로운 진폭 $y'_m$에 대한 전달률 $P$는
+  \begin{align}
+    \begin{split}
+      P &= \frac{1}{2}\sqrt{\mu F}\omega^2y'^2_m
+      = \frac{1}{2}\sqrt{(2.00\times 10^{-3}\,\mathrm{kg/m})(1\,200\,\mathrm{N})}
+      (1\,200\,\mathrm{rad/s})^2
+      4(3.00\times10^{-3}\,\mathrm{m})^2
+      (\cos(0.2\,\mathrm{rad}))^2 \\
+      &=39\,\mathrm{W}
+    \end{split}
+  \end{align}
+이다.
+
+  \item[(마)]
+  위상차가 $\pi$만큼 난다면 식~\eqref{eq:2-1}에 의해
+  \begin{align}
+    y'_m = 2y_m\cos\frac{1}{2}\pi = 0
+  \end{align}
+  이다. 따라서 전달률 또한 0이다.
+\end{itemize}
+\vspace{1.cm}
+
+\noindent {\bf 문제 3. (60pt)  }
+한쪽 끝은 $x=0$, 다른 끝은 $x=10.0$ m에 매어져 있는 질량 100 g의 줄에
+250 N의 장력이 작용한다. $t=0$일 때 $x=10.0$ m인 끝점에서 펄스 1을
+줄을 따라 보내고, $t=30.0$ ms일 때 $x=0$인 끝점에서 펄스 2를
+보냈다. 어떤 점 $x$에서 두 펄스가 만나겠는가? 
+
+\vspace{1.cm}
+\noindent {\bf 풀이 :   }
+파동의 속력 $v$는 다음과 같이 주어진다.
+\begin{align}\label{eq:3-1}
+  v = \sqrt{\frac{F}{\mu}}=\sqrt{\frac{Fl}{m}}.
+\end{align}
+$l$은 줄의 길이이고 $m$은 줄의 질량이다.
+만나는 지점을 $d$라 하면 펄스 1이 움직인 거리는 $l-d$, 펄스 2가 움직인 거리는 $d$이다.
+같은 줄에서 움직이기 때문에 두 펄스의 속력은 같고 펄스 1이 움직인 시간이 펄스 2보다 30.0 ms만큼 
+더 기므로
+\begin{align}
+  \frac{l-d}{v}-\frac{d}{v} = 3.00\times 10^{-2}\,\mathrm{s}
+  \Longrightarrow d=\frac{1}{2}(l-(3.00\times 10^{-2}\,\mathrm{s})v) 
+\end{align}
+이다. 식~\eqref{eq:3-1}을 대입하여 $d$를 구할 수 있다.
+\begin{align}
+  \begin{split}
+    d &=\frac{1}{2}\left(l-(3.00\times 10^{-2}\,\mathrm{s})\sqrt{\frac{Fl}{m}}\right) 
+    =\frac{1}{2}\left((10.0\,\mathrm{m})-(3.00\times 10^{-2}\,\mathrm{s})
+    \sqrt{\frac{(250\,\mathrm{N})(10.0\,\mathrm{m})}{(0.100\,\mathrm{kg})}}\right)  \\
+    &= 2.63\,\mathrm{m}.
+  \end{split}
+\end{align}
+펄스가 만나는 지점은 $x=0$인 점으로부터 2.63 m만큼 떨어진 곳이다.
+
+\vspace{1.cm}
+
+\noindent {\bf 문제 4. (80pt)}
+아래 식으로 주어진 파동의 속력을 구하여라.
+\begin{align}
+  \label{eq:4}
+\psi(x,t) = (2.00\,\mathrm{mm}) \sqrt{(20\,\mathrm{m}^{-1}) x - (4.0
+  \,\mathrm{s}^{-1})t} .
+\end{align}
+
+\vspace{1.cm}
+\noindent {\bf 풀이 :   }
+파동방정식은 다음과 같이 주어진다.
+\begin{align}
+  \frac{\partial^2 \psi}{\partial x^2} =\frac{1}{v^2}\frac{\partial^2 \psi}{\partial t^2}.
+\end{align}
+이를 이용해서 파동의 속력을 구해보자. 
+$\psi = A\sqrt{kx-\omega t}$라 하고
+$\psi$를 $x$와 $t$에 대해 각각 두번씩 편미분히면,
+\begin{align}
+  \frac{\partial^2 \psi}{\partial x^2}= -\frac{1}{4}Ak^2(kx-\omega t)^{-3/2},\,\,\,
+  \frac{\partial^2 \psi}{\partial t^2}= -\frac{1}{4}A\omega^2(kx-\omega t)^{-3/2}
+\end{align}
+이다. 따라서 속력 $v$는
+\begin{align}
+  v = \frac{\omega}{k} = \frac{4.0\,\mathrm{s}^{-1}}{20\,\mathrm{m}^{-1}}
+  = 0.2\,\mathrm{m/s}
+\end{align}
+이다.
+\vspace{1.cm}
+\end{document}

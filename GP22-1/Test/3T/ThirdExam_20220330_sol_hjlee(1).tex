@@ -1,0 +1,346 @@
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage[utf]{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+ \usepackage{setspace}
+%\pagestyle{fancy}
+\usepackage{tikz}
+
+\begin{document}
+
+\title{\Large 2022년 1학기 물리학 I: 제3차 시험}
+\author{김현철\footnote{Office: 5S-436D (면담시간 매주
+    화요일-16:00$\sim$20:00)}} 
+\email{hchkim@inha.ac.kr}
+\author{Lee Hui-Jae} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+Inha University, Incheon 22212, Republic of Korea }
+\date{Spring semester, 2022}
+
+
+\maketitle
+ 
+\noindent {\bf 1번 풀이 : }        
+질량이 $m$인 물체가 정삼각형의 각 꼭짓점에 놓여 있을 때 계의 총 중력 퍼텐셜에너지는
+\begin{align}
+  E_p =-3G\frac{m^2}{a}
+\end{align} 
+이고 한 물체를 무한히 먼 곳에 이동시켜 계에 두 물체만 남았다면 계의 총 중력 퍼텐셜에너지는
+\begin{align}
+  E'_p = -G\frac{m^2}{a}
+\end{align}
+이다. 외부에서 해준 일은 계의 총 에너지 변화량과 같으므로
+\begin{align}
+  W = E'_p - E_p = 2G\frac{m^2}{a}
+\end{align}
+이다.
+ 
+
+\vspace{0.5cm} 
+\noindent {\bf 2번 풀이 : } 
+줄의 장력 $T$가 도르래에 돌림힘으로 작용하여 도르래를 회전시킨다. 따라서,
+\begin{align}
+  TR = I\alpha = \frac{1}{2}MRa \Longrightarrow T =\frac{1}{2}Ma
+\end{align}    
+이고 장력과 중력이 작용하여 중력이 $M/2$인 물체를 움직이도록 한다.
+도르래와 물체가 줄로 연결되어 있으므로 가속도의 크기는 같다.
+\begin{align}
+  \frac{1}{2}Ma = \frac{1}{2}Mg - T.
+\end{align}
+두 식을 연립하면 장력 $T$는
+\begin{align}
+  T = \frac{1}{4}Mg
+\end{align}
+이다.
+
+ 
+
+\vspace{0.5cm} 
+\noindent {\bf 3번 풀이 : }
+가장 멀리있을 때 거리, 속력을 $r_1, v_1$이라 하고
+가장 가까이 있을 때 거리, 속력을 $r_2, v_2$라고 하면,
+각운동량 보존법칙에 의해 
+\begin{align}
+  mv_1r_1 = mv_2r_2
+\end{align}
+이다. $r_1 = 2r_2$이므로
+\begin{align}
+  2v_1r_2 = v_2r_2\Longrightarrow 2v_1 = v_2
+\end{align}
+이다. 따라서 최대 선속력은 최소 선속력의 2배이다.
+
+ 
+
+\vspace{0.5cm} 
+
+\noindent {\bf 4번 풀이 : }        
+팽창 전 별의 회전 운동에너지는
+\begin{align}
+  E_R = \frac{1}{2}I\omega^2
+\end{align}
+이다. 팽창 후 별의 회전관성은 3배 늘어난다. 외력이 작용하지 않았으므로
+각운동량이 보존된다. 팽창 후의 각속도를 $\omega'$이라고 하면 각운동량 보존 법칙에 의해
+\begin{align}
+  I\omega = 3I\omega' \Longrightarrow \omega' =\frac{1}{3}\omega
+\end{align}
+이다. 따라서 팽창 후의 별의 회전 운동에너지 $E'_R$은
+\begin{align}
+  E'_R=\frac{3}{2}I\omega'^2=\frac{1}{6}I\omega^2
+\end{align}
+이다. 따라서 팽창 후 회전 운동에너지는 팽창 전 회전 운동에너지의 $\frac{1}{3}$배가 된다.
+
+ 
+
+\vspace{0.5cm} 
+\noindent {\bf 5번 풀이 : }
+액체의 밀도를 $\rho_l$이라 하면 잠긴 부피 만큼의 물의 질량과
+물체의 질량이 같으므로
+\begin{align}
+  L \rho_l = L_0 \rho
+\end{align}
+이고 $\rho_l$은
+\begin{align}
+  \rho_l = \frac{L_0}{L}\rho
+\end{align}
+이다.
+\vspace{0.5cm}
+ 
+
+
+\noindent {\bf 6번 풀이 : }        
+베르누이 방정식에 의해
+\begin{align}
+  P_1 + \frac{1}{2}\rho v_1^2
+  =  P_2 + \frac{1}{2}\rho v_2^2
+\end{align}
+이므로 $P_2$는
+\begin{align}\label{eq:6-1}
+  P_2 = P_1 + \frac{1}{2}\rho\left(v_1^2-v_2^2\right)
+\end{align}
+이다. 연속방정식을 이용해 $v_2$를 구해보자. 
+\begin{align}
+  A_1 v_1 = A_2 v_2
+\end{align}
+이고 $A_1$의 반지름이 $A_2$의 반지름보다 2배 더 길다. 따라서 $A_1 = 4A_2$이고
+연속방정식으로부터
+\begin{align}
+  4v_1 = v_2
+\end{align}
+ 임을 알 수 있다. 이를 식~\eqref{eq:6-1}에 대입하면
+ \begin{align}
+  P_2 = P_1 + \frac{1}{2}\rho\left(v_1^2-16v_1^2\right)
+  =P_1 - \frac{15}{2}\rho v_1^2
+ \end{align}
+을 얻는다.
+
+\vspace{0.5cm} 
+\noindent {\bf 7번 풀이 : }        
+막대의 회전에 대한 운동방정식은
+\begin{align}
+  I\alpha = -MgL\sin\theta \approx -MgL\theta
+\end{align}
+이다. 각 $\theta$가 매우 작을 때 근사를 취하였다. 따라서
+\begin{align}
+  \frac{1}{3}ML^2 \frac{d^2\theta}{dt^2} = -MgL\theta \Longrightarrow
+  \frac{d^2\theta}{dt^2} = -\frac{3g}{L}\theta = -\omega^2\theta
+\end{align}
+이므로 각진동수 $\omega$는
+\begin{align}
+  \omega = \sqrt{\frac{3g}{L}}
+\end{align}
+임을 알 수 있다. 주기 $T$는
+\begin{align}
+  T = \frac{2\pi}{\omega} =2\pi\sqrt{\frac{L}{3g}}
+\end{align}
+이다. 이로부터 주기는 질량이 2배 늘어나고 길이도 2배 늘어나면 늘어나기 전 주기의
+$\sqrt{2}$배가 된다.
+\vspace{0.5cm}
+ 
+
+\noindent {\bf 8번 풀이 : }  
+그림이 주어지지 않아 풀 수 없음.
+\vspace{0.5cm}
+ 
+
+\vspace{0.5cm} 
+\noindent {\bf 9번 풀이 : }
+정상파의 기본진동수의 파형이라면 줄의 길이 $L$은 정상파의 파장 $\lambda$의 절반이다. 즉,
+\begin{align}
+  L = \frac{1}{2}\lambda
+\end{align}
+이다. 정상파의 파수를 $k$라 하면 정상파의 파장 $\lambda$은
+\begin{align}
+  \lambda = \frac{2\pi}{k}
+\end{align}
+이므로 줄의 길이 $L$은
+\begin{align}
+  L = \frac{\pi}{k} = 3\,\mathrm{m}
+\end{align}
+이다.
+ 
+
+\vspace{0.5cm} 
+\noindent {\bf 10번 풀이 : }       
+원래 음원의 진동수보다 관측자가 듣는 음원의 진동수가 감소한느 경우는 관측자와 음원이 서로 멀어지는
+경우이다. 따라서 답은 (2), (4)번이다.
+\vspace{0.5cm}
+ 
+\noindent {\bf 11번 풀이 : }
+\begin{itemize}
+  \item[(a)]
+  물리진자에 작용하는 돌림힘 $\tau$는
+  \begin{align}
+    \tau = -mgh\sin\theta
+  \end{align}
+  이다. $\theta$가 매우 작다면 $\sin\theta\approx\theta$로 근사할 수 있으므로
+  \begin{align}
+    \tau \approx -mgh\theta
+  \end{align}
+  이다.
+  \item[(b)] 
+  문제 7번과 같이 각진동수 $\omega$를 구하면
+  \begin{align}
+    \omega = \sqrt{\frac{mgh}{I}}
+  \end{align}
+  이고 주기 $T$는
+  \begin{align}
+    T = 2\pi\sqrt{\frac{I}{mgh}}
+  \end{align}
+  이다.
+\end{itemize}
+\vspace{0.5cm}
+ 
+\noindent {\bf 12번 풀이 : }       
+중첩된 파동의 방정식은
+\begin{align}
+  y(x,t) = A\sin(kx-\omega t)+A\cos(kx-\omega t)
+\end{align}
+이다. 삼각함수 덧셈공식 $\sin(a+b) = \sin a\cos b+\sin b\cos a$를 생각하자.
+$a = kx-\omega t$, $b= \pi/4$라고 생각하면
+\begin{align}
+  \begin{split}
+    y(x,t) &= \frac{A}{\cos\frac{\pi}{4}}\sin(kx-\omega t)\cos\frac{\pi}{4}
+    +\frac{A}{\sin\frac{\pi}{4}}\cos(kx-\omega t)\sin\frac{\pi}{4}  \\
+    &=\sqrt{2}A\sin(kx-\omega t+\frac{\pi}{4})
+  \end{split}
+\end{align}
+이므로 진폭은 $\sqrt{2}A$이다.
+
+ 
+
+\vspace{0.5cm} 
+\noindent {\bf 주관식 1번 풀이 : }
+\begin{itemize}
+  \item[(가)]
+  그림과 같이 놓인 원판의 질량중심을 지나는 회전축에 대한 회전관성 $I_{cm}$은
+  \begin{align}
+    I_{cm} = \frac{1}{2}MR^2
+  \end{align}
+  이다. 질량중심과 회전축까지의 거리 $h$는 $h=R$이므로
+  평행축 정리를 이용하면
+  \begin{align}
+    I = I_{cm}+Mh^2=\frac{1}{2}MR^2 + MR^2 = \frac{3}{2}MR^2
+  \end{align}
+  이다. 따라서 주어진 회전축에 대한 회전관성 $I$는 $\frac{3}{2}MR^2$이다.
+  \item[(나)] 
+  그림이 주어지지 않아 풀 수 없음. 
+\end{itemize}
+
+
+\vspace{0.5cm} 
+\noindent {\bf 주관식 2번 풀이 : }
+\begin{itemize}
+  \item[(가)]
+  그림으로부터 $ x=0$인 지점의 변위와 속도가 0초일 때 이후로 10초일 때 같아지므로 주기 $T$는 10 s이다.
+  전파속도 $v$는 
+  \begin{align}
+    v = \frac{\lambda}{T} = \frac{0.2\,\mathrm{m}}{10\,\mathrm{s}}=0.02\,\mathrm{m/s}
+  \end{align}
+  이고 파동의 최대변위가 0.5 m이므로 진폭 $A$는 0.5 m이다. 그래프를 통해 $y(x=0,t)$는
+  \begin{align}
+    y(0,t) = A\sin\omega t = (0.5\,\mathrm{m})\sin\left(\frac{2\pi}{10}t\right)
+  \end{align}
+  임을 알 수 있고 $t=$ 2.5 s일 때 변위 $y$는
+  \begin{align}
+    y = (0.5\,\mathrm{m})\sin\left(\left(\frac{2\pi}{10}\right)(2.5)\right)
+    =(0.5\,\mathrm{m})\sin\frac{\pi}{2} = 0.5\,\mathrm{m}
+  \end{align}
+  이다.
+  \item[(나)]
+  이 파동의 완전한 함수식을 알기 위해 파수 $k$와 각진동수 $\omega$를 구해야한다. 
+  파수 $k$와 각진동수 $\omega$는 다음과 같이 구할 수 있다.
+  \begin{align}
+    k = \frac{2\pi}{\lambda},\,\,\, \omega = \frac{2\pi}{T}.
+  \end{align}
+  따라서 $T$와 $\omega$는
+  \begin{align}
+    k = \frac{2\pi}{0.2\,\mathrm{m}}=10\pi\,\mathrm{m^{-1}},\,\,\,
+    \omega = \frac{2\pi}{10\,\mathrm{s}} = \frac{\pi}{5}\,\mathrm{m^{-1}}
+  \end{align}
+  이고 $+x$축으로 진행하는 파동의 파동함수 $y(x,t)$는
+  \begin{align}
+    y(x,t) = A\sin(kx-\omega t)
+    = (0.5\,\mathrm{m})\sin\left((10\pi\,\mathrm{m^{-1}})x
+    -(\frac{\pi}{5}\,\mathrm{m^{-1}}) t\right)
+  \end{align}
+  이다.
+  \item[(다)]
+  진폭이 $0.5\,\mathrm{m}$, 파장이 $0.2\,\mathrm{m}$인 한파장의 사인함수가 그려진다.
+\end{itemize}
+\vspace{0.5cm}
+ 
+
+\vspace{0.5cm} 
+\noindent {\bf 주관식 3번 풀이 : } 
+Quiz 13 참조.
+중첩 원리에 의해 물체 $m$에 작용하는 중력의 크기는 속이 찼을 때 
+작용하는 중력에 공동 만큼의 물체에 의한 중력을 뺀 값과 같다.
+물체 $M$의 밀도를 $\rho$라고 하면
+\begin{align}
+    M = \frac{4}{3}R^3\rho ,\,\,\,\rho = \frac{3M}{4R^3}
+\end{align}
+이고 공동 만큼의 물체의 질량을 $M^\prime$이라고 하면
+\begin{align}
+    M^\prime = \frac{4}{3}{\left(\frac{1}{2}R\right)}^3\rho=\frac{1}{8}M
+\end{align}
+이다. 속이 찼을 때 중력을 $F_1$라고 하자. $F_1$은
+\begin{align}
+    F_1 = \frac{GMm}{d^2}
+\end{align}
+이다. 공동 만큼의 중력을 $F_2$라고 하면 $F_2$는 다음과 같이 구할 수 있다.
+\begin{align}
+    F_2 = \frac{GM^\prime m}{(d-\frac{1}{2}R)^2}=\frac{GMm}
+    {2(2d-R)^2}.
+\end{align}
+위에서 말했듯이 실제 중력 $F$은 속이 찼을 때의 중력 $F_1$에 공동 만큼의 물체에 의한 중력 $F_2$를
+뺀 값과 같다.  즉,
+\begin{align}
+    F= F_1 - F_2
+\end{align}
+이다. 따라서 $m$에 미치는 중력 $F$는
+\begin{align}
+    F = GMm\left(\frac{1}{d^2}-\frac{1}{2(2d-R)^2}\right)
+\end{align}
+이다.
+\vspace{0.5cm}
+ 
+
+\vspace{0.5cm} 
+
+
+
+
+\end{document}

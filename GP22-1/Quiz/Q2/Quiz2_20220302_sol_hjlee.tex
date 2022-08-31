@@ -1,0 +1,175 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn,preprint]{revtex4-2} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage[utf]{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large 2022년 1학기 물리학 I: Quiz 2}
+\author{김현철\footnote{Office: 5S-436D (면담시간 매주
+    화요일-16:00$\sim$20:00)}} 
+\email{hchkim@inha.ac.kr}
+\author{Hwi-Jae Lee} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics, Inha
+  University, Incheon 22212, Republic of Korea }
+\date{Spring semester, 2022}
+
+\vspace{1.cm}
+\begin{abstract}
+\noindent \textbf{ {\color{red}주의}: \color{blue} 단 한 번의 부정행위도 절대
+  용납하지 않습니다. 적발 시, 학점은 F를 받게 됨은 물론이고,
+  징계위원회에 회부합니다. One strike out임을 명심하세요.}\\
+\\
+문제는 다음 쪽부터 나옵니다.  \\ \\
+{\bf Date:} 2022년 2월 28일 (월) 15:30-16:15 
+\\ \\ \\
+{\bf 학번:} \hspace{4cm}
+{\bf 이름:} 
+
+\end{abstract}
+\maketitle
+\newpage 
+\noindent {\bf 문제 1.} 다음 측정값들의 유효숫자의 자리수를 정하여라.
+\begin{itemize}
+\item[(가)] $2.008$ m
+\item[(나)] $9.06$ cm
+\item[(다)] $17.097\,\mathrm{kg}$ 
+\item[(라)] $0.017\,\mu \mathrm{s}$  
+\end{itemize}
+
+\noindent \textbf{풀이:}
+\begin{itemize}
+  \item[(가)] 숫자 중간에 있는 $0$ 은 유효하므로, 유효숫자의 개수는 4개 이다.$(2,0,0,8)$
+  \item[(나)] (가) 와 같은 이유로, 유효숫자의 개수는 3개 이다.$(9,0,6)$
+  \item[(다)] (가) 와 같은 이유로, 유효숫자의 개수는 5개 이다.$(1,7,0,9,7)$
+  \item[(라)] 숫자의 첫머리 0은 유효하지 않으므로, 유효숫자의 개수는 2개 이다.$(1,7)$
+\end{itemize}
+\newpage
+
+{\color{gray} [문제 풀이 쪽]}
+
+\newpage 
+
+
+\noindent {\bf 문제 2.}  측정한 각 변의 길이가 각각
+$a=(3.265\pm0.003)$ cm, $b=(12.356\pm0.002)$ cm이고, 두께가
+$d=(0.652\pm0.005)$ cm인 판이 있다. 유효숫자를 고려하여 이 판의 부피를 
+구하여라. 
+
+\noindent \textbf{풀이:} 판의 부피는 $a,b,d$ 를 모두 곱한 값이다. 곱셈과 나눗셈에서 유효수자의 계산은 주어진 수를 곱한 다음,
+유효숫자 중에서 가장 작은 값과 유효숫자가 같아야 한다. $a,b,d$ 중, 유효숫자가 가장 작은 값은 $d$ 로 3개 이다. \\주어진 범위 하에
+계산한 부피의 최솟값은 다음과 같다.
+\begin{align*}
+&((3.265-0.003)\times (12.356-0.002)\times (0.652-0.005))\mathrm{cm}^3=(3.262 \times 12.354 \times 0.647)\mathrm{cm}^3
+  \\ &= 26.1\mathrm{cm}^3&&
+\end{align*}
+주어진 범위 하에 계산한 부피의 최댓값은 다음과 같다.
+\begin{align*}
+  &((3.265+0.003)\times (12.356+0.002)\times (0.652+0.005))\mathrm{cm}^3=(3.268 \times 12.358 \times 0.657)\mathrm{cm}^3
+  \\ &= 26.5\mathrm{cm}^3&&  
+\end{align*}
+따라서, 이 판의 부피는 다음과 같다.
+\begin{align*}
+  (26.3\pm 2)\mathrm{cm}^3
+\end{align*}
+\newpage
+
+{\color{gray} [문제 풀이 쪽]}
+
+\newpage 
+
+\noindent {\bf 문제 3.} $\vec{A}=(1,-1,2)$, $\vec{B}=(-1,1,3)$일 때
+다음을 계산하여라.
+\begin{itemize}
+\item[(가)] $\vec{A}+\vec{B}$
+\item[(나)] $\vec{A}-2\vec{B}$
+\item[(다)] $\vec{A}\cdot\vec{B}$
+\item[(라)] $\vec{A}\times\vec{B}$
+\end{itemize}
+\noindent \textbf{풀이:}
+\begin{itemize}
+  \item[(가)]  벡터의 덧셈은 각 성분끼리 더하는 연산이다. 계산과정은 다음과 같다.
+  \begin{align*}
+    \vec{A}+\vec{B} = (1,-1,2)+(-1,1,3)=(0,0,5)  
+  \end{align*}
+  
+  \item[(나)] 벡터의 뺄셈은 각 성분끼리 빼는 연산이다. 계산과정은 다음과 같다.
+  \begin{align*}
+    \vec{A}-2\vec{B} = (1,-1,2)-2(-1,1,3)=(1,-1,2)-(-2,2,6)=(3,-3,-4)  
+  \end{align*}
+  \item[(다)] 벡터의 스칼라곱은 결과가 스칼라인 연산이다. 계산과정을 다음과 같다.
+  \begin{align*}
+    \vec{A}\cdot\vec{B} = (1\cdot(-1))+((-1)\cdot 1)+(2\cdot 3)=-1+-1+6=4  
+  \end{align*}
+  \item[(라)] 벡터의 벡터곱은 결과가 새로운 벡터인 연산이다. 계산과정은 다음과 같다.
+  \begin{align*}
+    {(\vec{A}\times\vec{B})}_i &= (((-1)\times 3) - (2 \times 1)) = -5 \\
+    {(\vec{A}\times\vec{B})}_j &= (2 \times (-1) -(1 \times 3)) = -5\\
+    {(\vec{A}\times\vec{B})}_k &= ((1 \times 1)-((-1)\times (-1))) = 0
+  \end{align*}
+  따라서, 연산의 결과는 다음과 같다.
+  \begin{align*}
+    \vec{A}\times\vec{B}  &= (-5,-5,0)
+  \end{align*}
+  
+\end{itemize}
+\newpage
+
+{\color{gray} [문제 풀이 쪽]}
+
+\newpage 
+
+\noindent {\bf 문제 4 [10pt]} 스칼라곱의 정의
+\begin{align}
+\vec{a}\cdot\vec{b} &= ab\cos\theta  \cr
+&=a_xb_x + a_yb_y + a_z b_z 
+\end{align}
+를 이용해서 아래에 주어진 두 벡터
+\begin{align}
+\vec{a} &= 3.0\hat{\bm{i}} + 2.0\hat{\bm{j}} + 3.0\hat{\bm{k}},\cr
+\vec{b} &= 2.0\hat{\bm{i}} + 1.0\hat{\bm{j}} + 3.0\hat{\bm{k}}
+\end{align}
+사이의 각도를 구하여라. \\
+\noindent \textbf{풀이:} 스칼라곱의 정의에 따르면 다음과 같다.
+\begin{align}
+  \cos\theta=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}
+\end{align}
+$\vec{a}\cdot\vec{b}$ 과 $|\vec{a}|$,$|\vec{b}|$ 은 간단하게 계산할 수 있다. 
+\begin{align*}
+  \vec{a}\cdot\vec{b} &= (3.0)(2.0)+(2.0)(1.0)+(3.0)(3.0) = 6.0+2.0+9.0 = 17 \\
+  |\vec{a}|&=\sqrt{{3.0}^2+{2.0}^2+{3.0}^2}=\sqrt{9.0+4.0+9.0}=\sqrt{22} \\
+  |\vec{b}|&=\sqrt{{2.0}^2+{1.0}^2+{3.0}^2}=\sqrt{4.0+1.0+9.0}=\sqrt{14}
+\end{align*}
+계산한 결과를 스칼라곱의 정의에 대입하자.
+\begin{align*}
+  \cos\theta = \frac{17}{\sqrt{22\cdot 14}}=\frac{17}{2\sqrt{77}}
+\end{align*}
+따라서, 각도는 다음과 같다.
+\begin{align*}
+  \theta = \cos^{-1}\left(\frac{17}{2\sqrt{77}}\right) \approx 14^{\circ}
+\end{align*}
+
+\newpage
+
+{\color{gray} [문제 풀이 쪽]}
+
+\newpage 
+
+\end{document}

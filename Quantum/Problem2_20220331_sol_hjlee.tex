@@ -1,0 +1,1498 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{bbm}
+\usepackage{slashed}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large Quantum Mechanics}
+\author{김현철}
+\email{hchkim@inha.ac.kr}
+\author{Lee Hui-Jae}
+\email{hjlee6674@inha.edu}
+\affiliation{Hardron Theory Group, Department of Physics, Inha University,
+Incheon 22212, Republic of Korea }
+\date{2021}
+
+\maketitle
+
+\noindent {\bf Due date:} \textbf{\color{red} April 9, 2022} \\ 
+\vspace{2cm}
+$\slashed{a}$
+\section*{\large Problem Set 2}
+\noindent \textbf{Problem 1.}
+A constant electric field $\mathcal{E}$ is exerted on a charged linear
+harmonic oscillator. 
+\begin{itemize}
+\item[(1)] Write down the corresponding Schr\"odinger equation. 
+\item[(2)] Derive the eigenvalues and eigenvectors of the charged
+  linear oscillators under a uniform electric field. 
+\item[(3)] Discuss the change in energy levels and physics. 
+  eigenstates. 
+\end{itemize}
+Hint: Use the operator method.
+
+\noindent \textbf{Answer : }
+\begin{itemize}
+  \item[(1)] A charged particle away from the equilibrium position 
+  has the potential energy when it is in the electric field. 
+  Let a distance from equilibrium position to a particle is $x$.
+  In the constant electric field, 
+  the electric potential energy $E_p$ is
+  \begin{align}
+    E_p = q\mathcal{E}x.
+  \end{align} 
+  Then, the Hamiltonian of the charged linear
+  harmonic oscillator $H$ is
+  \begin{align}\label{eq:1-1}
+    H = \frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2-q\mathcal{E}x.
+  \end{align}
+  So, the Schr\"odinger equation is
+  \begin{align}\label{eq:1-2}
+    -\frac{\hbar}{2m}\frac{\partial^2\psi}{\partial x^2}
+    +\frac{1}{2}m\omega^2x^2\psi
+    -q\mathcal{E}x\psi = E\psi.
+  \end{align}
+  \item[(2)] First, suppose that there is no electric field.
+  Then the Schr\"odinger equation and 
+  the energy are
+  \begin{align}
+    -\frac{\hbar}{2m}\frac{\partial^2\psi_n}{\partial x^2}
+    +\frac{1}{2}m\omega^2x^2\psi_n = E_n\psi_n,\,\,\, 
+    E_n = \left(\frac{1}{2}+n\right)\hbar\omega.
+  \end{align}
+  It is the Schr\"odinger equation of the simple harmonic oscillator. 
+  In the algebraic method to solve the equation, 
+  we defined the operators
+  \begin{align}
+      a = \sqrt{\frac{m\omega}{2\hbar}}
+      \left(x+i\frac{p}{m\omega}\right),\,\,\,
+      a^\dagger = \sqrt{\frac{m\omega}{2\hbar}}
+      \left(x-i\frac{p}{m\omega}\right),\,\,\,
+      \left[a,a^\dagger\right] = \mathbbm{I},
+  \end{align}
+  where $\mathbbm{I}$ is the identity operator and
+  \begin{align}\label{eq:1-2-1}
+    x = \sqrt{\frac{2\hbar}{m\omega}}
+    \left(\frac{a+a^\dagger}{2}\right),\,\,\,
+    p = \sqrt{2\hbar m\omega}
+    \left(\frac{a-a^\dagger}{2i}\right).
+  \end{align}
+ Therefore, the Hamiltonian $H_0$ can be expressed in terms of
+ the ladder operators as
+  \begin{align}\label{eq:1-3}
+    H_0 = \frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2 
+    = \hbar\omega\left(a^\dagger a + \frac{1}{2}\right)
+    = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right).
+  \end{align}
+  Now, recall that there is a constant 
+  electric field $\mathcal{E}$. 
+  From Eq.~\eqref{eq:1-1}, \eqref{eq:1-2-1} and \eqref{eq:1-3}, 
+  Hamiltonian with a constant electric field $H$ is
+   \begin{align}\label{eq:1-4}
+    H = \hbar\omega\left(a^\dagger a 
+    + \frac{1}{2}\right)-q\mathcal{E}x
+    = \hbar\omega\left(a^\dagger a 
+    + \frac{1}{2}-\frac{q\mathcal{E}}{2\hbar\omega}
+    \sqrt{\frac{2\hbar}{m\omega}}
+    \left(a+a^\dagger\right)\right)
+    =\hbar\omega\left(a^\dagger a 
+    + \frac{1}{2}+\kappa\left(a+a^\dagger\right)\right),
+   \end{align}  
+   where
+  \begin{align}\label{eq:1-8}
+   \kappa = -\frac{q\mathcal{E}}{2\hbar\omega}
+   \sqrt{\frac{2\hbar}{m\omega}}
+   =-\frac{q\mathcal{E}}{\omega\sqrt{2\hbar m\omega}}.
+  \end{align}
+   To eliminate the terms of $a$ and $a^\dagger$, we define the new operator $b$.
+   \begin{align}\label{eq:1-5}
+    b \coloneqq a + \kappa.
+   \end{align}
+   $b$ satisfies following commutation relations:
+   \begin{align}\label{eq:1-6}
+    \begin{split}
+      &\left[a,b\right] = a(a+\kappa)-(a+\kappa)a 
+      = aa-aa+\kappa a-\kappa a=0, \\
+      &\left[b,b^\dagger\right] 
+      = \left[(a+\kappa),(a+\kappa)^\dagger\right] 
+      = \mathbbm{I}.
+    \end{split}
+   \end{align}
+   The $H$ can be written as 
+   \begin{align}\label{eq:1-7}
+    \begin{split}
+      H &= \hbar\omega\left((a^\dagger+\kappa)(a+\kappa)
+      -\kappa(a+a^\dagger)-\kappa^2
+      + \frac{1}{2}+\kappa\left(a+a^\dagger\right)\right)  \\
+      &=\hbar\omega
+      \left(
+        b^\dagger b-\kappa^2
+      + \frac{1}{2}
+      \right).
+    \end{split}
+   \end{align}
+    We can write the eigenvalue equation with the new operator.
+    \begin{align}\label{eq:1-11}
+      &H \psi^\prime_n = \hbar\omega\left(b^\dagger b
+      + \frac{1}{2}-\kappa^2\right)\psi^\prime_n 
+      = E^\prime_n \psi^\prime_n.
+    \end{align}
+    Since $b$ and $b^\dagger$ behave as 
+   $a$ and $a^\dagger$, we can treat $b^\dagger b$ as
+   the number operator. So, the eigenvalue of the Hamiltonian is given by 
+   \begin{align}
+     E_n^\prime = \left(n +\frac{1}{2} -\kappa^2\right)\hbar\omega.
+   \end{align}
+   There is the ground state of $\psi_n^\prime$, that is
+    \begin{align}\label{eq:1-14}
+      b\psi_0^\prime=
+      \left(\sqrt{\frac{m\omega}{2\hbar}}\left(x+\frac{\hbar}{m\omega}
+      \frac{d}{dx}\right)+\kappa\right)
+      \psi_0^\prime(x)=0.
+    \end{align}
+    It is ODE of the first order about $x$.
+    \begin{align}
+      \frac{d\psi_0^\prime}{dx}
+      =-\frac{m\omega}{\hbar}
+      \left(
+        \sqrt{\frac{2\hbar}{m\omega}}
+      \kappa^2+x
+      \right)
+      \psi_0^\prime
+      =-\left(
+        \sqrt{\frac{2m\omega}{\hbar}}
+        \kappa+\frac{m\omega}{\hbar}x
+        \right)
+        \psi_0^\prime.
+    \end{align}
+     The solution of this ODE is    
+    \begin{align}
+      \psi_0^\prime = A\exp{\left(-\left(\frac{m\omega}{2\hbar}x^2
+      +\sqrt{\frac{2m\omega}{\hbar}}\kappa x\right)\right)}
+      =A\exp{\left(
+        -\frac{m\omega}{2\hbar}{\left(
+          x +\sqrt{\frac{2\hbar}{m\omega}}\kappa
+        \right)}^2+\kappa^2
+      \right)}.
+    \end{align}
+    % Normalization constant $A$ is 
+    % \begin{align}
+    %   &|A|^2\int\exp{\left(
+    %     -\frac{m\omega}{\hbar}{\left(
+    %       x +\sqrt{\frac{2\hbar}{m\omega}}\kappa
+    %     \right)}^2+2\kappa^2
+    %   \right)}\,dx
+    %   =|A|^2e^{2\kappa^2}\sqrt{\frac{\pi\hbar}{m\omega}}
+    %   =1, \\
+    %   &A = \pm \left(\frac{m\omega}{\pi\hbar}\right)
+    %   ^{\frac{1}{4}}e^{-\kappa^2}.
+    % \end{align}
+    Therefore the ground state of $\psi_n^\prime$ is
+    \begin{align}
+      \psi_0^\prime = A_0
+      \exp{\left(-\frac{m\omega}{2\hbar}
+      {\left(x +\sqrt{\frac{2\hbar}{m\omega}}\kappa\right)}
+        ^2\right)}.
+    \end{align}
+    As we stated before, $b$ and $b^\dagger$ behave as the ladder operators, 
+    so that $\psi_n^\prime$ can be expressed as 
+    \begin{align}
+      \psi_n^\prime = \frac{1}{\sqrt{n!}}(b^\dagger)^n
+      \psi_0^\prime
+      =A_n
+      \left(
+        \sqrt{\frac{m\omega}{2\hbar}}
+        \left(x-\frac{\hbar}{m\omega}\frac{d}{dx}\right)
+      +\kappa\right)^n
+      \exp{\left(-\frac{m\omega}{2\hbar}
+      {\left(x +\sqrt{\frac{2\hbar}{m\omega}}\kappa\right)}
+        ^2\right)}.
+    \end{align}
+    $A_n$ is the normalization constant. Substituting $\xi$ as,
+    \begin{align}\label{eq:1-16}
+      \xi \coloneqq \sqrt{\frac{m\omega}{2\hbar}}x+\kappa,\,\,\,
+      dx = \sqrt{\frac{2\hbar}{m\omega}}d\xi.
+    \end{align}
+    Then,
+    \begin{align}
+      \psi_n^\prime=A_n
+      \left(
+      \xi-\frac{1}{2}\frac{d}{d\xi}
+      \right)^ne^{-\frac{1}{2}\xi^2}
+      =A_n2^{-n}
+      H_n(\xi)e^{-\xi^2}.
+    \end{align}
+    From Eq.\eqref{eq:1-8} and \eqref{eq:1-16},
+    \begin{align}
+      \xi = \sqrt{\frac{m\omega}{2\hbar}}x
+      -\frac{q\mathcal{E}}{2\hbar\omega}
+       \sqrt{\frac{2\hbar}{m\omega}}
+      =\sqrt{\frac{m\omega}{2\hbar}}\left(x
+      -\frac{q\mathcal{E}}{m\omega^2}\right).
+    \end{align}
+    Finally we obtain the exact form of the $n$th eigenvector $\psi^\prime$.
+    \begin{align}\label{eq:1-15}
+      \psi_n^\prime=A_n^\prime
+      H_n\left(\sqrt{\frac{m\omega}{2\hbar}}\left(x
+      -\frac{q\mathcal{E}}{m\omega^2}\right)\right)
+      \exp{\left(-\frac{m\omega}{2\hbar}\left(x
+      -\frac{q\mathcal{E}}{m\omega^2}\right)^2\right)}.
+    \end{align}
+
+  \item[(3)] Let us compare the energy levels 
+  and eigenstate of SHO with not charged.
+  \begin{align}
+    &\psi_n = B_nH_n\left(\sqrt{\frac{m\omega}{2\hbar}}x\right)
+    \exp{\left(-\frac{m\omega}{2\hbar}x^2\right)},\,\,\,
+    E_n=\left(n+\frac{1}{2}\right)\hbar\omega \\
+    &\psi_n^\prime=B^\prime_nH_n\left(\sqrt{\frac{m\omega}{2\hbar}}
+    \left(x-\frac{q\mathcal{E}}{m\omega^2}\right)\right)
+    \exp{\left(-\frac{m\omega}{2\hbar}\left(x
+    -\frac{q\mathcal{E}}{m\omega^2}\right)^2\right)},\,\,\,
+    E^\prime_n= \left(\frac{1}{2}+n
+    -\frac{q^2\mathcal{E}^2}{2\hbar^2 m^2\omega^3}\right)\hbar\omega.
+  \end{align}
+  The energy levels with a constant electric field are shifted as 
+  $-\frac{q^2\mathcal{E}^2}{2\hbar m^2\omega^2}$ and the eigenvectors
+  with a constant electric field are translated as 
+  $-\frac{q\mathcal{E}}{m\omega^2}$ without the change of the shape 
+  for any $n$.
+  \end{itemize}
+
+\vspace{0.5cm}
+\newpage
+\noindent \textbf{Problem 2.} 
+The generating function $S(x,t)$ for the Hermite polynomial $H_n(x)$
+is defined as 
+\begin{align}
+S(x,t) = e^{x^2-(t-x)^2} = e^{-t^2 + 2 t x} 
+= \sum_{n=0}^\infty
+  \frac{H_n(x)}{n!} t^n.  
+\label{eq:1}
+\end{align}
+\begin{itemize}
+\item[(1)] Using this generating function, derive the Hermite
+  differential equation. 
+\item[(2)] Derive the following formula from Eq.~\eqref{eq:1}:
+  \begin{align}\label{eq:2-0-1}
+H_n(x) = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}    ,
+  \end{align}
+which is called the Rodrigues representation of the Hermite
+polynomial. 
+\item[(3)] Using Eq.~\eqref{eq:1}, derive the orthogonal relation of
+  the Hermite polynomials
+  \begin{align}\label{eq:2-0-2}
+    \int_{-\infty}^\infty e^{-x^2} H_n(x) H_m(x) dx 
+    = 2^n \sqrt{\pi}
+    n! \delta_{nm}.
+  \end{align}
+\item[(4)] Prove that
+  \begin{align}\label{eq:2-0-3}
+    \left(2x-\frac{d}{dx}\right)^n 1 = H_n(x),
+  \end{align}
+\item[(5)] Prove
+  \begin{align}\label{eq:2-0-4}
+    \int_{-\infty}^\infty x e^{-x^2} H_n(x) H_m(x) dx 
+    = \sqrt{\pi}
+    2^{n-1} n!\delta_{m,n-1} 
+    + \sqrt{\pi} 2^n (n+1)! \delta_{m,n+1}.
+  \end{align}
+\item[(6)] Prove
+  \begin{align}\label{eq:2}
+    \int_{-\infty}^\infty x^2 e^{-x^2} H_n(x) H_n(x) dx = 
+\sqrt{\pi} 2^n n! \left(n+\frac12\right).
+  \end{align}
+\end{itemize}
+
+\noindent \textbf{Answer : }
+
+\begin{itemize}
+\item[(1)] The Hermite differential equation is
+\begin{align}\label{eq:2-1}
+  \frac{d^2y}{dx^2}-2x\frac{dy}{dx}+\lambda y = 0,
+\end{align}
+where $\lambda$ is a non-negative integer. 
+The first and second derivatives of $x$ for generating function $S$ are
+\begin{align}\label{eq:2-2}
+  \begin{split}
+    &\frac{dS}{dx} = 2tS = \sum^\infty_{n=0}
+    \frac{H^\prime_n(x)}{n!}t^n  \\
+    &\frac{d^2S}{dx^2} = 4t^2S=\sum^\infty_{n=0}
+    \frac{H^{\prime\prime}_n(x)}{n!}t^n.
+  \end{split}
+\end{align}
+The first derivative of $t$ is
+\begin{align}\label{eq:2-3}
+  \frac{dS}{dt} = 2(-t+x)S \Longrightarrow \sum^\infty_{n=0}
+  \frac{H_n(x)}{n!}nt^{n-1}
+  =-\frac{dS}{dx} +2xS.
+\end{align}
+Rearranging $S$ in the first and second deriavtive inside Eq.~\eqref{eq:2-2}, we have
+\begin{align}\label{eq:2-3-1}
+  \begin{split}
+    \frac{dS}{dx} &= 
+    \frac{1}{2t}\frac{d^2S}{dx^2}
+    =\frac{1}{2}\sum^\infty_{n=0}
+    \frac{H^{\prime\prime}_n(x)}{n!}t^{n-1} , \\
+    2xS &= 2x\frac{1}{2t}\frac{dS}{dt} 
+    =x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1}.
+  \end{split}
+\end{align}
+Inserting Eq.~\eqref{eq:2-3-1} to Eq.~\eqref{eq:2-3}, we get
+\begin{align}
+  \sum^\infty_{n=0}\frac{H_n(x)}{n!}nt^{n-1}
+  =-\frac{1}{2}\sum^\infty_{n=0}\frac{H^{\prime\prime}_n(x)}{n!}t^{n-1}
+  +x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1},
+\end{align}
+or
+\begin{align}
+  \sum^\infty_{n=0}\left(\frac{H^{\prime\prime}_n(x)
+  -2xH^{\prime}_n(x)+2nH_n(x)}{n!}t^{n-1}\right)=0.
+\end{align}
+It is true for any $t$ when all coefficient is zero. Finally we obtain
+the hermite differential equation
+\begin{align}\label{eq:2-4}
+  H^{\prime\prime}_n(x)
+  -2xH^{\prime}_n(x)+2nH_n(x)=0.
+\end{align}
+\item[(2)] Carrying out Tayler expansion of Eq.~\eqref{eq:1}, we have
+\begin{align}
+  S(x,t) = e^{x^2}e^{-(t-x)^2} = \left.e^{x^2}\sum^\infty_{n=0}\frac{t^n}{n!}
+  \left(\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0} \right)
+  = \sum^\infty_{n=0}\frac{H_n(x)}{n!}t^n.
+\end{align}
+Since the series representation is unique,
+\begin{align}\label{eq:2-5}
+  H_n(x)=e^{x^2}\left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}.
+\end{align}
+If we regard $t$ as just the parameter, Eq.~\eqref{eq:2-5} is true for 
+any $t$. 
+A differential part of a LHS is
+\begin{align}
+  \left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}
+  =\left.(-1)^n\frac{d^n}{dx^n}e^{-(t-x)^2}\right|_{t=0}
+  =(-1)^n\frac{d^n}{dx^n}e^{-x^2}
+\end{align}
+Finally we obtain,
+\begin{align}\label{eq:2-5-1}
+  H_n(x) = (-1)^ne^{x^2}\frac{d^n}{dx^n}e^{-x^2}.
+\end{align}
+\end{itemize}
+%%---------------------------------------------------------------------------------------
+Let us define the new integration $I_{nkp}$.
+We use this integration to solve (3), (5) and (6).
+\begin{align}\label{eq:2-7-1}
+  I_{nkp} = \int^{\infty}_{-\infty}H_n(x)H_k(x)e^{-x^2}x^p\,dx.
+  % ,\,\,\,
+  % \sum^\infty_{p=0} \sum^\infty_{n=0} \sum^\infty_{k=0}I_{nkp}
+  % \frac{s^n}{n!}\frac{t^k}{k!}\frac{(2\lambda)^p}{p!}
+  % =\sqrt{\pi}e^{\lambda^2+2(st+\lambda s + \lambda t)}
+\end{align}
+To calculate this integration, let us make every function 
+in the integral into the form of the exponential.
+In the case of Hermite polynomial, it can be using the generation function
+and $x^p$ can be expressed to the power series of the $e^x$.
+\begin{align}\label{eq:2-7-2}
+  S(x,t) = \sum_{n=0}^\infty \frac{t^n}{n!}H_n(x)=e^{-t^2+2tx}
+  \Longrightarrow \sum_{n=0}^\infty\sum_{k=0}^\infty \frac{t^n}{n!}\frac{s^k}{k!}
+  I_{nkp}
+  = \int^{\infty}_{-\infty}e^{-t^2+2tx}e^{-s^2+2sx}e^{-x^2}x^p\,dx.
+\end{align}
+Making the same form of the exponent, consider the $e^{2\lambda x}$. Then,
+\begin{align}\label{eq:2-7-3}
+  e^{2\lambda x} = \sum_{p=0}^{\infty}\frac{(2\lambda)^p}{p!}x^p
+  \Longrightarrow \sum_{n=0}^\infty\sum_{k=0}^\infty\sum_{p=0}^{\infty}
+  \frac{t^n}{n!}\frac{s^k}{k!}\frac{(2\lambda)^p}{p!}
+  I_{nkp}
+  = \int^{\infty}_{-\infty}e^{-t^2+2tx}e^{-s^2+2sx}e^{-x^2+2\lambda x}\,dx.
+\end{align}
+It is the gaussian integration for $x$.
+\begin{align}\label{eq:2-7-4}
+  \begin{split}
+    \int^{\infty}_{-\infty}e^{-t^2+2tx}e^{-s^2+2sx}e^{-x^2+2\lambda x}\,dx
+    &=e^{-t^2-s^2}\int^{\infty}_{-\infty}e^{-x^2+2(t+s+\lambda) x}\,dx \\
+    &=e^{-t^2-s^2+(t+s+\lambda)^2}\int^{\infty}_{-\infty}e^{-(x-t-s-\lambda)^2}\,dx \\
+    &=\sqrt{\pi}e^{-t^2-s^2+(t+s+\lambda)^2}.
+  \end{split}
+\end{align}
+Therefore we obtain the result of the integration associated with $I_{nkp}$.
+Using this integration, let us solve Problem 2 as well as possible.
+\begin{align}\label{eq:2-7-5}
+  \sum_{n=0}^\infty\sum_{k=0}^\infty\sum_{p=0}^{\infty}
+  \frac{t^n}{n!}\frac{s^k}{k!}\frac{(2\lambda)^p}{p!}
+  I_{nkp}
+  =\sqrt{\pi}e^{-t^2-s^2+(t+s+\lambda)^2}.
+\end{align}
+%%---------------------------------------------------------------------------------------
+
+\begin{itemize}
+\item[(3)] Eq~\eqref{eq:2-0-2} is the case when $p=0$.
+\begin{align}
+  I_{nk0} = \int^{\infty}_{-\infty}H_n(x)H_k(x)e^{-x^2}\,dx.
+\end{align}
+From Eq~\eqref{eq:2-7-2},
+\begin{align}
+  \begin{split}
+    \sum_{n=0}^\infty\sum_{k=0}^\infty \frac{t^n}{n!}\frac{s^k}{k!}
+    I_{nk0}
+    &= \int^{\infty}_{-\infty}e^{-t^2+2tx}e^{-s^2+2sx}e^{-x^2}\,dx
+    =e^{-t^2-s^2}\int^\infty_{-\infty}e^{-x^2+2(t+s)x}\,dx  \\
+    &=e^{-t^2-s^2+(t+s)^2}\sqrt{\pi}.
+  \end{split}
+\end{align}
+Therefore we obtain
+\begin{align}
+  \sum_{n=0}^\infty\sum_{k=0}^\infty \frac{t^n}{n!}\frac{s^k}{k!}
+    I_{nk0}
+    =\sqrt{\pi}e^{2ts}.
+\end{align}
+$e^{2ts}$ can be expand to the power series.
+\begin{align}
+  \sum_{n=0}^\infty\sum_{k=0}^\infty \frac{t^n}{n!}\frac{s^k}{k!}
+    I_{nk0}
+    =\sqrt{\pi}\sum_{m=0}^{\infty}\frac{2^m}{m!}(ts)^m.
+\end{align}
+It is possible to express the RHS to the product of the series between $t$ and $s$.
+\begin{align}
+  \sum_{m=0}^{\infty}\frac{2^m}{m!}(ts)^m
+  =\left(\sum_{n=0}^{\infty}2^n n!\frac{t^n}{n!}\right)
+  \left(\sum_{k=0}^{\infty}\frac{s^k}{k!}\right)\delta_{nk}
+  =\sum_{n=0}^\infty\sum_{k=0}^\infty 2^n n!\frac{t^n}{n!}\frac{s^k}{k!}\delta_{nk}.
+\end{align}
+Hence we get
+\begin{align}
+  \sum_{n=0}^\infty\sum_{k=0}^\infty \frac{t^n}{n!}\frac{s^k}{k!}
+  I_{nk0}
+  =\sqrt{\pi}\sum_{n=0}^\infty\sum_{k=0}^\infty 
+  2^n n!\frac{t^n}{n!}\frac{s^k}{k!}\delta_{nk}
+\end{align}
+and $I_{nk0}$ is
+\begin{align}
+  I_{nk0}
+  = \int^{\infty}_{-\infty}H_n(x)H_k(x)e^{-x^2}\,dx
+  = \sqrt{\pi}2^n n!\delta_{nk}.
+\end{align}
+\item[(4)] {\it Proof}. We use the mathematical induction. 
+If $n=0$ and $n=1$, then,
+\begin{align}
+  H_0(x) = 1,\,\,\,H_1(x)=2x. 
+\end{align}
+The statement is true. Suppose it is true:
+\begin{align}
+  H_k(x) = \left(2x-\frac{d}{dx}\right)^k 1.
+\end{align}
+Then,
+\begin{align}
+  \begin{split}
+    H_{k+1}(x) &= \left(2x-\frac{d}{dx}\right)
+    \left(2x-\frac{d}{dx}\right)^k 1
+    =\left(2x-\frac{d}{dx}\right)H_k(x)
+  \end{split}
+\end{align}
+From Eq.~\eqref{eq:2-5-1},
+\begin{align}
+  \begin{split}
+    \left(2x-\frac{d}{dx}\right)H_k(x)
+    &=\left(2x-\frac{d}{dx}\right)(-1)^ke^{x^2}
+    \frac{d^k}{dx^k}e^{-x^2}  \\
+    &=(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
+    -(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
+    -(-1)^k e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}  \\
+    &=(-1)^{k+1}= e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}
+    =H_{k+1}(x).
+  \end{split}
+\end{align}
+Hence this statement is true for $n=k+1$. \\
+By mathematical induction, 
+this statement is true for any $n$. ~\hfill $\square$
+\item[(5)] Let us consider the following expression to treat the case when $p \neq 0$.
+\begin{align}
+  \begin{split}
+    &e^{-t^2-s^2+(t+s+\lambda)^2}
+    =e^{\lambda^2+2(st+s\lambda+t\lambda)} = \sum_{k,l,q,r}\frac{1}{k!l!q!r!}
+    (\lambda^2)^{k}(2st)^{l}(2s\lambda)^{q}(2t\lambda)^{r}  \\
+    &\Longrightarrow \sum_{n,m,p}\frac{s^nt^m(2\lambda)^p}{n!m!p!}I_{nmp}
+    =\sqrt{\pi}\sum_{k,l,q,r}\frac{2^{l+q+r}}{k!l!q!r!}\lambda^{2k+q+r}s^{l+q}t^{l+r}.
+  \end{split}
+\end{align}
+Comparing the order of each variables $\lambda,s,t$, there are two cases to make $p=1$;
+$(k,q,r) = (0, 0, 1)$ or $(k,q,r) = (0, 1, 0)$.
+\begin{itemize}
+  \item[a. ]$(k,q,r) = (0, 0, 1)$.
+  In this case, $n=1$ and $m=l+1$. That is, $m=n+1$.
+  \begin{align}
+    2\lambda\sum_n \frac{s^n t^{n+1}}{n!(n+1)!}I_{n,n+1,1}
+    =\sqrt{\pi}\sum_{n}\frac{2^{n+1}}{n!}\lambda s^n t^{n+1}.
+  \end{align}
+  Erasing $2\lambda$ on both sides,
+  \begin{align}
+    \sum_n \frac{s^n t^{n+1}}{n!(n+1)!}I_{n,n+1,1}
+    =\sqrt{\pi}\sum_{n}\frac{2^{n}}{n!} s^n t^{n+1}.
+  \end{align}
+  Therefore, we obtain
+  \begin{align}
+    I_{n,n+1,1} = (n+1)!2^n\sqrt{\pi}.
+  \end{align}
+  \item[b. ]$(k,q,r) = (0, 1, 0)$.
+  In this case, $n=l+1$ and $m=l$. That is, $m=n-1$.
+  \begin{align}
+    2\lambda\sum_n \frac{s^n t^{n-1}}{n!(n-1)!}I_{n,n-1,1}
+    =\sqrt{\pi}\sum_{n}\frac{2^{n}}{(n-1)!}\lambda s^n t^{n-1}.
+  \end{align}
+  Erasing $2\lambda$ on both sides,
+  \begin{align}
+    \sum_n \frac{s^n t^{n-1}}{n!(n-1)!}I_{n,n-1,1}
+    =\sqrt{\pi}\sum_{n}\frac{2^{n-1}}{(n-1)!}s^n t^{n-1}.
+  \end{align}
+  Therefore, we obtain
+  \begin{align}
+    I_{n,n-1,1} = n!2^{n-1}\sqrt{\pi}.
+  \end{align}
+\end{itemize}
+From these two results, we can write $I_{nk1}$ as following expression.
+\begin{align}
+  I_{nk1}=\int_{-\infty}^\infty x e^{-x^2} H_n(x) H_k(x) dx 
+  = \sqrt{\pi} 2^n (n+1)! \delta_{k,n+1}
+  +\sqrt{\pi}
+  2^{n-1} n!\delta_{k,n-1}.
+\end{align}
+\item[(6)] From Eq~\eqref{eq:2-7-1}, $I_{nnp}$ is
+\begin{align}
+  I_{nnp} = \int^{\infty}_{-\infty}H_n(x)H_n(x)e^{-x^2}x^p\,dx.
+\end{align}
+Integrating by part, we obtain
+\begin{align}
+  \begin{split}
+    I_{nnp} &= \left.-\frac{1}{2}H_nH_n x^{p-1}e^{-x^2}\right|^{\infty}_{-\infty}
+    +\frac{1}{2}\int^{\infty}_{-\infty}2H'_n H_n e^{-x^2}x^{p-1}\,dx
+    +\frac{1}{2}\int^{\infty}_{-\infty}H_n H_n (p-1)e^{-x^2}x^{p-2}\,dx \\
+    &=\int^{\infty}_{-\infty}H'_n H_n e^{-x^2}x^{p-1}\,dx
+    +\frac{1}{2}(p-1)\int^{\infty}_{-\infty}H_n H_n e^{-x^2}x^{p-2}\,dx.
+  \end{split}
+\end{align}
+From Eq~\eqref{eq:2-0-3}, $H'(x) = 2xH_{n}(x)-H_{n+1}(x)$. Hence,
+\begin{align}
+  \begin{split}
+    I_{nnp} &= \int^{\infty}_{-\infty}
+    2H_n H_n e^{-x^2}x^{p}\,dx
+    - \int^{\infty}_{-\infty}
+    H_nH_{n+1}x^{p-1}e^{-x^2}\,dx
+    +\frac{1}{2}(p-1)\int^{\infty}_{-\infty}
+    H_n H_n e^{-x^2}x^{p-2}\,dx \\
+    &= 2I_{n,n,p}-I_{n,n+1,p-1}+\frac{1}{2}(p-1)I_{n,n,p-2}.
+  \end{split}
+\end{align}
+We are treating the case when $p=2$. Therefore,
+\begin{align}
+  I_{nn2} = 2I_{n,n,2}-I_{n,n+1,1}+\frac{1}{2}I_{n,n,0}
+  \Longrightarrow
+  I_{n,n,2}=I_{n,n+1,1}-\frac{1}{2}I_{n,n,0}.
+\end{align}
+From Eq~\eqref{eq:2-0-2} and \eqref{eq:2-0-4}, we can calculate
+$I_{n,n+1,1}$ and $I_{n,n,0}$.
+\begin{align}
+  \begin{split}
+    I_{n,n,2} &= \sqrt{\pi}2^n(n+1)!-\frac{1}{2}2^n\sqrt{\pi}n!
+    =\sqrt{\pi}2^n n! \left(n+1-\frac{1}{2}\right)  \\
+    &=\sqrt{\pi}2^n n!\left(n+\frac{1}{2}\right).
+  \end{split}
+\end{align}
+Finally, we get
+\begin{align}
+  \int^{\infty}_{-\infty}H_n(x)H_n(x)e^{-x^2}x^2\,dx
+  =\sqrt{\pi}2^n n!\left(n+\frac{1}{2}\right).
+\end{align}
+\end{itemize}
+
+\vspace{0.5cm}
+
+\noindent \textbf{Problem 3.} 
+Given the eigenfunctions and eigenenergies of the SHO, 
+\begin{itemize}
+\item[(1)] Compute the kinetic and potential energies at the $n^{th}$
+  level.  Show that the results satisfy the virial theorem. 
+\item[(2)] Show that the $n^{th}$ state of the SHO satisfies 
+  \begin{align}
+    \Delta x \Delta p = \left(n+\frac12\right)\hbar.
+  \end{align}
+\end{itemize}
+
+\noindent \textbf{Answer : }
+\begin{itemize}
+  \item[(1)] The eigenvector and eigenfunction of the SHO are
+  \begin{align}\label{eq:3}
+    \psi_n(x)=\psi^*_n(x)= (n!2^n)^{-\frac{1}{2}}
+    \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+    \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
+    H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right),\,\,\,
+    E_n=\left( n+\frac{1}{2} \right)\hbar\omega.
+  \end{align}
+  The expectation value of the kinetic energy is
+  \begin{align}
+   \langle T_n\rangle = \frac{1}{2m}\int \psi^*_n p^2 
+   \psi_n\,dx
+   =\frac{\langle p^2\rangle}{2m}.
+  \end{align}
+  Since the expectation value of the kinetic energy is 
+  an integer multiple of the square of momentum, we just 
+  calculate the expectation value of the 
+  square of momentum. Using the integration by part,
+  \begin{align}\label{eq:3-1}
+    \langle p^2\rangle = -\hbar^2\int \psi^*_n 
+    \frac{\partial^2 \psi_n}{\partial x^2} \,dx
+    =\hbar^2\int\frac{\partial \psi^*_n}{\partial x} 
+    \frac{\partial \psi_n}{\partial x} \,dx
+  \end{align}
+  Changing the variable,
+  \begin{align}\label{eq:3-2}
+    \sqrt{\frac{m\omega}{\hbar}}x = \xi,\,\,\,
+    \frac{\partial \psi_n}{\partial x}
+    =\frac{\partial \psi_n}{\partial \xi}
+    \frac{\partial \xi}{\partial x}
+    =\sqrt{\frac{m\omega}{\hbar}}
+    \frac{\partial \psi_n}{\partial \xi}
+  \end{align}  
+  Then,
+  \begin{align}
+    \frac{\partial \psi_n}{\partial \xi}
+    =(n!2^n)^{-\frac{1}{2}}
+    \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+    (-\xi H_n\left(\xi\right) 
+    +H^\prime_n\left(\xi\right))
+    e^{-\frac{\xi^2}{2}}.
+  \end{align}
+  The integration of Eq.~\eqref{eq:3-1} is
+  \begin{align}
+    \begin{split}
+      \int\frac{\partial \psi^*_n}{\partial x} 
+      \frac{\partial \psi_n}{\partial x} \,dx
+      &= (n!2^n)^{-1}\sqrt{\frac{m\omega}{\hbar\pi}}
+      \frac{m\omega}{\hbar}\int{(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))}^2 e^{-\xi^2}\,
+      \sqrt{\frac{\hbar}{m\omega}}d\xi  \\
+      &= (n!2^n)^{-1}\frac{m\omega}{\hbar\sqrt{\pi}}
+      \int{(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))}^2 e^{-\xi^2}\,d\xi  \\
+    \end{split}
+  \end{align}
+  From Eq~\eqref{eq:2-0-3}, $H'(x) = 2xH_{n}(x)-H_{n+1}(x)$. Hence,
+  \begin{align}
+      \int(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))^2 e^{-\xi^2}\,d\xi
+      &=\int(-\xi H_n\left(\xi\right) 
+      + 2\xi H_n(\xi)-H_{n+1}(\xi))^2 e^{-\xi^2}\,d\xi  \\
+      &=\int(\xi H_n\left(\xi\right) 
+      -H_{n+1}(\xi))^2 e^{-\xi^2}\,d\xi \\
+      &=\int
+      (\xi^2H_n H_n-2\xi H_n H_{n+1}+H_{n+1}H_{n+1})  
+      e^{-\xi^2}\,d\xi.
+  \end{align}
+  We can use Eq.~\eqref{eq:2-0-2},~\eqref{eq:2-0-4} and 
+  ~\eqref{eq:2} to calculate this integration.
+  \begin{align}
+    \begin{split}
+      \int \xi^2 H_n H_n e^{-\xi^2}\,dx 
+      &= 2^n n!\sqrt{\pi}\left( n+\frac{1}{2} \right) \\  
+      \int \xi H_n H_{n+1} e^{-\xi^2}\,dx 
+      &= 2^n(n+1)!\sqrt{\pi}\\  
+      \int  H_{n+1} H_{n+1} e^{-\xi^2}\,dx 
+      &= 2^{n+1}(n+1)!\sqrt{\pi}.
+    \end{split}
+  \end{align}
+  Then,
+  \begin{align}
+      \int(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))^2 e^{-\xi^2}\,d\xi
+      &= \sqrt{\pi}2^n n!
+      \left(n+\frac{1}{2}-2(n+1)+2(n+1) \right) \\
+      &= \sqrt{\pi}2^n n!\left( n+\frac{1}{2} \right).
+  \end{align}
+  Therefore the expectation value of the square of the momentum is
+  \begin{align}\label{eq:3-ps}
+    \langle p^2\rangle = \hbar^2\,(n!2^n)^{-1}\frac{m\omega}
+    {\hbar\sqrt{\pi}}\,
+    \sqrt{\pi}2^n n!\left( n+\frac{1}{2} \right)
+    =\hbar m\omega\left( n+\frac{1}{2} \right).
+  \end{align}
+  We obtain the expectation value of the kinetic energy.
+  \begin{align}\label{eq:3-3}
+    \langle T_n\rangle=\frac{\langle p^2\rangle}{2m}
+    =\frac{1}{2}\hbar \omega\left( n+\frac{1}{2} \right).
+  \end{align}
+  The expectation value of the potential energy is
+  \begin{align}
+    \langle V_n\rangle = \int \psi^*_n \frac{1}{2}m\omega^2x^2 
+    \psi_n \,dx
+    =\frac{1}{2}m\omega^2\int \psi^*_n x^2 \psi_n \,dx
+    =\frac{1}{2}m\omega^2\langle x^2\rangle.
+  \end{align}
+  From Eq.~\eqref{eq:3-2}, the expectation value of the square 
+  of $x$ is
+  \begin{align}
+      \langle x^2\rangle &= \int \psi^*_n x^2 \psi_n \,dx
+      =\langle x^2\rangle ={\left(\frac{\hbar}{m\omega}\right)}
+      ^{\frac{3}{2}} 
+      \int \psi^*_n(\xi) \xi^2 \psi_n(\xi) \,d\xi \\
+      &= (n!2^n)^{-1}\sqrt{\frac{m\omega}{\hbar\pi}}
+      {\left(\frac{\hbar}{m\omega}\right)}^{\frac{3}{2}} 
+      \int \xi^2 H_n(\xi) H_n(\xi) e^{-\xi^2}\,d\xi  
+  \end{align}
+  The integration part can be calculated by Eq.~\eqref{eq:2}.
+  \begin{align}
+    \int \xi^2 H_n(\xi) H_n(\xi) e^{-\xi^2}\,d\xi
+    =\sqrt{\pi}2^n n!\left( n+\frac{1}{2} \right).
+  \end{align}
+  So, $\langle x^2\rangle$ is
+  \begin{align}\label{eq:3-xs}
+    \langle x^2\rangle = 
+    \frac{\hbar}{m\omega}
+    \left( n+\frac{1}{2}\right).
+  \end{align}
+  Finally we obtain the expectation value of the potential energy.
+  \begin{align}\label{eq:3-4}
+    \langle V_n\rangle=\frac{1}{2}m\omega^2(n!2^n)^{-1}
+    \sqrt{\frac{m\omega}{\hbar\pi}}
+    {\left(\frac{\hbar}{m\omega}\right)}^{\frac{3}{2}} 
+    \sqrt{\pi}2^n n!\left( n+\frac{1}{2} \right)
+    =\frac{1}{2}\hbar\omega
+    \left( n+\frac{1}{2} \right).
+  \end{align}
+  Let us confirm that the results satisfy the virial theorem. 
+  In this condition the virial theorem is
+  \begin{align}
+    \left\langle x\frac{\partial V}{\partial x}\right\rangle 
+    = 2\left\langle T\right\rangle .
+  \end{align}
+  Substituting Eq.~\eqref{eq:3-3} and~\eqref{eq:3-4},
+  \begin{align}
+  \left\langle x\frac{\partial V}{\partial x}\right\rangle 
+  =m\omega^2\int\psi^*_n x^2\psi_n\,dx = 2\left\langle 
+  V_n\right\rangle 
+  =2\left\langle T_n\right\rangle.
+  \end{align}
+  The results satisfy the virial theorem.
+  \item[(2)] Let us calculate $\Delta x$ and $\Delta p$. 
+  From the definition, $\Delta x$ and $\Delta p$ are
+  \begin{align}
+      \Delta x = \sqrt{\left\langle x^2\right\rangle 
+      - {\langle x\rangle}^2  },\,\,\,
+      \Delta p = \sqrt{\left\langle p^2\right\rangle 
+      - {\langle p\rangle}^2  }.
+  \end{align}
+  $\langle x\rangle$ is
+  \begin{align}
+      \langle x\rangle = \int x\psi^*\psi\,dx 
+      = (n!2^n)^{-1}\sqrt{\frac{m\omega}{\hbar\pi}}
+      \left(\frac{\hbar}{m\omega}\right)
+      \int \xi H_n H_n e^{-\xi^2}\,d\xi.
+  \end{align}
+  Since the integrated term is an even function and the integration 
+  interval is symmetric,
+  the integration is a zero. Therefore,
+  \begin{align}
+    \langle x\rangle = 0.
+  \end{align}
+  From Eq.~\eqref{eq:3-xs}, $\Delta x$ is
+  \begin{align}
+    \Delta x = \sqrt{\left\langle x^2\right\rangle}
+    = \sqrt{\frac{\hbar}{m\omega}
+    \left( n+\frac{1}{2}\right)}.
+  \end{align}
+  To calculate $\Delta p$, let us find the expectation value of $p$.
+  $\langle p\rangle$ is
+  \begin{align}
+    \langle p\rangle = \int \psi^*p\psi\,dx
+    = -i\hbar\int\psi^*_n
+    \frac{\partial \psi_n}{\partial x} \,dx.
+  \end{align}
+  The integration by part of $\langle p\rangle$ is
+  \begin{align}
+      \langle p\rangle=-i\hbar\int\psi^*_n
+      \frac{\partial \psi_n}{\partial x} \,dx
+      =i\hbar\int\frac{\partial \psi^*_n}{\partial x}
+      \psi_n \,dx.
+  \end{align}
+  From Eq.~\eqref{eq:3}, $\psi = \psi^*$. So,
+  \begin{align}
+    \langle p\rangle=i\hbar\int\frac{\partial \psi^*_n}{\partial x}
+    \psi_n \,dx=i\hbar\int\psi^*_n
+    \frac{\partial \psi_n}{\partial x}\,dx = -\langle p\rangle.
+  \end{align}
+  Therefore, we get
+  \begin{align}
+    \langle p\rangle = 0.
+  \end{align}
+  From Eq.~\eqref{eq:3-ps}, $\Delta p$ is
+  \begin{align}
+    \Delta p = \sqrt{\left\langle p^2\right\rangle}
+    = \sqrt{\hbar m\omega\left( n+\frac{1}{2} \right)}.
+  \end{align}
+  Finally we obtain $\Delta x\Delta p$.
+  \begin{align}
+    \Delta x\Delta p = \sqrt{\frac{\hbar}{m\omega}
+    \left(n+\frac{1}{2}\right)}\sqrt{\hbar m\omega
+    \left(n+\frac{1}{2}\right)}
+    =\hbar\left(n+\frac{1}{2}\right).
+  \end{align}
+\end{itemize}
+
+\vspace{1cm}
+
+\noindent \textbf{Problem 4.}
+If a wavefunction desribes a mixed state of the eigenstates of the SHO
+given as 
+\begin{align}
+  \psi(x,t) = \frac1{\sqrt{2}}[\psi_0(x,t) + \psi_1(x,t)] ,
+\end{align}
+\begin{itemize}
+\item[(1)] Investigate how the probability density changes in time. 
+\item[(2)] Prove the following relations 
+  \begin{align}
+\langle E\rangle &= \langle H\rangle =\hbar \omega    ,\cr
+\langle x \rangle &= \frac1{\sqrt{2}\alpha}\cos\omega t,\cr
+\langle p \rangle &= -\frac{\alpha}{\sqrt{2}}\hbar \sin\omega t,
+ \end{align}
+where $\alpha = \sqrt{m\omega/\hbar}$.
+ \item[(3)] If 
+   \begin{align}
+ \psi(x,t) = \frac1{\sqrt{2}}[e^{i\delta_0} \psi_0(x,t) + e^{i\delta}
+     \psi_1(x,t)],     
+   \end{align}
+discuss the effects of the phase factors $\delta_0$ and $\delta$ on
+$\langle x\rangle$ and $\langle p\rangle$.
+\end{itemize}
+
+\noindent \textbf{Answer : }
+\begin{itemize}
+  \item[(1)] The probability density of this wavefunction is
+  \begin{align}\label{eq:4-1}
+    \rho = |\psi(x,t)|^2 =\frac{1}{2}\left[
+      |\psi_0(x,t)|^2+|\psi_1(x,t)|^2+\psi_0^*(x,t)
+      \psi_1(x,t)+\psi_0(x,t)\psi_1^*(x,t)
+    \right].
+  \end{align}
+  To consider the time factor $\exp{\left(-\frac{iE_n}{\hbar}t\right)}$, 
+  we have to know the energy of the SHO.
+  The Schr\"odinger equation of the SHO is
+  \begin{align}\label{eq:4-2}
+      &H\psi_n(x,0)=E_n\psi_n(x,0)=\left(\frac{1}{2}+n\right)
+      \hbar\omega\psi_n(x,0).
+  \end{align}
+  And,
+  \begin{align}%\label{eq:4-3}
+    \psi_0(x,t) = \psi_0(x,0)\exp{\left(-\frac{iE_0}{\hbar}t\right)},\,\,\,
+    \psi_1(x,t) = \psi_1(x,0)\exp{\left(-\frac{iE_1}{\hbar}t\right)}
+  \end{align}
+  Therefore energys of $\psi_0$ and $\psi_1$ are
+  \begin{align}
+    \begin{split}\label{eq:4-4}
+      E_0 = \frac{1}{2}\hbar\omega,\,\,\,\psi_0(x,t)
+      &=\psi_0(x,0)e^{-\frac{1}{2}i\omega t},  \\
+      E_1 = \frac{3}{2}\hbar\omega,\,\,\,\psi_1(x,t)
+      &=\psi_1(x,0)e^{-\frac{3}{2}i\omega t}.
+    \end{split}
+  \end{align}
+  Then Eq.~\eqref{eq:4-1} is
+  \begin{align}%\label{eq:4-5}
+    \rho =\frac{1}{2}\left[
+      |\psi_0(x,0)|^2+|\psi_1(x,0)|^2+\psi_0^*(x,0)\psi_1(x,0)e^{-i\omega t}
+      +\psi_0(x,0)\psi_1^*(x,0)e^{i\omega t}
+    \right]
+  \end{align}
+  Since $\psi_0(x,0)$ and $\psi_0(x,0)$ are the eigenstate of the SHO,
+  \begin{align}\label{eq:4-6}
+    \psi_0(x,0)=\psi_0^*(x,0),\,\,\,\psi_1(x,0)=\psi_1^*(x,0)
+  \end{align}
+  Then the last two terms are
+  \begin{align}%\label{eq:4-7}
+    \psi_0^*(x,0)\psi_1(x,0)e^{-i\omega t}
+      +\psi_0(x,0)\psi_1^*(x,0)e^{i\omega t}
+      =2\psi_0(x,0)\psi_1(x,0)\cos{\omega t}.
+  \end{align}
+  The probability density is
+  \begin{align}\label{eq:4-8}
+    \rho =\frac{1}{2}\left[
+      |\psi_0(x,0)|^2+|\psi_1(x,0)|^2
+      +2\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\right]
+  \end{align}
+  Because $-1\leq \cos{\omega t}\leq 1$, the probability density oscillates
+  having the amplitude between $\rho_{\mathrm{min}}$ and $\rho_{\mathrm{max}}$.
+  \begin{align}
+    \rho_{\min} = \frac{1}{2}\left(\psi_0(x,0)-\psi_1(x,0)
+      \right)^2,\,\,\,
+      \rho_{\max} = \frac{1}{2}\left(\psi_0(x,0)+\psi_1(x,0)
+      \right)^2.
+  \end{align}
+  \item[(2)]
+   From Eq.~\eqref{eq:4-2}, Eq.~\eqref{eq:4-4} and Eq.~\eqref{eq:4-6}, 
+   the expectation value of the Hamiltonian is
+  \begin{align}
+    \begin{split}
+      \langle H \rangle &= \int \psi^*(x,t)H\psi(x,t)\,dx
+      = \int \psi^*(x,t)E\psi(x,t)\,dx
+      =\langle E \rangle  \\
+      &=\frac{1}{2}\int
+      [\psi_0^*(x,t) + \psi_1^*(x,t)][H\psi_0(x,t) + H\psi_1(x,t)]
+      \,dx \\
+      &=\frac{1}{2}\int
+      \left[e^{\frac{1}{2}i\omega t}\psi_0(x,0) 
+      + e^{\frac{3}{2}i\omega t}\psi_1(x,0)\right]
+      \left[\frac{1}{2}\hbar\omega e^{-\frac{1}{2}i\omega t}\psi_0(x,0) 
+      + \frac{3}{2}\hbar\omega 
+      e^{-\frac{3}{2}i\omega t}\psi_1(x,0)\right]
+      \,dx.
+    \end{split}
+  \end{align}
+  Since $\psi_0(x,0)$ and $\psi_1(x,0)$ are orthogonal to each other,
+  the term of $\psi_0(x,0)\psi_1(x,0)$ can be canceled out.
+  \begin{align}\label{eq:4-9}
+    \begin{split}
+      \langle H \rangle = \frac{1}{2}\int
+      \left[\frac{1}{2}\hbar\omega |\psi_0(x,0)|^2 
+      + \frac{3}{2}\hbar\omega |\psi_1(x,0)|^2\right]
+      \,dx
+      =\frac{1}{2}\left[\frac{1}{2}\hbar\omega
+      +\frac{3}{2}\hbar\omega\right]
+      =\hbar\omega.
+    \end{split}
+  \end{align}
+  The expectation value of the $x$ is
+  \begin{align}
+    \langle x \rangle = \int \psi^*(x,t)x\psi(x,t)\,dx
+    =\int x|\psi(x,t)|^2\,dx=\int x\rho\,dx
+  \end{align}
+  From the Eq.~\eqref{eq:4-8},
+  \begin{align}\label{eq:4-11}
+    \langle x \rangle=\frac{1}{2}\int x\left[
+      |\psi_0(x,0)|^2+|\psi_1(x,0)|^2
+      +2\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\right]\,dx.
+  \end{align}
+  Since the first two terms in the braket are the even functions, 
+  these terms can be canceled out.
+  \begin{align}\label{eq:4-12}
+    \langle x \rangle=\int x\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\,dx.
+  \end{align}
+  $\psi_0(x,0)$ and $\psi_1(x,0)$ are the eigenstate of the SHO. Therefore,
+  \begin{align}
+      \psi_0(x,0)&=\left(\frac{m\omega}{\pi\hbar}\right)
+      ^{\frac{1}{4}}
+      \exp{\left(-\frac{m\omega}{2\hbar}x^2\right)} \\
+      \psi_1(x,0)&=\sqrt{2}\left(\frac{m\omega}{\pi\hbar}\right)
+      ^{\frac{1}{4}}
+      \sqrt{\frac{m\omega}{\hbar}}x\exp{\left(-\frac{m\omega}{2\hbar}
+      x^2\right)}.
+  \end{align}
+  Then the expectation value of $x$ is
+  \begin{align}
+      \langle x \rangle
+      &=\sqrt{\frac{2}{\pi}}
+      \frac{m\omega}{\hbar}\cos{\omega t}
+      \int x^2\exp{\left(-\frac{m\omega}{\hbar}x^2\right)}
+      \,dx.
+  \end{align}
+  Substituting $\alpha = \sqrt{m\omega/\hbar}$, we get
+  \begin{align}
+      \langle x \rangle
+      &=\sqrt{\frac{2}{\pi}}
+      \alpha^2\cos{\omega t}
+      \left(-\frac{1}{2\alpha} \right)
+      \left(\frac{d}{d\alpha}\right)\int 
+      e^{-\alpha^2x^2}\,dx 
+      = -\sqrt{\frac{1}{2\pi}}
+      \alpha\cos{\omega t}
+      \left(\frac{d}{d\alpha}\right)\frac{\sqrt{\pi}}{\alpha} \\
+      &= \sqrt{\frac{1}{2\pi}}
+      \alpha\cos{\omega t}
+      \left(\frac{\sqrt{\pi}}{\alpha^2}\right)
+      =\frac{1}{\sqrt{2}\alpha}\cos{\omega t}.
+  \end{align}
+  Before finding expectation value of $p$, let us show that
+  \begin{align}
+    \langle p \rangle = m\frac{d}{dt}\langle x \rangle.
+  \end{align}
+  From the Generalized Ehrenfest's Theorem,
+  \begin{align}
+    i\hbar\frac{d}{dt}\langle x \rangle
+    =\langle\left[x,H\right]\rangle
+    +i\hbar\left\langle
+    \frac{\partial x}{\partial t}\right\rangle
+    =\left\langle
+    \left[x,\frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2\right]
+    \right\rangle
+    =\frac{1}{2m}\left\langle
+    \left[x,p^2\right]
+    \right\rangle.
+  \end{align}
+  Since $\left[x,p^2\right]=2i\hbar p$,
+  \begin{align}
+    i\hbar\frac{d}{dt}\langle x \rangle
+    =\frac{i\hbar}{m}\langle
+     p\rangle.
+  \end{align}
+  Hence,
+  \begin{align}\label{eq:4-13}
+    \langle p\rangle
+    =m\frac{d}{dt}\langle x \rangle
+    =-\frac{m\omega}{\sqrt{2}\alpha}\sin{\omega t}
+    =-\frac{\alpha}{\sqrt{2}}\hbar\sin{\omega t}.
+  \end{align}
+  \item[(3)] 
+  If there are the phase factors $\delta_0$ and $\delta$,
+  Eq.~\eqref{eq:4-12} changes into
+  \begin{align}
+      \langle x \rangle&=\frac{1}{2}
+      \left(e^{i(\delta_0-\delta)}+e^{-i(\delta_0-\delta)}\right)
+      \int x\left[\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\right]\,dx  \\
+      &=\cos{(\delta_0-\delta)}
+      \int x\left[\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\right]\,dx.
+  \end{align}
+  Let define $\Delta\delta$ as $\Delta\delta=\delta_0-\delta$. Then 
+  $\langle x \rangle$ is
+  \begin{align}
+    \langle x \rangle=\cos{\Delta\delta}
+    \int x\left[\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\right]\,dx.
+  \end{align}
+\end{itemize}
+The integration part equals the expectation value of $x$ 
+without the phase factors. Therefore,
+\begin{align}
+  \langle x \rangle=
+  \frac{1}{\sqrt{2}\alpha}\cos{\Delta\delta}\cos{\omega t}.
+\end{align}
+From Eq.~\eqref{eq:4-13}, the expectation value of $p$ is
+\begin{align}
+  \langle p \rangle=
+  -\frac{\alpha}{\sqrt{2}}\hbar\cos{\Delta\delta}\sin{\omega t}.
+\end{align}
+If $\Delta\delta=\left(n+\frac{1}{2}\right)\pi$, the expectation value of 
+$x$ and $p$ are zeros. And when $\Delta\delta=n\pi$,  the expectation value of 
+$x$ and $p$ has the maximum value.
+ \vspace{1cm}
+
+\noindent \textbf{Problem 5.}
+Derive the wavefunction in momentum space, which corresponds to the
+eigenfunctions for the SHO in coordinates, $\psi_n(x)$. 
+
+\noindent \textbf{Answer : }
+The solution of the Schr\"odinger equation in the 
+coordinate space is
+
+ \begin{align}\label{eq:5-1}
+   \psi_n(x)=(n!2^n)^{-\frac{1}{2}}
+   \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+   \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
+   H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right).
+ \end{align}
+ It satisfies the equation,
+\begin{align}\label{eq:5-2}
+  -\frac{\hbar^2}{2m}\frac{\partial^2\psi_n}{\partial x^2}
+  +\frac{1}{2}m\omega^2x^2\psi_n = E_n\psi_n,\,\,\,
+  E_n = \left(n+\frac{1}{2}\right)\hbar\omega.
+\end{align}
+The wavefunction in the momentum space $\phi_n(p)$ 
+is the Inverse Fourier Transformation 
+of the wavefunction in the coordinate space $\psi_n(x)$.
+\begin{align}
+  \begin{split}
+    \phi_n(p) &= \frac{1}{\sqrt{2\pi\hbar}}
+    \int \psi_n(x) e^{-\frac{i}{\hbar} px} \, dx \\
+    &= \frac{1}{\sqrt{2\pi\hbar}}(n!2^n)^{-\frac{1}{2}}
+    \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+    \int H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)
+    \exp{\left( -\frac{m\omega}{2\hbar}x^2
+    -\frac{i}{\hbar} px \right)}\, dx.
+  \end{split}
+\end{align}
+Changing $x$ and $p$ into the dimensionless variables 
+$\xi$ and $p_{\xi}$.
+\begin{align}
+  \xi = \sqrt{\frac{m\omega }{\hbar }}x,\,\,\,
+  p_\xi = \frac{1}{\sqrt{\hbar m \omega}}p.
+\end{align}
+Then $\phi_n(p)$ is
+\begin{align}
+  \phi_n(p) = \frac{1}{\sqrt{2\pi\hbar}}(n!2^n)^{-\frac{1}{2}}
+  \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+  \sqrt{\frac{\hbar }{m\omega }}
+  \int H_n\left( \xi \right)
+  e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi.
+\end{align}
+To find the Inverse Fourier Transformation of the Hermite polynomial,
+let us consider the generating function of the Hermite polynomial.
+\begin{align}\label{eq:5-3}
+  \int e^{-t^2 +2\xi t-\frac{1}{2}\xi^2 -i p_\xi\xi } \,d\xi
+  =\sum_n \frac{t^n}{n!}\int H_n(\xi)
+  e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi.
+\end{align}
+The LHS is the gaussian integration of $\xi$.
+\begin{align}
+  \begin{split}
+    \int e^{-t^2 +2\xi t-\frac{1}{2}\xi^2 -i p_\xi\xi } \,d\xi
+    &=e^{-t^2 }\int e^{-\frac{1}{2}\xi^2+\xi(2t -i p_\xi) } \,d\xi
+    =e^{-t^2 }\int e^{-\frac{1}{2}(\xi-(2t -i p_\xi))^2
+    +\frac{1}{2}(2t-ip_\xi)^2 } \,d\xi  \\
+    &=e^{-t^2 +\frac{1}{2}(2t-ip_\xi)^2}\sqrt{2\pi}
+    =\sqrt{2\pi}e^{t^2-2ip_\xi-\frac{1}{2}p^2_\xi}.
+  \end{split}
+\end{align}
+We can obtain the generating function about $-it$ and $p_\xi$.
+\begin{align}
+  \int e^{-t^2 +2\xi t-\frac{1}{2}\xi^2 -i p_\xi\xi } \,d\xi
+  =\sqrt{2\pi}e^{t^2-2ip_\xi-\frac{1}{2}p^2_\xi}
+  =\sqrt{2\pi}e^{-\frac{1}{2}p^2_\xi}
+  \sum_m\frac{\left(-it\right)^m}{m!}H_m(p_\xi).
+\end{align}
+From Eq.~\eqref{eq:5-3}, the coefficients of $n$th order 
+have to be the same.
+\begin{align}
+  \begin{split}
+    &\sum_n \frac{t^n}{n!}\int H_n(\xi)
+    e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi
+    =\sum_m\frac{\left(-it\right)^m}{m!}H_m(p_\xi)
+    \sqrt{2\pi}e^{-\frac{1}{2}p^2_\xi},  \\
+    &\int H_n(\xi)
+    e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi
+    =(-i)^mH_m(p_\xi)
+    \sqrt{2\pi}e^{-\frac{1}{2}p^2_\xi}.
+  \end{split}
+\end{align}
+Therefore the wavefunction in the momentum space $\phi_n(p)$ is
+\begin{align}
+  \phi_n(p) = (n!2^n)^{-\frac{1}{2}}
+  \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+  \sqrt{\frac{1}{m\omega }}(-i)^nH_n(p_\xi)
+  e^{-\frac{1}{2}p^2_\xi}.
+\end{align}
+\vspace{1cm}
+
+\noindent \textbf{Problem 6.}
+At $t=0$, the wavefunction for a state is described by
+\begin{align}\label{eq:6-1}
+\psi(x,0) = \sum_n A_n u_n(x) =
+  \left(\frac{\alpha^2}{\pi}\right)^{1/4} e^{-\alpha^2(x-a)^2/2}  .
+\end{align}
+show that after some time $t$, the probability density changes in time
+as 
+\begin{align}\label{eq:6-2}
+|\psi(x,t)|^2  =  \left(\frac{\alpha^2}{\pi}\right)^{1/4}e^{-\alpha^2
+  (x-a\cos\omega t)^2}
+\end{align}
+and discuss the result. 
+
+
+\noindent \textbf{Answer : }
+First we change the form of the exponential more similarly with 
+the generating function for the Hermite polynomial Eq.~\eqref{eq:1}.
+\begin{align}
+  \begin{split}\label{eq:6-3}
+    \exp{\left(-\frac{\alpha^2}{2}(x-a)^2\right)}
+    &= \exp{\left(-\frac{1}{2}\alpha^2x^2+\alpha^2 ax
+    -\frac{1}{2}\alpha^2a^2\right)}
+    =\exp{\left(-\frac{1}{2}\alpha^2x^2\right)
+    \exp\left(\alpha^2 ax-\frac{1}{2}\alpha^2a^2\right)}  \\
+    &= \exp{\left(-\frac{1}{2}\alpha^2x^2\right)
+    \exp\left(2\left(\frac{\alpha a}{2}\right)(\alpha x)
+    -\left(\frac{\alpha a}{2}\right)^2\right)}
+    \exp \left(-\left(\frac{\alpha a}{2}\right)^2\right).
+  \end{split}
+\end{align}
+The second exponential of the RHS is the generating function
+$S\left(\alpha x, \frac{\alpha a}{2}\right)$.
+\begin{align}%\label{eq:6-4}
+  \exp{\left(-\frac{\alpha^2}{2}(x-a)^2\right)}
+  =\exp{\left(-\frac{1}{2}\alpha^2\left(x^2+\frac{1}{2}a^2\right)
+  \right)}
+  \sum_{m=0}^{\infty}\frac{H_m(\alpha x)}{m!}\left(\frac{\alpha a}{2}
+  \right)^n.
+\end{align}
+Hence, $\psi(x,0)$ is
+\begin{align}\label{eq:6-5}
+    \psi(x,0) &= \sum_n A_n u_n(x) =
+    \left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{4}}
+    \exp{\left(-\frac{1}{2}\alpha^2\left(x^2+\frac{1}{2}a^2\right)
+    \right)}
+    \sum_n\frac{H_n(\alpha x)}{n!}\left(\frac{\alpha a}{2}
+    \right)^n \\
+    \label{eq:6-5-1}  &=\sum_n
+    \left(\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{4}}
+    \exp{\left(-\frac{1}{4}\alpha^2a^2\right)}
+    \frac{1}{n!}\left(\frac{\alpha a}{2}\right)^n\right)
+    \left(\exp{\left(-\frac{1}{2}\alpha^2x^2\right)}
+    H_n(\alpha x)\right).
+\end{align}
+From Eq.~\eqref{eq:6-1}, the wavefunction at the time $t$ is
+\begin{align}
+    \psi(x,t) &= \sum_n A_nu_n(x)e^{-i\frac{E_n}{\hbar}t}
+    =\sum_n A_nu_n(x)e^{-i\left(n+\frac{1}{2}\right)\omega t}  \\
+    &=e^{-\frac{1}{2}i\omega t}
+    \sum_n A_nu_n(x)e^{-in\omega t}.
+\end{align}
+Substituting Eq.~\eqref{eq:6-5}, we get
+\begin{align}
+    \psi(x,t) &=
+    \left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{4}}
+    e^{-\frac{1}{2}\alpha^2\left(x^2+\frac{1}{2}a^2\right)}
+    e^{-\frac{1}{2}i\omega t}
+    %\exp{\left(-\frac{1}{2}\alpha^2\left(x^2+\frac{1}{2}a^2\right)\right)}
+    \sum_n\left(\frac{H_n(\alpha x)}{n!}
+    \left(\frac{\alpha a}{2}\right)^n
+    e^{-in\omega t} \right) \\
+    &=\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{4}}
+    e^{-\frac{1}{2}\alpha^2\left(x^2+\frac{1}{2}a^2\right)}
+    e^{-\frac{1}{2}i\omega t}
+    \sum_n\left(\frac{H_n(\alpha x)}{n!}
+    \left(\frac{\alpha a}{2}e^{-i\omega t} \right)^n
+    \right).
+\end{align}
+The summation can be expressed as the generating function for the Hermite polynomial.
+\begin{align}
+  &\sum_n\left(\frac{H_n(\alpha x)}{n!}
+  \left( \frac{\alpha a}{2}e^{-i\omega t} \right)^n
+  \right) = S\left(\alpha x,\frac{\alpha a}{2}
+  e^{-i\omega t}\right)
+  =\exp{\left(-\frac{1}{4}\alpha^2 a^2e^{-2i\omega t}+\alpha^2ax
+  e^{-i\omega t}\right)},  \\
+  \label{eq:6-6}&\psi(x,t)
+  =\left(\frac{\alpha^2}{\pi}\right)
+  ^{\frac{1}{4}}
+  e^{-\frac{1}{2}\alpha^2
+  \left(x^2+\frac{1}{2}a^2\right)}
+  e^{-\frac{1}{2}i\omega t}
+  \exp{\left(-\frac{1}{4}\alpha^2 
+  a^2e^{-2i\omega t}
+  +\alpha^2axe^{-i\omega t}\right)}
+\end{align}
+From Eq.~\eqref{eq:6-6}, we obtain the probability density at the time $t$.
+\begin{align}
+    |\psi(x,t)|^2
+    &=\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
+    e^{-\alpha^2\left(x^2+\frac{1}{2}a^2\right)}
+    \exp{\left(-\frac{1}{4}\alpha^2 a^2
+    (e^{2i\omega t}+e^{-2i\omega t})
+    +\alpha^2ax(e^{i\omega t}+e^{-i\omega t})\right)} \\
+    &=\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
+    \exp{\left(-\alpha^2x^2
+    -\frac{1}{2}\alpha^2 a^2
+    (1+\cos{2\omega t})
+    +2\alpha^2ax\cos{\omega t}\right)}.
+    %&= \left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
+    %e^{-\alpha^2\left(x^2+\frac{1}{2}a^2\right)}
+    %\exp{\left(-\alpha^2a
+    %\left(\frac{1}{2} a(2\cos^2{\omega t}-1)
+    %-2x\cos{\omega t}
+    %\right)\right)}
+\end{align}
+From the half angle identity,
+$1+\cos{2\omega t}=2\cos^2{\omega t}$. So,
+\begin{align}
+  \begin{split}
+    |\psi(x,t)|^2&=\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
+    \exp{\left(-\alpha^2x^2
+    -\alpha^2 a^2\cos^2{\omega t}
+    +2\alpha^2ax\cos{\omega t}\right)}  \\
+    &=\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
+    \exp{\left(-\alpha^2(x^2
+    +a^2\cos^2{\omega t}
+    -2ax\cos{\omega t})\right)} \\
+    &=\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
+    \exp{\left(-\alpha^2(x
+    -a\cos{\omega t})\right)^2}.
+  \end{split}
+\end{align}
+Finally the probability density is
+\begin{align}
+  |\psi(x,t)|^2
+  =\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
+  e^{-\alpha^2(x-a\cos{\omega t})^2} .
+\end{align}
+With this probability density, the wavefunction moves between 
+intervals of $2a$ periodically without change in the shape and energy.
+Since, the expectation value of the position and the momentum oscillate 
+with the probability density.
+\vspace{1cm}
+
+\noindent \textbf{Problem 7.} THe Einstein model for a solid
+assumes that it consists of many SHOs. If the $N$ atoms are similar
+each other and oscillate similarly in average, the solid can be
+explained in terms of $N$ SHOs. At a given temperature $T$, $N$ atoms
+are in thermal equilibrium. Then, the Boltzmann distribution is given
+by 
+\begin{align}\label{eq:7-1}
+P_n = \frac1{Z} e^{-E_n/kT}   
+\end{align}
+with
+\begin{align}\label{eq:7-2}
+  Z = \sum_n e^{-E_n/kT}, 
+\end{align}
+where
+\begin{align}\label{eq:7-3}
+E_n = \left(n+\frac12\right)\hbar \omega .
+\end{align}
+\begin{itemize}
+\item[(1)] Derive the mean energy per an SHO 
+  \begin{align}
+    \langle E\rangle = \frac{\hbar\omega}{e^{\hbar\omega/kT}-1} +
+    \frac12 \hbar \omega.
+  \end{align}
+\item[(2)] If $U$ is the internal energy of the solid, derive the
+  specific heat with constant volume 
+  \begin{align}
+    C_V = \frac{\partial U}{\partial T}.
+  \end{align}
+Show that when $T$ is large, $C_V=3R$.
+\item[(3)] Discuss the physics related to this problem as far as you
+  can. 
+\end{itemize}
+
+\noindent \textbf{Answer : }
+\begin{itemize}
+  \item[(1)] By the definition, the expectation value of the energy is
+  \begin{align}
+    \langle E\rangle = \sum_n E_nP_n 
+    = \frac{1}{Z}\sum_n E_n e^{-E_n/kT},   \,\,\,
+    Z = \sum_n P_n.
+  \end{align}
+  Define $\beta$ as
+  \begin{align}\label{eq:7-4}
+    \beta =\frac{1}{kT}.
+  \end{align}
+  Then,
+  \begin{align}
+    \langle E\rangle = \frac{1}{Z}\sum_n E_n e^{-\beta E_n},   \,\,\,
+    Z = \sum_n e^{-\beta E_n}.
+  \end{align}
+  The summation term is regraded as the deriavtive for $\beta$.
+  \begin{align}\label{eq:7-5}
+    \langle E\rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta}
+    = -\frac{\partial (\ln{Z})}{\partial \beta}.
+  \end{align}
+  From Eq.~\eqref{eq:7-3}, $Z$ is
+  \begin{align}
+    Z = \sum_n e^{-\beta\hbar\omega(\frac{1}{2}+n)} 
+    = e^{-\frac{1}{2}\beta\hbar\omega}\sum_n 
+    e^{-n\beta\hbar\omega}.
+  \end{align}
+  It is power series with a common ratio 
+  $e^{-\beta\hbar\omega}$ 
+  and first term $e^{-\frac{1}{2}\beta\hbar\omega}$.
+  \begin{align}
+    Z = \frac{e^{-\frac{1}{2}\beta\hbar\omega}}
+    {1-e^{-\beta\hbar\omega}}.
+  \end{align}
+  Then $\ln{Z}$ is
+  \begin{align}
+    \ln{Z} = \ln{\left(e^{-\frac{1}{2}\beta\hbar\omega}
+    \right)}
+    -\ln{\left(1-e^{-\beta\hbar\omega}\right)}
+    =-\frac{1}{2}\beta\hbar\omega
+    -\ln{\left(1-e^{-\beta\hbar\omega}\right)}.
+  \end{align}
+  And Eq.~\eqref{eq:7-5} is
+  \begin{align}
+      \langle E\rangle = -\frac{\partial (\ln{Z})}
+      {\partial \beta}
+      = \frac{1}{2}\hbar\omega
+      +\frac{\hbar\omega e^{-\beta\hbar\omega}}
+      {1-e^{-\beta\hbar\omega}}  
+  \end{align}
+  Multiplying $e^{\beta\hbar\omega}$ to the second term of the RHS,
+  \begin{align}
+    \begin{split}\label{eq:7-6}
+      \langle E\rangle &=\frac{1}{2}\hbar\omega
+      +\frac{\hbar\omega}{e^{\beta\hbar\omega}-1} \\
+      &=\frac{\hbar\omega}{e^{\hbar\omega/kT}-1} 
+      + \frac{1}{2}\hbar\omega.
+    \end{split}
+  \end{align}
+  \item[(2)] The first law of the thermodynamics is
+  \begin{align}
+    dU = dQ - dW.
+  \end{align} 
+  $Q$ and $W$ are the heat supplied to the system and 
+  the work done on the system respectively. In the case of
+  the solid, the volume is constant and the work is a zero.
+  \begin{align}
+    dW = PdV = 0,\,\,\, dU = dQ.
+  \end{align}
+  By the definition of the specific heat with constant volume,
+  \begin{align}
+    C_V = \left(\frac{\partial Q}{\partial T}\right)_V 
+    =\frac{\partial U}{\partial T}.
+  \end{align}
+  Since $U$ is the total energy of the solid and there are the $N$
+  atoms,
+  \begin{align}
+    U = N\langle E\rangle=\frac{N\hbar\omega}{e^{\hbar\omega/kT}-1} 
+    + \frac{1}{2}N\hbar\omega.
+  \end{align}
+  Hence the specific heat $C_V$ is
+  \begin{align}\label{eq:7-8}
+    C_V = \frac{\partial U}{\partial T}
+    = \frac{\partial }{\partial T}
+    \left(\frac{N\hbar\omega}{e^{\hbar\omega/kT}-1}\right) 
+    =\frac{N\hbar^2\omega^2e^{\hbar\omega/kT}}
+    {kT^2\left(e^{\hbar\omega/kT}-1\right)^2}.
+  \end{align}
+  Considering that the degree of freedom is 3, we get
+  \begin{align}\label{eq:7-9}
+    C_V = \frac{3N\hbar^2\omega^2e^{\hbar\omega/kT}}
+    {kT^2\left(e^{\hbar\omega/kT}-1\right)^2}.
+  \end{align}
+  From Eq.~\eqref{eq:7-4}, Eq.~\eqref{eq:7-8} can be rewritten as
+  \begin{align}
+    C_V=\frac{3Nk\beta^2\hbar^2\omega^2e^{\beta\hbar\omega}}
+    {\left(e^{\beta\hbar\omega}-1\right)^2}.
+  \end{align}
+  When $T$ is large, $\beta$ is converged to a zero and 
+  $e^{-\beta\hbar\omega}$ is converged to 1. Then,
+  \begin{align}
+    \lim_{\beta\rightarrow 0}\frac{\beta}
+    {e^{\beta\hbar\omega}-1} = \frac{1}{\hbar\omega}.
+  \end{align}
+  Finally $C_V$ is
+  \begin{align}
+    C_V = \frac{3Nk\hbar^2\omega^2}
+    {\hbar^2\omega^2}=3Nk = 3nR.
+  \end{align}
+  \item[(3)] Let us consider when the temperature is very small.
+  From Eq.~\eqref{eq:7-9},
+  \begin{align}
+    \lim_{T\rightarrow 0}\frac{3N\hbar^2\omega^2e^{\hbar\omega/kT}}
+    {kT^2\left(e^{\hbar\omega/kT}-1\right)^2} = 0.
+  \end{align} 
+  $C_v$ is converged to a zero.
+  From Eq.~\eqref{eq:7-6}, when the temperature is large,
+  the mean energy per an SHO behaves approximately as the linear function.
+   \begin{align}
+    \begin{split}
+      \langle E\rangle &=\frac{1}{2}\hbar\omega
+      +\frac{\hbar\omega}{e^{\beta\hbar\omega}-1} 
+      \approx \frac{1}{2}\hbar\omega
+      +\frac{1}{\beta}-\frac{1}{2}\hbar\omega
+      +\frac{1}{12}\hbar\omega^2\beta+\cdots  \\
+      &\approx \frac{1}{\beta} = kT.
+    \end{split}
+   \end{align} 
+   In high temperatures, the mean energy per an SHO by The Einstein model is
+   directly proportional to temperature.
+\end{itemize}
+\end{document}

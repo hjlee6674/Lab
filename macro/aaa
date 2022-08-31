@@ -1,0 +1,17 @@
+import pyautogui
+import pygments
+import random
+a1=random.randrange(1,5)*0.1
+a2=random.randrange(1,5)*0.1
+a3=random.randrange(1,5)*0.1
+a=random.randrange(10,50)
+n=a
+print(a1,a2,a3,a)
+while n>0:
+  pyautogui.click(x=3440,y=830,interval=a1)
+  pyautogui.press('enter',interval=a2)
+  pyautogui.press('enter',interval=a3)
+  n=n-1
+  print(a-n)
+#pyautogui.click(x=3050,y=175)
+#pyautogui.click(x=3050,y=175)

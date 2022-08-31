@@ -1,0 +1,170 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn,preprint]{revtex4} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage[utf]{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+ \usepackage{setspace}
+ \usepackage{tikz}
+ \usepackage{tkz-euclide}
+ \usetikzlibrary{angles}
+%\pagestyle{fancy}
+
+\begin{document}
+
+% \title{\Large 2021년 1학기 고전역학 I: Quiz 5}
+% \author{김현철\footnote{Office: 5S-436D (면담시간 매주
+%     화요일-16:00$\sim$20:00)}} 
+% \email{hchkim@inha.ac.kr}
+% \affiliation{Hadron Theory Group, Department of Physics, Inha
+%   University, Incheon 402-751, Republic of Korea }
+% \date{Spring semester, 2021}
+
+
+% \vspace{1.cm}
+% \begin{abstract}
+% \noindent \textbf{ {\color{red}주의}: \color{blue} 단 한 번의 부정행위도 절대
+%   용납하지 않습니다. 적발 시, 학점은 F를 받게 됨은 물론이고,
+%   징계위원회에 회부합니다. One strike out임을 명심하세요.}\\
+% \\
+% 문제는 다음 쪽부터 나옵니다.  \\ \\
+% {\bf Date:} 2021년 3월 16일 (화) 12:25-13:15 
+% \\
+% {\bf 학번:} \hspace{4cm}
+% {\bf 이름:} 
+
+% \end{abstract}
+% \maketitle
+
+\noindent {\bf 문제 6.} 그림 \ref{pic:10} 처럼, 세 개의 벡터가 2차원 평면에 놓여있다.
+각각의 크기는 a = 3.00 m, b = 4.00 m, c = 10.0 m 이고, 
+$\vec{a}$ 와 $\vec{b}$ 의 사잇각은 $30^\circ$이다.
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}
+    \coordinate (A) at (30:0.1);
+    \coordinate (C) at (120:0.1);
+    \draw (0,0) coordinate (O)
+    (30:0.1) coordinate (A) -- (O)
+    (120:0.1) coordinate (B) -- (O)
+    pic {right angle = A--O--B}
+    pic [draw,thick,angle eccentricity=.2]
+    {right angle = A--O--C};
+    \draw [very thick, red, -latex] (0:0) -- (30:1.5) node [black,above] {$\vec{b}$};
+    \draw [very thick, red, -latex] (0:0) -- (0:1.125) node [black,below] {$\vec{a}$};
+    \draw [very thick, red, -latex] (0:0) -- (120:3.75) node [black,above] {$\vec{c}$};
+    \draw [ ->] (-3,0) -- (3,0) node [above] {$x$};
+    \draw  (1,0) arc (0:30:1) (21:1) node [right] {$\theta$};
+
+  %  \draw [thick, -]  (2,-0.3)  -- (2,0.3) node [above] {$\frac{1}{2}$};
+  %  \draw [thick, -]  (-2,-0.3) -- (-2,0.3) node [left=0.1cm, above] {$-\frac{1}{2}$};
+  %  \draw [thick, -]  (-0.3,-4/3) -- (0.3,-4/3) node [below] {$-1/3$};
+  %  \draw [thick, -]  (-0.3,8/3) -- (0.3,8/3) node [right] {$2/3$};
+    \draw [ ->] (0,-1) -- (0,4) node [right] {$y$};
+    % \draw [thick, -]  (0,-4.5) -- (0,-4.5) ;
+    % \draw [thick, -]  (5,2) -- (5,2) ;
+    % \draw [thick, -]  (5,0) -- (5,0) ;
+    % \draw [thick, -]  (5,-2) -- (5,-2) ;
+    % \draw [thick, -]  (5,-4) -- (5,-4) ;
+    %\fill[fill=navy] -- (0,8/3) node[fill=navy!,circle,inner sep=1.5pt,draw] {} node [above=0.2cm,left=0.05cm]  {$\Lambda_{c}^{+}$}
+    %                 -- (-2,-4/3) node[fill=navy!,circle,inner sep=1.5pt,draw] {} node [below=0.2cm,left=0.05cm] {$\Xi_{c}^{0}$}
+    %                 -- (2,-4/3) node[fill=navy!,circle,inner sep=1.5pt,draw] {} node [below=0.2cm,right=0.05cm] {$\Xi_{c}^{+}$};
+    % \node[fill=navy!,circle,inner sep=1.5pt,draw] at (0,0) {} node [below=0.2cm,left=0.05cm] {$\Sigma^{*0}$};
+  \end{tikzpicture}
+  \caption{ 문제 6}
+  \label{pic:10}
+\end{figure}
+
+\noindent{\bf 답:} 
+\begin{itemize}
+  \item[(a)] 벡터 $\vec{a}$ 와 $x$ 축이 이루는 각도를 $\phi$ 라고 하면 각 성분은 다음과 같다.
+  \begin{align}
+    a_x = |a|\cos{\phi},\,\,\,a_y = |a|\sin{\phi}.
+  \end{align}
+  $|a|=3.00\,\mathrm{m}$ 이고 $\phi = 0^\circ$ 이므로,
+  \begin{align}
+    \begin{split}
+    &a_x = (3.00\,\mathrm{m})(\cos{0^\circ}) =3.00\,\mathrm{m},   \\
+    &a_y = (3.00\,\mathrm{m})(\sin{0^\circ})=0\,\mathrm{m}.
+    \end{split}
+  \end{align}
+  \item[(b)] 벡터 $\vec{b}$ 의 각 성분은 다음과 같다.
+  \begin{align}
+    b_x = |b|\cos{\theta},\,\,\,b_y = |b|\sin{\theta}
+  \end{align}
+  $|b|=4.00\,\mathrm{m}$ 이고 $\theta = 30^\circ$ 이므로,
+  \begin{align}
+    \begin{split}
+      &b_x = (4.00\,\mathrm{m})(\cos{30^\circ}) 
+      =(4.00\,\mathrm{m})\left(\frac{\sqrt{3}}{2}\right)
+      =(2.00\times\sqrt{3})\,\mathrm{m} =3.46\,\mathrm{m},  \\
+      &b_y = (4.00\,\mathrm{m})(\sin{30^\circ})
+      =(4.00\,\mathrm{m})\left(\frac{1}{2}\right)
+      =2.00\,\mathrm{m}.
+    \end{split}
+  \end{align}
+  \item[(c)] 벡터 $\vec{c}$ 와 $x$ 축이 이루는 각도를 $\psi$ 라고 하면,
+  \begin{align}
+    \psi = \theta + 90^{\circ}.
+  \end{align}
+  따라서, 벡터 $\vec{c}$ 의 각 성분은 다음과 같다.
+  \begin{align}
+    c_x = |c|\cos{(\theta + 90^{\circ})},\,\,\,c_y = |c|\sin{(\theta + 90^{\circ})}.
+  \end{align}
+  $|c|=10.0\,\mathrm{m}$ 이고 $\theta = 30^\circ$ 이므로,
+  \begin{align}
+    \begin{split}
+      &c_x = (10.0\,\mathrm{m})(\cos{120^\circ}) 
+      =(10.0\,\mathrm{m})\left(-\frac{1}{2}\right)
+      =-5.00\,\mathrm{m},  \\
+      &c_y = (10.0\,\mathrm{m})(\sin{120^\circ})
+      =(10.0\,\mathrm{m})\left(\frac{\sqrt{3}}{2}\right)
+      =(5.00\times\sqrt{3})\,\mathrm{m}
+      =8.66\,\mathrm{m}.
+    \end{split}
+  \end{align}
+  \item[(d)] $\vec{c}$ 를 성분별로 나눠서 생각해보면,
+  \begin{align}
+    c_x = p a_x + q b_x,\,\,\, c_y = p a_y + q b_y.
+  \end{align}
+dlek. (1), (2), (3) 에서 각 벡터의 성분을 구했으므로 대입해보면,
+\begin{align}
+  \begin{split}
+    -5.00\,\mathrm{m} &= p\times(3.00\,\mathrm{m})
+    +q\times((2.00\times\sqrt{3})\,\mathrm{m})  \\
+    (5.00\times\sqrt{3})\,\mathrm{m} &= p\times(0\,\mathrm{m})
+    +q\times(2.00\,\mathrm{m})
+  \end{split}
+\end{align}
+$p$ 와 $q$ 에 대한 연립 일차 방정식이 된다. 두번째 식부터 계산해보면,
+\begin{align}
+  q = \frac{(5.00\times\sqrt{3})\,\mathrm{m}}{2.00\,\mathrm{m}}
+    = 4.33
+\end{align}
+이고 $q$ 를 첫번째 식에 대입하면 다음과 같다.
+\begin{align}
+  \begin{split}
+    p &=- \frac{5.00\,\mathrm{m}
+    +q\times((2.00\times\sqrt{3})\,\mathrm{m})}{3.00\,\mathrm{m}} \\
+    &=- \frac{5.00\,\mathrm{m}
+    +(2.50\times\sqrt{3})((2.00\times\sqrt{3})\,\mathrm{m})}{3.00\,\mathrm{m}}
+    =- \frac{5.00\,\mathrm{m}+15.0\,\mathrm{m}}{3.00\,\mathrm{m}} \\
+    &= -6.67.
+  \end{split}
+\end{align}
+따라서, $p = -6.67$ 이고 $q = 4.33$ 이다.
+\end{itemize}
+
+\end{document}  
