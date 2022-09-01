@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: template.aux
+The top-level auxiliary file: Quiz2_Solution_2.aux
 The style file: apsrev4-2.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -11,8 +11,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: templateNotes.bib
-Database file #2: ref.bib
+Database file #1: Quiz2_Solution_2Notes.bib
 control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
 Warning--jnrlst (dependency: not reversed) set 1
@@ -26,45 +25,45 @@ Control: production of article title (0) allowed
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-You've used 7 entries,
+You've used 2 entries,
             6079 wiz_defined-function locations,
-            1677 strings with 15883 characters,
-and the built_in function-call counts, 5566 in all, are:
-= -- 356
-> -- 112
-< -- 56
-+ -- 39
-- -- 40
-* -- 795
-:= -- 531
-add.period$ -- 5
-call.type$ -- 7
-change.case$ -- 25
-chr.to.int$ -- 16
-cite$ -- 7
-duplicate$ -- 578
-empty$ -- 374
-format.name$ -- 59
-if$ -- 1051
-int.to.chr$ -- 2
-int.to.str$ -- 14
-missing$ -- 91
-newline$ -- 67
-num.names$ -- 15
-pop$ -- 254
+            1635 strings with 15052 characters,
+and the built_in function-call counts, 991 in all, are:
+= -- 12
+> -- 16
+< -- 35
++ -- 8
+- -- 20
+* -- 131
+:= -- 72
+add.period$ -- 0
+call.type$ -- 2
+change.case$ -- 0
+chr.to.int$ -- 12
+cite$ -- 2
+duplicate$ -- 137
+empty$ -- 17
+format.name$ -- 0
+if$ -- 127
+int.to.chr$ -- 1
+int.to.str$ -- 9
+missing$ -- 28
+newline$ -- 52
+num.names$ -- 0
+pop$ -- 68
 preamble$ -- 1
-purify$ -- 25
+purify$ -- 0
 quote$ -- 0
-skip$ -- 227
+skip$ -- 33
 stack$ -- 0
-substring$ -- 107
-swap$ -- 497
-text.length$ -- 11
+substring$ -- 12
+swap$ -- 110
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 75
+type$ -- 12
 warning$ -- 1
-while$ -- 24
+while$ -- 11
 width$ -- 0
-write$ -- 94
+write$ -- 52
 (There was 1 warning)

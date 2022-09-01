@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{0}%
+\begin{thebibliography}{5}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,4 +50,52 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont
+  {Chen}(2007)}]{10.1093/acprof:oso/9780199211500.001.0001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
+  {Chen}},\ }\href {https://doi.org/10.1093/acprof:oso/9780199211500.001.0001}
+  {\emph {\bibinfo {title} {{Introduction to Scanning Tunneling Microscopy}}}}\
+  (\bibinfo  {publisher} {Oxford University Press},\ \bibinfo {year}
+  {2007})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Binnig}\ and\ \citenamefont
+  {Rohrer}(1983{\natexlab{a}})}]{BINNIG1983236}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Binnig}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Rohrer}},\ }\bibfield  {title} {\bibinfo {title} {Scanning tunneling
+  microscopy},\ }\href
+  {https://doi.org/https://doi.org/10.1016/0039-6028(83)90716-1} {\bibfield
+  {journal} {\bibinfo  {journal} {Surface Science}\ }\textbf {\bibinfo {volume}
+  {126}},\ \bibinfo {pages} {236} (\bibinfo {year}
+  {1983}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tersoff}\ and\ \citenamefont
+  {Hamann}(1985)}]{PhysRevB.31.805}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Tersoff}}\ and\ \bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont
+  {Hamann}},\ }\bibfield  {title} {\bibinfo {title} {Theory of the scanning
+  tunneling microscope},\ }\href {https://doi.org/10.1103/PhysRevB.31.805}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
+  {volume} {31}},\ \bibinfo {pages} {805} (\bibinfo {year} {1985})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Binnig}\ and\ \citenamefont
+  {Rohrer}(1983{\natexlab{b}})}]{binnig1983scanning}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Binnig}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Rohrer}},\ }\bibfield  {title} {\bibinfo {title} {Scanning tunneling
+  microscopy},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Surface science}\ }\textbf {\bibinfo {volume} {126}},\ \bibinfo {pages}
+  {236} (\bibinfo {year} {1983}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kittel}\ \emph {et~al.}(1996)\citenamefont {Kittel},
+  \citenamefont {McEuen},\ and\ \citenamefont
+  {McEuen}}]{kittel1996introduction}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Kittel}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {McEuen}},\
+  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {McEuen}},\
+  }\href@noop {} {\emph {\bibinfo {title} {Introduction to solid state
+  physics}}},\ Vol.~\bibinfo {volume} {8}\ (\bibinfo  {publisher} {wiley New
+  York},\ \bibinfo {year} {1996})\BibitemShut {NoStop}%
 \end{thebibliography}%

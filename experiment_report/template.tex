@@ -1,105 +1,111 @@
-% ****** Start of file apssamp.tex ******
-%
-%   This file is part of the APS files in the REVTeX 4.2 distribution.
-%   Version 4.2a of REVTeX, December 2014
-%
-%   Copyright (c) 2014 The American Physical Society.
-%
-%   See the REVTeX 4 README file for restrictions and more information.
-%
-% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
-% as well as the rest of the prerequisites for REVTeX 4.2
-%
-% See the REVTeX 4 README file
-% It also requires running BibTeX. The commands are as follows:
-%
-%  1)  latex apssamp.tex
-%  2)  bibtex apssamp
-%  3)  latex apssamp.tex
-%  4)  latex apssamp.tex
-%
-\documentclass[reprint,amsmath,amssymb,aps,]{revtex4-2}
-\usepackage{graphicx}% Include figure files
-\usepackage{dcolumn}% Align table columns on decimal point
-\usepackage{bm}% bold math
-%\usepackage{hyperref}% add hypertext capabilities
-%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering lines
+\documentclass[aps,reprint,superscriptaddress]{revtex4-2}
 \usepackage{kotex}
 \usepackage[HWP]{dhucs-interword}
 \usepackage[dvips]{color}
 \usepackage{graphicx}
+\usepackage{bm}
 \usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amscd}
-\usepackage{amsthm}
-%\usepackage[showframe,%Uncomment any one of the following lines to test 
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
+\usepackage{tikz}
 
 \begin{document}
+\title{응집물질물리실험 예비보고서 \\
+\small 실험주제 : STM}
 
-\preprint{APS/123-QED}
-
-\title{Manuscript Title:\\with Forced Linebreak}% Force line breaks with \\
 \author{HuiJae-Lee}
-\altaffiliation{Physics Department, Inha University.}%Lines break automatically or can be forced with \\
+\affiliation{Physics Department, Inha University}
 \email{hjlee6674@inha.edu}
+\date{\today}
 
-\date{\today}% It is always \today, today,
-             %  but any date may be explicitly specified
 
 \begin{abstract}
-An article usually includes an abstract, a concise summary of the work
-covered at length in the main body of the article. 
+ 이번 실험에서는 STM(주사 터널링 현미경)의 작동원리와 사용 방법에 대해 알아보고 
+ Graphite의 표면을 직접 관찰하며 응용해본다. 또한, STM을 이용한 관찰로 부터 결정구조에 대해
+ 공부하고 이해하는 것을 목표로 한다.
 \end{abstract}
 
-%\keywords{Suggested keywords}%Use showkeys class option if keyword
-                              %display desired
 \maketitle
 
-%\tableofcontents
+\section[Introduction]{Introduction}
+Ricard Fyenman는 1959년 그의 강연 
+"There's Plenty of Room at the Bottom: 
+An Invitation to Enter a New Field of Physics"에서 각각의 
+원자를 뚜렷하게 보고 우리가 원하는 방식으로 배열하는 새로운 연구 분야를 
+제시했고, 그로부터 20년 후 과학자들은 STM(Scanning Tunneling Microscope)과 
+AFM(Atomic Force Microscope)의 개발로 그 목표를 달성하기 시작했다. 그 결과로
+나노 스케일에서의 과학과 기술을 더욱 높은 수준으로 끌어올렸고 기초 물리학에 대한 이해 또한
+엄청나게 발전하였다. 그 중에서도 이번 실험에 사용할 STM은 3차원에서 표면 구조를 직접 그리고
+실제로 제공한다.
+\section[Experiment]{Experiment}
+\subsection{Theory}
+\subsubsection{양자 터널링}
+STM의 원리를 이해하기 위해서는 양자 터널링 현상에 대해 알아야 한다. 양자 터널링은 양자역학과
+고전역학의 뚜렷한 차이점 중 하나로, 입자의 동력학적 거동을 해석하는데 파동함수와 확률을
+도입하여 설명한다. 
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}
+    %axis
+    \draw[-latex] (-4,0)  -- (4,0) node[shift={(-0.1,-0.3)}] {$x$} ;
+    \draw[-latex] (0,-1)  -- (0,3) node[shift={(-0.3,-0.1)}] {$y$} ;
+    %coordinate
+    \coordinate (A) at (-1.5,0);
+		\coordinate (B) at (-1.5,1.6);
+		\coordinate (C) at ( 1.5,1.6);
+    \coordinate (D) at ( 1.5,0);
+    %potential
+    \draw[] (A)  -- (B);
+    \draw[] (B)  -- (C);
+    \draw[] (C)  -- (D);
+    %wave function
+    \draw[-latex] (-4,1)  -- (-1.5,1) node[left=20,above=5] {\large$\psi_{in}$} ;
+    \draw[-latex] (1.5,1) node[right=25,above=5] {\large$\psi_{trans}$}  -- (4,1) ;
+    %node
+		\node[above=10,right] at (0,1.5) {$V_0$};
+		\node[below] at (A) {$-a$};
+		\node[below] at (D) {$a$};
 
-\section{\label{sec:level1}}
-\subsection{\label{sec:level2}Second-level heading: Formatting}
+  \end{tikzpicture}
+  \caption{퍼텐셜 장벽}
+  \label{<label>}
+\end{figure}
+다음과 같은 퍼텐셜 장벽과 이 장벽에 대해 왼쪽에서 입사하는 자유 입자를 
+고려하자. 퍼텐셜 장벽의 너비는 $2a$이고 퍼텐셜의 크기는 $V_0$이다. 중요한 점은 입사하는
+자유 입자가 가진 에너지 $E$가 $V_0$보다 작다는 것이다. 즉, $E<V_0$이다. 이 때 투과확률 $T$는
+다음과 같다.
+\begin{align}
+  \begin{split}
+    T=\frac{1}{1+\left(\frac{k^2+q^2}{2kq}\right)^2\sinh^2qa},\,\,\,\\
+    k=\sqrt{\frac{2mE}{\hbar^2}},\,\,\,
+    q=\sqrt{\frac{2m(V_0-E)}{\hbar^2}}.
+  \end{split}
+\end{align}
+
+\subsubsection{STM}
+시료의 표면을 측정하기 위해, STM에 달린 작은 금속 꼭지가 표면에 굉장히 근접한다. 이 금속
+꼭지는 하나의 원자로 되어있다. 시료에 전압을 걸어주었을 때 시료와 금속 꼭지 사이에는 
+터널링 전류(tunneling current)가 측정된다. 이 때 금속 꼭지가 근접하는 거리는 꼭지와
+표면 사이의 저항을 측정 가능할 만큼이다. 시료에 전류가 흘러야 하므로, 도체 시료를 이용한다.
+터널링 전류는 꼭지와 시료 사이 터널링 확률(tunneling probability)에 비례하고 이 확률은
+거리에 지수적으로 민감하다. WKB 근사로부터, 터널링 확률 $P$가 거리 $z$와 다음의 비례관계에 
+있음을 알 수 있다.
+\begin{align}
+   P \propto \exp\left(-2\sqrt{\frac{2m\phi}{\hbar^2}z}\right).
+\end{align}
+$\phi$는 터널링을 위한 유효 장벽의 높이이다. STM은 확률이 거리에 민감하게 반응하는 만큼
+정확하게 표면을 측정할 수 있다.
 
 
-\subsubsection{Wide text (A level-3 head)}
+\subsubsection{Graphite}
+\subsection{Experimental Methods}
+\subsection{Theory}
 
-
-\subsection{\label{sec:citeref}Citations and References}
-
-\subsubsection{Citations}
-
-\subsubsection{Example citations}
-
-\subsubsection{References}
-
-
-\subsubsection{Example references}
-
-\subsection{Footnotes}%
-
-\section{Math and Equations}
+\nocite{*}
+\bibliography{ref}
 
 
 
-\subsection{Multiline equations}
+%\begin{thebibliography}{9}
+%\end{thebibliography}
 
-
-
-\subsubsection{Wide equations}
-
-\section{Cross-referencing}
-
-
-\section{Floats: Figures, Tables, Videos, etc.}
-
+\vfill
 \end{document}
-%
-% ****** End of file apssamp.tex ******
