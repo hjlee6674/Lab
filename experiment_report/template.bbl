@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{5}%
+\begin{thebibliography}{7}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,16 +50,8 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont
-  {Chen}(2007)}]{10.1093/acprof:oso/9780199211500.001.0001}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
-  {Chen}},\ }\href {https://doi.org/10.1093/acprof:oso/9780199211500.001.0001}
-  {\emph {\bibinfo {title} {{Introduction to Scanning Tunneling Microscopy}}}}\
-  (\bibinfo  {publisher} {Oxford University Press},\ \bibinfo {year}
-  {2007})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Binnig}\ and\ \citenamefont
-  {Rohrer}(1983{\natexlab{a}})}]{BINNIG1983236}%
+  {Rohrer}(1983)}]{BINNIG1983236}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
   {Binnig}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
@@ -67,8 +59,8 @@
   microscopy},\ }\href
   {https://doi.org/https://doi.org/10.1016/0039-6028(83)90716-1} {\bibfield
   {journal} {\bibinfo  {journal} {Surface Science}\ }\textbf {\bibinfo {volume}
-  {126}},\ \bibinfo {pages} {236} (\bibinfo {year}
-  {1983}{\natexlab{a}})}\BibitemShut {NoStop}%
+  {126}},\ \bibinfo {pages} {236} (\bibinfo {year} {1983})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Tersoff}\ and\ \citenamefont
   {Hamann}(1985)}]{PhysRevB.31.805}%
   \BibitemOpen
@@ -79,15 +71,31 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
   {volume} {31}},\ \bibinfo {pages} {805} (\bibinfo {year} {1985})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Binnig}\ and\ \citenamefont
-  {Rohrer}(1983{\natexlab{b}})}]{binnig1983scanning}%
+\bibitem [{\citenamefont
+  {Lounis}(2014)}]{https://doi.org/10.48550/arxiv.1404.0961}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Binnig}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Rohrer}},\ }\bibfield  {title} {\bibinfo {title} {Scanning tunneling
-  microscopy},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Surface science}\ }\textbf {\bibinfo {volume} {126}},\ \bibinfo {pages}
-  {236} (\bibinfo {year} {1983}{\natexlab{b}})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Lounis}},\ }\href {https://doi.org/10.48550/ARXIV.1404.0961} {\bibinfo
+  {title} {Theory of scanning tunneling microscopy}} (\bibinfo {year}
+  {2014})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Beiser}\ \emph {et~al.}(2003)\citenamefont {Beiser},
+  \citenamefont {Mahajan},\ and\ \citenamefont
+  {Choudhury}}]{beiser2003concepts}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Beiser}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Mahajan}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Choudhury}},\ }\href
+  {https://books.google.co.kr/books?id=pyFbONhSbnsC} {\emph {\bibinfo {title}
+  {Concepts of Modern Physics}}}\ (\bibinfo  {publisher} {Tata McGraw-Hill,
+  Higher Education},\ \bibinfo {year} {2003})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Chen}(2007)}]{10.1093/acprof:oso/9780199211500.001.0001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
+  {Chen}},\ }\href {https://doi.org/10.1093/acprof:oso/9780199211500.001.0001}
+  {\emph {\bibinfo {title} {{Introduction to Scanning Tunneling Microscopy}}}}\
+  (\bibinfo  {publisher} {Oxford University Press},\ \bibinfo {year}
+  {2007})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kittel}\ \emph {et~al.}(1996)\citenamefont {Kittel},
   \citenamefont {McEuen},\ and\ \citenamefont
   {McEuen}}]{kittel1996introduction}%
@@ -98,4 +106,10 @@
   }\href@noop {} {\emph {\bibinfo {title} {Introduction to solid state
   physics}}},\ Vol.~\bibinfo {volume} {8}\ (\bibinfo  {publisher} {wiley New
   York},\ \bibinfo {year} {1996})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Townsend}(2000)}]{townsend2000modern}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont
+  {Townsend}},\ }\href@noop {} {\emph {\bibinfo {title} {A modern approach to
+  quantum mechanics}}}\ (\bibinfo  {publisher} {University Science Books},\
+  \bibinfo {year} {2000})\BibitemShut {NoStop}%
 \end{thebibliography}%

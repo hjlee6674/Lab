@@ -1,0 +1,514 @@
+\documentclass[superscriptaddress,
+nofootinbib,byrevtex,fleqn,prd,12pt]{revtex4}
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsxtra,amsthm}
+\usepackage{graphicx}
+\usepackage{bm,bbold}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage[fleqn]{nccmath}
+\usepackage{empheq}
+\usepackage{mathtools}
+\usepackage{kotex}
+\usepackage{simplewick}
+\usepackage{subfigure}
+\usepackage{float}
+\restylefloat{table}
+\DeclareGraphicsExtensions{.jpg,.pdf,.png}
+\DeclareGraphicsRule{.jpg}{eps}{.bb}{}
+\setlength{\paperheight}{297mm}
+\setlength{\paperwidth}{210mm}
+\newcommand{\D}{\mathbf{D}}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\dg}{\dagger}
+\newcommand{\ugf}{U^{\gamma_5}}
+\newcommand{\kD}{(k \cdot D)}
+%--------------------------------------------------
+\usepackage[normalem]{ulem} % \sout{old text} for strikeout
+\usepackage[dvipsnames]{xcolor} % For blue in-text comments and% additions
+\renewcommand\sout{\bgroup \color{red} \ULdepth=-.5ex \ULset}
+\newcommand{\com}[1]{{\sf\color[rgb]{0,0,1}{#1}}}
+\newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
+\linespread{2}
+%--------------------------------------------------
+\newsavebox{\dotbox}
+\newcommand{\outerdot}[1]{\sbox\dotbox{$#1$}\dot{\usebox\dotbox}}
+%--------------------------------------------------
+\makeatletter
+\renewcommand*\env@matrix[1][\arraystretch]{%
+  \edef\arraystretch{#1}%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols c}}
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\begin{document}
+  \unitlength = 1mm
+\title{손지기 솔리톤 모형에서 하이퍼론의 성질\\
+(Properties of hyperons in a chiral soliton model)}
+%--------------------------------------------------
+\author{김남용}
+\affiliation{Department of Physics, Inha University, Incheon 402-751,
+  Korea}
+
+%--------------------------------------------------
+\begin{abstract}
+   스컴 모형(Skyrme model)을 이해하기 위하여 스컴 모형을 사용하여 자유공간에서의 솔리톤(soliton)과 핵자(nucleon), 델타 중입자(delta isobar)의 질량 863.1MeV, 938.7MeV, 1241.1MeV을 계산하였고 SU(3)스컴모형의 회전 행렬을 SU(2) 부분 군(sub group)과 기묘 방향(strageness deriction)으로의 회전으로 나눌 수 있다 가정하여 색소수에 대하여 전개를 하고 0차 근사를 한 해밀토니언과 바른 틀 공액 운동량과 바른 틀 운동량을 구하였다.
+\end{abstract}
+\maketitle
+%--------------------------------------------------
+%--------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Package rerunfilecheck Warning: File `Paper.out' has changed.
+\newcommand{\Slash}[1]{\ooalign{\hfil/\hfil\crcr$#1$}}%%%%TheFeynmanSlash%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{서론} \label{1}
+
+
+\section{기본 이론} \label{2}
+
+\subsection{SU(2) 스컴 모형에서의 솔리톤 질량}\label{21}
+
+
+\subsection{시간에 의존하는 라그랑지언}\label{22}
+
+손지기장이 시간의 의존하는 경우 우리는 시간에 의존하는 SU(2) 회전 행렬(Rotaional Matrix)을 정적인 손지기장에 가하면 시간에 의존하는 손지기장을 얻을 수 있으며 그 형태는 아래와 같다.\cite{1}
+\begin{align}
+  U(t) = A(t) U_{0}A^{\dagger}(t)
+\end{align}
+
+이때 회전 행렬 A(t)는 임의의 SU(2) 회전 행렬이므로 아래와 같이 표현할 수 있다.
+\begin{align}
+  A(t)= a_{0} + i \bm{\tau} \cdot \mathbf{a}
+\end{align}
+
+이때 $ \mathbf{a} $는 시간에 의존하는 임의의 함수이다.
+시간에 의존하는 손지기장을 (1)의 라그랑지언 밀도에 대입하여 계산하기 위하여 라그랑지언 밀도의 첫 항과 두 번째 항을 각각 $ \mathcal{L}_{1} $ $ \mathcal{L}_{2} $라 하면 각각의 항은 아래와 같이 정리 된다.
+
+\begin{align}
+  \mathcal{L}_{1} &= \frac{F_{\pi}^{2}}{16} \tr \left(\partial_{\mu} U \partial_{\mu} U ^{\dagger} \right) \cr
+  &= \frac{F_{\pi}^{2}}{16} \left( \tr \left(\partial_{0} U \partial_{0} U ^{\dagger}\right) - \tr  \left(\partial_{i} U \partial_{i} U^{\dagger} \right)\right)
+\end{align}
+
+\begin{align}
+    \mathcal{L}_{2} &=\frac{1}{32e^{2}} \tr[(\partial _{\mu}U)U^{\dagger},(\partial _{\mu}U)U^{\dagger}]^{2} \cr
+    &= \frac{1}{32e^{2}} \tr[(\partial _{i}U)U^{\dagger},(\partial _{j}U)U^{\dagger}]^{2}
+    -2 \tr[(\partial _{0}U)U^{\dagger},(\partial _{i}U)U^{\dagger}]^{2}
+\end{align}
+
+위의 두 라그랑지언을 보면 시간에 대한 미분이 있는 항과 공간에 대한 미분만 있는 항으로 구분할 수 있음을 알 수 있다. 공간에 대한 미분만 있는 항은 앞에 솔리톤의 고전적 질량의 계산에 이미 포함되었다. 그러므로 시간에 의존하는 라그랑지언은 아래의 꼴을 가짐을 알 수 있다.
+\begin{align}
+  L = - M +\int r^{2} \{ \tr (\partial_{0}U \partial_{0} U ^{\dagger}) - 2 \tr[(\partial_{0}U)U^{\dagger},(\partial_{i}U)U^{\dagger}]^{2} dr \} d\Omega
+\end{align}
+
+위 식의 대각합이 있는 항을 먼저 계산하면 아래와 같다.
+\begin{align}
+  \tr (\partial_{0}U \partial_{0} U ^{\dagger}) &= 2 \tr(U_{0}[C,U_0{}^{\dagger}]C) \cr
+  &= 8(\mathbf{b}^{2}-(\mathbf{b} \cdot \mathbf{n})^{2})\sin^{2}(F(r))
+\end{align}
+
+\begin{align}
+  \tr[(\partial_{0}U)U^{\dagger},(\partial_{i}U)U^{\dagger}]^{2} &= -2 \tr [C,U]\partial_{i} U_{0}^{\dagger}[C,U_{0}] \partial_{i}U_{0}^{\dagger} + 4\tr [C,U_{0}]\partial_{i}
+  U_{0}^{\dagger}\partial_{i}U_{0}[C,U_{0}^{\dagger}] \cr
+  &- 2 \tr\partial_{i} U_{0} [C,U_{0}^{\dagger}] \partial_{i} U_{0} [C,U_{0}^{\dagger}] \cr
+  &= 16(\partial_{r}F(r))^{2}\sin^{2}(F(r))(\mathbf{b}^{2}-(\mathbf{b} \cdot \mathbf{n})^{2}) \cr
+  &- \left(32 (\partial_{r}F(r))^{2} \sin^{2}(F(r)) + 64\frac{\sin^{4}(F(r))}{r^{2}} \right)(\mathbf{b}^{2} - (\mathbf{b} \cdot \mathbf{n})^{2}) \cr
+  &+ 16(\partial_{r}F(r))^{2}\sin^{2}(F(r))(\mathbf{b}^{2}-(\mathbf{b} \cdot \mathbf{n})^{2})
+\end{align}
+위의 C는 계산을 위하여 도입한 행렬로 $ C= \dot{A}^{\dagger}A $로 정의된다. 이때 $ \mathbf{b} $는 C를 $ C= i \mathbf{b} \cdot \tau $로 정의하며 나오는 백터로 $\mathbf{b}=\dot{a}_{0} \mathbf{a} - a_{0}\dot{\mathbf{a}} + \dot{\mathbf{a}}  \times \mathbf{a}$ 로 정의된다.
+위의 결과를 이용하면 아래의 라그랑지언을 얻을 수 있다.
+\begin{align}
+  L = -M + \frac{4\pi}{6} \int r^{2} \sin^{2}(F(r))\left[ F_{\pi}^{2} \frac{4}{e^{2}}\left((\partial_{r}F(r))^{2} + \frac{\sin^{2}(F(r))}{r^{2}} \right) \right] dr \tr (\partial_{0} A
+   \partial_{0} A ^{\dagger})
+\end{align}
+ 이때 적분은 아래와 같이 정의될 수 있다.
+ \begin{align}
+   \Lambda &= \frac{1}{e^{3}F_{\pi}} \int \tilde{r}^{2} \sin^{2}(F(\tilde{r}))\left[1 + 4 \left((\partial_{\tilde{r}}F(\tilde{r}))^{2}+\frac{\sin^{2}(F(\tilde{r}))}{\tilde{r}} \right) \right] d\tilde{r}\\
+   \lambda &=\frac{4\pi}{6}\frac{1}{e^{3}F_{\pi}}\Lambda
+ \end{align}
+ 위의 결과와 $ \tr[\partial_{0}A \partial_{0}A^{\dagger}] =2(\dot{a}_{0}^{2} +\dot{\mathbf{a}_{i}^{2}}) $를 이용하면 라그랑지언은 아래의 꼴로 정리된다.
+ \begin{align}
+   L= -M +2 \lambda \sum_{i=0}^{3} \dot{\mathbf{a}}_{i}^{2}
+ \end{align}
+ 이때 바른 틀 정준 운동량을 $\Pi_{i} = \frac{\partial L}{\partial \dot{\mathbf{a}}_{i}} $이므로 해밀토니언은 아래와 같이 정의된다.\cite{1}
+ \begin{align}
+  H &= \Pi_{i}\dot{\mathbf{a}}_{i} - L \cr
+  &= M + \frac{1}{8\lambda} \sum_{i=0}^{3} \Pi_{i} \Pi_{i}
+ \end{align}
+ 이때 바른 틀 정준 운동량을 양자화하면 해밀토니언은 아래의 꼴을 가진다.
+ \begin{align}
+   \Pi_{i} &= -i \frac{\partial} {\partial a_{i}} \\
+   H & = M + \frac{1}{8 \lambda} \sum_{i=0}^{3} \left(- \frac{\partial ^{2}}{\partial \mathbf{a}_{i}^{2}}\right)
+ \end{align}
+ 이때 SU(2) $\times$ SU(2) 회전 행렬은 6개의 회전 생성원이 있고 이는 아래와 같이 표현된다.
+\begin{align}
+   \vec{L}^{2} = L_{23}^{2} + L_{31}^{2}+L_{12}^{2}+L_{01}^{2}+L_{02}^{2}+L_{03}^{2}
+\end{align}
+이때 기존 SU(2) 회전 행렬에서의 각운동량 연산자와 비교하면 아래와 같은 두 개의 연산자를 얻을 수 있다.
+\begin{align}
+  \vec{L}_{ij}'&=\vec{L}_{k}'\\
+  \vec{L}_{0i} &=\vec{K}_{i}
+\end{align}
+이 두 개의 연산자를 이용하여 스핀과 아이소스핀의 두개의 연산자를 아래와 같이 정의할 수 있다.
+\begin{align}
+  \vec{I} &= \frac{1}{2}(\vec{L}- \vec{K}) \\
+  \vec{J} &= \frac{1}{2}(\vec{L}+ \vec{K})
+\end{align}
+위의 I는 아이소 스핀 연산자이며 J는 각운동량 연산자이다. 이때 핵자의 스핀을 솔리톤을 회전시켜 설명하므로 각운동량은 스핀으로 해석 할 수 있다. 이때 $ \vec{J}$와 $ \vec{K}$는 아래의 관계를 만족한다.
+\begin{align}
+  \vec{J}^{2} = \vec{I}^{2}
+\end{align}
+이를 통해 해밀토니언은 아래의 꼴로 쓸 수 있음을 알 수 있다.
+ \begin{align}
+   H &= M +\frac{2}{8\lambda}(\vec{J}^{2}+\vec{I}^{2}) \cr
+    &= M +\frac{1}{4\lambda} 2 \vec{J}^{2}
+ \end{align}
+즉 해밀토니언의 고유 상태는 J의 고유 상태와 같다는 것을 알 수 있다. 이를 통해 해밀토니언의 고유값을 구하여 보면 아래와 같다.
+\begin{align}
+  H|J,I> &= M +\frac{1}{4\lambda} 2 \vec{J}^{2}|J,I> \cr
+  &= M +\frac{1}{4\lambda} 2 \vec{I}^{2}|J,I> \cr
+  &= M +\frac{1}{4\lambda} 2J(J+1)
+\end{align}
+이때 4차원의 각운동량은 정수이고 그랜드 스핀으로 해석할 수 있다. l = 2J = 2I의 관계식을 가진다. 이를 통하여 다시 해밀토니언의 고유 값을 표현하면 아래와 같다.
+\begin{align}
+  E = M + \frac{1}{8\lambda}l(l+2)
+\end{align}
+이를 통하여 핵자와 델타 중입자에 대응되는 고유 상태를 도입하면 각각의 질량은 아래와 같이 나타난다.
+\begin{align}
+  M_{N} &= M + \frac{1}{2\lambda}\frac{3}{4} \\
+  M_{\Delta} &= M + \frac{1}{2\lambda}\frac{15}{4}
+\end{align}
+이때 핵자와 델타 중입자는 각각 $ I=J= \frac{1}{2} $ , $ I= J= \frac{3}{2} $에 대응되는 상태이다.
+
+\subsection{SU(3) 스컴모형과 SU(3)회전행렬}\label{23}
+
+ SU(3) 스컴 모형에서의 시간에 무관한 손지기장은 고슴도치 가설을 사용하면 아래와 같이 나타낼 수 있다.
+\begin{align}
+U_{0} &= \left(\begin{array} {cc} e^{2i \frac{\vec{\pi} \cdot \vec{ \tau}} {F_{\pi}}} & 0 \\ 0 & 1 \end{array} \right) \cr
+&=\left(\begin{array} {cc} e^{i F(r) \vec{\tau}\cdot \hat{n}} & 0 \\ 0 & 1 \end{array} \right)
+\end{align}
+이 시간에 무관한 손지기장에 SU(3) 회전 행렬을 가하면 시간에 의존하는 손지기장은 $ U(t)= \mathcal{A}(t)U_{0} \mathcal{A}(t)^{\dagger}$와 같이 된다. 이때 $\mathcal{A}(t) $는 임의의 SU(3) 회전 행렬이다. 이때 집단 자리 표(collective coordinate)에서 SU(2) 회전과 기묘 방향의 강체 회전이 있다고 가정하면 아래와 같이 쓸 수 있다.
+\begin{align}
+  \mathcal{A}(t) &= A(t) S(t) \label{eq:rotation} \\
+  A(t) & = \exp \left(\frac{i}{2} \sum_{a=1}^{3} \omega_{a} \lambda_{a} t \right) \\
+  S(t) &=  \exp \left( i \sum_{a=4}^{7} \frac{2 k_{a}'(t)\lambda_{a}} {F_{\pi}} \right) = \exp \left( i \sum_{a=4}^{7} k_{a}(t)\lambda_{a} \right)
+\end{align}
+이때 $ \lambda $는 겔만 행렬(Gell-Mann matrix)을 의미하며 $ \omega$는 각속도를 의미한다. 이때 $ S(t)$를 행렬의 형태로 다시 계산하면 아래의 꼴이 됨을 알 수 있다.
+\begin{align}
+  S(t)= \exp \left[ \left( \begin{array}{ccc} 0 & 0 & k_{4}(t) -i k_{5}(t) \\
+  0 & 0 & k_{6}(t) -i k_{7}(t) \\
+  k_{4}(t) + i k_{5} & k_{6}(t) + i k_{7}(t) & 0 \end{array} \right) \right]
+\end{align}
+위의 결과를 블록 행렬(block matrix)로 나타내면 아래와 같다.
+\begin{align}
+  S(t)&= \exp \left[i \left( \begin{array}{cc}  0 & \sqrt{2}D \\
+  \sqrt{2}D^{\dagger} & 0 \end{array} \right) \right] \\
+  D &= \frac{1}{\sqrt{2}} \left( \begin{array}{c} k_{4}(t) - ik_{5}(t)\\
+  k_{6}(t) - i k_{7}(t) \end{array} \right)
+\end{align}
+S(t)를 전개하면 아래와 같이 쓸 수 있다.
+\begin{align}
+  S(t) & = \mathbb{1}+i\mathcal{D}\frac{\sin{d}}{d}-\mathcal{D}^2\frac{1-\cos{d}}{d^2} \label{eq:expansionS}\\
+S^\dagger(t)& = \mathbb{1}-i\mathcal{D}\frac{\sin{d}}{d}-\mathcal{D}^2\frac{1-\cos{d}}{d^2}\label{eq:expationSD}\\
+\dot{S}(t) &= i\dot{\mathcal{D}}\frac{\sin{d}}{d}+i\mathcal{D}\frac{\cos{d}}{d^2}(\dot{D}^\dagger D
++D^\dagger\dot{D})-i\mathcal{D}\frac{\sin{d}}{d^3}(\dot{D}^\dagger D+D^\dagger\dot{D})\cr
+&-(\dot{\mathcal{D}}\mathcal{D}+\mathcal{D}\dot{\mathcal{D}})\frac{1-\cos{d}}{d^2}-\mathcal{D}^2\frac{\sin{d}}{d^3}(\dot{D}^\dagger D
++D^\dagger\dot{D})\cr
+&+2\mathcal{D}^2\frac{1-\cos{d}}{d^4}((\dot{D}^\dagger D+D^\dagger\dot{D}))\label{eq:expansionDS}
+\end{align}
+이때 $\mathcal{D}= i \sum_{a=4}^{7} k_{a}(t) \lambda_{a}$이고 $d = \sqrt{2D^{\dagger}D}$이다. 이때 $D^{\dagger}D$는 기묘 방향으로의 각속도이다.
+\subsection{색소수를 이용한 전개와 0차근사 해밀토니언}\label{24}
+색소 수를 이용한 전개를 하기 위하여 회전 행렬을 보면 A(t) 회전 행렬의 $\omega$의 색소 수 차원은 $ \frac{1}{N} $차원이다. 이때 N은 색소 수를 의미한다. 파이온 붕괴 상수($F_{\pi}$)는 $\frac{1}{\sqrt{N}}$의 차수를 가지므로 $K_{a}$또한 $\frac{1}{\sqrt{N}}$의 차수를 가지는 것을 알 수 있다. 이를 통하여 $d$와 $D^{\dagger}D$는 각각 $ \frac{1}{\sqrt{N}}$  $\frac{1}{N}$ 차수가 된다.
+SU(3) 스컴 모형에서의 라그랑지언 밀도는 아래와 같다.\cite{3}
+\begin{align}
+  \mathcal{L} = \mathcal{L}_{WZ}+\frac{F_{\pi}^{2}}{16} \tr (\partial_{\mu}U^{\dagger}\partial^{\mu}U)+\frac{1}{32e^{2}} \tr[(\partial_{\mu}U)U^{\dagger]},(\partial_{\nu}U)U^{\dagger}]^{2}
+  +\frac{F_{\pi}^{2}}{16} \tr\mathcal{M}(U+U^{\dagger}-2)\label{eq:lagrangian}
+\end{align}
+M은 쿼크 질량 행렬(quark mass matrix)이고 $ \mathcal{L}_{WZ}$는 베스-주미노(Wess-Zumino) 항이다. 이때 라그랑지언을 계산하기 전 계산상의 편의를 위하여 C를 아래와 같이 정의하겠다.
+\begin{align}
+  C= \mathcal{A}^{\dagger} \dot{\mathcal{A}}
+  \label{eq:Cmatrix}
+\end{align}
+C를 이용하여 라그랑지언을 정리하기 위하여 각각의 항으로 나누어 보면 두 번째 항은 아래와 같이 정리된다.
+\begin{align}
+  \frac{F_{\pi}^{2}}{16} \tr (\partial_{\mu}U^{\dagger} \partial^{\mu}U) = - \frac{F_{\pi^{2}}}{16} \tr(\partial_{i}U_{0}^{\dagger}\partial^{i}U_{0})+\frac{F_{\pi}^{2}}{16}
+   \tr([C,U_{0}^{\dagger}][C,U_{0}])\label{eq:secondterm}
+\end{align}
+세 번째 항은 아래와 같이 정리된다.
+\begin{align}
+  \frac{1}{32e^{2}} \tr[(\partial_{\mu}U)U^{\dagger]},(\partial_{\nu}U)U^{\dagger}]^{2} &= \frac{1}{32e^{2}} \tr[(\partial_{i}U)U^{\dagger]},(\partial_{j}U)U^{\dagger}]^{2} \cr
+  &-\frac{1}{16e^{2}} \tr([C,U_{0}]\partial_{i}U_{0}^{\dagger}[C,U_{0}]\partial_{i}U_{0}^{\dagger}) \cr
+  &+ \frac{1}{16e^{2}} \tr(2[C,U_{0}]\partial_{i}U_{0}^{\dagger}\partial_{i}U_{0}^{\dagger}[C,U_{0}]) \cr
+  &- \frac{1}{16e^{2}} \tr(\partial_{i}U_{0}[C,U_{0}^{\dagger}]\partial_{i}U_{0}[C,U_{0}^{\dagger}]\label{eq:thirdterm}
+\end{align}
+위의 결과를 보면 각각의 항이 $ C^{2}$차수를 가짐을 알 수 있다. 색소 수에 대한 차수는 이 C 행렬과 파이온 붕괴상수로 결정이 된다. 이를 통하여 색소 수에 대한 0차 근사를 할 경우 C의 색소 수에 대한 차수는 $\frac{1}{\sqrt{N}}$임을 알 수 있다.
+식 ~\eqref{eq:Cmatrix}을 식 ~\eqref{eq:rotation}의 표현을 사용하여 나타내면 아래와 같다.
+\begin{align}
+  C = \frac{i}{2} S^{\dagger} (\vec{\omega} \cdot \vec{\lambda})S + S^{\dagger}\dot{S}
+\end{align}
+이를 위의 식~\eqref{eq:expansionS},~\eqref{eq:expationSD}과 ~\eqref{eq:expansionDS}를 이용하여 전개하면 색소 수에 대하여 $ \frac{1}{\sqrt{N}}$의 차수를 가지는 항은 $i \mathcal{D}$임을 알 수 있다. 위의 SU(2) 모형과 마찬가지로 공간에 대한 항은 솔리톤의 질량이 되므로
+시간에 대한 미분이 있는 항을 따로 계산하겠다. 식 ~\eqref{eq:secondterm}와 식~\eqref{eq:thirdterm}의 C 행렬을 포함하고 있는 항을 각각 $ \mathcal{L}_2$ $\mathcal{L}_{3} $라 하면 각각은 아래와 같이 정리된다.
+\begin{align}
+  \mathcal{L}_{2} &= F_{\pi}^{2} \sin^{2}\left(\frac{F(r)}{2}\right)\dot{D}^{\dagger}\dot{D} \\
+  \mathcal{L}_{3} &=  \sin^{2}\left(\frac{F(r)}{2}\right)\left[\frac{1}{e^{2}}\left( (\partial_{r}F(r))^{2}+\frac{2\sin^{2}(F(r))}{r^{2}}\right) \right]\dot{D}^{\dagger}\dot{D}\label{eq:aboutc}
+\end{align}
+식 40의 4번째 항을 계산하기 위하여 아래의 쿼크 질량 행렬을 도입하겠다.
+\begin{align}
+  \mathcal{M}=\left[\begin{array}{ccc}
+  m_{\pi}^{2} & 0 & 0 \\
+  0 & m_{\pi}^{2} & 0 \\
+  0 & 0 & 2m_{k}^{2} -m_{\pi}^{2}
+   \end{array} \right]
+\end{align}
+이 쿼크 질량 행렬\cite{6}을 도입하여 식 ~\eqref{eq:lagrangian}의 네 번째 항을 $\mathcal{L}_{\mathcal{M}}$이라 하면 $\mathcal{L}_{\mathcal{M}}$은 아래와 같이 정리된다.
+\begin{align}
+  \mathcal{L}_{\mathcal{M}}&=   \frac{F_{\pi}^{2}}{16}\tr \mathcal{M}(U + U^{\dagger} -2 ) \cr
+  &= F_{2}^{\pi} \sin(\frac{F(r)}{2})m_{k}^{2} D^{\dagger}D
+\end{align}
+마지막을 베스-주미노 항은 아래의 형태를 가진다.\cite{5}
+\begin{align}
+\mathcal{L}_{WZ} = - \frac{iN}{48\pi^{2}} \varepsilon_{ijk} \tr \mathcal{A}^{\dagger} \dot{A}
+&((\partial_{i}U_{0})U_{0}^{\dagger}(\partial_{j}U_{0})U_{0}^{\dagger}(\partial_{k}U_{0})U_{0}^{\dagger} \cr
+&+ U_{0}^{\dagger}(\partial_{i}U_{0})U_{0}^{\dagger}(\partial_{j}U_{0})U_{0}^{\dagger}(\partial_{k}U_{0})) \cr
+ = - \frac{iN}{48\pi^{2}} \varepsilon_{ijk} \tr\{C & ,U_{0}^{\dagger}\}((\partial{i}U_{0})(\partial{j}U_{0})(\partial{k}U_{0}))\label{eq:wessterm}
+\end{align}
+이때 N은 색소 수를 의미한다. 이 베스-주미노 항의 경우 N의 1차와 C의 1차의 차수를 가진다. 따라서 색소 수에 대하여 0차 근사를 할 경우 C는 $ \frac{1}{N}$의 차수를 가진다.
+C의 $\frac{1}{N}$ 차수를 가지는 항은 $ \frac{i}{2}(\vec{\omega} \cdot \vec{\tau})+ \frac{1}{2}[\mathcal{D},\mathcal{\dot{D}}]$이다. 이 결과를 이용하면
+베스-주미노 항을 아래와 같이 정리할 수 있다.
+\begin{align}
+  \mathcal{L}_{WZ} &= - \frac{iN}{4\pi^{2}}(\partial_{r}F(r)) \sin^{2} (F(r))(k_{5}(t)\dot{k_{4}}(t)-k_{4}(t) \dot{k_{5}}(t)+ k_{7}(t) \dot{k_{6}}(t) -k_{6}(t)\dot{k_{7}}(t)) \cr
+  &= - \frac{N}{ 4\pi^{2}}(\partial_{r}F(r)) \sin^{2} (F(r))(D^{\dagger}\dot{D^{\dagger}}-\dot{D}^{\dagger}D)
+\end{align}
+위 결과를 통하여 라그랑지언의 시간에 의존하는 항을 $ L_{t}$라 하면 $L_{t}$는 아래와 같이 표현된다.
+\begin{align}
+  L_{t} &=   \int (\mathcal{L}_{WZ} + \mathcal{L}_{2} + \mathcal{L}_{3} + \mathcal{L}_{\mathcal{M}}) d^{3}r \cr
+  &= - \frac{i N}{\pi} \int (\partial_{r}F(r))^{2} \sin^{2} (D^{\dagger}\dot{D}-\dot{D}^{\dagger}D) \cr
+  &+ 4\pi \int r^{2} \sin^{2}(\frac{F(r)}{2}) \left[F_{\pi}^{2} + \frac{1}{e^{2}}\left((\partial_{r}F(r))^{2} +\frac{2 \sin^{2}(F(r))}{r^{2}} \right) \right]dr
+   \dot{D}^{\dagger} \dot{D} \cr
+   & - 4 \pi \int F_{\pi}^{2} r^{2} \sin^{2} (\frac{F(r)}{2})dr m_{k}^{2} D^{\dagger}D
+\end{align}
+이때 $- \frac{2}{\pi}\int (\partial_{r} F(r))\sin^{2}(F(r))dr $은 중입자 수를 의미하고 이 값은 1이 된다. 그러므로 위의 라그랑지언은 아래의 더 간단한 형태로 정리된다.
+\begin{align}
+  L_{t}  &= \frac{iN}{2} (D^{\dagger}\dot{D}-\dot{D}^{\dagger}D) \cr
+  &+ 4\pi \int r^{2} \sin^{2}(\frac{F(r)}{2}) \left[F_{\pi}^{2} + \frac{1}{e^{2}}\left((\partial_{r}F(r))^{2} +\frac{2 \sin^{2}(F(r))}{r^{2}} \right) \right]dr
+   \dot{D}^{\dagger} \dot{D} \cr
+   & - 4 \pi \int F_{\pi}^{2} r^{2} \sin^{2} (\frac{F(r)}{2})dr m_{k}^{2} D^{\dagger}D
+\end{align}
+이때 각항의 적분을 아래와 같이 정의하면
+\begin{align}
+  \Phi &= \pi \int r^{2} \sin^{2}(\frac{F(r)}{2}) \left[F_{\pi}^{2} + \frac{1}{e^{2}}\left((\partial_{r}F(r))^{2} +\frac{2 \sin^{2}(F(r))}{r^{2}} \right) \right]dr \\
+  \Gamma &=  4 \pi \int F_{\pi}^{2} r^{2} \sin^{2} (\frac{F(r)}{2})dr
+\end{align}
+라그랑지언의 시간에 의존하는 항은 아래의 형태로 쓸 수 있다.
+\begin{align}
+  L_{t} = 4 \Phi \dot{D}^{\dagger}\dot{D}+ \Gamma_{k}^{2}D^{\dagger}D + \frac{iN}{2}(D^{\dagger}\dot{D}-\dot{D}^{\dagger}D)
+\end{align}
+이때 시간에 의존하는 해밀토니언은 아래와 같이 정의된다.
+\begin{align}
+  H_{t} &= \frac{\partial L_{st}}{\partial\dot{k}_{i}}\dot{k}_{i}-L_{t} \cr
+  &= 4\Phi\dot{D}^{\dagger}\dot{D}+\Gamma m_{k}^{2}D^{\dagger}D
+\end{align}
+이 결과를 통하여 바른 틀 공액 운동량과 바른 틀 운동량을 아래와 같이 정의할 수 있다.
+\begin{align}
+  \Pi &= 4\Phi \dot{D} - \frac{iN}{2}D \\
+  \Pi^{\dagger} &= 4\Phi \dot{D}^{\dagger} + \frac{iN}{2}D^{\dagger}
+\end{align}
+이때 시간에 의존하는 라그랑지언은 $k_{4}$와 $ k_{5}$의 평면에서와
+ $k_{6} $ $k_{7} $ 공간에서의 라그랑지언으로 나눌 수 있다.
+ 이때 두 라그랑지언의 형태는 같다. 또한 $k_{4}-k{5} \approx \exp (i\omega t)$로 치환하면 고전 원운동의 진동수를 구할 수 있다. $k_{4} $ $k_{5} $공간에서의 라그랑지언을 $L_{45}$라 하면 $L_{45}$는 아래의 형태를 가진다.
+ \begin{align}
+   L_{45} = 2 \Phi (\dot{k}_{4}^{2}+\dot{k}_{5}^{2})+ \frac{N}{2}(k_{4}\dot{k}_{5}-k_{5}\dot{k}_{4})- \frac{1}{2} m_{k}^{2} \gamma(k_{4}^{2}+k_{5}^{2})
+ \end{align}
+ 이 라그랑지언을 통하여 운동방정식을 구하면 아래의 2개의 방정식을 얻을 수 있다.
+ \begin{align}
+   \frac{\delta S_{45}} {\delta k_{4}}= -4 \Phi \ddot{k}_{4} +N \dot{k_{5}^{2}} - m_{k}^{2} \Gamma K_{4} = 0 \\
+   \frac{\delta S_{45}} {\delta k_{5}}= -4 \Phi \ddot{k}_{5} -N \dot{k_{4}^{2}} - m_{k}^{2} \Gamma K_{5} = 0
+ \end{align}
+ 이때 위의 근사에 따라 $k_{4}= i k_{5} + e^{-i\omega t}$로 근사하고 위의 두식을 연립하면 아래의 방정식을 얻을 수 있다.
+ \begin{align}
+   4\Phi \omega^{2} + N \omega = m_{k}^{2} \Gamma
+ \end{align}
+ 이 방적식의 해가 되는 $ \omega$는 두 개가 있으며 각각 $\omega_{+}, \omega_{-} $라 하면 각각은 아래의 형태를 가지며 각각 입자와 반입자의 에너지로 해석할 수 있다.
+ \begin{align}
+   \omega_{\pm} = \frac{N}{8\Phi}(\sqrt{}1+ \frac{16\Phi \Gamma}{N^{2}}\pm 1)
+   \equiv \frac{N}{8\Phi} \left(\sqrt{1+ \frac{m_{k}^{2}}{M_{0}^{2}}} \pm 1 \right)
+ \end{align}
+ 이때 $M_{0}^{2}$는 $M_{0}^{2} \equiv \frac{N^{2}}{16 \Phi \Gamma} $로 정의된 값이다.
+\newpage
+\section{계산} \label{3}
+이 절에서는 위의 SU(2) 스컴 모형을 이용하여 구한 자유공간에서 핵자와 델타 중입자의 질량을 모양 함수와 해밀토니언의 고유 상태, 고유 값을 이용하여 구하겠다.
+우선 고전적인 핵자의 질량은 솔리톤의 질량을 통하여 구할 수 있으며 이를 $ M_{soliton}$으로 표현하겠다. 해밀토니언의 고유 상태는 $|J,I>$이다.
+ 핵자의 경우 아이소스핀이 $\frac{1}{2}$이고 스핀이 $ \frac{1}{2}$이므로 $|\frac{1}{2},\frac{1}{2}>$의 상태가 핵자에 해당하는 상태가 된다.
+ 델타 중입자의 경우 아이소스핀과 스핀이 각각 $\frac{3}{2}$, $\frac{3}{2} $이므로 $ |\frac{3}{2}, \frac{3}{2}>$가 델타 중입자에 해당하는 상태가 된다.
+ 이제 식 ~\eqref{eq:eqofmotion}과 경계조건을 만족하는 모양 함수를 이용하여 적분하면 각각의 질량은 아래의 표와 같이 나타난다.
+ 모양 함수에 대한 자세한 계산은 부록에서 대체하겠다.
+\begin{table}[H]\label{table}
+\caption{솔리톤과 핵자, 델타 중입자의 질량}
+\begin{center}
+\begin{large}
+\begin{tabular}{c|cc}
+  \hline
+\hline
+  &\ 자유공간 \  &\ Experiment  \\
+\hline
+\hline
+$M_{\mathrm{soliton}}$(MeV) \ & \ 863.1 \ & \\
+$M_{N}$(MeV) \ & \ 938.7 &\ 938.3 \\
+$M_{\Delta}$(MeV) \ & \ 1241.1 &\ 1232 \\
+\hline
+\hline
+\end{tabular}
+\end{large}
+\end{center}
+\end{table}
+이때 파이온 붕괴상수는 129MeV를 차원이 없는 변수 e는 5.45를 사용하였다.
+\newpage
+\section{결론} \label{4}
+본 논문에서는 SU(2) 스컴 모형을 이용하여 고전적인 핵자의 질량을 계산하였다. 이후 손지기장에 SU(2) 회전 행렬을 가하여 시간에 의존하는 손지기장과 라그랑지언을 구하였으며 이 라그랑지언을 양자화하여 핵자와 델타의 질량을 기술하였다.
+표 1의 결과를 보면 알려진 실험값과 매우 비슷한 값을 얻었음을 알 수 있다. 이를 통하여 핵자와 델타 중입자의 성질은 SU(2) 스컴 모형로 설명할 수 있음을 알 수 있다. 이때 기묘도가 존재하는 입자를 기술할 때는 SU(2) 스컴 모형로는 적합하지 않다.
+그러므로 기묘도가 있는 입자를 기술하기 위해서는 SU(3) 스컴모형을 사용할 필요가 있다. 이를 위하여 위 연구에서는 SU(3) 손지기장을 도입하였다. 기본이론에서 설명한 바와 같이 SU(3) 집단 자리 표를 이용하여 회전 행렬을 SU(2) 부분 군의 회전과 기묘 방향(starnge direction)의 회전으로 나누었다. 이를 통하여 SU(3) 스컴 모형의 라그랑지언중 시간에 의존하는 항을 구하였다. 이때 각각의 회전 행렬에는 색소 수를 포함한 항이 존재하였다. 이때 이 색소 수를 이용하여 라그랑지언을 전개하여 라그랑지언을 계산할 수 있다. 위의 연구에서는 우선 가장 간단한 0차 근사를 한 라그랑지언을 통하여 해밀토니언을 구하여 기묘도가 있는 입자를 기술할 수 있는 기반을 만들었다. 이 연구에서는 아직 색소 수에 대한 더 높은 차수를 가지는 라그랑지언을 계산하거나 밀도 범함수(density functional)을 도입한 라그랑지언을 계산하지 않았다. 이러한 과정을 통하면 기묘도가 있는 입자의 성질과 이러한 입자들이 핵물질 속에서 어떠한 성질 변화를 가지는지를 알 수 있을 것으로 예상된다.
+\newpage
+
+\section{부록} \label{5}
+
+\subsection{대칭텐서와 반대칭 텐서를 이용한 식\eqref{eq:solitonLagrangian}의 증명}\label{51}
+고슴도치 가설을 이용하여 얻은 손지기장은 파울리 행렬의 성질에 의하여 아래의 형태로 전개할 수 있다.
+\begin{align}
+U_{0}(r) = \exp [iF(r)\bm{\tau} \cdot \hat{n}]=\cos F(r)+i\bm{\tau}\cdot\Hat{n}\sin F(r)
+\end{align}
+이때 임의의 단위백터의 미분이
+\begin{align}
+  \partial_i\Hat{n}_j=(\delta_{ij}-\Hat{n}_i\Hat{n}_j)/r
+\end{align}
+임을 이용하면 손지기장의 공간에 대한 미분이 아래와 같은 형태임을 알 수 있다.
+\begin{align}
+\partial_iU_0=-(\partial_{r}F(r))\Hat{n}_i\sin F(r)+i(\bm{\tau}\cdot\Hat{n})(\partial_{r}F(r))\Hat{n_i}\cos F(r)+i\frac{\tau_i-(\bm{\tau}\cdot\Hat{n})\Hat{n}_i}{r}\sin F(r)
+\end{align}
+손지기장의 공간에 대한 미분만을 포함한 식 \eqref{eq:solitonLagrangian}을 유도하기 위하여 $U_0\partial_iU_0^\dagger=L_i=i\tau_jL_{ij}$라 정의하면
+\begin{align}
+\tr(\tau_kL_i)=i\tr(\tau_k\tau_j)L_{ij}=2i\delta_{jk}L_{ij}=2iL_{ik}\quad \therefore\ L_{ij}=\frac{1}{2i}\tr(\tau_jL_i)
+\end{align}
+이된다. 이때 $L_{ij}$를 대칭 텐서와 반대칭 텐서로 나누면 아래의 표현과 같이 나눌 수 있다.
+\begin{align}
+&L_{ij}=\frac{1}{2i}(A_{ij}+S_{ij})\\
+&A_{ij}=2i\varepsilon_{jki}\frac{\Hat{n}_k}{r}\sin^2F(r) \\
+&S_{ij}=-2i\left(\frac{\delta_{ij}-\Hat{n}_i\Hat{n}_j}{r}\sin F(r)\cos F(r)+(\partial_{r}F(r))\Hat{n}_i\Hat{n}_j\right).
+\end{align}
+이때 $A_{ij}$ $S_{ij}$는 각각 반대칭 텐서와 대칭 텐서를 의미한다. 위의 결과를 이용하면 \eqref{eq:SU2lagrangian}의 첫 항은 아래와 같이 계산된다.
+\begin{align}
+-\tr(\partial_iU_0\partial_iU_0^\dagger)=&-\tr(\partial_iU_0U_0^\dagger U_0\partial_iU_0^\dagger)=\tr(L_iL^i)\cr
+=&-\tr(\tau_jL_{ij}\tau_kL_{ik})=-2L_{ij}L_{ij}\cr
+=&\frac{1}{2}(A_{ij}+S_{ij})(A_{ij}+S_{ij})=\frac{1}{2}(A_{ij}^2+S_{ij}^2)\cr
+=&-2(\frac{2\sin^2F(r)}{r^2}+(\partial_{r}F(r))^{2})
+\end{align}
+\eqref{eq:SU2lagrangian}의 두 번째 항은 $L_{i}$를 이용하면 아래와 같이 표현할 수 있다.
+\begin{align}
+\tr[(\partial_i U_0)U_0^\dagger,(\partial_j U_0)U_0^\dagger]^2=&\tr[L_i,L_j]^2\cr
+=&\tr[i\tau_{i_1}L_{ii_1},i\tau_{j_1}L_{jj_1}][i\tau_{i_2}L_{ii_2},i\tau_{j_2}L_{jj_2}]\cr
+=&\tr[\tau_{i_1},\tau_{j_1}][\tau_{i_2},\tau_{j_2}]L_{ii_1}L_{jj_1}L_{ii_2}L_{jj_2}
+\end{align}
+이때 반대칭 텐서와 대칭 텐서를 이용하여 계산하면 아래의 결과를 얻을 수 있다.
+\begin{align}
+=&-\frac{1}{2}(\delta_{i_1i_2}\delta_{j_1}{j_2}-\delta_{i_1j_2}\delta_{j_1i_2})(S_{ii_1}+A_{ii_1})(S_{jj_1}+A_{jj_1})(S_{ii_2}+A_{ii_2})(S_{jj_2}+A_{jj_2})\cr
+=&-\frac{1}{2}(S_{ii_1}^2+A_{ii_1}^2)(S_{jj_1}^2+A_{jj^1}^2)+\frac{1}{2}(S_{ii_1}S_{ij_1}+A_{ii_1}A_{ij_1})(S_{jj_1}S_{ji_1}+A_{jj_1}A_{ji_1})\cr
+=&-\frac{16\sin^2F(r)}{r^2}\left(\frac{\sin^2F(r)}{r^2}+2(\partial_{r}F(r))^{2}\right)
+\end{align}
+이러한 과정을 통하여 ~\eqref{eq:solitonLagrangian}을 유도할 수 있다.
+\subsection{모양함수(Profile Function)}\label{52}
+모양 함수는 라그랑지언~\eqref{eq:solitonLagrangian}을 통하여 얻은 운동방정식~\eqref{eq:eqofmotion}의 해가 된다. 또한 모양 함수는 $ r \approx 0$에서는 $F(r)= \pi$이고 $r \approx \infty$에서는 $F(r) = 0$의 경계조건을 가진다.
+식~\eqref{eq:solitonLagrangian}에 오일러 라그랑주 방정식을 사용하면
+\begin{align}
+  & \left(\frac{1}{4} \tilde{r}^{2} +2 \sin^{2} (F(\tilde{r})) \right)\partial_{\tilde{r}}^{2}F(\tilde{r})+ \frac{1}{2}\tilde{r}(\partial_{\tilde{r}}F(\tilde{r})) +\sin(2F(\tilde{r}))(\partial_{\tilde{r}}F(\tilde{r}))^{2} \cr
+  & - \frac{1}{4} \sin(2F(\tilde{r})) - \frac{\sin^{2}(F(\tilde{r}))\sin(2F(\tilde{r}))}{\tilde{r}^{2}} = 0 \label{eq:eqofmotion}
+\end{align}
+의 운동방정식을 얻을 수 있다. 이 운동방정식은 비선형 방정식이다. 이 비선형 방정식의 $r \approx 0$와 $r \approx \infty$의 근사적인 해는 각각 아래와 같은 형태를 가진다.
+ \begin{align}
+F(r)&= \pi - a r \cr
+F(r)&= \frac{b}{r^{2}}
+ \end{align}
+ 이때 선형 모양 함수가 $r \approx 0$에서의 근사적인 해이고 $\frac{1}{r^{2}} $에 비례하는 함수는 $r \approx \infty$에서의 근사적 해이다.
+ 메스메티카를 이용하여 수치해석적으로 해를 구하면 그 해와 위의 두 함수는 연속 조건을 만족해야 하며 미분가능하여야 한다. 위 조건의 이용하여 a와 b 두 개의 변수를 계산하면 이는 각각 아래와 같은 값을 가진다.\cite{2,4}
+\begin{align}
+  a = 1.00864 (r=4.54 \times 10^{-4})
+  b = 8.28187 (r=4.87)
+\end{align}
+가로 안의 값은 각각의 해가 연결이 되는 지점이다. 이를 이용하여 그래프를 그리면 아래와 같은 그래프를 얻을 수 있다.
+\newpage
+
+위의 해를 이용하여 질량을 구하면 표(1)의 값을 얻을 수 있다.
+\subsection{식 ~\eqref{eq:secondterm}의 증명}\label{53}
+
+\begin{align}
+\tr(\partial_0 U\partial_0 U^\dagger)=&\tr[(\dot{\mathcal{A}}U_0 \mathcal{A}^\dagger+\mathcal{A}U_0\dot{\mathcal{A}^\dagger})(\dot{\mathcal{A}}U_0 ^\dagger \mathcal{A}^\dagger+\mathcal{A}U_0 ^\dagger \dot{\mathcal{A}^\dagger})]\cr
+=&\tr(\dot{\mathcal{A}}U_0 \mathcal{A}^\dagger \dot{\mathcal{A}}U_0^\dagger \mathcal{A}^\dagger +\dot{\mathcal{A}}U_0A^\dagger \mathcal{A}U_0^\dagger \dot{\mathcal{A}}^\dagger
++\mathcal{A}U_0 \dot{\mathcal{A}}^\dagger \dot{\mathcal{A}} U_0^\dagger \mathcal{A}^\dagger +\mathcal{A}U_0\dot{\mathcal{A}}^\dagger \mathcal{A}U_0^\dagger \dot{\mathcal{A}}^\dagger)\cr
+=&\tr(CU_0CU_0^\dagger-CU_0U_0^\dagger C-U_0CCU_0^\dagger+U_0CU_0^\dagger C)\cr
+=&\tr\left(\left[C,U_0\right][C,U_0^\dagger]\right).
+\end{align}
+
+\subsection{식~\eqref{eq:thirdterm}의 증명}\label{54}
+
+\begin{align}
+\tr[(\partial_0 U) U^\dagger \, ,(\partial_i U)U^\dagger]^2=&\tr\left[\partial_0UU^\dagger \partial_iUU^\dagger-\partial_iUU^\dagger\partial_0UU^\dagger\right]^2\nonumber\\
+=&\tr[-\partial_0 UU^\dagger U\partial_i U^\dagger +\partial_i UU^\dagger U \partial_0 U^\dagger]^2\nonumber\\
+=&\tr[-\partial_0U\partial_i U^\dagger + \partial_i U \partial_0 U^\dagger]^2\nonumber\\
+=&\tr[-(\dot{\mathcal{A}}U_0A^\dagger+AU_0\dot{\mathcal{A}^\dagger}\mathcal{A}\partial_i U_0^\dagger \mathcal{A}^\dagger\cr
+&\quad+\mathcal{A}\partial_i U_0\mathcal{A}^\dagger(\dot{\mathcal{A}}U_0^\dagger \mathcal{A}^\dagger+\mathcal{A}U_0^\dagger \dot{\mathcal{A}^\dagger})]^2\nonumber\\
+=&\tr([C,U_0]\partial_iU_0^\dagger [C,U_0]\partial_i U_0^\dagger -2[C,U_0]\partial_i U_0^\dagger\partial_i U_0[C,U_0^\dagger]\cr
+&\qquad+\partial_i U_0[C,U_0^\dagger]\partial_iU_0[C,U_0^\dagger]).
+\end{align}
+
+\subsection{C의 급수 전개}\label{55}
+~\eqref{eq:aboutc}를 계산하기 위해서는 색소 수에 대하여 전개된 C행렬과 차수를 봐야 한다. 이를 위하여 C 행렬을 ~\eqref{eq:rotation}의 표현을 이용하여 정리하면 아래와 같이 정리된다.
+\begin{align}
+  C=&\mathcal{A}^\dagger\dot{\mathcal{A}}= S^\dagger A^\dagger(\dot{A}S+A\dot{S})=S^\dagger A^\dagger\dot{A}S
+  +S^\dagger A^\dagger A\dot{S}=\frac{i}{2}S^\dagger(\vec{\omega}\cdot\vec{\lambda})S+S^\dagger\dot{S}\label{eq:cmatrix}
+\end{align}
+이때 ~\eqref{eq:expansionS}와 ~\eqref{eq:expationSD}의 식의 $\sin d$와 $\cos d$를 테일러급수 전개하면 아래와 같다.
+\begin{align}
+  \sin d&=d-\frac{d^3}{3!}+\frac{d^5}{5!}-\cdots\\
+  \cos d&=1-\frac{d^2}{2!}+\frac{d^4}{4!}-\cdots.
+\end{align}
+이를 통하여 C를 계산하기 전 C의 색소 수에 대한 차수를 생각하여 보면 C는 $\frac{1}{\sqrt{N}} $의 차수를 가져야 한다. $\omega$는 $\frac{1}{N}$의 차수를 가지므로 $\frac{i}{2}S^\dagger(\vec{\omega}\cdot\vec{\lambda})S $는 무시할 수 있다. $ S^\dagger\dot{S} $의 경우 d와 D의 차수가 $ \frac{1}{\sqrt{N}}$이므로
+C의 차수가 $\frac{1}{\sqrt{N}}$이 되기 위하여서는 $ S^\dagger $에서 $\mathbb{1}$ 을 취하여야 한다. 즉 C의 항중 $ \frac{1}{\sqrt{N}} $의 차수를 가지는 항은 아래의 항으로 정해진다.
+\begin{align}
+  S^\dagger\dot{S}\simeq i\dot{\mathcal{D}}\frac{\sin d}{d}\simeq i\dot{D}
+\end{align}
+베스-주미노항~\eqref{eq:wessterm}의 경우 C의 차수가 $ \frac{1}{N} $을 가져야 한다. 이때의 C를 계산하여 보면 식~\eqref{eq:cmatrix}의 첫 번째 항은 $\omega$가 $\frac{1}{N}$의 차수를 가지므로 $S(t) $와 $ S^{\dagger}(t) $에서 $\mathbb{1}$을 취해야 한다. 그러므로
+\begin{align}
+  \frac{i}{2}S^{\dagger}(\vec{\omega} \cdot \vec{\lambda}) S \approx \frac{i}{2}(\vec{\omega}\cdot \vec{\lambda})
+\end{align}
+이 된다. 두 번째의 항의 경우 $\frac{1}{N}$차수를 가지는 항은
+\begin{align}
+  S^\dagger\dot{S}\approx & \mathcal{D}\dot{\mathcal{D}}\frac{\sin^2d}{d^2}-(\dot{\mathcal{D}}\mathcal{D}+\mathcal{D}\dot{\mathcal{D}})
+  \frac{1-\cos d}{d^2}\cr
+  \approx& \mathcal{D}\dot{\mathcal{D}}-\frac{1}{2}(\dot{\mathcal{D}}\mathcal{D}+\mathcal{D}\dot{\mathcal{D}}) \cr
+  =&\frac{1}{2}[\mathcal{D},\mathcal{\dot{D}}].
+\end{align}
+이 된다. 그러므로 C의 $\frac{1}{N}$의 차수를 가지는 항은
+\begin{align}
+  C=\frac{i}{2}\vec{\omega}\cdot{\vec{\lambda}}+\frac{1}{2}[\mathcal{D},\mathcal{\dot{D}}].
+\end{align}
+이 된다.
+\newpage
+\section{참고문헌}\label{6}
+\begin{thebibliography}{References}
+ \bibitem{1}
+   G.S. Adkins, C.R. Nappi and E. Witten, Nucl. Phys. B228 (1983) 552%SU(2) 라그랑지언
+ \bibitem{2}
+      U.~Yakhshiev, PTEP {\bf 2014}, no. 12, 123D03 (2014).%모양함수 어심토틱해
+  \bibitem{3}
+    K.~M.~Westerberg and I.~R.~Klebanov, Phys.\ Rev.\ D {\bf 50}, 5834 (1994)%SU(3) 라그랑지안
+ \bibitem{4}
+    G. Adkins and C. Nappi, Nucl. Phys. B233, 109 (1984)%모양함수 어심토틱해
+ \bibitem{5}
+   V.~B.~Kopeliovich, J.\ Exp.\ Theor.\ Phys.\  {\bf 85}, 1060 (1997)%베스-주미노항
+ \bibitem{6}
+    I.~R.~Klebanov and K.~M.~Westerberg, Phys.\ Rev.\ D {\bf 53}, 2804 (1996)%quark mass matrix
+  \bibitem{7}
+  E. Witten, Nucl, Phys. B223 (1983) 433%경계조건
+\end{thebibliography}
+
+\end{document}
