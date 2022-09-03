@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{7}%
+\begin{thebibliography}{8}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -112,4 +112,9 @@
   {Townsend}},\ }\href@noop {} {\emph {\bibinfo {title} {A modern approach to
   quantum mechanics}}}\ (\bibinfo  {publisher} {University Science Books},\
   \bibinfo {year} {2000})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {nanoSurf}()}]{easyscan2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {nanoSurf}},\ }\href
+  {https://doi.org/10.1093/acprof:oso/9780199211500.001.0001} {\emph {\bibinfo
+  {title} {easyScan 2 STM}}}\BibitemShut {NoStop}%
 \end{thebibliography}%

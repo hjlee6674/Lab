@@ -26,45 +26,46 @@ Control: production of article title (0) allowed
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-You've used 9 entries,
+Warning--empty year in easyscan2
+You've used 10 entries,
             6079 wiz_defined-function locations,
-            1689 strings with 16238 characters,
-and the built_in function-call counts, 6673 in all, are:
-= -- 415
-> -- 137
-< -- 58
-+ -- 50
-- -- 46
-* -- 948
-:= -- 675
-add.period$ -- 7
-call.type$ -- 9
-change.case$ -- 33
-chr.to.int$ -- 19
-cite$ -- 9
-duplicate$ -- 698
-empty$ -- 482
-format.name$ -- 71
-if$ -- 1252
+            1692 strings with 16269 characters,
+and the built_in function-call counts, 7218 in all, are:
+= -- 455
+> -- 145
+< -- 59
++ -- 54
+- -- 48
+* -- 1016
+:= -- 743
+add.period$ -- 8
+call.type$ -- 10
+change.case$ -- 37
+chr.to.int$ -- 20
+cite$ -- 11
+duplicate$ -- 752
+empty$ -- 526
+format.name$ -- 76
+if$ -- 1353
 int.to.chr$ -- 1
-int.to.str$ -- 16
-missing$ -- 97
-newline$ -- 73
-num.names$ -- 21
-pop$ -- 307
+int.to.str$ -- 17
+missing$ -- 103
+newline$ -- 76
+num.names$ -- 24
+pop$ -- 338
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 39
 quote$ -- 0
-skip$ -- 259
+skip$ -- 281
 stack$ -- 0
-substring$ -- 125
-swap$ -- 573
+substring$ -- 137
+swap$ -- 611
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 98
-warning$ -- 1
-while$ -- 27
+type$ -- 110
+warning$ -- 2
+while$ -- 29
 width$ -- 0
-write$ -- 106
-(There was 1 warning)
+write$ -- 112
+(There were 2 warnings)

@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex template"] 1662015665 "template.aux" "template.bbl" "template" 1662017758
+["bibtex template"] 1662120813 "template.aux" "template.bbl" "template" 1662120815
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "ref.bib" 1662012704 3974 550a2d2d9e35cf3e80ddb7d474ea11fb ""
-  "template.aux" 1662017319 2735 2588f6dffda6f74bb5b19a559f09a4d9 "pdflatex"
-  "templateNotes.bib" 1662017319 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "ref.bib" 1662120812 4137 deb998ee41a1c2e49ab6b4d0601492e0 ""
+  "template.aux" 1662120814 2778 5c5cde669d9edc9de9c45cb2ff475063 "pdflatex"
+  "templateNotes.bib" 1662120814 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "template.blg"
   "template.bbl"
-["pdflatex"] 1662017318 "/home/sigma/Lab/experiment_report/template.tex" "/home/sigma/Lab/experiment_report/template.pdf" "template" 1662017758
+["pdflatex"] 1662120814 "/home/sigma/Lab/experiment_report/template.tex" "/home/sigma/Lab/experiment_report/template.pdf" "template" 1662120815
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/experiment_report/template.aux" 1662017319 2735 2588f6dffda6f74bb5b19a559f09a4d9 ""
-  "/home/sigma/Lab/experiment_report/template.tex" 1662017637 6744 359ac906a6cef2fb6f817655e622f440 ""
+  "/home/sigma/Lab/experiment_report/template.aux" 1662120814 2778 5c5cde669d9edc9de9c45cb2ff475063 ""
+  "/home/sigma/Lab/experiment_report/template.tex" 1662120150 6744 359ac906a6cef2fb6f817655e622f440 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -283,13 +283,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
   "STM.png" 1662014462 71704 666848e83880158aaa167d095aeebbe7 ""
-  "template.aux" 1662017319 2735 2588f6dffda6f74bb5b19a559f09a4d9 "pdflatex"
-  "template.bbl" 1662015665 5526 4438ccf719df88785cbef93c16588076 "bibtex template"
-  "template.tex" 1662017637 6744 359ac906a6cef2fb6f817655e622f440 ""
+  "template.aux" 1662120814 2778 5c5cde669d9edc9de9c45cb2ff475063 "pdflatex"
+  "template.bbl" 1662120814 5799 8d935d31934fc041ba332abc7818ca48 "bibtex template"
+  "template.tex" 1662120150 6744 359ac906a6cef2fb6f817655e622f440 ""
   (generated)
-  "template.aux"
-  "templateNotes.bib"
   "template.log"
-  "/home/sigma/Lab/experiment_report/template.log"
+  "templateNotes.bib"
   "/home/sigma/Lab/experiment_report/template.pdf"
   "template.pdf"
+  "/home/sigma/Lab/experiment_report/template.log"
+  "template.aux"
