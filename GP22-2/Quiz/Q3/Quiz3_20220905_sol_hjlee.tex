@@ -88,28 +88,34 @@ $0<\phi<2\pi$이다. 따라서 플럭스 $\Phi_E$에 대한 식~(\ref{eq:1-1})�
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}
-    \draw[-latex] (0,0)--(0,1.2) node[above]{$y$};
-    \draw[-latex] (0,0)--(1.2,0) node[above]{$x$};
+    %\draw[-latex] (0,0)--(0,1.2) node[above]{$y$};
+    %\draw[-latex] (0,0)--(1.2,0) node[above]{$x$};
     
     \draw (-3, 1)--(3, 1) node[right]{$+\sigma$};
     \draw (-3,-1)--(3,-1) node[right]{$-\sigma$};
     \draw[|<->|] (-4,-1)--(-4,1) node[below=25,left]{$d$};
 
-    \draw[|<->|] (-1,-1.4)--( 1,-1.4) node[below=5,left=20]{$2r$};
-    \draw[dashed,red] ( 1, 0.8)--( 1,-0.8);
-    \draw[dashed,red] (-1, 0.8)--(-1,-0.8);
-    \draw[dashed,red] (-1,-0.8)--( 1,-0.8);
-    \draw[dashed,red] (-1, 0.8)--( 1, 0.8);
+    \foreach \n in {0,...,7}
+    \draw[-latex,red] (-2.5+5*\n/7,1.05)--(-2.5+5*\n/7,2);
+    \foreach \n in {0,...,7}
+    \draw[-latex,red] (-2.5+5*\n/7,0.95)--(-2.5+5*\n/7,0.05);
+    \foreach \m in {0,...,7}    
+    \draw[-latex,blue] (-2.5+5*\m/7,-0.05)--(-2.5+5*\m/7,-0.95);
+    \foreach \n in {0,...,7}
+    \draw[-latex,blue] (-2.5+5*\n/7,-2)--(-2.5+5*\n/7,-1.05);
   \end{tikzpicture}
   \caption{면전하밀도 $\sigma$로 대전되어 있는 무한히 큰 두 평면}
   \label{fig:1-1}
 \end{figure}
-중심축이 각 평면에 수직이고 밑변의 반지름이 $r$인 원통을 생각하자. 이 원통의
-표면을 가우스면으로 하여 가우스 법칙을 이용해 전기장을 구할 것이다. 먼저 전기장의 방향을
-생각해보자. 도체의 전기장은 항상 표면의 수직된 방향이므로 평면 사이 공간에서 평면과 평행한
-방향의 전기장은 존재하지 않는다. 즉, $x$방향의 전기장은 존재하지 않는다. 가우스면을 세 부분으로
-나누어보자. 반지름이 $r$인 원형의 면이 위, 아래로 있어 이 면들을 각각 $A_{t}$, $A_{b}$이라
-하고 원통의 옆면을 $A_s$
+$+\sigma$로 대전된 평면에 의한 전기장을 $\vec{E}_+$,
+$-\sigma$로 대전된 평면에 의한 전기장을 $\vec{E}_-$라 하자. 평면에 수직한 방향을 $y$방향이라
+하면 평면 사이에서 두 전기장의 방향은 $-y$방향이다. 중첩의 원리에 의해 두 평면 사이 전기장 
+$\vec{E}_{tot}$는
+\begin{align}
+  \vec{E}_{tot} = \vec{E}_++\vec{E}_-=\frac{\sigma}{2\epsilon_0}\hat{\bm{j}}
+  +\frac{\sigma}{2\epsilon_0}\hat{\bm{j}}=\frac{\sigma}{\epsilon_0}\hat{\bm{j}}
+\end{align}
+이다. 따라서 평명 사이에서 계산한 전기장은 $\sigma/\varepsilon_0\hat{\bm{j}}$이다.
 \end{itemize}
 
 

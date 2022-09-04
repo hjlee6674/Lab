@@ -316,9 +316,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd0.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd3.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb1.tfm
 OUTPUT /home/sigma/Lab/GP22-2/Quiz/Q3/Quiz3_20220905.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb1.tfm
 INPUT /home/sigma/Lab/GP22-2/Quiz/Q3/qfig3-1.png
 INPUT /home/sigma/Lab/GP22-2/Quiz/Q3/qfig3-1.png
 INPUT /home/sigma/Lab/GP22-2/Quiz/Q3/qfig3-1.png
