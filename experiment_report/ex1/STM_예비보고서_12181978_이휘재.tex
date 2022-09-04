@@ -126,7 +126,62 @@ $\phi$는 터널링을 위한 유효 장벽의 높이이다. STM은 확률이 �
 공유하며 C-C거리는 $141.7$~pm이다. 층 사이 약한 결합의 세기가 반데르발스 결합에 비견될 만한
 강도를 가진다.
 \subsection{Experimental Methods}
-\subsection{Theory}
+\subsubsection{준비}
+\begin{itemize}
+  \item[1. ] 실험장비를 초기화 한다. 장비의 전원을 켜고 컨트롤러 위 상태 표시등이 모두 켜지는지
+  확인한다. Scan Head등과 detected modules등이 깜박이기 시작하고 다른 모든 표시등이 꺼진다.
+  프로그램을 시작하면 모든 표시등이 꺼진다. 화면에 “Controller Startup in 
+  progress" 문구가 표시되고 module등이 차례로 켜진다. 
+  
+  초기화가 완료되면 “Starting System"
+  메세지가 표시되고 Probe Status등, Scan Head status light등 그리고 detected modules등이 
+  켜진다. scan head가 감지되지 않으면 2개의 Scan Head Status등이 깜박인다.
+  \item[2. ] STM 탐침을 준비하고 설치한다. 이 때 탐침을 직접 만들어야 하는데 다음의 과정을
+  거친다.
+  \begin{small}
+  \begin{enumerate}
+    \item[(1)] wire cutter의 자르는 부분과 Flat nose plier, 핀셋을 에탄올로
+    세척한다. 
+    \item[(2)] 핀셋으로 기기에서 탐침을 제거한다. 이 탐침이 충분히 길면, 재활용이 가능하다.
+    \item[(3)] wire를 Flat nose plier로 잡고 cutter로 wire를 약 4mm 정도 잡아당긴다.
+    \item[(4)] cutter에 힘을 주되, wire가 끊어지지 않도록 한다.
+    \item[(5)] cutter를 wrie의 방향과 같은 방향으로 잡아당긴다. 좋은 탐침을 얻기 위해서는
+    자르지 말고 잡아당겨야 한다(FIG.~\ref{fig:3}).
+    \item[(6)] 핀셋으로 새로 만든 탐침을 기기에 설치한다(FIG.~\ref{fig:4}).
+      \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.3]{tip.png}
+        \caption{탐침을 자르는 방법}
+        \label{fig:3}
+      \end{figure}
+      \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.35]{tip2.png}
+        \caption{탐침을 설치하는 방법}
+        \label{fig:4}
+      \end{figure}
+  \end{enumerate}
+  \end{small}
+  \item[3. ] 샘플을 장착한다. 먼저 검은색 플라스틱 부분을 잡고 샘플 홀더를 보관 용기에서 빼낸다.
+  이 때 금속 부분은 만져서는 안된다. 이 샘플 홀더를 탐침이 닿지 않도록 하여 기기에 장착한다.
+  HOPG(흑연) 샘플을 스카치 테이프로 절단한다. 절단한 샘플을 샘플 홀더와 같이 기기에 장착한다.
+  \item[4. ] 샘플과 탐침 사이 거리가 1mm 미만이 되도록 샘플 홀더를 민다(FIG.~\ref{fig:4}). 
+  이제 Positioning 창을 열고 magnifier로 탐침과 샘플 사이 거리를 관찰한다. 이 거리는 
+  1mm 이내여야 한다. Z-control panel에서 control parameter를 다음과 같이 설정한다: 
+  (point=1 nA, P-gain=10000, I-gain=1000, tip voltage=50 mV). 값들을 설정하고 [Approach]를
+  누른다. 탐침의 접근이 성공적으로 완료되면 probe status등이 깜박임에서 녹색으로 바뀌고 스캔이
+  자동으로 시작된다. 그렇지 않으면, 다시 시도한다.
+  \begin{figure}[htp]
+    \centering
+    \includegraphics[scale=0.3]{approach.png}
+    \caption{탐침과 샘플은 닿지 않아야 한다.}
+    \label{fig:4}
+  \end{figure}
+  \item[5. ] imaging parameter(scan speed, scan direction, tilt, P-gain and I-gain)를 
+  조절하고 해상도를 256으로 설정한다. ~500 nm 구간에서 평평한 영역을 찾을 수 있고 원자 해상도
+  이미지는 ~4nm 구간이다. 이미지가 원자적 특성을 보여주지 않는다면 스캔 방향을 다르게 하여 다시
+  시도한다.
+\end{itemize}
 
 \nocite{*}
 \bibliography{ref}

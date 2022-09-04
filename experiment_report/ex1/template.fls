@@ -331,6 +331,18 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb0.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmce.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc3.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmaf.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmoc9.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmobe.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcd.tfm
+INPUT /home/sigma/Lab/experiment_report/tip.png
+INPUT /home/sigma/Lab/experiment_report/tip.png
+INPUT /home/sigma/Lab/experiment_report/tip.png
+INPUT /home/sigma/Lab/experiment_report/tip2.png
+INPUT /home/sigma/Lab/experiment_report/tip2.png
+INPUT /home/sigma/Lab/experiment_report/tip2.png
+INPUT /home/sigma/Lab/experiment_report/approach.png
+INPUT /home/sigma/Lab/experiment_report/approach.png
+INPUT /home/sigma/Lab/experiment_report/approach.png
 INPUT /home/sigma/Lab/experiment_report/template.bbl
 INPUT /home/sigma/Lab/experiment_report/template.bbl
 INPUT /home/sigma/Lab/experiment_report/template.aux
@@ -383,6 +395,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb
@@ -393,6 +406,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmca.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb
