@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1662017961 "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.tex" "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.pdf" "Quiz4_20220907" 1662017962
+["pdflatex"] 1662380120 "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.tex" "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.pdf" "Quiz4_20220907" 1662380121
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.aux" 1662017961 455 32c8a0fd1ce9e6792b81e3e36ccb0cda ""
-  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.tex" 1662017960 3602 8eb5b91e9dab488e244252c7cfe88495 ""
+  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.aux" 1662380120 455 32c8a0fd1ce9e6792b81e3e36ccb0cda ""
+  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.tex" 1662380119 3602 8eb5b91e9dab488e244252c7cfe88495 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -221,14 +221,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
-  "Quiz4_20220907.aux" 1662017961 455 32c8a0fd1ce9e6792b81e3e36ccb0cda "pdflatex"
-  "Quiz4_20220907.tex" 1662017960 3602 8eb5b91e9dab488e244252c7cfe88495 ""
+  "Quiz4_20220907.aux" 1662380120 455 32c8a0fd1ce9e6792b81e3e36ccb0cda "pdflatex"
+  "Quiz4_20220907.tex" 1662380119 3602 8eb5b91e9dab488e244252c7cfe88495 ""
   "defcolor.sty" 1662017919 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   "qfig5-1.png" 1662017800 22422 71bd5130581cf8797efa92af043d9f78 ""
   "qfig5-2.png" 1662017801 28167 1ffbcfd35004834a1df8f9b1dc19d0dd ""
   (generated)
-  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.pdf"
   "Quiz4_20220907.aux"
+  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.pdf"
   "Quiz4_20220907.log"
-  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.log"
   "Quiz4_20220907.pdf"
+  "/home/sigma/Lab/GP22-2/Quiz/Q4/Quiz4_20220907.log"
