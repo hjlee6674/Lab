@@ -1,6 +1,0 @@
-# For LDG service access
-ciecplib>=0.4.4
-dqsegdb2>=1.0.1
-amqplib
-htchirp >= 2.0
-dqsegdb >= 2.0.0
