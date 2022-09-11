@@ -21,42 +21,84 @@
 \begin{document}
 
 \title{\Large 2020년 2학기 물리학 II}
-\author{김현철\footnote{Office: 5S-436D (면담시간 매주
-    수요일-16:15$\sim$19:00)}} 
-\email{hchkim@inha.ac.kr}
+
+\author{Hui-Jae Lee} 
+\email{hjlee6674@inha.edu}
 \affiliation{Hadron Theory Group, Department of Physics,
   Inha  University, Incheon 22212, Republic of Korea }
+\author{Byeong-woo Han} 
+\email{12191964@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+  \author{김현철\footnote{Office: 5S-436D (면담시간 매주
+  수요일-16:15$\sim$19:00)}} 
+\email{hchkim@inha.ac.kr}
+\affiliation{Hadron Theory Group, Department of Physics,
+Inha  University, Incheon 22212, Republic of Korea }
 \date{Autumn Semester, 2020}
+
 
 \maketitle
 
 {\color{red} {\bf Due date:} 2020년 9월 14일  15:25-16:15 }
 \vspace{1.cm}
 
-\noindent \textbf{ 주의: \color{blue} 단 한 번의 부정행위도 절대
-  용납하지 않습니다. 적발 시, 학점은 F를 받게 됨은 물론이고,
-  징계위원회에 회부합니다. One strike out임을 명심하세요.} 
-\\
-\\
-
-{\bf 학번:} \hspace{4cm}
-{\bf 이름:} 
-
 \section*{\large Quiz 5}
 \noindent {\bf 문제 1 [20pt].} 반지름이 $r$이고 길이가 $L$인 원통형
 구리 도선이 있다. 부피를 일정하게 유지한 채로 이 도선을 늘려 길이가 두
 배가 되었다면, 저항은 처음의 몇 배가 되었는가? 
-\newpage
-{\color{gray} [문제 풀이 쪽]}
-\newpage
+\vspace{0.5cm}
+
+\noindent{\bf 풀이 : }
+길이가 $L$이고 단면적이 $A$인 도선의 저항 $R$은 길이에 비례하고 단면적에 반비례한다. 즉,
+\begin{align}
+  R=\rho\frac{L}{A}
+\end{align}
+이고 $\rho$은 도선의 비저항이다. 처음 저항을 $R_0$, 처음 반지름을 $r_0$라 하자. 
+$R_0$는
+\begin{align}
+  R_0 = \rho\frac{L}{\pi r^2_0}
+\end{align}
+로 쓸 수 있는데 길이를 2배로 늘리고 부피를 유지했다면 반지름이 변했을 것이다. 변한 반지름 $r$은
+부피를 유지했다는 사실로부터 얻을 수 있다.
+\begin{align}
+  \pi r^2_0 L = \pi r^2(2L)\Longrightarrow r = \frac{1}{\sqrt{2}}r_0.
+\end{align}
+따라서 변한 저항 $R$은 다음과 같다.
+\begin{align}
+  R = \rho\frac{2L}{\pi r^2}=\rho\frac{4L}{\pi r_0^2}=4R_0.
+\end{align}
+길이를 2배로 늘리고 부피를 유지하면 저항은 4배 증가한다.
+\vspace{0.5cm}
 
 \noindent {\bf 문제 2 [20pt].} 반지름이 $a$인 도체공을 중심이 같고
 반지름이 $b$ ($b>a$)이고 비저항이 $\rho$인 물질로 만들어진 공을 감싸고
 있다. 이 두 공 사이의 저항을 구하여라.  
 
-\newpage
-{\color{gray} [문제 풀이 쪽]} 
-\newpage
+\vspace{0.5cm}
+
+\noindent{\bf 풀이 : }
+두 공 사이의 저항을 구하기 위해 먼저 두 공 사이에 놓여진 미소 구껍질을 생각하자. 이 미소 구껍질은
+두 공과 중심이 같고 반지름이 $r$이며 두께는 $dr$이다. 이 미소 구껍질 사이의 미소 저항을 구한다면,
+미소 저항을 거리 $a$부터 $b$까지 적분하여 반지름이 $a$인 공과 반지름이 $b$인 공 사이의 저항을
+알아낼 수 있다. 미소 구껍질의 면적은 $4\pi r^2$이므로 미소저항 $dR$은
+\begin{align}
+  dR = \rho\frac{dr}{4\pi r^2}
+\end{align}
+으로 쓸 수 있다. 양변을 적분하면
+\begin{align}
+  \begin{split}
+    \int dR &= \int^b_a  \rho\frac{dr}{4\pi r^2}
+    =\frac{\rho}{4\pi}\int^b_a\frac{1}{r^2}\,dr
+    =\frac{\rho}{4\pi}\left.\left(-\frac{1}{r}\right)\right|^{b}_{a}
+    =\frac{\rho}{4\pi}\left(
+      -\frac{1}{b}+\frac{1}{a}
+      \right) \\
+    &= \frac{\rho(b-a)}{4\pi ab}
+    \end{split}
+\end{align}
+을 얻는다. 즉, 두 공 사이의 저항은 $\frac{\rho(b-a)}{4\pi ab}$이다.
+\vspace{0.5cm}
 
 \noindent {\bf 문제 3 [20pt].} 
 저항값이 $R$인 저항이 달려 있는 단일고리
@@ -64,9 +106,27 @@
 저항소자를 직렬로 회로에 연결하자 전류가 $4.0$ A로 낮아졌다. $R$ 값을
 구하여라.   
 
-\newpage
-{\color{gray} [문제 풀이 쪽]}
-\newpage
+\vspace{0.5cm}
+
+\noindent{\bf 풀이 : }
+처음 전압, 전류, 저항을 각각 $V$, $I=5.0$ A, $R$이라고 하면 옴의 법칙에 의해 다음이 성립한다.
+\begin{align}\label{eq:3-1}
+  V = IR.
+\end{align}
+여기에 저항 $R'=5.0\,\mathrm{\Omega}$를 직렬로 연결하였으므로 변한 전압 $V'$와 전류 $I'=4.0$
+A는 다시 옴의 법칙을 만족한다. 즉,
+\begin{align}\label{eq:3-2}
+  V' = I'(R+R')
+\end{align} 
+이다. 저항을 추가로 연결한다고 회로의 전압이 달라지지는 않으므로 $V=V'$이고 식~(\ref{eq:3-1})과
+식~(\ref{eq:3-2})로부터
+\begin{align}
+  IR=I'(R+R')\Longrightarrow
+  R = \frac{I'}{I+I'}R'=\frac{4.0~\mathrm{A}}{5.0~\mathrm{A}+4.0~\mathrm{A}}
+  (5.0~\mathrm{\Omega})=2.2~\mathrm{\Omega}
+\end{align}
+를 얻는다. 따라서 처음 저항 $R$은 $2.2~\mathrm{\Omega}$이다.
+\vspace{0.5cm}
 
 \noindent {\bf 문제 4 [20pt].} 
 그림~\ref{fig:1}은 번개가 치는 날 나무 옆에 있으면 왜 안 되는지
@@ -87,9 +147,11 @@ $d/h=0.400$이고, 총전류는 $I=5\,000$ A라고 하면, 사람을 지나는 �
   \label{fig:1}
 \end{figure}
 
-\newpage
-{\color{gray} [문제 풀이 쪽]}
-\newpage
+\vspace{0.5cm}
+
+\noindent{\bf 풀이 : }
+
+\vspace{0.5cm}
 
 \noindent {\bf 문제 5 [20pt].} 
 그림~\ref{fig:2}처럼 $a$와 $b$ 사이에 똑같이 생긴 저항 다섯 개가
@@ -101,7 +163,9 @@ $d/h=0.400$이고, 총전류는 $I=5\,000$ A라고 하면, 사람을 지나는 �
   \label{fig:2}
 \end{figure}
 
-\newpage
-{\color{gray} [문제 풀이 쪽]}
-\newpage
+\vspace{0.5cm}
+
+\noindent{\bf 풀이 : }
+
+\vspace{0.5cm}
 \end{document}
