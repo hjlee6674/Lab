@@ -1,6 +1,6 @@
 %\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
 %nofootinbib,superscriptaddress,fleqn]{revtex4} 
-\documentclass[tightenlines,floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4}  
+\documentclass[tightenlines,floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2}  
 %\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
 \usepackage{kotex}
 \usepackage[HWP]{dhucs-interword}
@@ -22,14 +22,14 @@
 
 \title{\Large 2020년 2학기 물리학 II}
 
-\author{Hui-Jae Lee} 
-\email{hjlee6674@inha.edu}
-\affiliation{Hadron Theory Group, Department of Physics,
-  Inha  University, Incheon 22212, Republic of Korea }
 \author{Byeong-woo Han} 
 \email{12191964@inha.edu}
 \affiliation{Hadron Theory Group, Department of Physics,
   Inha  University, Incheon 22212, Republic of Korea }
+  \author{Hui-Jae Lee} 
+  \email{hjlee6674@inha.edu}
+  \affiliation{Hadron Theory Group, Department of Physics,
+    Inha  University, Incheon 22212, Republic of Korea }
   \author{김현철\footnote{Office: 5S-436D (면담시간 매주
   수요일-16:15$\sim$19:00)}} 
 \email{hchkim@inha.ac.kr}
@@ -119,7 +119,7 @@ A는 다시 옴의 법칙을 만족한다. 즉,
   V' = I'(R+R')
 \end{align} 
 이다. 저항을 추가로 연결한다고 회로의 전압이 달라지지는 않으므로 $V=V'$이고 식~(\ref{eq:3-1})과
-식~(\ref{eq:3-2})로부터
+식~\eqref{eq:3-2}로부터
 \begin{align}
   IR=I'(R+R')\Longrightarrow
   R = \frac{I'}{I+I'}R'=\frac{4.0~\mathrm{A}}{5.0~\mathrm{A}+4.0~\mathrm{A}}
@@ -147,11 +147,67 @@ $d/h=0.400$이고, 총전류는 $I=5\,000$ A라고 하면, 사람을 지나는 �
   \label{fig:1}
 \end{figure}
 
-\vspace{0.5cm}
+\vspace{1.cm}
 
-\noindent{\bf 풀이 : }
+\noindent {\bf 풀이 :}
+저항 $R$은
+\begin{align}
+  R=\rho\frac{A}{l}=\frac{1}{\sigma}\frac{A}{l}
+\end{align}
+이고 이동한 거리에 반비례한다.
+사람의 전기전도도가 훨씬 높으므로 사람의 저항 $R_{h}$을 $0$라고 가정하자. 
+또한 나무껍질의 습도가 높은 공기를 타고 전류가 내려가므로 전기전도도는
+$\sigma$로 같다. 따라서  넓이 $A$는 매우 작으므로 같다고 가정한다.
+$d$로 이동한 거리가 수평이라고 가정할 때, 먼저 거리가 $h$인 저항$R_h$와
+거리가 $d$인 저항$R_d$와의 비는 다음과 같다.
+\begin{align}
+  \frac{R_h}{R_d}=\frac{d}{h}=0.400
+\end{align}
+이제 사람을 지나는 전류를 구하기 위해 옴의 법칙을 이용하자. 처음 전압을
+$V$, 땅의 전압을 $0~\mathrm{V}$라 가정하고 사람을 따라 땅까지
+흐르는 전류를 $I_d$, 나무껍질을 따라 땅까지 흐르는 전류를 $I_h$라고 하자.
+전하량 보존법칙에 의해서 다음이 성립한다.
+\begin{align}
+  I=I_d+I_h.
+  \label{eq:4-1}
+\end{align}
+또한, 두 저항이 병렬로 연결되있으모로, 옴의 법칙에 의해 다음이 성립한다.
+\begin{align}
+  \begin{split}
+   &I_h=\frac{V}{R_h},\\
+   &I_d=\frac{V}{R_d}.
+   \label{eq:4-2}
+  \end{split}
+\end{align}
+식~(\ref{eq:4-2})을 식~(\ref{eq:4-1})에 대입하면 다음과 같은 결과를 
+얻을 수 있다.
+\begin{align}
+  \begin{split}
+   I&=V\left(\frac{1}{R_d}+\frac{1}{R_h}\right)\\
+   &=\frac{V}{R_h}\left(1+\frac{R_h}{R_d}\right)\\
+  \end{split}
+\end{align}
+식~(\ref{eq:4-2})과 $I=5\,000~\mathrm{A}$, ${R_h}/{R_d}=0.400$을 대입하면
+\begin{align}
+   5000~\mathrm{A}=1.40I_h\Longrightarrow
+   I_h=\frac{5000}{1.40}~\mathrm{A}
+\end{align}
+이다. 즉, 사람에게 흐르는 전류 $I_h$는
+\begin{align}
+  I_h = 3570~\mathrm{A}
+\end{align}
+으로 사람에게는 $3570~\mathrm{A}$만큼의 전류가 흐르게 된다.
+%을 얻고 이를 식~(\ref{eq:4-1})에 대입하면
+%\begin{align}
+%  \begin{split}
+%    &5000=I_d+\frac{5000}{1.400}\\
+%    &I_d=5000\left(1-\frac{1}{1.400}\right)\\
+%    &\quad\approx 3570~\mathrm{A}
+%  \end{split}
+%\end{align}
+%이다.
 
-\vspace{0.5cm}
+\vspace{1.cm}
 
 \noindent {\bf 문제 5 [20pt].} 
 그림~\ref{fig:2}처럼 $a$와 $b$ 사이에 똑같이 생긴 저항 다섯 개가
@@ -162,10 +218,42 @@ $d/h=0.400$이고, 총전류는 $I=5\,000$ A라고 하면, 사람을 지나는 �
   \caption{\textbf{문제 5}}
   \label{fig:2}
 \end{figure}
+\vspace{1.cm}
 
-\vspace{0.5cm}
-
-\noindent{\bf 풀이 : }
-
-\vspace{0.5cm}
+\noindent {\bf 풀이 :}
+먼저 회로의 가운데에 있는 세 병렬저항들의 합성저항을 구하자.
+세 개의 병렬저항 $R_j$의 합성저항 $R_{eq}$는 다음과 같이 쓸 수 있다.
+\begin{align}
+  \frac{1}{R_{eq}}=\sum^{N}_{j=1}\frac{1}{R_j}.
+\end{align}
+여기서, $N=3$, $R_1=R_2=R_3=R$이므로
+\begin{align}
+  \begin{split}
+   \frac{1}{R_{eq}}&=\sum^{N}_{j=1}\frac{1}{R_j}\\
+   &=\frac{1}{R}+\frac{1}{R}+\frac{1}{R}\\
+   &=\frac{3}{R} 
+  \end{split}
+\end{align}
+이다. 따라서
+\begin{align}
+  R_{eq}=\frac{R}{3}
+\end{align}
+를 얻는다. 이제 전체 합성저항들을 구하자. 가운데 합성저항이
+양 옆의 저항과 직렬로 연결되어 있으므로 세 직렬저항 $R'_j$의 합성저항
+$R'_{eq}$는 다음과 같이 쓸 수 있다.
+\begin{align}
+  R'_{eq}=\sum^N_{j=1}R'_j.
+\end{align}
+여기서, $N=3$, $R'_1=R'_3=R$, $R'_2=R_{eq}=R/3$이므로,
+\begin{align}
+  \begin{split}
+    R'_{eq}&=R+\frac{R}{3}+R\\
+    &=\frac{7}{3}R
+  \end{split}
+\end{align}
+이다. 따라서 총 합성저항 $R'_{eq}$는
+\begin{align}
+  R'_{eq}=\frac{7}{3}R
+\end{align}
+이다.
 \end{document}
