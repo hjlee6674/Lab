@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex Quiz6_20220919"] 1663252116 "Quiz6_20220919.aux" "Quiz6_20220919.bbl" "Quiz6_20220919" 1663254138
+["bibtex Quiz6_20220919"] 1663340893 "Quiz6_20220919.aux" "Quiz6_20220919.bbl" "Quiz6_20220919" 1663341281
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Quiz6_20220919.aux" 1663254137 2315 533bc0477e4674d157aa49101d037b8a "pdflatex"
-  "Quiz6_20220919Notes.bib" 1663254137 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Quiz6_20220919.aux" 1663341279 2350 e6da0e11604edb09a75e31e92ef467c7 "pdflatex"
+  "Quiz6_20220919Notes.bib" 1663341279 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Quiz6_20220919.bbl"
   "Quiz6_20220919.blg"
-["pdflatex"] 1663254133 "/home/sigma/Lab/GP22-2/Quiz/Q5,6/Quiz6_20220919.tex" "Quiz6_20220919.pdf" "Quiz6_20220919" 1663254138
+["pdflatex"] 1663341276 "/home/sigma/Lab/GP22-2/Quiz/Q5,6/Quiz6_20220919.tex" "Quiz6_20220919.pdf" "Quiz6_20220919" 1663341281
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP22-2/Quiz/Q5,6/Quiz6_20220919.tex" 1663254132 13387 06c0dddcb5f2695746ab00a338d7c3fd ""
+  "/home/sigma/Lab/GP22-2/Quiz/Q5,6/Quiz6_20220919.tex" 1663341276 19137 f1bc7ba14bea9d9d61f471676ad7ade2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -292,9 +292,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
-  "Quiz6_20220919.aux" 1663254137 2315 533bc0477e4674d157aa49101d037b8a "pdflatex"
-  "Quiz6_20220919.bbl" 1663252117 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz6_20220919"
-  "Quiz6_20220919.tex" 1663254132 13387 06c0dddcb5f2695746ab00a338d7c3fd ""
+  "Quiz6_20220919.aux" 1663341279 2350 e6da0e11604edb09a75e31e92ef467c7 "pdflatex"
+  "Quiz6_20220919.bbl" 1663340894 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz6_20220919"
+  "Quiz6_20220919.tex" 1663341276 19137 f1bc7ba14bea9d9d61f471676ad7ade2 ""
   "defcolor.sty" 1662540819 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   "qfig6-20220919-2.png" 1662540734 159871 2daa7c846e366e3f96d95250b12e280a ""
   "qfig7-1.png" 1662540734 30527 a72cf96d00db698d54123643b9f8591d ""
