@@ -18,6 +18,7 @@
 \usepackage[utf8]{inputenc}
 %\pagestyle{fancy}
 \usepackage{tikz}
+\usepackage{pgfplots}
 \begin{document}
 
 \title{\Large 2022년 2학기 물리학 II}
@@ -63,7 +64,7 @@ $r$만큼 떨어진 곳에 생성되는 자기장 $\vec{B}$는
 
     \draw[latex-] (0,0) -- (30:1.5) node[above,left=5]{$\vec{r}$};
     \draw[] (0,0) -- (-45:1.5) node[above=10,left=12]{$R$};
-    \draw[-latex] (30:1.5) -- ++(120:0.5)node[right=2]{$d\vec{l}$};;
+    \draw[-latex] (30:1.5) -- ++(120:0.5)node[right=2]{$d\vec{l}$};
     \draw[] (0.5,0) arc(0:30:0.5) node[right=7,below=-5] {$\phi$} ;
   \end{tikzpicture}
   \caption{$xy$평면에 놓여있는 원형도선}
@@ -75,7 +76,7 @@ $r$만큼 떨어진 곳에 생성되는 자기장 $\vec{B}$는
 여기서 전류는 시계 반대 방향으로 흐른다.
 이 경우 벡터 $\vec{r}$과 $d\vec{l}$로 부터 $d\vec{l}\times \hat{\bm r}$을
 다음과 구할 수 있다.
-\begin{align}
+\begin{align}\label{eq:1-2}
   \begin{split}
     &\vec{r} = -R\cos\phi\,\hat{\bm i}-R\sin\phi\,\hat{\bm j} ,\,\,\,
     d\vec{l} = Rd\phi(-\sin\phi\,\hat{\bm i}+\cos\phi\,\hat{\bm j}) \\
@@ -118,6 +119,132 @@ $r$만큼 떨어진 곳에 생성되는 자기장 $\vec{B}$는
 
 \vspace{1cm}
 \noindent {\bf 풀이 :} 
+
+앙페르 법칙을 이용해 각 경우의 자기장을 구해보자. 앙페르 법칙은 폐곡선을 따라
+  생성되는 자기장은 폐곡선 내부의 전류에 비례한다는 법칙으로
+  \begin{align}\label{eq:2-1}
+    \int \vec{B}\cdot d \vec{l}=\mu_0 I
+  \end{align}
+  로 쓸 수 있다. 
+
+  \begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+      \draw[-latex] (-2.5,0) -- (2.5,0) node[right]{$x$};
+      \draw[-latex] (0,-2.5) -- (0,2.5) node[left]{$y$};
+
+        \draw[] (0,0) -- (20:0.5) node[left=8,above=-3]{$a$};
+        \draw[] (0,0) -- (120:2)   node[below=15,right=10]{$b$};
+        \draw[] (0,0) -- (140:2.2) node[below=15,right=18]{$c$};
+        \draw[-latex] (30:0.5) -- ++(120:0.5)node[right=2]{$d\vec{l}$};
+
+      \draw[] (0, 0) circle (0.5);
+      \draw[] (0, 0) circle (2);
+      \draw[] (0, 0) circle (2.2);
+    \end{tikzpicture}
+    \caption{반지름이 $a$인 금속막대와 안쪽 반지름 $b$, 바깥쪽 반지름이 $c$인
+    원형 금속관의 단면}
+    \label{fig:2}
+  \end{figure}
+
+\begin{itemize}
+  \item[(가)]
+  축으로부터의 거리 $r$이 $a$보다 작은 경우, 반지름이 $r$인 원형 폐곡선을 따라
+  생성되는 자기장을 구하자. 페곡선 내부의 면적 $A_{in}$에 흐르는 전류 $I_{in}$은
+  반지름이 $a$인 금속막대에 흐르는 전류 $I$와 다음의 관계가 있다.
+  \begin{align}
+    I_{in} = \frac{A_{in}}{A}I = \frac{\pi r^2}{\pi a^2}I
+    = \frac{r^2}{a^2}I.
+  \end{align}
+  식~\eqref{eq:2-1}에 의하면
+  \begin{align}
+    \int \vec{B}\cdot d \vec{l}=\mu_0 I_{in}=\mu_0 \frac{r^2}{a^2}I
+  \end{align}
+  이다. 자기장 $\vec{B}$는 직선 도선이 만드는 자기장이므로 
+  $\vec{B}$의 방향은 $d\vec{l}$과 평행하다. 따라서
+  \begin{align}
+    \int \vec{B}\cdot d \vec{l} = \left|\vec{B} \right|2\pi r
+    =\mu_0\frac{r^2}{a^2}I \Longrightarrow
+    \left|\vec{B} \right| = \frac{\mu_0 r I}{2\pi a^2}
+  \end{align}
+  를 얻는다. 자기장의 방향은 $d\vec{l}$와 일치하고 $d\vec{l}$는 각벡터 방향을
+  향하므로 자기장 $\vec{B}$는
+  \begin{align}
+    \vec{B} = \frac{\mu_0 r I}{2\pi a^2}\hat{\bm \phi}
+  \end{align}
+  이다.
+  \item[(나)]
+  $a<r<b$인 경우,  폐곡선이 반지름이 $a$인 금속막대의 단면을 모두 포함하므로
+  식~\eqref{eq:2-1}을 다음과 같이 쓸 수 있다.
+  \begin{align}
+    \int \vec{B}\cdot d \vec{l}=\left|\vec{B} \right|2\pi r=\mu_0 I
+    \Longrightarrow 
+    \left|\vec{B} \right|=\frac{\mu_0 I}{2\pi r}
+  \end{align}
+  이 경우 역시 자기장의 방향은 $d\vec{l}$와 일치하므로
+  \begin{align}\label{eq:2-2}
+    \vec{B} = \frac{\mu_0 I}{2\pi r}\hat{\bm \phi}
+  \end{align}
+  를 얻는다.
+  \item[(다)]
+  이 경우, 자기장에 중첩의 원리가 적용된다는 사실을 이용하자.
+  반지름이 $c$인 단면과 $a$인 단면에 같은 방향으로 전류가 흐르고
+  반지름이 $b$인 단면에 반대 방향으로 전류가 흐른다 하여 문제를 풀자.
+  먼저, 반지름이 $c$인 단면에 흐르는 총 전류는 원형 금속관일 때 전류가 $I$만큼 
+  흐른다는 사실로부터 전류밀도를 구하고 면적을 곱해 구할 것이다.
+  반지름이 $c$인 단면에 흐르는 면적 당 전류밀도 $J_c$는
+  \begin{align}
+    J_c = \frac{I}{\pi(c^2-b^2)}
+  \end{align}
+  이고 이 단면에 흐르는 총 전류 $I_c$는
+  \begin{align}
+    I_c = \pi c^2 J_c = \frac{c^2}{c^2-b^2}I
+  \end{align}
+  임을 알 수 있다. 반지름이 $b$인 단면에 반대 방향으로 흐르는 전류의 전류밀도
+  $J_b$는 반지름이 $c$인 단면과 겹치는 부분을 상쇄해야 하므로 반지름이 $c$인
+  단면의 전류밀도 $J_c$와 같다.
+  \begin{align}
+    J_b = J_c.
+  \end{align}
+  따라서, 반지름이 $b$인 단면에 흐르는 전류 $I_b$는
+  \begin{align}
+    I_b = \pi b^2 J_b = \frac{b^2}{c^2-b^2}I
+  \end{align}
+  이다. 우리가 구한 두 전류 $I_b$, $I_c$는 각각 반지름이 $b$, $c$인
+  원통형 금속막대에 흐르는 전류이므로 식~\eqref{eq:2-2}을 이용해 
+  각 전류에 의해 생성되는 자기장 $\vec{B_b}$, $\vec{B_c}$를 구할 수 있다.
+  \begin{align}
+    \vec{B_b} &= -\frac{\mu_0 I_b}{2\pi r}\hat{\bm \phi}
+    =-\frac{\mu_0 b^2 I}{2\pi r(c^2-b^2)}\hat{\bm \phi}
+    , \\
+    \vec{B_c} &=  \frac{\mu_0 I_c}{2\pi r}\hat{\bm \phi}
+    = \frac{\mu_0 c^2 I}{2\pi r(c^2-b^2)}\hat{\bm \phi}.
+  \end{align}
+  $\vec{B_b}$는 전류의 방향이 반대이므로 $-$부호가 붙는다. 반지름이 $a$인
+  단면에 의해 생성되는 자기장 $\vec{B_a}$는 식~\eqref{eq:2-2}이고
+  총 자기장 $\vec{B}$는 이들을 모두 합한 값이다.
+  \begin{align}
+    \begin{split}
+      \vec{B} &= \vec{B_a}+\vec{B_b}+\vec{B_c}
+      =\frac{\mu_0 I}{2\pi r}\left[1
+      -\frac{b^2 }{c^2-b^2}
+      +\frac{c^2 }{c^2-b^2}\right]\hat{\bm \phi}  \\
+      &=\frac{\mu_0 I}{\pi r}\hat{\bm \phi}.
+    \end{split}
+  \end{align}
+  $r>c$인 경우에 생성되는 자기장은 각벡터 방향이고 크기는 
+  $\frac{\mu_0 I}{\pi r}$이다.
+
+  %이 경우, 원형 금속관의 단면까지 모두 포함하므로 금속막대에 의한 자기장 
+  %$\vec{B}_1$와 원형 금속관에 의한 자기장 $\vec{B}_2$를 따로 구하자. 
+  %총 생성되는 자기장 $\vec{B}$는 중첩의 원리에 의해 각 자기장을 모두 더한 것과
+  %같다.
+  %\begin{align}
+  %  \vec{B} = \vec{B}_1+\vec{B}_2.
+  %\end{align}
+  %자기장 $\vec{B}$
+\end{itemize}
+
 \vspace{1cm}
 
 \noindent {\bf 문제 3 [30pt].}
@@ -133,6 +260,28 @@ $r$만큼 떨어진 곳에 생성되는 자기장 $\vec{B}$는
 
 \vspace{1cm}
 \noindent {\bf 풀이 :} 
+도선을 두 부분으로 나누어 각각에 의한 자기장을 생각해보자.
+먼저 도선 중심 $C$를 기준으로 왼쪽과 오른쪽에 존재하는 도선에 의한 자기장은
+도선의 미소길이 방향 $d\vec{l}$과 미소 도선부터 $C$까지의 단위벡터 $\hat{\bm r}$이
+평행하므로
+\begin{align}
+  d\vec{l}\parallel \hat{\bm r} \Longrightarrow
+  d\vec{l}\times \hat{\bm r}=0
+\end{align}
+이고 비오-사바르 법칙에 의해 자기장도 $0$이다.
+이제 원형 도선에 의한 자기장만 따져주면 되는데 윗 도선과 아랫 도선의 전류 방향이
+각각 시계 방향, 시계 반대 방향으로 반대이다. 즉, $d\vec{l}$이 반대이다. 윗 도선의
+미소길이 방향을 $d\vec{l}_{u}$, 아랫 도선의 미소길이 방향을 $d\vec{l}_{d}$라 
+하면
+\begin{align}
+  \begin{split}
+    d\vec{l}_{u} &= -Rd\phi(-\sin\phi\,\hat{\bm i}+\cos\phi\,\hat{\bm j}), \\ 
+    d\vec{l}_{d} &= Rd\phi(-\sin\phi\,\hat{\bm i}+\cos\phi\,\hat{\bm j})
+  \end{split}
+\end{align}
+이다. $R$은 두 도선으로 이루어진 원형 도선의 반지름이다. 따라서 두 도선에 의한
+자기장은 서로 크기는 같고 방향만 반대가 된다. 중첩의 원리에 의해 총 자기장은
+두 자기장을 더한 것이므로 서로 상쇄되고 총 자기장은 $\vec{0}$이다.
 \vspace{1cm}
 
 \noindent {\bf 문제 4 [50pt].}
