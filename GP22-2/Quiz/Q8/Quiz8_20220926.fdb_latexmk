@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1663762322 "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926.tex" "Quiz8_20220926.pdf" "Quiz8_20220926" 1663762325
+["pdflatex"] 1663842908 "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926.tex" "Quiz8_20220926.pdf" "Quiz8_20220926" 1663842911
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926.tex" 1663762321 12922 eec60ffce0c9c22c3f3f33d771fb2719 ""
+  "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926.tex" 1663842907 15802 b4ea6aac6ecb4cc010ba22c24de85f11 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -311,8 +311,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
-  "Quiz8_20220926.aux" 1663762324 983 5b34788a8a919486eaf3dea4b209702c "pdflatex"
-  "Quiz8_20220926.tex" 1663762321 12922 eec60ffce0c9c22c3f3f33d771fb2719 ""
+  "Quiz8_20220926.aux" 1663842910 1050 9119b242b97344b00ab8572efbf980b8 "pdflatex"
+  "Quiz8_20220926.tex" 1663842907 15802 b4ea6aac6ecb4cc010ba22c24de85f11 ""
   "defcolor.sty" 1663687525 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   "qfig10-1.png" 1663687484 53830 bf1068dbac53f16d8ef33a57c5e61043 ""
   "qfig10-3.png" 1663687482 30363 4ee4162bc53027986cc788a3c0db4e7e ""

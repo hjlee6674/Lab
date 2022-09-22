@@ -6,6 +6,10 @@
 \usepackage{bm}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
 
 \begin{document}
 \title{응집물질물리실험 예비보고서 \\
@@ -31,11 +35,55 @@ BaTiO$_3$의 상전이를 관측하는 것을 목적으로 한다. 각 시료들
 \subsection{Theory}
 \subsubsection{CaTiO$_3$, SrTiO$_3$, BaTiO$_3$}
 
+CaTiO$_3$, SrTiO$_3$, BaTiO$_3$는 페로브스카이트 구조를 가지는 정육면체 결정의 모서리에
+Ba, 면 중심에 O, 부피중심에 각각 Ca,Sr, Ti가 위치한 형태이다. 이들은 강유전성 물질이며 
+고유의 퀴리온도가 존재한다. 한가지 예시로, BaTiO$_3$의 
+퀴리온도는 408 K이다. 즉, $135~\mathrm{^\circ C}$ 이상의 온도로 BaTiO$_3$를 가열하면
+편극이 깨진다.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.3]{BaTiO.png}
+  \caption{BaTiO$_3$의 결정구조}
+  \label{fig:batio}
+\end{figure}
+
+이번 실험에서 CaTiO$_3$, SrTiO$_3$, BaTiO$_3$는 각각 다음의 과정을 거쳐 합성을 진행한다.
+\begin{align}
+  \ce{CaCO3 + TiO2  -> CaTiO3 + CO2}  \\
+  \ce{SrCO3 + TiO2  -> SrTiO3 + CO2}  \\
+  \ce{BaCO3 + TiO2  -> BaTiO3 + CO2}
+\end{align}
+각 물질의 몰질량은 TABLE~\ref{table:1}에 적어놓았다.
+
+
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.2\textwidth}>{\centering\arraybackslash}p{0.2\textwidth}}
+      \toprule
+      Compound & molar mass (g/mol) \\
+      \midrule
+      \ce{BaCO3}  & 197.34 \\
+      \ce{BaTiO3} & 233.19 \\
+      \ce{CaCO3}  & 100.09 \\
+      \ce{CaTiO3} & 135.94 \\
+      \ce{SrCO3}  & 147.63 \\
+      \ce{SrTiO3} & 183.49 \\
+      \ce{TiO2}   & 79.866 \\
+      \ce{CO2}    & 44.009 \\
+      \bottomrule
+  \end{tabular}
+  \caption{실험에 관련된 물질들의 몰질량}
+  \label{table:1}
+\end{table}
+
+ 
 \subsubsection{고상소결법}
-고상소결은 고상소결이 진행되는 공정 조건에서 모든 물질들이 고체 상태로 유지되는 공정을 의미한다.
-고상소결에서는 결정립(grain)의 변화에 의해 치밀화가 발생한다. 고상소결에서는 고체-기체 계면을
-고체-고체 계면으로 변환시켜 에너지를 낮추고 물질이동은 입계(grain boundary)에서 확산에 의해
-발생한다.
+
+소결은 금속 또는 세라믹 분말에 열을 가하여 밀도가 조절된 물질 또는 성분을 생산하는 공정 
+기술이다. 소결은 재료과학 및 공학의 기본요소 중 합성, 가공요소로 분류되고 있다.
+기본적으로 소결은 고상소결과 액상소결로 나눌 수 있다. 이번 실험에서 이용할 고상소결은
+소결 온도에 도달했을 때 전체적으로 고체 상태에서 치밀화되는 과정이다. 
 
 
 
