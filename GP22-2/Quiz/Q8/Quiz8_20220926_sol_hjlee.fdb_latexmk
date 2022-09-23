@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1663939568 "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926.tex" "Quiz8_20220926.pdf" "Quiz8_20220926" 1663939571
+["pdflatex"] 1663940169 "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926_sol_hjlee.tex" "Quiz8_20220926_sol_hjlee.pdf" "Quiz8_20220926_sol_hjlee" 1663940172
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926.tex" 1663939568 14811 11c104687dcb24bc541bf3f420f6b5a8 ""
+  "/home/sigma/Lab/GP22-2/Quiz/Q8/Quiz8_20220926_sol_hjlee.tex" 1663940144 14811 11c104687dcb24bc541bf3f420f6b5a8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -309,12 +309,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
-  "Quiz8_20220926.aux" 1663939570 1082 1bfc51832a7de0596a59ab55bad030a8 "pdflatex"
-  "Quiz8_20220926.tex" 1663939568 14811 11c104687dcb24bc541bf3f420f6b5a8 ""
+  "Quiz8_20220926_sol_hjlee.aux" 1663940171 1082 1bfc51832a7de0596a59ab55bad030a8 "pdflatex"
+  "Quiz8_20220926_sol_hjlee.tex" 1663940144 14811 11c104687dcb24bc541bf3f420f6b5a8 ""
   "defcolor.sty" 1663687525 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   "qfig10-1.png" 1663687484 53830 bf1068dbac53f16d8ef33a57c5e61043 ""
   "qfig10-3.png" 1663687482 30363 4ee4162bc53027986cc788a3c0db4e7e ""
   (generated)
-  "Quiz8_20220926.aux"
-  "Quiz8_20220926.log"
-  "Quiz8_20220926.pdf"
+  "Quiz8_20220926_sol_hjlee.aux"
+  "Quiz8_20220926_sol_hjlee.log"
+  "Quiz8_20220926_sol_hjlee.pdf"
