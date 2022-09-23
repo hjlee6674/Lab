@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.7)  22 SEP 2022 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.7)  23 SEP 2022 15:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,37 +595,70 @@ Package chemgreek Info: Activating mapping `default' on line 14.
 <BaTiO.png, id=4, 430.60875pt x 387.4475pt>
 File: BaTiO.png Graphic file (type png)
 <use BaTiO.png>
-Package pdftex.def Info: BaTiO.png  used on input line 46.
+Package pdftex.def Info: BaTiO.png  used on input line 50.
 (pdftex.def)             Requested size: 129.18361pt x 116.23514pt.
 LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <10> not available
-(Font)              Font shape `LUC/nanummj/m/sl' tried instead on input line 81.
+(Font)              Font shape `LUC/nanummj/m/sl' tried instead on input line 84.
  [1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./BaTiO.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 92.
+
+<sintering.png, id=73, 566.115pt x 386.44376pt>
+File: sintering.png Graphic file (type png)
+<use sintering.png>
+Package pdftex.def Info: sintering.png  used on input line 95.
+(pdftex.def)             Requested size: 169.8358pt x 115.93402pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+[]\OT1/cmr/m/n/10.95 Two-particle model\LUC/nanummj/m/n/10.95/c5 �\LUC/nanummj/m/n/10.95/c1 ^^\ $\LUC/nanummj/m/n/10.95/ba �\LUC/nanummj/m/n/10.95/d5 X\LUC/nanummj/m/n/10.95/b2 � \OT1/cmr/m/n/10.95 ini-tial
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 99--102
+\OT1/cmr/m/n/10.95 (ma-te-rial trans-port)\LUC/nanummj/m/n/10.95/c7 t |\LUC/nanummj/m/n/10.95/c5 �\LUC/nanummj/m/n/10.95/b0 �\LUC/nanummj/m/n/10.95/b2 �\LUC/nanummj/m/n/10.95/b3 p \LUC/nanummj/m/n/10.95/c7 t\LUC/nanummj/m/n/10.95/c5 � \LUC/nanummj/m/n/10.95/b3 ^^@\LUC/nanummj/m/n/10.95/d5 \
+ []
+
+<transport.png, id=74, 337.26pt x 479.7925pt>
+File: transport.png Graphic file (type png)
+<use transport.png>
+Package pdftex.def Info: transport.png  used on input line 105.
+(pdftex.def)             Requested size: 134.9016pt x 191.91359pt.
+<intermediate.png, id=75, 343.2825pt x 325.215pt>
+File: intermediate.png Graphic file (type png)
+<use intermediate.png>
+Package pdftex.def Info: intermediate.png  used on input line 116.
+(pdftex.def)             Requested size: 85.8204pt x 81.30354pt.
+<final.png, id=76, 294.09875pt x 330.23375pt>
+File: final.png Graphic file (type png)
+<use final.png>
+Package pdftex.def Info: final.png  used on input line 117.
+(pdftex.def)             Requested size: 73.5245pt x 82.55823pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(./STM_예비보고서_12181978_이휘재.bbl
+[2 <./sintering.png> <./transport.png> <./intermediate.png> <./final.png>] (./STM_예비보고서_12181978_이휘재.bbl
 Underfull \hbox (badness 1127) in paragraph at lines 66--74
  []\OT1/cmr/m/n/10 R. Brook, Sin-ter-ing: An overview, in \OT1/cmr/m/it/10 Con-
  []
 
-) [2] (./STM_예비보고서_12181978_이휘재.aux) ) 
+) [3] (./STM_예비보고서_12181978_이휘재.aux) ) 
 Here is how much of TeX's memory you used:
- 16942 strings out of 478287
- 334200 string characters out of 5849290
- 640524 words of memory out of 5000000
- 34764 multiletter control sequences out of 15000+600000
- 503861 words of font info for 145 fonts, out of 8000000 for 9000
+ 16985 strings out of 478287
+ 334927 string characters out of 5849290
+ 632566 words of memory out of 5000000
+ 34799 multiletter control sequences out of 15000+600000
+ 505921 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,89p,695b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on STM_예비보고서_12181978_이휘재.pdf (2 pages, 2307307 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmaf.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmca.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
+Output written on STM_예비보고서_12181978_이휘재.pdf (3 pages, 2743151 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
+ 355 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
