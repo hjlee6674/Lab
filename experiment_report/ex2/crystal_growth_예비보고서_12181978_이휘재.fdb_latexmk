@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex STM_예비보고서_12181978_이휘재"] 1664100622 "STM_예비보고서_12181978_이휘재.aux" "STM_예비보고서_12181978_이휘재.bbl" "STM_예비보고서_12181978_이휘재" 1664100628
+["bibtex crystal_growth_예비보고서_12181978_이휘재"] 1664100691 "crystal_growth_예비보고서_12181978_이휘재.aux" "crystal_growth_예비보고서_12181978_이휘재.bbl" "crystal_growth_예비보고서_12181978_이휘재" 1664100698
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "STM_예비보고서_12181978_이휘재.aux" 1664100627 3082 932a86a6df094cc3bb07ef236911ec76 "pdflatex"
-  "STM_예비보고서_12181978_이휘재Notes.bib" 1664100627 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "crystal_growth_예비보고서_12181978_이휘재.aux" 1664100697 3093 c5c949cd1c79dc7e99ede5b4d8b89af7 "pdflatex"
+  "crystal_growth_예비보고서_12181978_이휘재Notes.bib" 1664100697 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   "ref.bib" 1663827908 2295 d65927fea9865ce4320605d52245bde7 ""
   (generated)
-  "STM_예비보고서_12181978_이휘재.bbl"
-  "STM_예비보고서_12181978_이휘재.blg"
-["pdflatex"] 1664100623 "/home/sigma/Lab/experiment_report/ex2/STM_예비보고서_12181978_이휘재.tex" "STM_예비보고서_12181978_이휘재.pdf" "STM_예비보고서_12181978_이휘재" 1664100628
+  "crystal_growth_예비보고서_12181978_이휘재.bbl"
+  "crystal_growth_예비보고서_12181978_이휘재.blg"
+["pdflatex"] 1664100691 "/home/sigma/Lab/experiment_report/ex2/crystal_growth_예비보고서_12181978_이휘재.tex" "crystal_growth_예비보고서_12181978_이휘재.pdf" "crystal_growth_예비보고서_12181978_이휘재" 1664100698
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/experiment_report/ex2/STM_예비보고서_12181978_이휘재.tex" 1664100616 9308 d2c05ea31e74bdb5d45abc1c05655100 ""
+  "/home/sigma/Lab/experiment_report/ex2/crystal_growth_예비보고서_12181978_이휘재.tex" 1664100616 9308 d2c05ea31e74bdb5d45abc1c05655100 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -288,15 +288,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
   "BaTiO.png" 1663767949 63464 e4afc4bcb66d75e5e43703ac535a0441 ""
-  "STM_예비보고서_12181978_이휘재.aux" 1664100627 3082 932a86a6df094cc3bb07ef236911ec76 "pdflatex"
-  "STM_예비보고서_12181978_이휘재.bbl" 1664100623 3825 e54485beb2b686b64ea59c2f97e89ef0 "bibtex STM_예비보고서_12181978_이휘재"
-  "STM_예비보고서_12181978_이휘재.tex" 1664100616 9308 d2c05ea31e74bdb5d45abc1c05655100 ""
+  "crystal_growth_예비보고서_12181978_이휘재.aux" 1664100697 3093 c5c949cd1c79dc7e99ede5b4d8b89af7 "pdflatex"
+  "crystal_growth_예비보고서_12181978_이휘재.bbl" 1664100691 3825 e54485beb2b686b64ea59c2f97e89ef0 "bibtex crystal_growth_예비보고서_12181978_이휘재"
+  "crystal_growth_예비보고서_12181978_이휘재.tex" 1664100616 9308 d2c05ea31e74bdb5d45abc1c05655100 ""
   "final.png" 1663910503 67758 96abc129386499ae9e666a00513db13b ""
   "intermediate.png" 1663910466 78652 1f3b5f67250d1eef3589d9017377b49b ""
   "sintering.png" 1663907997 47815 3635e825e917b59653a993237871a03a ""
   "transport.png" 1663908537 27550 146b3ba2077cfc18f897a9c97f6c4ae7 ""
   (generated)
-  "STM_예비보고서_12181978_이휘재.aux"
-  "STM_예비보고서_12181978_이휘재.log"
-  "STM_예비보고서_12181978_이휘재.pdf"
-  "STM_예비보고서_12181978_이휘재Notes.bib"
+  "crystal_growth_예비보고서_12181978_이휘재.aux"
+  "crystal_growth_예비보고서_12181978_이휘재.log"
+  "crystal_growth_예비보고서_12181978_이휘재.pdf"
+  "crystal_growth_예비보고서_12181978_이휘재Notes.bib"
