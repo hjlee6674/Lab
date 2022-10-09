@@ -3,8 +3,8 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/sigma/Lab/GP22-2/Quiz/Q10/Quiz10_20221005.tex
-OUTPUT Quiz10_20221005.log
+INPUT /home/sigma/Lab/GP22-2/Quiz/Q10/Quiz10_20221005_sol_han_lee.tex
+OUTPUT Quiz10_20221005_sol_han_lee.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
@@ -365,10 +365,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Quiz10_20221005.aux
-INPUT Quiz10_20221005.aux
-INPUT Quiz10_20221005.aux
-OUTPUT Quiz10_20221005.aux
+INPUT ./Quiz10_20221005_sol_han_lee.aux
+INPUT Quiz10_20221005_sol_han_lee.aux
+INPUT Quiz10_20221005_sol_han_lee.aux
+OUTPUT Quiz10_20221005_sol_han_lee.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
@@ -497,7 +497,7 @@ INPUT ./qfig10-20221005-1.pdf
 INPUT ./qfig10-20221005-1.pdf
 INPUT qfig10-20221005-1.pdf
 INPUT ./qfig10-20221005-1.pdf
-OUTPUT Quiz10_20221005.pdf
+OUTPUT Quiz10_20221005_sol_han_lee.pdf
 INPUT ./qfig10-20221005-1.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbbb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc8.tfm
@@ -523,7 +523,7 @@ INPUT qfig10-20221005-2.pdf
 INPUT ./qfig10-20221005-2.pdf
 INPUT ./qfig10-20221005-2.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb6.tfm
-INPUT Quiz10_20221005.aux
+INPUT Quiz10_20221005_sol_han_lee.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb

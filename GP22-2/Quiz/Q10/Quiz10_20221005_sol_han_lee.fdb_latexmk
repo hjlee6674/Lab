@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1664862086 "/home/sigma/Lab/GP22-2/Quiz/Q10/Quiz10_20221005.tex" "Quiz10_20221005.pdf" "Quiz10_20221005" 1664862087
+["pdflatex"] 1664862155 "/home/sigma/Lab/GP22-2/Quiz/Q10/Quiz10_20221005_sol_han_lee.tex" "Quiz10_20221005_sol_han_lee.pdf" "Quiz10_20221005_sol_han_lee" 1664862157
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP22-2/Quiz/Q10/Quiz10_20221005.tex" 1664862085 10692 2f1fc89fa2d8fe255eaf736e74493d75 ""
+  "/home/sigma/Lab/GP22-2/Quiz/Q10/Quiz10_20221005_sol_han_lee.tex" 1664862097 10692 2f1fc89fa2d8fe255eaf736e74493d75 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -201,12 +201,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
-  "Quiz10_20221005.aux" 1664862087 777 7951e465ce8401cba6ad42e4956f4f88 "pdflatex"
-  "Quiz10_20221005.tex" 1664862085 10692 2f1fc89fa2d8fe255eaf736e74493d75 ""
+  "Quiz10_20221005_sol_han_lee.aux" 1664862156 777 7951e465ce8401cba6ad42e4956f4f88 "pdflatex"
+  "Quiz10_20221005_sol_han_lee.tex" 1664862097 10692 2f1fc89fa2d8fe255eaf736e74493d75 ""
   "defcolor.sty" 1664710379 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   "qfig10-20221005-1.pdf" 1664710302 12033 326c5721fff1b43d177d5b3ed05159b4 ""
   "qfig10-20221005-2.pdf" 1664710303 15821 d05128c0dca4a62385a6292600542520 ""
   (generated)
-  "Quiz10_20221005.aux"
-  "Quiz10_20221005.log"
-  "Quiz10_20221005.pdf"
+  "Quiz10_20221005_sol_han_lee.aux"
+  "Quiz10_20221005_sol_han_lee.log"
+  "Quiz10_20221005_sol_han_lee.pdf"

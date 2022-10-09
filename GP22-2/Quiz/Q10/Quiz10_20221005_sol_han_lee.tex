@@ -21,6 +21,14 @@
 \begin{document}
 
 \title{\Large 2022년 2학기 물리학 II}
+\author{Byeong-woo Han}
+\email{12191964@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+  \author{Hui-Jae Lee}
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
 \author{김현철\footnote{Office: 5S-436D (면담시간 매주
     수요일-16:15$\sim$19:00)}} 
 \email{hchkim@inha.ac.kr}
@@ -55,7 +63,7 @@
 전류 $I_2$가 흐르는 도선이 받는 힘이다.  전류의 방향이
 $\hat{\bm k}$이므로 도선의 길이에 대한 벡터 $\vec{L}$은
 \begin{align}
-  \vec{L} = -L~\hat{\bm k}
+  \vec{L} = L~\hat{\bm k}
 \end{align}
 이고 자기장 $\vec{B_1}$과 $\vec{B_2}$는 각각 직선 도선에 흐르는 전류 $I_1$, $I_2$에 
 의해 생성되는 자기장이므로
@@ -114,9 +122,43 @@ $\vec{F}_2$는
 A의 전류가 흐른다고 한다. 벼락으로부터 100.0 m 떨어진 산 위에서 벼락에
 의해 순간적으로 형성되는 자기장의 크기를 계산하라.
 
+\vspace{1.cm}
 \noindent {\bf 풀이 : } 
+구름과 땅 사이에 수직으로 벼락이 치는 것을 수직으로 무한히 긴 직선도선이
+있는 것으로 생각할 수 있다. 그렇다면 벼락에 의한 자기장을 앙페르 법칙으로 
+구할 수 있다. 앙페르 법칙은 다음과 같다.
+\begin{align}
+  \oint_{C} \vec{B}\cdot d\vec{l}=\mu_0 I_{enc}
+  \label{eq:2-1}
+\end{align}
+벼락과 중심을 공유하고 반지름이 $r$인 원을 앙페르 고리로 생각하자. 
+그렇다면 식~\ref{eq:2-1}의 좌변의 적분은 다음과 같다.
+\begin{align}
+  \oint_{C} \vec{B}\cdot d\vec{l}=2\pi rB
+  \label{eq:2-2}
+\end{align}
+식~\ref{eq:2-1}에서 $I_{enc}=I$ 이므로, 앙페르 법칙으로 구한 자기장의
+크기는
+\begin{align}
+  \begin{split}
+    &2\pi rB=\mu_0 I\\
+    &B=\frac{\mu_0 I}{2\pi r}
+  \end{split}
+  \label{eq:2-3}
+\end{align}
+이다. 여기서 $r=100.0~\mathrm{m}$, $I=1.00\times 10^4~\mathrm{A}$,
+$\mu_0\approx 1.256\times 10^{−6}~\mathrm{N\cdot A^{-2}}$이므로,
+\begin{align}
+  \begin{split}
+    B&=\frac{\mu_0 I}{2\pi r}\\
+    &=\frac{1.256\times 10^{−6}~\mathrm{N\cdot A^{-2}} \times 1.00\times 10^4~\mathrm{A}}{2\pi \times 100.0~\mathrm{m}}\\
+    &=0.200~\mathrm{T}
+  \end{split}
+  \label{eq:2-4}
+\end{align}
+이다.
 
-\vspace{1cm}
+\vspace{1.cm}
 
 \noindent {\bf 문제 3 [50pt]:}
 반지름이 6.00 cm인 원형 회로의 면에 수직으로 통과하는 균일한 자기장이
@@ -124,7 +166,47 @@ A의 전류가 흐른다고 한다. 벼락으로부터 100.0 m 떨어진 산 위
 회로에 유도되는 기전력을 구하여라.
 
 \noindent {\bf 풀이 : } 
-\vspace{1cm}
+폐회로를 지나는 자기장이 일정한 비율로 변할 때, 회로의 유도되는 기전력은
+패러데이 법칙으로 구할 수 있다. 패러데이법칙은 다음과 같다.
+\begin{align}
+  \mathcal{E} =-\frac{d\Phi_B}{dt}
+  \label{eq:3-1}
+\end{align}
+여기서 $\Phi_B$는 자기선속이다.
+반지름이 $r$인 원형회로를 통과하는 균일한 자기장 $B$가 있을 때,
+자기선속 $\Phi_B$는 다음과 같다.
+\begin{align}
+  \Phi_B=\pi r^2 B
+  \label{eq:3-2}
+\end{align}
+
+그런데 자기장이 시간 $t$동안 일정한 비율로 변하므로 $dB/dt$는
+상수이고, 원형 회로의 넓이가 바뀌지 않으므로 자기선속의 변화량 
+${d\Phi_B}/{dt}$는
+\begin{align}
+  \frac{d\Phi_B}{dt}&=\pi r^2 \,\frac{dB}{dt}\cr
+  &=\pi r^2\, \frac{\Delta B}{\Delta t}
+  \label{eq:3-3}
+\end{align}
+따라서, 유도되는 기전력은
+\begin{align}
+  \mathcal{E}=-\pi r^2\, \frac{\Delta B}{\Delta t}
+  \label{eq:3-4}
+\end{align}
+이다. $\Delta B=0~\mathrm{T}-5.30~\mathrm{T}=-5.30~\mathrm{T}$이고,
+$\Delta t=0.0100~\mathrm{s}$, $r=6.00~\mathrm{cm}=0.06~\mathrm{m}$이므로
+기전력을 구하면,
+\begin{align}
+  \begin{split}
+    \mathcal{E}&=-\pi r^2\, \frac{\Delta B}{\Delta t}\\
+    &=\pi (0.06~\mathrm{m})^2\, \frac{5.30~\mathrm{T}}{0.0100~\mathrm{s}}\\
+    &\approx 5.99~\mathrm{V}
+    \end{split}
+  \label{eq:3-5}
+\end{align}
+이다.
+
+\vspace{1.cm}
 
 \noindent {\bf 문제 4 [50pt]:}
 각 변의 길이가 $2.00$ m인 정사각형 고리 전류가
