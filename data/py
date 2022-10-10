@@ -1,0 +1,20 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+
+# import csv
+folderPath = r'/home/sigma/Lab/data' # 폴더 경로
+attributeTable = 'Sr.csv' # 파일 이름
+os.chdir(folderPath)
+df = pd.read_csv(attributeTable)
+df = df[['Angle', 'Intensity']]
+
+
+# plot
+plt.figure(figsize=(15, 8))
+plt.rcParams.update({'font.size': 22})
+ax = df.set_index('Angle')['Intensity'].plot(kind='line', marker='d')
+ax.set_ylabel("Intensity")
+ax.set_xlabel("Angle")
+plt.show()
