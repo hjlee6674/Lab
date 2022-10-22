@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: STM_예비보고서_12181978_이휘재.aux
 The style file: apsrev4-2.bst
@@ -26,45 +26,45 @@ Control: production of article title (0) allowed
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-You've used 3 entries,
+You've used 4 entries,
             6079 wiz_defined-function locations,
-            1642 strings with 15302 characters,
-and the built_in function-call counts, 2008 in all, are:
-= -- 90
-> -- 42
-< -- 39
-+ -- 16
-- -- 26
-* -- 284
-:= -- 170
-add.period$ -- 1
-call.type$ -- 3
-change.case$ -- 5
-chr.to.int$ -- 13
-cite$ -- 3
-duplicate$ -- 234
-empty$ -- 90
-format.name$ -- 15
-if$ -- 334
+            1649 strings with 15521 characters,
+and the built_in function-call counts, 3122 in all, are:
+= -- 169
+> -- 75
+< -- 44
++ -- 26
+- -- 34
+* -- 459
+:= -- 274
+add.period$ -- 2
+call.type$ -- 4
+change.case$ -- 10
+chr.to.int$ -- 14
+cite$ -- 4
+duplicate$ -- 339
+empty$ -- 169
+format.name$ -- 34
+if$ -- 561
 int.to.chr$ -- 1
-int.to.str$ -- 10
-missing$ -- 43
-newline$ -- 55
-num.names$ -- 3
-pop$ -- 110
+int.to.str$ -- 11
+missing$ -- 59
+newline$ -- 58
+num.names$ -- 6
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 10
 quote$ -- 0
-skip$ -- 77
+skip$ -- 123
 stack$ -- 0
-substring$ -- 25
-swap$ -- 199
-text.length$ -- 3
+substring$ -- 38
+swap$ -- 299
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 26
+type$ -- 41
 warning$ -- 1
-while$ -- 13
+while$ -- 15
 width$ -- 0
-write$ -- 61
+write$ -- 70
 (There was 1 warning)

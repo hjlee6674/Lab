@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1665398142 "/home/sigma/Lab/GP22-2/Quiz/T1/Quiz10_20221005_sol_han_lee.tex" "Quiz10_20221005_sol_han_lee.pdf" "Quiz10_20221005_sol_han_lee" 1665398142
+["pdflatex"] 1665484584 "/home/sigma/Lab/GP22-2/Quiz/T1/Quiz10_20221005_sol_han_lee.tex" "Quiz10_20221005_sol_han_lee.pdf" "Quiz10_20221005_sol_han_lee" 1665484587
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP22-2/Quiz/T1/Quiz10_20221005_sol_han_lee.tex" 1665398139 11350 aa1e0c8d9ecef3c948356dfe11c1da4d ""
+  "/home/sigma/Lab/GP22-2/Quiz/T1/Quiz10_20221005_sol_han_lee.tex" 1665484586 16061 2e43a2b4f6fdb6662852e29d94ffad7c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -104,6 +104,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1248133631 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
@@ -218,8 +219,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
-  "Quiz10_20221005_sol_han_lee.aux" 1665398142 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "Quiz10_20221005_sol_han_lee.tex" 1665398139 11350 aa1e0c8d9ecef3c948356dfe11c1da4d ""
+  "Quiz10_20221005_sol_han_lee.aux" 1665484585 295 0a420501bbee842e775ea2ac3c18374b "pdflatex"
+  "Quiz10_20221005_sol_han_lee.tex" 1665484586 16061 2e43a2b4f6fdb6662852e29d94ffad7c ""
   "defcolor.sty" 1665308809 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
   "Quiz10_20221005_sol_han_lee.aux"
