@@ -1,0 +1,33 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# import csv
+folderPath = r'/home/sigma/Lab/data' # 폴더 경로
+attributeTable = 'note.csv' # 파일 이름
+os.chdir(folderPath)
+df = pd.read_csv(attributeTable)
+dg = df[['Temperature', 'Capacity']]
+dh = df[['Temperature', 'Displacement']]
+print(dg)
+#+df = df[['Angle', 'Intensity']]
+
+# plot
+plt.figure(figsize=(15, 8))
+plt.rcParams.update({'font.size': 22})
+ax = dg.set_index('Temperature')['Capacity'].plot(kind='line', marker='d')
+ax.set_ylabel("Capacity")
+ax.set_xlabel("Temperature")
+
+ay=ax.twinx()
+ay = dh.set_index('Temperature')['Displacement'].plot(color='green', kind='line', marker='d')
+ay.set_ylabel("Displacement")
+ay.set_xlabel("Temperature")
+plt.show()
+
+#ax = df.set_index('Tempertature')['Capacity'].plot(kind='line', marker='d')
+#ay = df.set_index('Tempertature')['D'].plot(kind='line', marker='d')
+#ax.set_ylabel("Capacity")
+#ay.set_ylabel("D")
+#ax.set_xlabel("Temperature")
+#plt.show()

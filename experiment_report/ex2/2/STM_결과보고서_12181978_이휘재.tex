@@ -1,4 +1,4 @@
-\documentclass[aps,reprint,superscriptaddress,11pt]{revtex4-2}
+\documentclass[aps,reprint,superscriptaddress,10pt]{revtex4-2}
 \usepackage{kotex}
 \usepackage[HWP]{dhucs-interword}
 \usepackage[dvips]{color}
@@ -7,6 +7,12 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{natbib}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{setspace}
+\setstretch{1.4}
 
 
 
@@ -21,22 +27,368 @@ Structure transition of BaTiO3}
 \date{\today}
 
 \begin{abstract}
-
+  X-ray diffraction을 이용하여 각 시료의 격자 상수를 구하고 격자 구조를 추정하였다.
 \end{abstract}
 
 \maketitle
 
-
-
 \section{Process}
+\subsection{X-ray Diffraction}
+\begin{itemize}
+  \item[1. ] Ba, Sr, Ca를 각자 다른 사발에 넣고 모든 사발에 TiO$_3$를 몰 수에 맞춰 넣은 후
+  30분 가량 동안 갈아준다. 
+  \item[2. ] 충분히 갈아진 시료들을 캡슐에 담아 퍼니스에 넣어 $800~\mathrm{^\circ C}$ 이상의
+  온도로 24시간 이상 가열한다.
+  \item[3. ] 위의 과정을 3번 반복하여 최대한 많은 물질을 반응시킨다.
+  \item[4. ] 반응시킨 시료를 인하대학교 표준분석연구원에 의뢰하여  X-ray Diffraction 
+  데이터를 얻는다.
+\end{itemize}
 
-
-
+\subsection{Structure Transition of BaTiO$_3$}
+\begin{itemize}
+  \item[1. ] 준비된 기기에 온도계와 RLC미터를 연결한다.
+  \item[2. ] 준비된 기기를 핫플레이트에 올려 가열시킬 준비를 한다.
+  \item[3. ] 온도에 따른 커패시턴스와 전기변위장의 변화를 측정한다.
+\end{itemize}
 \section{Result}
+\subsection{X-ray Diffraction}
+X-ray diffraction은 인하대학교 표준분석연구원에 의뢰를 맡겨 진행하였으며
+실험에 사용된 X-ray의 파장은 1.54~$\mathrm{\AA}$이다.
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+\subsubsection{CaTiO$_3$}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.18]{Ca.png}
+  \caption{CaTiO$_3$의 XRD 패턴}
+  \label{fig:Ca}
+
+\end{figure}
 
 
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+\subsubsection{SrTiO$_3$}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.18]{Sr.png}
+  \caption{SrTiO$_3$의 XRD 패턴}
+  \label{fig:Sr}
+
+\end{figure}
+
+
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+\subsubsection{BaTiO$_3$}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.18]{Ba.png}
+  \caption{BaTiO$_3$의 XRD 패턴}
+  \label{fig:Ba}
+
+\end{figure}
+
+
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+\subsection{Structure Transition of BaTiO$_3$}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.2]{CD.png}
+  \caption{BaTiO$_3$의 온도에 따른 상전이에 의한 $C_p$와 $D$의 변화}
+  \label{fig:CD}
+\end{figure}
+
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\newpage
 \section{Analysis}
+\subsection{X-ray Diffraction}
+X-ray diffraction의 이론적인 값으로부터 각 물질의 격자 상수를 계산할 수 있다.
+FIG~\ref{fig:Ca1}, FIG~\ref{fig:Sr1}, FIG~\ref{fig:Ba1}의 peak 위에 기입된
+세개의 숫자는 Miller index로 격자 상수를 계산하는데 쓰인다. Miller index가 
+$h,k,l$로 주어졌다면 Bragg 법칙과 면간 거리 $d$에 대한 식을 다음과 같이 쓸 수 있다.
+\begin{align}
+  \label{eq:1} d_{hkl} &= \frac{\lambda}{2\sin\theta},\,\,\,  \\
+  \label{eq:2} \frac{1}{d_{hkl}^2} &=\left(\frac{h}{a}\right)^2
+  +\left(\frac{k}{b}\right)^2+\left(\frac{l}{c}\right)^2.
+\end{align}
+a, b, c는 격자 상수이다.
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\newpage
+\subsubsection{CaTiO$_3$}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.5]{Ca1.png}
+  \caption{CaTiO$_3$의 이론 상 XRD 패턴}
+  \label{fig:Ca1}
+\end{figure}
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}
+      \toprule
+      Miller index& Angle($^\circ$) & Intensity \\
+      \midrule
+      (101)&23.24 &2285 \\
+      (121)&33.11 &12048 \\
+      (202)&47.50 &5664 \\
+      (123)&59.29 &2638\\
+      (242)&69.48 &1445\\
+      (161)&79.13 &798 \\
+      \bottomrule
+  \end{tabular}
+  \caption{FIG.~\ref{fig:Ca1}에서 볼 수 있는 밀러 index와 그 angle에 따른
+  FIG.~\ref{fig:Ca}에서의 intensity. }\label{table:1}
+\end{table}
 
+\vspace{0.1cm}
+
+
+Peak가 확실하게 보이는 (121), (202), (123)을 택하여 식~\eqref{eq:1}을 이용해 
+$d_{hkl}$를 구하면 다음과 같다(TABLE~\ref{table:1-1}).
+
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}
+      \toprule
+      $d_{hkl}$& Value($\mathrm{\AA}$) \\
+      \midrule
+      $d_{121}$&1.410 \\
+      $d_{202}$&1.044 \\
+      $d_{123}$&0.8956 \\
+      \bottomrule
+  \end{tabular}
+  \caption{CaTiO$_3$의 $d_{hkl}$.}\label{table:1-1}
+\end{table}
+
+이 값을 식~\eqref{eq:2}에 대입하여 격자 상수 $a,b,c$를 구할 수 있다(TABLE~\ref{table:1-2}).
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}
+      \toprule
+      $a,b,c$& Value \\
+      \midrule
+      $a$&5.42872\\
+      $b$&7.6394\\
+      $c$&5.3867\\
+      \bottomrule
+  \end{tabular}
+  \caption{CaTiO$_3$의 격자 상수 $a,b,c$.}\label{table:1-2}
+\end{table}
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\newpage
+\subsubsection{SrTiO$_3$}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.3]{Sr1.png}
+  \caption{SrTiO$_3$의 이론 상 XRD 패턴}
+  \label{fig:Sr1}
+\end{figure}
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}      \toprule
+      Miller index & Angle($^\circ$) & Intensity \\
+      \midrule
+      (110)& 32.43 &18974 \\
+      (111)& 39.97 &4729 \\
+      (200)& 46.50 &7229 \\
+      (211)& 57.79 &5705 \\
+      (220)& 67.83 &3477 \\
+      (311)& 77.23 &2379 \\
+      \bottomrule
+  \end{tabular}
+  \caption{FIG.~\ref{fig:Sr1}에서 볼 수 있는 밀러 index와 그 angle에 따른
+  FIG.~\ref{fig:Sr}에서의 intensity. }\label{table:2}
+\end{table}
+
+Peak가 확실하게 보이는 (110), (111), (200)을 택하여 식~\eqref{eq:1}을 이용해 
+$d_{hkl}$를 구하면 다음과 같다(TABLE~\ref{table:2-1}).
+
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}
+      \toprule
+      $d_{hkl}$& Value($\mathrm{\AA}$) \\
+      \midrule
+      $d_{110}$&1.410 \\
+      $d_{111}$&1.044 \\
+      $d_{200}$&0.8956 \\
+      \bottomrule
+  \end{tabular}
+  \caption{SrTiO$_3$의 $d_{hkl}$.}\label{table:2-1}
+\end{table}
+
+이 값을 식~\eqref{eq:2}에 대입하여 격자 상수 $a,b,c$를 구할 수 있다(TABLE~\ref{table:2-2}).
+
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}
+      \toprule
+      $a,b,c$& Value \\
+      \midrule
+      $a$&3.90126\\
+      $b$&3.89801\\
+      $c$&3.90741\\
+      \bottomrule
+  \end{tabular}
+  \caption{SrTiO$_3$의 격자 상수 $a,b,c$.}\label{table:2-2}
+\end{table}
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+\newpage
+\subsubsection{BaTiO$_3$}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.25]{Ba1.png}
+  \caption{BaTiO$_3$의 이론 상 XRD 패턴}
+  \label{fig:Ba1}
+\end{figure}
+
+
+  \begin{table}[htp]
+    \centering
+    \begin{tabular}{>{\centering}p{0.12\textwidth}
+      >{\centering}p{0.12\textwidth}
+      >{\centering\arraybackslash}p{0.12\textwidth}} 
+      \toprule
+      Miller index & Angle($^\circ$) & Intensity \\
+      \midrule
+      (100)& 22.13 &3865 \\
+      (101)& 31.51 &19735 \\
+      (111)& 38.86 &5886 \\
+      (200)& 45.22 &3701 \\
+      (210)& 50.89 &1303 \\
+      (211)& 56.19 &4752 \\
+      (202)& 65.88 &2130 \\
+      (212)& 70.40 &665 \\
+      (310)& 75.05 &1164 \\
+      (311)& 79.38 &661 \\
+      \bottomrule
+  \end{tabular}
+  \caption{FIG.~\ref{fig:Ba1}에서 볼 수 있는 밀러 index와 그 angle에 따른
+  FIG.~\ref{fig:Ba}에서의 intensity. }\label{table:3}
+\end{table}
+
+Peak가 확실하게 보이는 (100), (101), (111)을 택하여 식~\eqref{eq:1}을 이용해 
+$d_{hkl}$를 구하면 다음과 같다(TABLE~\ref{table:3-1}).
+
+
+
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}
+      \toprule
+      $d_{hkl}$& Value($\mathrm{\AA}$) \\
+      \midrule
+      $d_{100}$&1.410 \\
+      $d_{101}$&1.044 \\
+      $d_{111}$&0.8956 \\
+      \bottomrule
+  \end{tabular}
+  \caption{BaTiO$_3$의 $d_{hkl}$.}\label{table:3-1}
+\end{table}
+
+이 값을 식~\eqref{eq:2}에 대입하여 격자 상수 $a,b,c$를 구할 수 있다(TABLE~\ref{table:3-2}).
+
+\begin{table}[htp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}}
+      \toprule
+      $a,b,c$& Value \\
+      \midrule
+      $a$&4.01204\\
+      $b$&4.00663\\
+      $c$&4.00893\\
+      \bottomrule
+  \end{tabular}
+  \caption{BaTiO$_3$의 격자 상수 $a,b,c$.}\label{table:3-2}
+\end{table}
+\newpage
+
+X-ray diffracion으로 알아낸 각 시료의 격자 상수와 각 시료의 이론적 격자 상수를
+비교하여 각 시료의 구조를 알아낼 수 있다. 격자 상수의 오차는 다음과 
+같다(TABLE~\ref{table:result}).
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{>{\centering}p{0.12\textwidth}
+    >{\centering}p{0.12\textwidth}
+    >{\centering\arraybackslash}p{0.12\textwidth}} 
+    \toprule
+    $a,b,c$(CaTiO$_3$) & 이론값 & 상대오차(\%) \\
+    \midrule
+    $a$& 5.51 & 1.48 \\
+    $b$& 7.69 & 0.658 \\
+    $c$& 5.41 & 0.431 \\
+    \bottomrule
+\end{tabular}
+
+\begin{tabular}{>{\centering}p{0.12\textwidth}
+  >{\centering}p{0.12\textwidth}
+  >{\centering\arraybackslash}p{0.12\textwidth}} 
+  \toprule
+  $a,b,c$(SrTiO$_3$) & 이론값 & 상대오차(\%) \\
+  \midrule
+  $a$& 3.95 & 1.23 \\
+  $b$& 3.95 & 1.32 \\
+  $c$& 3.95 & 1.08 \\
+  \bottomrule
+\end{tabular}
+
+\begin{tabular}{>{\centering}p{0.12\textwidth}
+  >{\centering}p{0.12\textwidth}
+  >{\centering\arraybackslash}p{0.12\textwidth}} 
+  \toprule
+  $a,b,c$(BaTiO$_3$) & 이론값 & 상대오차(\%) \\
+  \midrule
+  $a$& 4.20 & 4.48 \\
+  $b$& 4.00 & -0.166 \\
+  $c$& 4.00 & -0.223 \\
+  \bottomrule
+\end{tabular}
+\caption{CaTiO$_3$, SrTiO$_3$, BaTiO$_3$의 격자 상수 $a,b,c$의
+이론값과 상대오차.}\label{table:result}
+\end{table}
+이로 부터 각 시료의 구조를 알 수 있는데 CaTiO$_3$는 orthorhombic,
+SrTiO$_3$는 cubic, BaTiO$_3$는 tetragonal이다.
+
+
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+\subsection{Structure Transition of BaTiO$_3$}
 
 
 
@@ -47,7 +399,7 @@ Structure transition of BaTiO3}
 
 
 \nocite{*}
-\bibliography{ref_}
+\bibliography{ref}
 
 
 

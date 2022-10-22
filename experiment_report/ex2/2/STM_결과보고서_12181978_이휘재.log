@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.7)  22 OCT 2022 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.7)  23 OCT 2022 00:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -69,9 +69,9 @@ Class revtex4-2 Info: RevTeX society APS selected on input line 40.
 Class revtex4-2 Warning: No journal specified, using default pra.
 
 Class revtex4-2 Info: APS journal PRA selected on input line 7661.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps11pt4-2.rtx
-File: aps11pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentation)
-Class revtex4-2 Info: RevTeX pointsize 11pt selected on input line 39.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
+File: aps10pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentation)
+Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
 ) (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
@@ -453,78 +453,255 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@expandcount=\count301
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 13.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 13.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 13.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 13.
+))) (/usr/share/texlive/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+ (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box78
-) (./STM_결과보고서_12181978_이휘재.aux)
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count303
+\calc@Bcount=\count304
+\calc@Adimen=\dimen257
+\calc@Bdimen=\dimen258
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count305
+\calc@Cskip=\skip57
+) (/usr/share/texlive/texmf-dist/tex/latex/chemgreek/chemgreek.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
+\l__chemgreek_tmpa_int=\count306
+\g__chemgreek_tmpa_int=\count307
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count308
+\__mhchem_arrow_extPgfLength_skip=\skip58
+\mhchem@minispace@tmp=\skip59
+\mhchem@minibackspace@tmp=\skip60
+\mhchem@bondwidth=\skip61
+\mhchem@bondheight=\skip62
+\mhchem@smallbondwidth@tmpA=\skip63
+\mhchem@smallbondwidth@tmpB=\skip64
+\mhchem@smallbondwidth=\skip65
+\mhchem@bondtmp@minussidebearingleft=\skip66
+\mhchem@bondtmp@minussidebearingright=\skip67
+\l__mhchem_option_version_int=\count309
+\mhchem@option@minusmathsidebearingleft=\dimen259
+\mhchem@option@minusmathsidebearingright=\dimen260
+\mhchem@option@minustextsidebearingleft=\dimen261
+\mhchem@option@minustextsidebearingright=\dimen262
+
+
+Package mhchem Warning: You did not specify a 'version' option for the mhchem
+(mhchem)                package. Please write \usepackage[version=4]{mhchem}
+(mhchem)                in your preamble (or any lower number for
+(mhchem)                compatibility mode), because you might get slightly
+(mhchem)                different output with the same input in future versions.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen263
+\lightrulewidth=\dimen264
+\cmidrulewidth=\dimen265
+\belowrulesep=\dimen266
+\belowbottomsep=\dimen267
+\aboverulesep=\dimen268
+\abovetopsep=\dimen269
+\cmidrulesep=\dimen270
+\cmidrulekern=\dimen271
+\defaultaddspace=\dimen272
+\@cmidla=\count310
+\@cmidlb=\count311
+\@aboverulesep=\dimen273
+\@belowrulesep=\dimen274
+\@thisruleclass=\count312
+\@lastruleclass=\count313
+\@thisrulewidth=\dimen275
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count314
+\multirow@dima=\skip69
+\bigstrutjot=\dimen276
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen277
+\ar@mcellbox=\box79
+\extrarowheight=\dimen278
+\NC@list=\toks41
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box80
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+Class revtex4-2 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 19.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 19.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 19.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 19.
+ (./STM_결과보고서_12181978_이휘재.aux)
 \openout1 = `STM_결과보고서_12181978_이휘재.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 13.
-LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 19.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 19.
  (/usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    ... okay on input line 19.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen257
-\scratchbox=\box79
-\nofMPsegments=\count304
-\nofMParguments=\count305
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen258
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count315
+\scratchdimen=\dimen279
+\scratchbox=\box81
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen280
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+
+Package chemgreek Info: Activating mapping `default' on line 19.
+
 \openout3 = `STM_결과보고서_12181978_이휘재Notes.bib'.
 
 
-No file STM_결과보고서_12181978_이휘재.bbl.
+
+LaTeX Warning: Command \r invalid in math mode on input line 56.
+
+<Ca.png, id=4, 1084.05pt x 578.16pt>
+File: Ca.png Graphic file (type png)
+<use Ca.png>
+Package pdftex.def Info: Ca.png  used on input line 64.
+(pdftex.def)             Requested size: 195.12057pt x 104.0643pt.
+<Sr.png, id=6, 1084.05pt x 578.16pt>
+File: Sr.png Graphic file (type png)
+<use Sr.png>
+Package pdftex.def Info: Sr.png  used on input line 78.
+(pdftex.def)             Requested size: 195.12057pt x 104.0643pt.
+<Ba.png, id=7, 1084.05pt x 578.16pt>
+File: Ba.png Graphic file (type png)
+<use Ba.png>
+Package pdftex.def Info: Ba.png  used on input line 93.
+(pdftex.def)             Requested size: 195.12057pt x 104.0643pt.
+<CD.png, id=8, 1084.05pt x 578.16pt>
+File: CD.png Graphic file (type png)
+<use CD.png>
+Package pdftex.def Info: CD.png  used on input line 107.
+(pdftex.def)             Requested size: 216.80615pt x 115.62994pt.
 [1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./STM_결과보고서_12181978_이휘재.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Ca.png> <./Sr.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 119.
+
+<Ca1.png, id=71, 381.425pt x 305.14pt>
+File: Ca1.png Graphic file (type png)
+<use Ca1.png>
+Package pdftex.def Info: Ca1.png  used on input line 138.
+(pdftex.def)             Requested size: 190.71202pt x 152.56961pt.
+
+LaTeX Warning: Command \r invalid in math mode on input line 173.
+
+[2 <./Ba.png> <./CD.png> <./Ca1.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 202.
+
+<Sr1.png, id=84, 658.46pt x 573.14125pt>
+File: Sr1.png Graphic file (type png)
+<use Sr1.png>
+Package pdftex.def Info: Sr1.png  used on input line 206.
+(pdftex.def)             Requested size: 197.53952pt x 171.9437pt.
+
+LaTeX Warning: Command \r invalid in math mode on input line 237.
+
+<Ba1.png, id=85, 853.1875pt x 655.44875pt>
+File: Ba1.png Graphic file (type png)
+<use Ba1.png>
+Package pdftex.def Info: Ba1.png  used on input line 271.
+(pdftex.def)             Requested size: 213.29636pt x 163.86179pt.
+
+Underfull \hbox (badness 1454) in paragraph at lines 301--303
+\LUC/nanummj/m/n/10/c5 � \LUC/nanummj/m/n/10/c2 � []\LUC/nanummj/m/n/10/c7 D t\LUC/nanummj/m/n/10/c6 �\LUC/nanummj/m/n/10/d5 t $\OML/cmm/m/it/10 d[]$\LUC/nanummj/m/n/10/b9 | \LUC/nanummj/m/n/10/ad l\LUC/nanummj/m/n/10/d5 X\LUC/nanummj/m/n/10/ba t \LUC/nanummj/m/n/10/b2 �\LUC/nanummj/m/n/10/c7 L\LUC/nanummj/m/n/10/ac � ^^Y\LUC/nanummj/m/n/10/b2 �\OT1/cmr/m/n/10 (TA-
+ []
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 311.
+
+[3 <./Sr1.png> <./Ba1.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 338.
+
+
+Overfull \hbox (3.86041pt too wide) in paragraph at lines 349--349
+ []|$\OML/cmm/m/it/10 a; b; c$\OT1/cmr/m/n/10 (CaTiO$[]$)| 
+ []
+
+
+Overfull \hbox (1.11041pt too wide) in paragraph at lines 361--361
+ []|$\OML/cmm/m/it/10 a; b; c$\OT1/cmr/m/n/10 (SrTiO$[]$)| 
+ []
+
+
+Overfull \hbox (3.72154pt too wide) in paragraph at lines 373--373
+ []|$\OML/cmm/m/it/10 a; b; c$\OT1/cmr/m/n/10 (BaTiO$[]$)| 
+ []
+
+(./STM_결과보고서_12181978_이휘재.bbl
+LaTeX Font Info:    Trying to load font information for LUC+uhcmj on input line 80.
+ (/usr/share/texlive/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+File: lucuhcmj.fd 2013/09/26 UHC Myeongjo font definitions
+)
+Missing character: There is no ^^R in font uwmj22!
+
+Underfull \hbox (badness 5161) in paragraph at lines 92--97
+ []\OT1/cmr/m/n/9 M. Biglar, M. Gro-mada, F. STA-CHOW-ICZ, and
+ []
+
+) [4] [5] (./STM_결과보고서_12181978_이휘재.aux) ) 
 Here is how much of TeX's memory you used:
- 15310 strings out of 478287
- 298293 string characters out of 5849290
- 572983 words of memory out of 5000000
- 33204 multiletter control sequences out of 15000+600000
- 485870 words of font info for 84 fonts, out of 8000000 for 9000
+ 16838 strings out of 478287
+ 330811 string characters out of 5849290
+ 639228 words of memory out of 5000000
+ 34647 multiletter control sequences out of 15000+600000
+ 501076 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,89p,697b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd5.pfb>
-Output written on STM_결과보고서_12181978_이휘재.pdf (1 page, 471699 bytes).
+ 84i,13n,89p,1392b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb>
+Output written on STM_결과보고서_12181978_이휘재.pdf (5 pages, 2508422 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 355 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

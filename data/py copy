@@ -1,0 +1,20 @@
+import numpy as np
+january_data = weather_data_sorted[weather_data_sorted.date_TimeEST < np.datetime64('2016-01-03')]
+fig, temp_ax = plt.subplots()
+fig.set_size_inches(14, 8)
+humidity_ax = temp_ax.twinx()
+temp_ax.set_title("Hourly Temperature in NYC")
+temp_ax.set_xlabel("Date & Time")
+temp_ax.set_ylabel("Temperature (ºF)")
+
+major_locator = AutoDateLocator()
+formatter = ConciseDateFormatter(major_locator)
+humidity_ax.xaxis.set_major_formatter(formatter)
+temp_ax.xaxis.set_major_formatter(formatter)
+
+temp_lines = temp_ax.plot(january_data.date_TimeEST, january_data.TemperatureF, 'r')
+humidity_lines = humidity_ax.plot(january_data.date_TimeEST, january_data.Humidity, 'c')
+
+all_lines = temp_lines + humidity_lines
+
+temp_ax.legend(all_lines, ["Temperature", "Humidity"])

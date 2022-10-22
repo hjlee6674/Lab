@@ -1,9 +1,9 @@
-PWD /home/sigma/Lab/experiment_report/ex2
+PWD /home/sigma/Lab/experiment_report/ex2/1
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/sigma/Lab/experiment_report/ex2/crystal_growth_예비보고서_12181978_이휘재.tex
+INPUT /home/sigma/Lab/experiment_report/ex2/1/crystal_growth_예비보고서_12181978_이휘재.tex
 OUTPUT crystal_growth_예비보고서_12181978_이휘재.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
