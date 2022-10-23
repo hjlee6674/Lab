@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{2}%
+\begin{thebibliography}{4}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -73,4 +73,17 @@
   shadow of the supermassive black hole},\ }\href@noop {} {\bibfield  {journal}
   {\bibinfo  {journal} {Astrophysical Journal Letters}\ }\textbf {\bibinfo
   {volume} {875}} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reddy}()}]{nasa1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Reddy}},\ }\href@noop {} {\bibinfo {title} {Nasa visualization shows a black
+  holes warped world}},\ \bibinfo {howpublished}
+  {\url{https://www.nasa.gov/feature/goddard/2019/nasa-visualization-shows-a-black-hole-s-warped-world}}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Schnittman}()}]{nasa2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Schnittman}},\ }\href@noop {} {\bibinfo {title} {Black hole accretion disk
+  visualization}},\ \bibinfo {howpublished}
+  {\url{https://svs.gsfc.nasa.gov/13326}}\BibitemShut {NoStop}%
 \end{thebibliography}%

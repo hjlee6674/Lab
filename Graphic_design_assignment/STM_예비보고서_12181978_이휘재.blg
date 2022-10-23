@@ -26,45 +26,47 @@ Control: production of article title (0) allowed
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-You've used 4 entries,
+Warning--empty year in nasa1
+Warning--empty year in nasa2
+You've used 6 entries,
             6079 wiz_defined-function locations,
-            1649 strings with 15521 characters,
-and the built_in function-call counts, 3122 in all, are:
-= -- 169
-> -- 75
-< -- 44
-+ -- 26
-- -- 34
-* -- 459
-:= -- 274
-add.period$ -- 2
-call.type$ -- 4
-change.case$ -- 10
-chr.to.int$ -- 14
-cite$ -- 4
-duplicate$ -- 339
-empty$ -- 169
-format.name$ -- 34
-if$ -- 561
+            1657 strings with 15788 characters,
+and the built_in function-call counts, 4248 in all, are:
+= -- 257
+> -- 91
+< -- 48
++ -- 34
+- -- 38
+* -- 613
+:= -- 414
+add.period$ -- 4
+call.type$ -- 6
+change.case$ -- 20
+chr.to.int$ -- 16
+cite$ -- 8
+duplicate$ -- 449
+empty$ -- 255
+format.name$ -- 44
+if$ -- 769
 int.to.chr$ -- 1
-int.to.str$ -- 11
-missing$ -- 59
-newline$ -- 58
-num.names$ -- 6
-pop$ -- 154
+int.to.str$ -- 13
+missing$ -- 69
+newline$ -- 64
+num.names$ -- 12
+pop$ -- 204
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 18
 quote$ -- 0
-skip$ -- 123
+skip$ -- 165
 stack$ -- 0
-substring$ -- 38
-swap$ -- 299
-text.length$ -- 7
+substring$ -- 62
+swap$ -- 383
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 41
-warning$ -- 1
-while$ -- 15
+type$ -- 65
+warning$ -- 3
+while$ -- 19
 width$ -- 0
-write$ -- 70
-(There was 1 warning)
+write$ -- 84
+(There were 3 warnings)
