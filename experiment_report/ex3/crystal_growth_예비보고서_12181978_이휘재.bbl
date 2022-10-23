@@ -50,6 +50,20 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Jaeger}(1987)}]{10.5555/31823}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~C.}\ \bibnamefont
+  {Jaeger}},\ }\href@noop {} {\emph {\bibinfo {title} {Introduction to
+  Microelectronic Fabrication}}}\ (\bibinfo  {publisher} {Addison-Wesley
+  Longman Publishing Co., Inc.},\ \bibinfo {address} {USA},\ \bibinfo {year}
+  {1987})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Neamen}(2003)}]{neamen2003semiconductor}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Neamen}},\ }\href {https://books.google.co.kr/books?id=TPE9AQAAIAAJ} {\emph
+  {\bibinfo {title} {Semiconductor Physics And Devices}}},\ McGraw-Hill Series
+  in Electrical and Computer Engineering\ (\bibinfo  {publisher} {McGraw-Hill
+  Education},\ \bibinfo {year} {2003})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kittel}\ \emph {et~al.}(1996)\citenamefont {Kittel},
   \citenamefont {McEuen},\ and\ \citenamefont
   {McEuen}}]{kittel1996introduction}%
@@ -60,24 +74,4 @@
   }\href@noop {} {\emph {\bibinfo {title} {Introduction to solid state
   physics}}},\ Vol.~\bibinfo {volume} {8}\ (\bibinfo  {publisher} {wiley New
   York},\ \bibinfo {year} {1996})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Brook}(1991)}]{BROOK1991438}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Brook}},\ }\bibfield  {title} {\bibinfo {title} {Sintering: An overview},\
-  }in\ \href
-  {https://doi.org/https://doi.org/10.1016/B978-0-08-034720-2.50121-0} {\emph
-  {\bibinfo {booktitle} {Concise Encyclopedia of Advanced Ceramic
-  Materials}}},\ \bibinfo {editor} {edited by\ \bibinfo {editor} {\bibfnamefont
-  {R.}~\bibnamefont {BROOK}}}\ (\bibinfo  {publisher} {Pergamon},\ \bibinfo
-  {address} {Oxford},\ \bibinfo {year} {1991})\ pp.\ \bibinfo {pages}
-  {438--440}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kang}(2005)}]{KANG2005xi}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.-J.~L.}\
-  \bibnamefont {Kang}},\ }\bibfield  {title} {\bibinfo {title} {Preface},\ }in\
-  \href {https://doi.org/https://doi.org/10.1016/B978-075066385-4/50000-5}
-  {\emph {\bibinfo {booktitle} {Sintering}}},\ \bibinfo {editor} {edited by\
-  \bibinfo {editor} {\bibfnamefont {S.-J.~L.}\ \bibnamefont {Kang}}}\ (\bibinfo
-   {publisher} {Butterworth-Heinemann},\ \bibinfo {address} {Oxford},\ \bibinfo
-  {year} {2005})\ pp.\ \bibinfo {pages} {xi--xii}\BibitemShut {NoStop}%
 \end{thebibliography}%

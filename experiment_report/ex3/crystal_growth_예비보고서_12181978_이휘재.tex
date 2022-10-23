@@ -1,4 +1,4 @@
-\documentclass[aps,reprint,superscriptaddress,11pt]{revtex4-2}
+\documentclass[aps,reprint,superscriptaddress,10pt]{revtex4-2}
 \usepackage{kotex}
 \usepackage[HWP]{dhucs-interword}
 \usepackage[dvips]{color}
@@ -10,11 +10,11 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage{tikz}
 
 \begin{document}
 \title{응집물질물리실험 예비보고서 \\
-\small 실험주제 : Crystal Growth \& X-ray diffraction,
-Structure transition of BaTiO3}
+\small 실험주제 : Photo lithography}
 
 \author{HuiJae-Lee}\email{hjlee6674@inha.edu}
 \affiliation{Physics Department, Inha University}
@@ -23,188 +23,260 @@ Structure transition of BaTiO3}
 
 
 \begin{abstract}
-이번 실험은 X-ray diffraction을 이용하여 CaTiO$_3$, SrTiO$_3$, BaTiO$_3$를 관측하고
-BaTiO$_3$의 상전이를 관측하는 것을 목적으로 한다. 각 시료들은 고상소결법을 통해 제작한다.
+Photo lithography 공정을 직접 진행해보고 공정의 과정과
+photo mask, photoresist, etching, depostion 등 공정에 필요한 요소들을 알아본다.
  \end{abstract}
  
  \maketitle
  
 \section[Introduction]{Introduction}
-CaTiO$_3$, SrTiO$_3$, BaTiO$_3$는 강유전성을 가진 물질이며 그 특정한 구조를 일컬어 
-페로브스카이트(perovskite) 구조를 가지는 물질이다. 이런 강유전성 물질들은 현대 시대에 
-축전기의 역할을 하는 물질로써 주목받고 있다. 이번 실험에서는 고상소결법을 통해 다른 물질로
-부터 위 세 페로브스카이트 물질을 제조하여 X-ray diffraction으로 그 분자구조를 관찰하고
-BaTiO$_3$의 유전체적 특징을 분석한다.
-\section[Experiment]{Experiment}
-\subsection{Theory}
-\subsubsection{CaTiO$_3$, SrTiO$_3$, BaTiO$_3$}
-
-CaTiO$_3$, SrTiO$_3$, BaTiO$_3$는 페로브스카이트 구조를 가지는 정육면체 결정의 모서리에
-Ba, 면 중심에 O, 부피중심에 각각 Ca,Sr, Ti가 위치한 형태이다. 이들은 강유전성 물질이며 
-고유의 퀴리온도가 존재한다. 한가지 예시로, BaTiO$_3$의 
-퀴리온도는 408 K이다. 즉, $135~\mathrm{^\circ C}$ 이상의 온도로 BaTiO$_3$를 가열하면
-편극이 깨진다.
-
+Photo lithography는 반도체의 실제 회로를 만드는 과정이다.
+반도체의 표면에 감광액을 바르고 자외선을 조사하여 감광액에 화학적 변화를 일으킨다.
+이 때 조사하는 자외선은 포토마스크로 걸러지는데 이 포토마스크는 회로 패턴에 맞게
+자외선을 걸러낸다. 포토마스크의 패턴에 맞게 자외선에 조사되어 감광액에 변화가 일어나면
+더이상 필요하지 않은 감광액을 제거하여 반도체의 표면에 회로 패턴을 새기는 과정으로
+진행한다(FIG.~\ref{fig:1}).
 \begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.3]{BaTiO.png}
-  \caption{BaTiO$_3$의 결정구조}
-  \label{fig:batio}
-\end{figure}
-
-이번 실험에서 CaTiO$_3$, SrTiO$_3$, BaTiO$_3$는 각각 다음의 과정을 거쳐 합성을 진행한다.
-\begin{align}
-  \ce{CaCO3 + TiO2  -> CaTiO3 + CO2}  \\
-  \ce{SrCO3 + TiO2  -> SrTiO3 + CO2}  \\
-  \ce{BaCO3 + TiO2  -> BaTiO3 + CO2}
-\end{align}
-각 물질의 몰질량은 TABLE~\ref{table:1}에 적어놓았다.
-
-
-\begin{table}[htp]
-  \centering
-  \begin{tabular}{>{\centering}p{0.2\textwidth}>{\centering\arraybackslash}p{0.2\textwidth}}
-      \toprule
-      Compound & molar mass (g/mol) \\
-      \midrule
-      \ce{BaCO3}  & 197.34 \\
-      \ce{BaTiO3} & 233.19 \\
-      \ce{CaCO3}  & 100.09 \\
-      \ce{CaTiO3} & 135.94 \\
-      \ce{SrCO3}  & 147.63 \\
-      \ce{SrTiO3} & 183.49 \\
-      \ce{TiO2}   & 79.866 \\
-      \ce{CO2}    & 44.009 \\
-      \bottomrule
-  \end{tabular}
-  \caption{실험에 관련된 물질들의 몰질량}\label{table:1}
-\end{table}
-
- 
-\subsubsection{고상소결법}
-
-소결은 금속 또는 세라믹 분말에 열을 가하여 밀도가 조절된 물질 또는 성분을 생산하는 공정 
-기술이다. 소결은 재료과학 및 공학의 기본요소 중 합성, 가공요소로 분류되고 있다.
-기본적으로 소결은 고상소결과 액상소결로 나눌 수 있다. 이번 실험에서 이용할 고상소결은
-소결 온도에 도달했을 때 전체적으로 고체 상태에서 치밀화되는 과정이다. 고상소결법은 
-진행 시간에 따라 크게 세 stage로 나눌 수 있는데, 순서대로 initial stage, intermediate stage,
-final stage로 부른다(FIG.~\ref{fig:sintering}).
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=0.3]{sintering.png}
-  \caption{고상소결 과정}\label{fig:sintering}
-\end{figure}
-
-Two-particle model에서 설명하는 initial stage는 입자 사이에 neck을 형성하는 과정이다.
-neck이 형성되어 두 입자가 연결되면 물질 수송(material transport)이 일어나는데 이에 대한
-많은 메카니즘이 알려져 있다(FIG.~\ref{fig:transport}).
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=0.4]{transport.png}
-  \caption{두 입자 사이에 형성된 neck과 물질 수송 메카니즘}\label{fig:transport}
-\end{figure}
-
-intermediate stage에서는 모든 입자의 가장자리를 따라 실린더 모양의 기공이 형성된다. 
-이후 입자가 성장하면서 final stage에 도달하면 실린더 모양의 기공이 단절되고 각 꼭짓점에 
-격리된 기공이 남는다(FIG.~\ref{fig:inter}). 
-
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=0.25]{intermediate.png}
-  \includegraphics[scale=0.25]{final.png}
-  \caption{기공이 형성된 기하학적 모델. 왼쪽부터 순서대로 intermediate stage,
-  final stage에 형성되는 모델이다.}\label{fig:inter}
-\end{figure}
-
-
-
- \subsubsection{X-ray diffraction}
-X-ray diffraction는 결정 구조를 해석하는 방법 중 하나로, 브래그 법칙을 이론적인
-토대로 이용한다. 결정에 X선을 입사시키면 X선의 일부는 투과하고 일부는 산란되는데
-산란되는 X선은 결정 구조의 규칙성에 관한 정보를 포함한다. 규칙적으로 배열된 결정에
-입사각 $\frac{\pi}{2}-\theta$로 입사하는 X선을 고려해보자(FIG~\ref{fig:bragg}).
-브래그 법칙은 입사선과 평면 사이 각도 $\theta$, 결정면 사이 간격 $d$, X선의 파장 
-$\lambda$ 사이 관계를 보여준다.
-\begin{align}
-  2d\sin{\theta} = n\lambda
-\end{align}
-$n$은 정수이다.
-
-\begin{figure}[htbp]
-  \centering
-
   \begin{tikzpicture}
-    
-  \def \d {1.5}; %직선 사이 거리
-  \def \x {4}; %parameter 1
-  \def \y {2.5}; %점 사이 간격
-  \def \t {0}; %parameter 2
+    \def \d {1.2};
+  \node[draw, shape=rectangle](A) at (0,0)     {Cleaning};
+  \node[draw, shape=rectangle](B) at (0,-\d)   {Deposit barrier layer};
+  \node[draw, shape=rectangle](C) at (0,-2*\d) {Coat with photoresist};
+  \node[draw, shape=rectangle](D) at (0,-3*\d) {Soft bake};
+  \node[draw, shape=rectangle](E) at (0,-4*\d) {Align masks};
+  \node[draw, shape=rectangle](F) at (0,-5*\d) {Expose pattern};
+  \node[draw, shape=rectangle](G) at (0,-6*\d) {Develop photoresist};
+  \node[draw, shape=rectangle](H) at (0,-7*\d) {Hard bake};
+  \node[draw, shape=rectangle](I) at (0,-8*\d) {Etch windows in barrier layer};
+  \node[draw, shape=rectangle](J) at (0,-9*\d) {Remove photoresist};
 
-  \draw (-4, \d/2) -- (4, \d/2);
-  \draw (-4,-\d/2) -- (4,-\d/2);
-  \draw (0,-\d/2)--(\x,  \x*\d/\y-\d/2); %C to B
-  \draw (-\y,\d/2)--(\t,\d/\y*\t+3*\d/2);
-  \draw (0,-\d/2)--(-\x, \x*\d/\y-\d/2); %C to A
-
-  \node[shape=circle,fill=black,scale=0.6] at (-\y, \d/2) {};
-  \draw (-\y, \d/2) node[above=3]{$A$};
-  \coordinate (A) at (-\y, \d/2);
-  \node[shape=circle,fill=black,scale=0.6] at ( 0, \d/2) {};
-  \node[shape=circle,fill=black,scale=0.6] at ( \y, \d/2) {};
-  \draw ( \y, \d/2) node[above=3]{$B$};
-  \coordinate (B) at ( \y, \d/2); 
-  \node[shape=circle,fill=black,scale=0.6] at (-\y,-\d/2) {};
-  \node[shape=circle,fill=black,scale=0.6] at ( 0,-\d/2) {};
-  \draw ( 0,-\d/2) node[below=3]{$C$};
-  \coordinate (C) at ( 0,-\d/2); 
-  \node[shape=circle,fill=black,scale=0.6] at ( \y,-\d/2) {};
-  \draw[latex-latex] (A) -- (-\y,-\d/2) node[left=5,above=15] {$d$};
-  \draw[]  (-\y+0.5, \d/2) arc(0: atan(\d/\y):0.5) 
-  node[below=1,right=1.5]{$\theta$};
-  \draw[]     ( 0.5,-\d/2)    arc(0: atan(\d/\y):0.5) 
-  node[below=1,right=1.5]{$\theta$};
-  \draw[] (-\y+0.5, \d/2) arc(0:-atan(\d/\y):0.5) 
-  node[above=1,right=1.5]{$\theta$};
-
+  \draw[->, thick] (A) -- (B);
+  \draw[->, thick] (B) -- (C);
+  \draw[->, thick] (C) -- (D);
+  \draw[->, thick] (D) -- (E);
+  \draw[->, thick] (E) -- (F);
+  \draw[->, thick] (F) -- (G);
+  \draw[->, thick] (G) -- (H);
+  \draw[->, thick] (H) -- (I);
+  \draw[->, thick] (I) -- (J);
   \end{tikzpicture}
-  \caption{결정에 입사하는 X선에 대한 브래그 법칙}
-  \label{fig:bragg}
+  \caption{Photo lithography 순서도}
+  \label{fig:1}
 \end{figure}
+
+\section{Experiment}
+
+\subsection{Theory}
+\subsubsection{Cleaning}
+회로의 제작은 특정한 비저항을 가지는 웨이퍼 위에서 이루어진다. 웨이퍼는 미립자 수준의
+작은 물질과 물질의 흔적을 제거하기 위해 화학적으로 세척된다. 이 때 불산 용액을 사용하며
+웨이퍼 표면 위의 산화물을 모두 제거한다. 탈이온수 또한 사용하는데 이는 불산이 제거하지 못한
+물질들을 제거한다(FIG.~\ref{fig:a}).
+\subsubsection{Barrier layer formation}
+\begin{figure}[htbp]
+  \centering
+\includegraphics[scale=0.4]{a.png}
+
+  \caption{SiO$_2$ 증착}
+  \label{fig:a}
+\end{figure}
+
+Cleaning 과정 이후에 웨이퍼는 barrier layer로 덮인다. 이 때 주로 SiO$_2$ 혹은 Si$_3$N$_4$를 이용한다.
+
+\subsubsection{Photoresist application}
+\begin{figure}[htbp]
+  \centering
+\includegraphics[scale=0.4]{b.png}
+
+  \caption{감광 물질은 SiO$_2$ layer 위에 코팅된다.}
+  \label{fig:b}
+\end{figure}
+SiO$_2$ layer가 구성되면 웨이퍼는 다시 감광 물질로 덮인다. 감광 물질이 잘 부착되기 위해서는
+표면이 깨끗하고 건조해야 하지만 이 감광 물질이 잘 붙지 않는 문제가 흔히 발생한다. 이를 해결하기
+위해, 접착력을 높여주는 물질로 HMDS를 이용한다. 감광 물질은 주로 액체이기 때문에 웨이퍼를 진공에서
+고속으로 회전시켜 감광 물질을 접착시킨다(FIG.~\ref{fig:b}). 
+
+\subsubsection{Soft baking}
+Soft baking은 감광 물질의 접착력을 높이고 접착되지 않은 감광 물질을 제거하기 위한 건조 과정이다.
+5~30분 동안 60~100$^\circ$C의 온도에서 진행한다.
+
+\subsubsection{Align masks}
+Photo mask에는 복잡한 패턴이 새겨져 있어 이를 웨이퍼에 옮기는 과정을 거쳐야 한다. Photo mask가 정확한
+위치에 패턴을 옮겨야 하므로 mask들의 위치를 정렬하는 과정을 거친다.
+
+\subsubsection{Photoresist exposure and development}
+
+\begin{figure}[htbp]
+\includegraphics[scale=0.4]{c.png}
+\caption{웨이퍼에 옮겨야할 패턴이 mask에 새겨져 있으며 감광 물질의 종류에 따라 mask에 패턴이 새겨진
+ 방식이 달라진다.}
+\label{fig:c}
+\end{figure}
+
+Mask를 정렬했다면 감광 물질들은 mask를 통해 강한 자외선에 노출된다. 감광 물질들이 자외선에 노출된 부분들은
+SiO$_2$가 추후에 제거될 부분들이다. 자외선에 노출된 감광 물질들은 아래층에 존재하는 SiO$_2$가 노출되도록
+씻겨 내려간다. 이렇게 씻겨 내려가는 감광 물질을 positive resist라고 부르며 이 종류의 감광 물질을 사용할 때
+mask는 웨이퍼의 표면에 남아 있어야 할 패턴을 포함한다(FIG.~\ref{fig:d}). 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.4]{d.png}
+  \caption{Positive photoresist의 경우 자외선에 노출된 부분이 씻겨진다.}
+    \label{fig:d}
+  \end{figure}
+이와 반대로 작용하는 negative resist는 자외선에 
+노출되지 않은 부분이 씻겨 내려가며 이 종류의 감광 물질을 사용할 때 mask는 웨이퍼의 표면에서 제거되어야 할
+패턴을 포함한다. Negative resist는 IC 회로를 구성하는데 주로 사용되며 positive resist는 비교적 작은 스케일의
+구조를 다루기에 적함하다(FIG.~\ref{fig:pattern}).
+
+
+\begin{figure}[htbp]
+  \centering
+\includegraphics[scale=0.5]{pattern.png}
+
+  \caption{Positive resist와 negative resist를 사용할 때 패턴을 새기는 과정}
+  \label{fig:pattern}
+\end{figure}
+
+\subsubsection{Hard baking}
+자외선에 감광 물질을 조사하고 SiO$_2$ layer를 노출시켰으면 감광 물질을 더 단단하게 하고
+웨이퍼에 대한 접착력을 향상시키기 위해 다시 한번 건조, 가열 과정을 거친다.
+20~30분 동안 120~180$^\circ$C의 온도에서 진행한다.
+
+\subsubsection{Etch windows in barrier layer}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.4]{e.png}
+  \caption{Etching을 통해 노출된 SiO$_2$는 제거된다.}
+    \label{fig:e}
+  \end{figure}
+
+Etching은 감광 물질에 덮여있지 않은 부분의 SiO$_2$을 깎아내는 과정으로 wet chemical etching과  
+dry plasma etching이 있다(FIG.~\ref{fig:e}).
+\begin{itemize}
+  \item[A. ] Wet chemical etching은 웨이퍼를 용액에 담그는 방식으로 플루오린화 수소산(HF)가 포함된
+  용액을 사용한다. 실온에서 플루오린화 수소산이 감광 물질이나 웨이퍼를 깎는 속도보다 SiO$_2$를 깎는 속도가
+  더 빠르다는 점이 이용한다. 물질을 깎는 비율이 온도에 의존하기 때문에 온도를 세밀하게 관리해야 한다.
+  Wet chemical etching의 단점 중 하나는 모든 방향에서 동등하게 etching이 진행된다는 것이다.
+  이는 패턴의 선폭이 감광 물질의 두께와 유사한 길이일 때 중대한 문제가 될 수 있다(FIG.~\ref{fig:wet}).
+
+  \begin{figure}[htbp]
+    \centering
+  \includegraphics[scale=0.5]{wet.png}
+    \caption{Wet chemical etching에 의한 etching은 감광 물질이 씻겨나간 부분보다 더 많은 SiO$_2$를
+    깎을 수도 있으며 이는 중대한 문제가 될 수 있다.}
+    \label{fig:wet}
+  \end{figure}
+  
+
+  \item[B. ] Dry plasma etching은 적은 양의 반응 가스만을 필요로 하는 방법으로 플라즈마를 이용한다.
+  Wet chemical etching과 달리 undercutting이 발생하는 문제를 피할 수 있다.
+  
+  
+\end{itemize}
+
+\subsubsection{Remove photoresist}
+감광 물질은 감광 물질의 접착력을 잃도록 하는 액체를 이용하여 제거한다(FIG.~\ref{fig:f}).
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.4]{f.png}
+  \caption{Ecthing 이후 감광 물질을 제거한 모습}
+    \label{fig:f}
+  \end{figure}
+
+  \subsection{Depostion}
+  Deposition은 다양한 금속을 웨이퍼의 표면에 얇게 쌓는 과정이다.
+  \subsubsection{Sputtering}
+  Sputtering은 목표지점에 이온을 강하게 충돌시켜 depositoin하는 방법이다. 주로 Ar$^+$가 쓰인다.
+  이번 실험에서는 구리 이온을 이용한다.
+  이온은 충돌하며 deposition이 발생하는 물질로 운반된다. Sputtering으로 deposition하기 위해
+  넘어야 할 threshold energy가 존재하여 입사시키는 이온의 energy를 이 값보다 크게 해야 한다.
+  \subsubsection{Chemical vapor deposition}
+  Chemical Vapor Deposition(CVD)은 기체 화합물의 반응이나 열을 이용해 표면에 얇게 쌓는 방법이다.
+  CVD reactor는 여러 종류가 있으며 APCVD, LPCVD, PECVD가 대표적이다(FIG.~\ref{fig:CVD}). 
+  APCVD(Atmospheric Pressure CVD)는 
+  silicon dioxide passivation의 deposition에 사용되며 반응 기체의 높은 흐름율을 필요로 한다.
+  LPCVD(Low-Pressure CVD)는 
+  높은 온도와 낮은 압력을 필요로 하며 polysilicon, silicon dioxide, 
+  silicon nitride의 deposition에 사용된다. 
+  PECVD(Plasma-Enhanced CVD)는 plasma를 이용해 낮은 온도에서도
+  반응이 일어나도록 한다.
+
+  \begin{figure}[htbp]
+    \centering
+  \includegraphics[scale=0.5]{APCVD.png}
+    \caption{APCVD reactor}
+    \vspace{0.5cm}
+  \includegraphics[scale=0.5]{LPCVD.png}
+    \caption{LPCVD reactor}
+    \vspace{0.5cm}
+    \includegraphics[scale=0.5]{PECVD.png}
+    \caption{PECVD reactor}
+
+
+    \label{fig:CVD}
+  \end{figure}
+
+
+
 \subsection{Experimental Methods}
-\subsubsection{Crystal growth}
 \begin{itemize}
-  \item[1. ] 시료들을 중량하여 사발에 담고 막자를 이용해 30분 가량 갈아준다.
-  \item[2. ] 충분히 갈아진 시료들을 캡슐에 담아 퍼니스에 넣는다.
-  \item[3. ] 퍼니스에서 $800~\mathrm{^\circ C}$ 이상의 온도로 24시간 가량 시료를 가열시킨다.
-  \item[4. ] 가열이 끝나면 식히기 위해 4시간 이상 대기한 후 퍼니스를 개방한다. 
-  이 때 퍼니스는 개방한 상태로 2시간 더 식혀준다.
-  \item[5. ] 위 2$\sim$4의 과정을 반복하여 반응하지 않은 물질이 없도록 한다. 
-\end{itemize}
-\subsubsection{X-ray diffraction}
-\begin{itemize}
-  \item[1. ] 제작된 시료를 인하대학교 표준분석연구원에 의뢰한다. 예약은 일주일 전에 미리 
-  하도록 한다.
-  \item[2. ] 측정 데이터를 분석한다.
-\end{itemize}
-\subsubsection{Structure transition of \ce{BaTiO3} }
-\begin{itemize}
-  \item[1. ] 여분의 \ce{BaTiO3}를 이용하여 다음 과정을 따라 펠릿을 제작한다.
+  \item[1. ]
+  먼저 실험에 필요한 장비들을 아세톤과 알코올로 세척한다. 세척 후 블로워를 이용하여 건조시킨다.
+  이번 실험의 장비 세척을 실험 결과에 많은 영향을 미치므로 보다 세심하게 세척해야 한다.
+  \item[2. ]
+  웨이퍼에 감광 물질을 도포한다. 도포 과정은 스핀 코터를 이용하여 진행한다. 감광 물질은 자외선에
+  반응하기 때문에 옐로우룸에서 진행한다. 
   \begin{itemize}
-    \item [(1)] \ce{BaTiO3}가루를 펠릿 틀 안에 넣고 공기를 빼서 평평하게 편다.
-    \item [(2)] 펠릿 틀을 유압프레스에 넣어 1 t의 무게로 압축한다.
-    \item [(3)] 30분 가량 압축 후 퍼니스에서 가열한다.
+    \item[a. ]  스핀 코터는 1000RPM 부터 4000RPM까지 1000 단위로 
+    높여가면서 진행하며 각 RPM에 대한 RamP와 Time 값은 모두 10으로 설정한다. 
+    \item[b. ] 스핀 코터를 위 조건으로 세팅하고 Vacuum 버튼을 눌러 웨이퍼를 고정시킨다.
+    \item[c. ] 웨이퍼가 고정되면 스포이드를 이용하여 감광 물질 도포를 시작한다. 이 때 기포가 발생하지 않도록
+    주의해야하며 도포 이후에도 옐로우룸 밖에서 자외선이 들어오지 않도록 한다.
   \end{itemize}
-  \item[2. ] 에나멜선의 한쪽 피복을 제거해 펠릿에 위치시키고 sliver paste를 바른 후 30분 이상 건조시킨다.
-  \item[3. ] sliver paste 위에 silver epoxy를 넘치지 않도록 바른다.
-  \item[4. ] sliver가 굳도록 $100~\mathrm{^\circ C}$ 이상의 온도로 30분 이상 가열시킨다.
-  \item[5. ] 펠릿에 뒷면에도 같은 방법으로 에나멜선을 연결한다.
-  \item[6. ] 핫플레이트 위에 실리콘 액체가 담긴 비커를 두고 온도계를 바닥에서 띄워서 고정시킨다.
-  \item[7. ] 에나멜선을 LCR미터에 연결하여 온도에 따른 캐패시턴스와 전기변위장을 측정한다.
-  \item[8. ] 다른 진동수 값에서도 실험을 반복하고 USB를 이용해 데이터를 추출한다.
+  \item[3. ]
+  웨이퍼를 소프트 베이킹한다. 베이킹 온도는 130{$^\circ$}C이다.
+  \item[4. ]
+  웨이퍼에 자외선을 노광한다.
+  \begin{itemize}
+    \item[a. ]
+    UV 노광 장비의 본체, UV 램프, 노광 장비 순으로 전원을 인가한다. 
+    컴퓨터의 프로그램을 켜면 UV 램프의 전원을 킬 수 있다. 전원을 킨 후
+    3.5 ~ 3.7A로 안정될 때 까지 대기한다. 안정화가 완료되면 stable 표시가 화면에 나타난다.
+    \item[b. ]
+    Mask Holder Lock 버튼을 눌러 잠금을 해제하고 마스크를 넣는다. 마스크를 고정하기 위해 
+    Mask Vacuum 버튼을 눌러야 한다.
+    \item[c. ]
+    Sample stage에 웨이퍼를 올린다. 웨이퍼를 고정하기 위해 Sample Vacuum 버튼을 눌러야 한다.
+    \item[d. ]
+    Aligner 위 아래쪽에서 $x$, $y$, $z$축 rotation을 조정할 수 있다. 이는 마스크의 위치를
+    조절하는데 사용한다.
+    \item[e. ]
+    준비가 끝나면 position을 exposure로 바꾸어주고 exposure 버튼을 눌러 노광을 진행한다.
+    노광이 끝나면 Sample Vacuum을 해제하고 웨이퍼를 꺼낸다.
+  \end{itemize}
+  \item[5. ]
+  노광이 끝나면 현상액으로 웨이퍼를 현상한다. 현상이 끝나면 증류수로 현상액을 제거하고 블로워로
+  건조시킨다.
+  \item[6. ]
+  웨이퍼를 하드 베이킹하여 밀착력을 높인다.
+  \item[7. ]
+  하드 베이킹이 끝나면 금속을 증착시킨다. 사용되는 금속은 구리이며 증착기를 이용한다.
+  \begin{itemize}
+    \item[a. ]
+    증착기 위에 웨이퍼를 올리고 테이프로 고정한 후 증착기에 전원을 인가한다.
+    \item[b. ]
+    Cycle 버튼을 눌러 증착기를 작동시키면 금속 플레이트가 웨이퍼 위에 쌓인다. 
+    Cycle 버튼이 2번 깜박이면 버튼을 두번 눌러서 증착기를 껐다 킨다. 
+    \item[c. ]
+    증착이 완료되면 전원을 끄고 진공이 풀린 후에 웨이퍼를 꺼낸다.
+  \end{itemize}
+  \item[8. ]
+  박리 과정을 진행하여 감광 물질을 걷어낸다. 박리는 웨이퍼를 아세톤에 5분 가량 담구어 진행한다.
 \end{itemize}
+
 \nocite{*} 
 \bibliography{ref}
 
