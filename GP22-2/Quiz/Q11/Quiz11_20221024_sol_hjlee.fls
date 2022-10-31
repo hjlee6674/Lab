@@ -3,8 +3,8 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/sigma/Lab/GP22-2/Quiz/Q11/Quiz11_20221024.tex
-OUTPUT Quiz11_20221024.log
+INPUT /home/sigma/Lab/GP22-2/Quiz/Q11/Quiz11_20221024_sol_hjlee.tex
+OUTPUT Quiz11_20221024_sol_hjlee.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
@@ -365,10 +365,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Quiz11_20221024.aux
-INPUT Quiz11_20221024.aux
-INPUT Quiz11_20221024.aux
-OUTPUT Quiz11_20221024.aux
+INPUT ./Quiz11_20221024_sol_hjlee.aux
+INPUT Quiz11_20221024_sol_hjlee.aux
+INPUT Quiz11_20221024_sol_hjlee.aux
+OUTPUT Quiz11_20221024_sol_hjlee.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
@@ -500,7 +500,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbc.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc4.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd0.tfm
-OUTPUT Quiz11_20221024.pdf
+OUTPUT Quiz11_20221024_sol_hjlee.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd1.tfm
 INPUT ./qfig11-20221024-1.pdf
@@ -517,7 +517,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmaf.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc0.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmce.tfm
-INPUT Quiz11_20221024.aux
+INPUT Quiz11_20221024_sol_hjlee.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
