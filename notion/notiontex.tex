@@ -169,4 +169,42 @@
     -\frac12\sqrt{3}&\frac12  \\
   \end{pmatrix}
 \end{align*}
-\end{document}
+
+\begin{align*}
+  U(t) &= \left<\mathbf{x}\left|e^{-i(\mathbf{p}^2/2m)t}
+  \right| \mathbf{x_0}\right> \\
+  &=\int \frac{d^3p}{(2\pi)^3}\left<\mathbf{x}\left|e^{-i(\mathbf{p}^2/2m)t}
+  \right| \mathbf{p}\right>\left<\mathbf{p}|\mathbf{x_0}\right> \\
+  &=\frac{1}{(2\pi)^3}\int d^3p e^{-i(\mathbf{p}^2/2m)t}\cdot
+  e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{x_0})} \\
+  &=\left(\frac{m}{2\pi it}\right)^{\frac{3}{2}}
+  e^{im(\mathbf{x}-\mathbf{x_0}^2)/2t}.
+\end{align*}
+
+\begin{align*}
+  U(t) &= \left<\mathbf{x}\left|e^{-it\sqrt{\mathbf{p}^2+m^2}}
+  \right| \mathbf{x_0}\right> \\
+  &=\frac{1}{(2\pi)^3}\int d^3p e^{-it\sqrt{\mathbf{p}^2+m^2}}\cdot
+  e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{x_0})} \\
+  &=\frac{1}{2\pi^2|\mathbf{x}-\mathbf{x_0}|}
+  \int^\infty_0dp\,p\,\sin(p|\mathbf{x}-\mathbf{x_0}|)e^{-it\sqrt{p^2+m^2}}
+\end{align*}
+\begin{align}
+  \lim_{\delta z\rightarrow 0}\frac{\delta f}{\delta z}
+  =\lim_{\delta y\rightarrow 0}\frac{\delta u+i\delta v}{i\delta y}
+  =-i\frac{\partial u}{\partial y}+\frac{\partial v}{\partial y}
+\end{align}
+\begin{align}
+  \lim_{\delta z\rightarrow 0}\frac{\delta f}{\delta z}
+  =\lim_{\delta x\rightarrow 0}\frac{\delta u+i\delta v}{\delta x}
+  =\frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}
+\end{align}
+\begin{align}
+  \int_{z_1}^{z_2}f(z)\,dz = \int_{x_1,y_1}^{x_2,y_2}[u(x,y)+iv(x,y)][dx+idy]
+  =\int_{x_1,y_1}^{x_2,y_2}[u(x,y)dx-v(x,y)dy]
+  +i\int_{x_1,y_1}^{x_2,y_2}[v(x,y)dx+u(x,y)dy]
+\end{align}
+\begin{align}
+  \oint_C f(z)\,dz=0.
+\end{align}
+\end{document} 
