@@ -4,16 +4,16 @@ import os
 
 # import csv
 folderPath = r'/home/sigma/Lab/data' # 폴더 경로
-attributeTable = 'Halleffect_p.csv' # 파일 이름
+attributeTable = 'Halleffect-R_p.csv' # 파일 이름
 os.chdir(folderPath)
 df = pd.read_csv(attributeTable)
-x=df[['Current']]
-y1=df[['Hall Voltage, 2mA']]
-y2=df[['Hall Voltage, 4mA']]
-y3=df[['Hall Voltage, 6mA']]
-dg = df[['Current', 'Hall Voltage, 2mA']]
-dh = df[['Current', 'Hall Voltage, 4mA']]
-di = df[['Current', 'Hall Voltage, 6mA']]
+x=df[['Magnetic field(G)']]
+y1=df[['Hall coefficient(2 mA)']]
+y2=df[['Hall coefficient(4 mA)']]
+y3=df[['Hall coefficient(6 mA)']]
+dg = df[['Magnetic field(G)', 'Hall coefficient(2 mA)']]
+dh = df[['Magnetic field(G)', 'Hall coefficient(4 mA)']]
+di = df[['Magnetic field(G)', 'Hall coefficient(6 mA)']]
 print(dg)
 #+df = df[['Angle', 'Intensity']]
 
@@ -25,8 +25,8 @@ ax.plot(x,y1, marker='o',label='2mA')
 ax.plot(x,y2, marker='^',label='4mA')
 ax.plot(x,y3, marker='s',label='6mA')
 
-ax.set_ylabel('Voltage(mV)',fontsize=24)
-ax.set_xlabel('Current(mA)',fontsize=24)
+ax.set_ylabel('Hall Coefficient',fontsize=24)
+ax.set_xlabel('Magnetic field(G)',fontsize=24)
 ax.legend(fontsize=20, loc='best')
 
 

@@ -1,0 +1,35 @@
+\documentclass[aps,reprint,superscriptaddress,10pt]{revtex4-2}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tikz}
+
+
+\begin{document}
+In the interacting theory, the field equation is nonlinear, and the excitations (bosons or fermions) interact with each other. The use of the canonical quantization procedure, in which one imposes equal-time commutation relations c.f. (\ref{commut}), is thus not appropriate for the interacting theory. Instead, one needs to work with the Heisenberg picture, in which the operators evolve in time according to the Heisenberg equations of motion, while the states remain stationary. The Heisenberg picture quantization of the Klein-Gordon field reduces to the standard one (\ref{commut}) if one imposes the condition that the field operator should be a function of the field variable at the same time. In the Heisenberg picture, (\ref{commut}) is modified to
+\begin{equation}
+[\phi(\vec x,t),\phi(\vec y,t)]=0
+\end{equation}
+\begin{equation}
+[\pi(\vec x,t),\pi(\vec y,t)]=[\phi(\vec x,t),\pi(\vec y,t)]=0\ .
+\end{equation}
+
+The Heisenberg equations of motion for the field operator are
+\begin{equation}
+\label{heisenberg}b
+\partial_t\phi(\vec x,t)=\{\phi(\vec x,t),H(t)\}
+\end{equation}
+\begin{equation}
+\label{heisenberg2}
+\partial_t\pi(\vec x,t)=\{\pi(\vec x,t),H(t)\}\ ,
+\end{equation}
+where $H(t)=\int \mathcal{H}(\vec x,t)d^3x$ is the total Hamiltonian, and $\mathcal{H}$ is the Hamiltonian density. The Heisenberg equations of motion (\ref{heisenberg}) and (\ref{heisenberg2}) are obtained by differentiating the Heisenberg equations (\ref{heisenberg}) for the canonical operators $x^i$ and $p^i$ with respect to time.
+\end{document}

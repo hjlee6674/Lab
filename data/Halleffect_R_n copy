@@ -4,29 +4,28 @@ import os
 
 # import csv
 folderPath = r'/home/sigma/Lab/data' # 폴더 경로
-attributeTable = 'Halleffect_p.csv' # 파일 이름
+attributeTable = 'gauss.csv' # 파일 이름
 os.chdir(folderPath)
 df = pd.read_csv(attributeTable)
-x=df[['Current']]
-y1=df[['Hall Voltage, 2mA']]
-y2=df[['Hall Voltage, 4mA']]
-y3=df[['Hall Voltage, 6mA']]
-dg = df[['Current', 'Hall Voltage, 2mA']]
-dh = df[['Current', 'Hall Voltage, 4mA']]
-di = df[['Current', 'Hall Voltage, 6mA']]
-print(dg)
+x=df[['Magnetic field']]
+y1=df[['Current']]
+y2=df[['Comparing line']]
+
+dg = df[['Magnetic field', 'Current']]
+dh = df[['Magnetic field', 'Comparing line']]
+
+
 #+df = df[['Angle', 'Intensity']]
 
 
 fig=plt.figure(figsize=(10,10))
 ax = fig.add_subplot(1,1,1)
 
-ax.plot(x,y1, marker='o',label='2mA')
-ax.plot(x,y2, marker='^',label='4mA')
-ax.plot(x,y3, marker='s',label='6mA')
+ax.plot(x,y1, marker='o',label='Current')
+ax.plot(x,y2, marker='^',label='Comparing line')
 
-ax.set_ylabel('Voltage(mV)',fontsize=24)
-ax.set_xlabel('Current(mA)',fontsize=24)
+ax.set_ylabel('Current(mA)',fontsize=24)
+ax.set_xlabel('Magnetic field(G)',fontsize=24)
 ax.legend(fontsize=20, loc='best')
 
 

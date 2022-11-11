@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1667573491 "/home/sigma/Lab/notion/notiontex.tex" "notiontex.pdf" "notiontex" 1667573492
+["pdflatex"] 1667900357 "/home/sigma/Lab/notion/notiontex.tex" "notiontex.pdf" "notiontex" 1667900357
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/notion/notiontex.tex" 1667573491 6686 1846ab568eb7cecb304011473b99b5df ""
+  "/home/sigma/Lab/notion/notiontex.tex" 1667900356 6695 9ad9ea8a8a6443895cbade2888932274 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -84,8 +84,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
   "defcolor.sty" 1661917155 30932 ee3b4786a49446d3c1adb266588a4d63 ""
-  "notiontex.aux" 1667573492 77 25d328a28761584c99bfe58436ddd65f "pdflatex"
-  "notiontex.tex" 1667573491 6686 1846ab568eb7cecb304011473b99b5df ""
+  "notiontex.aux" 1667900357 77 25d328a28761584c99bfe58436ddd65f "pdflatex"
+  "notiontex.tex" 1667900356 6695 9ad9ea8a8a6443895cbade2888932274 ""
   (generated)
   "notiontex.aux"
   "notiontex.log"
