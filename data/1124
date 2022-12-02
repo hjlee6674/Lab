@@ -1,0 +1,21 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+
+# import csv
+folderPath = r'/home/sigma/Lab/data' # 폴더 경로
+attributeTable = '1124 .csv' # 파일 이름
+os.chdir(folderPath)
+df = pd.read_csv(attributeTable)
+dg = df[['Temperature', 'Voltage']]
+print(df)
+print(dg)
+
+# plot
+plt.figure(figsize=(15, 8))
+plt.rcParams.update({'font.size': 22})
+ax = dg.set_index('Temperature')['Voltage'].plot(kind='line', marker='d')
+ax.set_ylabel("Voltage(10$^{-6}$V)")
+ax.set_xlabel("Temperature(C$^\circ$)")
+plt.show()

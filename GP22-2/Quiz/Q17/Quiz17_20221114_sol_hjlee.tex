@@ -1,0 +1,231 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[tightenlines,floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large 2022년 2학기 물리학 II}
+\author{Hui-Jae Lee} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+\date{Autumn Semester, 2022}
+\author{김현철\footnote{Office: 5S-436D (면담시간 매주
+    수요일-16:15$\sim$19:00)}} 
+\email{hchkim@inha.ac.kr}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+\date{Autumn Semester, 2022}
+\maketitle
+
+
+\section*{\large Quiz 17}
+\noindent {\bf 문제 1 [30pt].}
+$S$ 관성좌표계에서 $\vec{v}$의 속도로 움직이고 있는 입자가 있다.
+\begin{itemize}
+\item[(가)]  $S$ 좌표계에 대해 $x$ 방향으로 상대속도 $u$로 움직이고
+  있는 관성좌표계 $S'$에서 이 입자의 속도의 각 성분을 구하여라. 
+\item[(나)] $v_x=c$일 때, $v_x'=c$임을 보여라. 
+\end{itemize}
+
+\noindent {\bf 풀이. }
+\begin{itemize}
+  \item[(가)] $S'$ 관성좌표계에서 관측한 입자의 속도를 $\vec{v}'$라고 하자. 이 좌표계는
+  $S$ 관성좌표계에 대해 $x$축 방향으로 $u$의 상대속도로 움직이고 있으므로 로렌츠의 속도
+  변환 공식에 의해 속도 $\vec{v}$, $\vec{v}'$의 성분들은 다음과 같은 관계에 있다.
+  \begin{align}\label{eq:1-1}
+    \begin{split}
+      v'_x &=\frac{v_x-u}{1-v_x u/c^2},  \\
+      v'_y &=\frac{v_y}{\gamma(1-v_x u/c^2)}, \\
+      v'_z &=\frac{v_z}{\gamma(1-v_x u/c^2)} .\\
+    \end{split}
+  \end{align}
+  여기서 $\gamma$는 로렌츠 인자로 $\gamma=(1-v_x^2/c^2)^{-1/2}$이다.
+  \item[(나)]
+  식~\eqref{eq:1-1}의 $x$방향 성분 변환 관계로부터 $v_x=c$이면
+  \begin{align}
+    v'_x &=\frac{c-u}{1-c u/c^2}=\frac{c-u}{1-u/c}=c\frac{1-u/c}{1-u/c}=c
+  \end{align}
+  $v_x'=c$임을 알 수 있다.
+\end{itemize}
+
+\vspace{1cm}
+
+\noindent {\bf 문제 2 [70pt].}
+로렌츠 변환을 자세히 유도하여라. 즉,
+\begin{align}
+  \label{eq:1}
+  x' = \frac{x-ut}{\sqrt{1-u^2/c^2}},\;\;\; y'=y,\;\;\;z'=z,\;\;\;
+  t' = \frac{t-ux/c^2}{\sqrt{1-u^2/c^2}}
+\end{align}
+임을 자세히 보여라. 
+
+\noindent {\bf 풀이. }
+\begin{figure}[htp]
+  \centering
+  \begin{tikzpicture}
+    
+    \coordinate (S) at (0,0);
+    \coordinate (S') at (3,0);
+    \coordinate (A) at (5,3);
+    \draw[-latex] (S) -- +(0,4) node[above,left=2]{$y$};
+    \draw[-latex] (S) -- +(4,0) node[above]{$x$};
+    \draw[-latex] (S') -- +(0,4) node[above,left=2]{$y'$};;
+    \draw[-latex] (S') -- +(4,0) node[above]{$x'$};;
+    \draw node[left=5,below] at (0,0) {$S$};
+    \draw node[left=5,below] at (3,0) {$S'$};
+    \filldraw[black] (A) circle (1pt) node[right] {$A$};
+    \draw[-latex] (S) -- (A)  node[left=75,below=25]{$\vec{r}$}; 
+    \draw[-latex] (S') -- (A) node[left=40,below=35]{$\vec{r}'$}; 
+  \end{tikzpicture}
+  \caption{두 관성좌표계 $S$, $S'$}
+  \label{fig:2-1}
+\end{figure}
+두 관성좌표계 $S$와 $S'$으로부터 각각 $(x,y,z,t)$, $(x',y',z',t')$만큼 떨어진 지점에
+사건 $A$가 발생하였다고 하자. 사건 $A$의 발생이 $S$의 원점에 위치한 관측자에 도달하는 시간
+$t$와 $S'$의 원점에 위치한 관측자에 도달하는 시간 $t'$는 다음과 같다.
+\begin{align}\label{eq:2-1}
+  c^2t^2 = x^2+y^2+z^2,\,\,\,  c^2t'^2 = x'^2+y'^2+z'^2.
+\end{align}
+이 때 $y=y'$, $z=z'$이다. 관성좌표계 $S'$이 $S$에 대해 $x$축 방향으로
+상대속도 $u$로 움직인다고 가정하자. 로렌츠 변환은 다음과 같이 $(x,t)$와 $(x',t')$의
+변환을 가정하면서 시작한다.
+\begin{align}\label{eq:2-2}
+  \begin{split}
+    \begin{cases}
+      x'=\gamma(x-ut) \\
+      t'=a(t-bx)
+    \end{cases}
+  \end{split}
+\end{align}
+식~\eqref{eq:2-1}에 대입하면 $y=y'$, $z=z'$이므로
+\begin{align}
+  x'^2+y'^2+z'^2 = \gamma^2(x-ut)^2+y^2+z^2 = c^2a^2(t-bx)^2
+\end{align}
+으로 쓸 수 있고 오른쪽 두 항을 풀어 쓰면
+\begin{align}
+  \gamma^2(x^2-2uxt+u^2t^2)+y^2+z^2 = c^2a^2(t^2-2xbt+b^2x^2)
+\end{align}
+이다. $x^2$, $xt$, $t^2$끼리 묶으면
+\begin{align}
+  (\gamma^2-c^2a^2b^2)x^2-2(\gamma^2u-a^2bc^2)xt+y^2+z^2
+  =(c^2a^2-\gamma^2u^2)t^2
+\end{align}
+로 식~\eqref{eq:2-1}와 비교할 수 있는 형태을 얻는다.
+\begin{align}
+  \begin{split}
+    \begin{cases}
+      (\gamma^2-c^2a^2b^2)x^2-2(\gamma^2u-a^2bc^2)xt+y^2+z^2
+      =(c^2a^2-\gamma^2u^2)t^2 \\
+      x^2+y^2+z^2 =  c^2t^2
+    \end{cases}
+  \end{split}
+\end{align}
+각 계수가 같아야 하므로
+\begin{align}
+    \begin{cases}
+    \gamma^2-c^2a^2b^2 = 1 \\
+    \gamma^2u-a^2bc^2 = 0 \\
+    c^2a^2-\gamma^2u^2 = c^2
+  \end{cases}
+\end{align}
+이다. 두번째 식으로부터 얻을 수 있는
+\begin{align}\label{eq:2-4}
+  a^2 = \frac{\gamma^2u}{bc^2},\,\,\,b = \frac{\gamma^2u}{a^2c^2}
+\end{align}
+를 첫번째 식과 세번째 식에 대입해 $a$와 $b$를 소거하자. 세번째 식에 
+$a^2$을 대입하면 
+\begin{align}\label{eq:2-5}
+  b = \frac{\gamma^2u}{c^2+u^2\gamma^2}
+\end{align}
+를 얻고 이를 첫번째 식에 대입하여
+\begin{align}
+  \gamma^2c^2=c^2+u^2\gamma^2
+\end{align}
+$\gamma$를 다음과 같이 구할 수 있다.
+\begin{align}
+  \gamma^2(c^2-u^2)=c^2
+  \Longrightarrow \gamma = \frac{1}{\sqrt{1-u^2/c^2}}.
+\end{align}
+이를 식~\eqref{eq:2-5}에 대입하여
+\begin{align}
+  b = \frac{u}{c^2}
+\end{align}
+$b$를 구할 수 있고 식~\eqref{eq:2-4}에 대입하여
+\begin{align}
+  a^2=\gamma^2\Longrightarrow a= \gamma
+\end{align}
+를 얻는다. 따라서 식~\eqref{eq:2-2}는
+\begin{align}
+  x'=\frac{x-ut}{\sqrt{1-u^2/c^2}},\,\,\,t'=a\frac{t-ux/c^2}{\sqrt{1-u^2/c^2}}
+\end{align}
+인 로렌츠 변환이 된다.
+
+
+\vspace{1cm}
+\noindent {\bf 문제 3 [30pt].}
+정지길이가 30.0 cm인 막대자가 진행방향인 $x$축에 대해 $30.0^\circ$
+기울어진 채 $x$방향으로 $v=0.990c$의 속도로 움직이고 있다. 정지해 있는
+관찰자가 측정한 이 자의 길이는 얼마인가? 
+
+\noindent {\bf 풀이. }
+막대자가 기울어져 있으므로 길이 수축은 $x$축 방향으로의 길이에만 일어난다.
+막대자의 $x$축 방향 길이 $L_x$는
+\begin{align}
+  L_x = L\cos30.0^\circ
+\end{align}
+이고 수축이 일어난 $x$축 방향 길이 $L_x'$는
+\begin{align}
+  L_x' = \sqrt{1-\frac{v^2}{c^2}}L_x
+\end{align}
+이다. $L_x=$30.0 cm, $v=0.990c$이므로
+\begin{align}
+  L_x' = \sqrt{1-(0.990)^2}(30.0~\mathrm{cm})\cos30.0^\circ
+  =3.67~\mathrm{cm}
+\end{align}
+로 막대자의 수축된 $x$축 방향 길이를 구할 수 있다. 따라서 정지해 있는 관찰자가 측정한 
+막대자의 총 길이 $L'$은
+\begin{align}
+  {L'} = \sqrt{{L'}_x^2+{L'}_y^2} 
+  =\sqrt{(3.67~\mathrm{cm})^2+((30.0~\mathrm{cm})\sin30.0^\circ)^2} 
+  =15.4~\mathrm{cm}
+\end{align}
+$15.4$ cm이다.
+
+\vspace{1cm}
+\noindent {\bf 문제 4 [30pt].}
+정지상태에서 중간자는 생성 후 2.0 $\mu s$만에 소멸된다. 이 중간자가
+실험실에서 $0.990c$의 속력으로 움직이면, 실험실 시계로 중간자 수명은
+얼마인가? 
+
+\noindent {\bf 풀이. }
+중간자가 소멸되는데 걸리는 시간을 $t$라 하면 시간 팽창을 고려하여 실험실에서 관측한
+시간 $t'$를 구할 수 있다. 시간 팽창에 의해
+\begin{align}
+  t' = \frac{t}{\sqrt{1-u^2/c^2}}
+\end{align}
+$t=2.0~\mu s$이고 $u=0.990c$이므로
+\begin{align}
+  t' = \frac{2.0~\mu s}{\sqrt{1-(0.990)^2}}
+  =14~\mu s
+\end{align}
+실험실 시계로 관측한 중간자 수명은 14 $\mu s$이다.
+\end{document}
+
