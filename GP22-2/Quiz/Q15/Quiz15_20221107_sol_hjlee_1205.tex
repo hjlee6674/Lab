@@ -1,0 +1,249 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[tightenlines,floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large 2022년 2학기 물리학 II}
+\author{Hui-Jae Lee} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+\date{Autumn Semester, 2022}
+\author{김현철\footnote{Office: 5S-436D (면담시간 매주
+    수요일-16:15$\sim$19:00)}} 
+\email{hchkim@inha.ac.kr}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+\date{Autumn Semester, 2022}
+\maketitle
+
+
+\section*{\large Quiz 15}
+\noindent {\bf 문제 1 [20pt].}
+어떤 렌즈 앞에 물체를 놓았더니 4배 크기의 실상이 생겼고, 이 물체를
+렌즈에서 4.00 cm 더 멀리 하였더니 2배 크기의 실상이 생겼다. 이 렌즈의
+초점거리는 얼마인가? 
+
+\noindent {\bf 풀이 : }
+렌즈에서 물체까지의 거리를 $p$, 렌즈에서 상까지의 거리를 $q$, 렌즈의 초점거리를
+$f$라 하면 다음의 얇은 렌즈 방정식이 성립한다.
+\begin{align}\label{eq:1-1}
+  \frac{1}{p}+\frac{1}{q}=\frac{1}{f}.
+\end{align}
+또한 상의 배율 $M$은
+\begin{align}
+  M = -\frac{q}{p}
+\end{align}
+이므로 식~\eqref{eq:1-1}에 대입하여 다음과 같이 쓸 수 있다.
+\begin{align}
+  \frac{1}{p}\left(1-\frac{1}{M}\right)=\frac{1}{f}
+\end{align}
+
+처음 렌즈와 물체 사이의 거리를 $p_1$이라 하면 4배 크기의 실상이 생겼으므로
+\begin{align}\label{eq:1-3}
+  \frac{1}{p_1}\left(1-\frac{1}{-4}\right)
+  =\frac{5}{4p_1}=\frac{1}{f}
+\end{align}
+이다. 볼록렌즈에 의해 생기는 실상은 도립 실상 뿐이므로 배율의 부호가 $-$이다. 
+물체를 렌즈로부터 4.00 cm 멀리 하였을 때 2배 크기의 실상이 생겼으므로
+\begin{align}\label{eq:1-4}
+  \begin{split}
+    &\frac{1}{p_1+4.00~\mathrm{cm}}\left(1-\frac{1}{-2}\right)
+    =\frac{3}{2p_1+8.00~\mathrm{cm}}=\frac{1}{f} \\
+    &\Longrightarrow 3f= 2p_1+8.00~\mathrm{cm}
+  \end{split}
+\end{align}
+로 쓸 수 있다. 식~\eqref{eq:1-3}와 식~\eqref{eq:1-4}을 연립하면
+\begin{align}
+  3f= \frac{5}{2}f+8.00~\mathrm{cm}
+  \Longrightarrow
+  f= 16.0~\mathrm{cm}
+\end{align}
+초점거리 16.0 cm를 얻을 수 있다.
+\vspace{1cm}
+
+\noindent {\bf 문제 2 [30pt].}
+굴절율이 1.62인 유리로 만든 얇은 렌즈가 있다. 이 렌즈의 한쪽 면은
+오목하며 곡률 반지름이 100 cm이고, 다른 한쪽 면은 볼록하며
+곡률 반지름이 40.0 cm이다. 이 렌즈의 초점거리를 구하여라. 
+
+\noindent {\bf 풀이 : }
+렌즈의 굴절률을 $n$, 렌즈의 앞면 곡률 반지름을 $R_1$, 뒷면 곡률 반지름을 $R_2$라
+하면 렌즈의 초점거리 $f$는 렌즈 제작자의 공식에 의해 다음과 같다.
+\begin{align}\label{eq:2-1}
+  \frac{1}{f} = (n-1)\left(\frac{1}{R_1}-\frac{1}{R_2}\right).
+\end{align}
+렌즈의 볼록한 면을 앞면이라 하자. 두 면의 곡률 중심이 렌즈 뒤에 있으므로 
+$R_1$, $R_2$의 부호는 $+$이고 식~\eqref{eq:2-1}에 대입하여
+\begin{align}
+  \begin{split}
+    &\frac{1}{f}=(1.62-1)\left(\frac{1}{40.0~\mathrm{cm}}
+    -\frac{1}{100.0~\mathrm{cm}}\right)
+    =\frac{0.62\times3}{200.0~\mathrm{cm}}\\ &\Longrightarrow
+    f=108~\mathrm{cm}
+  \end{split}
+\end{align}
+초점거리 108 cm를 얻을 수 있다.
+
+
+\vspace{1cm}
+
+\noindent {\bf 문제 3 [50pt].}
+너비 $a$와 간격이 $d$인 이중실틈(doubleslit)에 파장이 $\lambda$인
+결맞은 빛을 비춘다. 실틈에서부터 $D$만큼 떨어진 화면에 나타나는 밟은
+간섭무늬 사이의 거리는 얼마인가?
+
+
+\noindent {\bf 풀이 : } 
+$a\ll d$이고 $D$가 충분히 크다고 하자.
+밝은 간섭무늬가 나타나는 보강간섭의 경로차는 파장의 정수배이다.
+\begin{align}\label{eq:3-1}
+  d\sin\theta = m\lambda,\,\,\, m =1,\,2,\,3,\,\cdots
+\end{align}
+$D$가 충분히 크므로 $\theta\ll 1$로 근사할 수 있고 이 때 $\sin\theta$는
+\begin{align}
+  \sin\theta \approx \tan\theta = \frac{y}{D}
+\end{align}
+로 근사할 수 있다. $y$는 가운데 밝은 무늬로부터 다른 밝은 무늬까지의 거리이다.
+식~\eqref{eq:3-1}에 대입하여
+\begin{align}
+  \frac{dy}{D}=m\lambda\Longrightarrow
+  y_m = \frac{mD}{d}\lambda
+\end{align}
+를 얻을 수 있고 간섭무늬 사이 거리는
+\begin{align}
+  y = \frac{D}{d}\lambda
+\end{align}
+이다.
+
+
+
+% 두 슬릿의 양 끝에서 출발하는 네개의 파동 
+% $\psi_1$, $\psi_2$, $\psi_3$, $\psi_4$이 스크린의 한 부분에서 만난다고 가정하자.
+% $\psi_1$, $\psi_2$는 $a$만큼, $\psi_1$, $\psi_4$는 $2a+d$만큼 떨어져 있다.
+% $\psi_1$, $\psi_2$, $\psi_3$, $\psi_4$는 각각
+% \begin{align}
+%   \begin{split}
+%     &\psi_1=A\sin(\omega t-kr_1),\,\,\,\psi_2=A\sin(\omega t-kr_2), \\
+%     &\psi_3=A\sin(\omega t-kr_3),\,\,\,\psi_4=A\sin(\omega t-kr_4)
+%   \end{split}
+% \end{align}
+% 로 쓸 수 있다. $\psi_1$, $\psi_2$의 합과 $\psi_3$, $\psi_4$의 합은 각각
+% \begin{align}
+%   \begin{split}
+%     &\psi_{12}=2A\sin\left(\omega t-\frac{k}{2}(r_1+r_2)\right)\cos\frac{\phi}{2}, \\
+%     &\psi_{34}=2A\sin\left(\omega t-\frac{k}{2}(r_3+r_4)\right)\cos\frac{\phi'}{2}
+%   \end{split}
+% \end{align}
+% 이다. 여기서 $\phi = k(r_1-r_2)$이고 $\phi' = k(r_3-r_4)$이다. 이 둘이 서로 같아
+% \begin{align}
+%   \phi \approx \phi' = \frac{2\pi}{\lambda}a\sin\theta
+% \end{align}
+% 라고 가정하자. 그러면 $\psi_1$, $\psi_2$, $\psi_3$, $\psi_4$의 전체 합을 다음과 같이
+% 구할 수 있다.
+% \begin{align}
+%   \begin{split}
+%     \psi_{1234} &= \psi_{12}+\psi_{34}
+%     =2A\cos\frac{\phi}{2}\left\{\sin\left(\omega t-\frac{k}{2}(r_1+r_2)\right)
+%     +\sin\left(\omega t-\frac{k}{2}(r_3+r_4)\right)\right\} \\
+%     &=4A\cos\frac{\phi}{2}\sin\left(\omega t-\frac{k}{4}(r_1+r_2+r_3+r_4)\right)
+%     \cos\frac{\phi''}{2}.
+%   \end{split}
+% \end{align}
+% 여기서 $\phi''=k(r_1+r_2-(r_3+r_4))$이다. 스크린에서 빛의 세기 $I$는 $|\psi^2|$에
+% 비례하므로
+% \begin{align}
+%   I \sim  16A^2\cos^2\frac{\phi}{2}\sin^2\left(\omega t-\frac{k}{4}(r_1+r_2+r_3+r_4)\right)
+%   \cos^2\frac{\phi''}{2}
+% \end{align}
+% 이고 시간에 대한 평균 $\left<I\right>$를 계산하면 $\sin^2(\omega t - C)$에 대한 평균은
+% 다음과 같이 계산할 수 있다.
+% \begin{align}
+%   \left<\sin^2(\omega t - C)\right>
+%   =\frac{1}{T}\int_0^T\sin^2(\omega t - C)\,dt = \frac{1}{2}.
+% \end{align}
+% $C$는 시간에 대한 상수이다. 따라서 $\left<I\right>$는
+% \begin{align}\label{eq:3-4}
+%   \begin{split}
+%     \left<I\right> &= 16A^2\cos^2\frac{\phi}{2}
+%     \left<\sin^2\left(\omega t-\frac{k}{4}(r_1+r_2+r_3+r_4)\right)\right>
+%     \cos^2\frac{\phi''}{2}  \\
+%     &=8A^2\cos^2\frac{\phi}{2}\cos^2\frac{\phi''}{2}
+%   \end{split}
+% \end{align}
+% 와 같다. 가정 $\phi \approx \phi'$에 의해 
+% \begin{align}
+%   \begin{split}
+%     \phi \approx \phi' &\Longrightarrow
+%     r_1-r_2 \approx r_3-r_4 \\
+%     &\Longrightarrow
+%     \phi'' \approx 2\phi
+%   \end{split}
+% \end{align}
+% 이고 식~\eqref{eq:3-4}은
+% \begin{align}
+%   \left<I\right> = 8A^2\cos^2\frac{\phi}{2}\cos^2\phi
+% \end{align}
+% 이다. $\cos^2\frac{\phi}{2}$의 주기는 $2\pi$이고 $\cos^2\phi$의 주기는 $\pi$이므로
+% $\left<I\right>$의 주기는 $2\pi$이고 빛의 세기의 최댓값 또한 같은 주기를 가진다. $\phi$는
+% \begin{align}
+%   \phi = \frac{2\pi}{\lambda}a\sin\theta
+% \end{align}
+% 이고 $\theta<<1$이라 하면 
+% \begin{align}
+%   \sin\theta\approx\tan\theta=\frac{y}{D}
+% \end{align}
+% 이다. $y$는 스크린의 중심으로부터 빛의 세기가 첫번째로 최댓값이 되는 지점까지의 거리이다.
+% $\phi$가 $2\pi$만큼 변할 때 마다 빛의 세기가 최댓값을 가지므로 $y$는
+% \begin{align}
+%   2\pi = \frac{2\pi a }{\lambda D} y
+%   \Longrightarrow y = \frac{a}{D}\lambda
+% \end{align}
+% 이다.
+\vspace{1cm}
+
+\noindent {\bf 문제 4 [50pt].}
+폭이 $a$인 단일슬릿에서부터 $L$만큼 떨어진 곳에 스크린을
+두었다. 단일슬릿 앞에서 파장이 $\lambda$인 빛을 쪼였다. $a\ll L$
+이라고 하자. 만약에 회절 무늬에서 어두운 부분을 나타내는 두 최소점
+$m=m_1$과 $m=m_2$ 사이의 거리를 $\Delta y$라고 둔다면, 이 슬릿의 폭
+$a$는 얼마인가? 
+
+\noindent {\bf 풀이 : }
+단일 슬릿의 경우 중심에서부터 어두운 부분까지의 거리를 $y_m$이라 하면
+\begin{align}
+  y_m = \frac{m\lambda L}{a},\,\,\,m=1,\,2,\,3,\,\cdots
+\end{align}
+로 쓸 수 있고 두 중심에서 두 최소점 까지의 거리 $y_1$, $y_2$는
+\begin{align}
+  y_1=\frac{m_1\lambda L}{a} ,\,\,\,y_2=\frac{m_2\lambda L}{a}
+\end{align}
+이다. 따라서 $\Delta y$는
+\begin{align}
+  \Delta y = y_2-y_1 = \frac{m_2\lambda L}{a} - \frac{m_1\lambda L}{a}
+\end{align}
+이고 $a$는
+\begin{align}
+  a = \frac{(m_2-m_1)\lambda L}{\Delta y}
+\end{align}
+이다.
+\vspace{1cm}
+\end{document}
+
