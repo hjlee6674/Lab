@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1667733801 "/home/sigma/Lab/GP22-2/Quiz/Q15/Quiz15_20221107_sol_hjlee.tex" "Quiz15_20221107_sol_hjlee.pdf" "Quiz15_20221107_sol_hjlee" 1667733802
+["pdflatex"] 1670223717 "/home/sigma/Lab/GP22-2/Quiz/Q15/Quiz15_20221107_sol_hjlee.tex" "Quiz15_20221107_sol_hjlee.pdf" "Quiz15_20221107_sol_hjlee" 1670223718
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP22-2/Quiz/Q15/Quiz15_20221107_sol_hjlee.tex" 1667733755 8796 19cd534240dcb3e1d36513a9f8800d69 ""
+  "/home/sigma/Lab/GP22-2/Quiz/Q15/Quiz15_20221107_sol_hjlee.tex" 1670223717 9734 39883a618191fa1d81d9d4e2b6e92964 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -89,6 +89,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd3.tfm" 1364599308 1240 0ba0d8110eaa965fe82649c35aae8a9c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd5.tfm" 1364599308 1248 528122c0ec5b8fe37c5f9a68d4591379 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd6.tfm" 1364599308 1256 7f40e67a93382186df75e8e2b7098d53 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd7.tfm" 1364599308 880 c8f4f02efbb915a390350590022001e9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -150,6 +151,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb" 1364599308 190919 c0b8ee9a31988256013d1799b78bc90b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb" 1364599308 180221 abec42c102a26dbcc461fb4cfef50d74 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb" 1364599308 193800 f00d5b3c74e239b93c2b1630102dc289 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb" 1364599308 119106 fb059d78940aa44da782e0dadb3c906f ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty" 1591045760 12594 0d51ac3a545aaaa555021326ff22a6cc ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
@@ -199,8 +201,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
-  "Quiz15_20221107_sol_hjlee.aux" 1667733801 383 f5dcfed29665ac42fd20840379cd25fd "pdflatex"
-  "Quiz15_20221107_sol_hjlee.tex" 1667733755 8796 19cd534240dcb3e1d36513a9f8800d69 ""
+  "Quiz15_20221107_sol_hjlee.aux" 1670223717 382 cf1584e71ecbc7f59aab88d2ad1d0147 "pdflatex"
+  "Quiz15_20221107_sol_hjlee.tex" 1670223717 9734 39883a618191fa1d81d9d4e2b6e92964 ""
   "defcolor.sty" 1667626512 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
   "Quiz15_20221107_sol_hjlee.aux"

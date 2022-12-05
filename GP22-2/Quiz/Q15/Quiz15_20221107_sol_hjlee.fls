@@ -507,6 +507,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd2.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd3.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb0.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd7.tfm
 INPUT Quiz15_20221107_sol_hjlee.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -569,3 +570,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb

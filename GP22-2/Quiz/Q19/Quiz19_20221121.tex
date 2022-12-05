@@ -1,0 +1,297 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[tightenlines,floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large 2022년 2학기 물리학 II}
+\author{Hui-Jae Lee} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+\date{Autumn Semester, 2022}
+\author{김현철\footnote{Office: 5S-436D (면담시간 매주
+    수요일-16:15$\sim$19:00)}} 
+\email{hchkim@inha.ac.kr}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+\date{Autumn Semester, 2022}
+\maketitle
+
+
+\section*{\large Quiz 19}
+\noindent {\bf 문제 1 [50pt].}
+어떤 금속의 일함수가 0.80 eV이다. 이 금속에 파장이 500 nm인 빛을
+쪼였을 때 튀어나오는 전자에 대한 저지전압을 구하여라. 이때 튀어나오는
+전자의 최대속력은 얼마인가? 
+
+\noindent {\bf 풀이. }
+광전효과에 따르면 파장이 $\lambda$인 빛의 에너지 $E$는
+\begin{align}
+  E = h\frac{c}{\lambda}
+\end{align}
+이고 광전효과에 의해 방출된 전자의 일함수 $\Phi$와 전자의 운동에너지 $K$는
+\begin{align}
+  \Phi+K = E = h\frac{c}{\lambda}
+\end{align}
+로 구할 수 있다. 이 때 $h$와 $c$는 각각 플랑크 상수와 빛의 속력이다. 
+저지전압 $V_0$는 방출된 전자에 의한 전류를 $0$으로 만드는 전압이므로 
+\begin{align}
+  eV_0 = K
+\end{align}
+가 성립한다. 저지전압 $V_0$를 구하기 전에 전자의 운동에너지를 먼저 구해보면
+\begin{align}
+  \begin{split}
+    K &=h\frac{c}{\lambda}-\Phi \\ %1.60218\,\mathrm{C} \\
+    &= (6.626\times 10^{-34}\mathrm{J\cdot s})
+    \frac{(3\times 10^{8}\,\mathrm{m/s})}{(5.00\times 10^{-7}\,\mathrm{m})}
+    -0.80\,\mathrm{eV}
+    =1.68\,\mathrm{eV}
+  \end{split}
+\end{align}
+이다. 전자볼트(eV)가 전자 1개가 1V의 전위를 거슬러 올라갈 때 필요한 일의 양이므로
+1 eV를 1V와 기본전하 e의 곱으로 쓸 수 있다.
+\begin{align}
+  1\,\mathrm{eV} = 1\,\mathrm{V}\cdot e.
+\end{align}
+따라서 저지전압 $V_0$는
+\begin{align}
+  V_0 = \frac{K}{e} = 1.68\,\mathrm{V}
+\end{align}
+이고 전자의 최대속력 $v$는
+\begin{align}
+  \begin{split}
+    &K = \frac{1}{2}mv^2 \\
+    &\Longrightarrow
+    v = \sqrt{\frac{2K}{m}}
+    = \sqrt{\frac{2\times 1.68\,\mathrm{eV}}{9.109\times 10^{-31}\,\mathrm{kg}}}\\
+    &=7.69\times{10^{5}}\,\mathrm{m/s}
+  \end{split}
+\end{align}
+이다.
+\vspace{1cm}
+
+
+\noindent {\bf 문제 2 [50pt].}
+파장이 1 \AA 인 엑스선이 자유전자와 산란하였다.
+(가) 산란각이 $90^\circ$°인 경우에 대해서 콤프턴 이동을 구하여라.
+(나) 이때 자유전자의 충돌 후 운동량과 운동에너지를 구하여라.
+
+\noindent {\bf 풀이. }
+\begin{itemize}
+  \item[(가)]
+  콤프턴 이동 $\Delta\lambda$는 다음과 같이 주어진다.
+  \begin{align}
+    \Delta\lambda = \frac{h}{m_0c}(1-\cos\phi)
+  \end{align}
+  여기서 $m_0$는 전자의 정지 질량, $\phi$는 엑스선의 산란각이다.
+  $m_0=9.109\times 10^{-31}\,\mathrm{kg}$이고 
+  $\phi= 90^\circ$이므로 $\Delta\lambda$는
+  \begin{align}
+    \begin{split}
+      \Delta\lambda &= \frac{(6.626\times 10^{-34}\mathrm{J\cdot s})}
+      {(9.109\times 10^{-31}\,\mathrm{kg})(3\times 10^{8}\,\mathrm{m/s})}
+      (1-\cos 90^\circ) \\
+      &= 2.425\times 10^{-2}\,\mathrm{\AA}
+    \end{split}
+  \end{align}
+이다.
+  \item[(나)]
+  엑스선의 산란 전 에너지와 산란 후 에너지를 각각 $E$, $E'$이라 하고 전자의 운동에너지를
+  $K$라 하면 에너지 보존 법칙에 의해
+  \begin{align}
+    E = E'+K
+  \end{align}
+  가 성립하고 광전효과로부터 엑스선의 에너지를 엑스선의 파장에 대해 쓸 수 있다.
+  \begin{align}
+    \frac{hc}{\lambda} =\frac{hc}{\lambda + \Delta\lambda} + K.
+  \end{align}
+ 따라서 자유전자의 충돌 후 운동에너지 $K$는
+ \begin{align}
+  \begin{split}
+    K &= \frac{hc}{\lambda} - \frac{hc}{\lambda + \Delta\lambda}  \\
+    &=(9.109\times 10^{-31}\,\mathrm{kg})(3\times 10^{8}\,\mathrm{m/s})
+    \left(\frac{1}{1\,\mathrm{\AA}}-\frac{1}{1.024\,\mathrm{\AA}}\right) \\
+    &= 6.405\times 10^{-14}\,\mathrm{J}
+  \end{split}
+ \end{align}
+ 이다. 전자의 운동량 $\vec{p}$를 성분별로 구해보자. 엑스선이 $y$축 방향으로
+ 완전히 산란되었기 때문에 운동량 보존 법칙에 의하면 전자의 $x$축 운동량은 
+ 산란 전 엑스선의 운동량과 같고 전자의 $y$축 운동량은 산란 후 엑스선의 운동량과 같다.
+ 즉,
+ \begin{align}
+  p_x = \frac{h}{\lambda},\,\,\, p_y = \frac{h}{\lambda+\Delta\lambda}
+ \end{align}
+ 이다. 따라서,
+ \begin{align}
+  \begin{split}
+    p_x &= \frac{6.626\times 10^{-34}\mathrm{J\cdot s}}{1\,\mathrm{\AA}}
+    =  6.626\times 10^{-24}\,\mathrm{kg\cdot m/s}, \\
+    p_y &= \frac{6.626\times 10^{-34}\mathrm{J\cdot s}}{1.024\,\mathrm{\AA}}
+    =6.471\times 10^{-24}\,\mathrm{kg\cdot m/s}
+  \end{split}
+ \end{align}
+ 으로 운동량을 각 성분별로 구할 수 있고 운동량의 크기 $p$는
+ \begin{align}
+  \begin{split}
+    p &=\sqrt{p_x^2+p_y^2} = \sqrt{(6.626\times 10^{-24}\,\mathrm{kg\cdot m/s})^2
+    +(6.471\times 10^{-24}\,\mathrm{kg\cdot m/s})^2}  \\
+    &= 9.262\times 10^{-24}\,\mathrm{kg\cdot m/s}
+  \end{split}
+ \end{align}
+ 으로 구할 수 있다.
+\end{itemize}
+
+\vspace{1cm}
+
+\noindent {\bf 문제 3 [50pt].}
+나트륨 표면을 이용하는 광전효과 실험에서 파장이 300 nm일 때 정지
+퍼텐셜(stopping potential)이 1.85 V, 파장이 400 nm일 때 0.820
+V였다. 이 데이터로부터 
+\begin{itemize}
+\item[(가)] 플랑크 상수의 값을 구하여라.
+\item[(나)] 나트륨의 일함수 $\Phi$를 구하여라. 
+\item[(다)] 나트륨에 대한 문턱 파장 $\lambda$를 구하여라. 
+\end{itemize}
+
+\noindent {\bf 풀이. }
+\begin{itemize}
+  \item[(가)]
+  입사한 빛의 파장을 $\lambda$라 하면 정지 퍼텐셜 $V_0$는
+  \begin{align}\label{eq:3-1}
+    eV_0=\frac{hc}{\lambda}-\Phi 
+  \end{align}
+  % 이고 플랑크 상수에 대해 쓰면 다음과 같다.
+  % \begin{align}
+  %   h = \frac{(eV_0+\Phi)\lambda}{c}.
+  % \end{align}
+  이고 $\Phi$는 나트륨의 일함수이다. 첫번째 데이터의 파장과 정지 퍼텐셜을 $\lambda_1$,
+  $V_{0,1}$이라 하고 두번째 데이터의 파장과 정지 퍼텐셜을 $\lambda_2$,
+  $V_{0,2}$이라 하자. 식~\eqref{eq:3-1}에 두 데이터를 대입하고 $\Phi$가 일정함을 이용해
+  두 식을 연립하면
+  \begin{align}
+    \begin{split}
+      & e(V_{0,1}-V_{0,2}) = hc\left(\frac{1}{\lambda_1}-\frac{1}{\lambda_2}\right) \\
+      &\Longrightarrow h =\frac{e(V_{0,1}-V_{0,2})}{c}\left(\frac{\lambda_1\lambda_2}
+      {\lambda_2-\lambda_1}\right)
+    \end{split}
+  \end{align}
+  를 얻을 수 있다. 값을 대입하여 플랑크 상수를 구해보면
+  \begin{align}
+    \begin{split}
+      h &=\frac{(1.60218\times 10^{-19}\,\mathrm{C})
+      ((1.85\,\mathrm{V})-(0.820\,\mathrm{V}))}{3\times 10^{8}\,\mathrm{m/s}}\left(
+        \frac{(300\,\mathrm{nm})(400\,\mathrm{nm})}
+        {(400\,\mathrm{nm})-(300\,\mathrm{nm})}\right)  \\
+        &=6.60\times 10^{-34}\,\mathrm{J\cdot s}
+      \end{split}
+  \end{align}
+  으로 실제 플랑크 상수 $h=6.626\times 10^{-34}\,\mathrm{J\cdot s}$와 0.3924 \%의 상대오차를
+  보인다.
+  % 따르면 플랑크 상수는
+  % \begin{align}
+  %   h = \frac{\{(1.60218\times 10^{-19}\,\mathrm{C})(1.85\,\mathrm{V})
+  %   +\Phi\}(300\,\mathrm{nm})}{3\times 10^{8}\,\mathrm{m/s}}
+  %   =2.96\times 10^{-34}\,\mathrm{J\cdot s}
+  % \end{align}
+  % 이고 두번째 데이터에 따르면
+  % \begin{align}
+  %   h = \frac{\{(1.60218\times 10^{-19}\,\mathrm{C})(0.820\,\mathrm{V})
+  %   +\Phi\}(400\,\mathrm{nm})}{3\times 10^{8}\,\mathrm{m/s}}
+  %   =2.96\times 10^{-34}\,\mathrm{J\cdot s}
+  % \end{align}
+  \item[(나)]
+ 플랑크 상수의 참값  $h=6.626\times 10^{-34}\,\mathrm{J\cdot s}$을 이용해 식~\eqref{eq:3-1}로부터
+ 나트륨의 일함수를 구해보자. 첫번째 데이터를 대입하면
+ \begin{align}
+  \begin{split}
+    \Phi &= \frac{(6.626\times 10^{-34}\mathrm{J\cdot s})(3\times 10^{8}\,\mathrm{m/s})}
+    {(300\,\mathrm{nm})}-(1.60218\times 10^{-19}\,\mathrm{C})(1.85\,\mathrm{V}) \\
+    &= 2.29\,\mathrm{eV}
+  \end{split}
+ \end{align}
+ $\Phi =  2.29\,\mathrm{eV}$이고 두번째 데이터를 대입하면
+ \begin{align}
+  \begin{split}
+    \Phi &= \frac{(6.626\times 10^{-34}\mathrm{J\cdot s})(3\times 10^{8}\,\mathrm{m/s})}
+    {(400\,\mathrm{nm})}-(1.60218\times 10^{-19}\,\mathrm{C})(0.820\,\mathrm{V}) \\
+    &= 2.28\,\mathrm{eV}
+  \end{split}
+ \end{align}
+ $\Phi =  2.28\,\mathrm{eV}$이다. 따라서 나트륨의 일함수는 $ 2.28\,\mathrm{eV}$임을 알 수 있다.
+  \item[(다)]
+  나트륨의 문턱 파장 $\lambda_0$는 정지 퍼텐셜이 $0$ eV일 때 파장으로 식~\eqref{eq:3-1}로부터
+ \begin{align}
+  \lambda_0 = \frac{hc}{\Phi} = \frac{(6.626\times 10^{-34}\mathrm{J\cdot s})(3\times 10^{8}\,\mathrm{m/s})}
+  {2.28\,\mathrm{eV}}
+  =5.44\times 10^{-7}\,\mathrm{m}
+ \end{align}
+  문턱 파장 $5.44\times 10^{-7}\,\mathrm{m}$를 얻을 수 있다.
+
+\end{itemize}
+
+\vspace{1cm}
+
+\noindent {\bf 문제 4 [50pt].} 
+전자와 양성자에 대한 컴프턴 파장을 구하여라. 전자와 양성자의 컴프턴
+파장과 같으려면 광자의 에너지는 각각 얼마나 되어야 하는가?
+(전자의 질량은 $m_e=0.511\, \mathrm{MeV/c^2}$, 양성자의 질량은
+$M_p=938.27\,\mathrm{MeV/c^2}$이다. $\hbar c=197.33\,\mathrm{MeV\cdot
+  fm}$를 이용하여라. $\hbar h/2\pi$이다.)  
+ 
+\noindent {\bf 풀이. }
+컴프턴 파장 $\lambda$는 다음과 같이 주어진다.
+\begin{align}
+  \lambda = \frac{h}{mc}.
+\end{align}
+
+전자의 컴프턴 파장 $\lambda_e$는
+\begin{align}
+  \lambda_e = \frac{2\pi\hbar}{m_e c}= \frac{2\pi\hbar c}{m_e c^2}
+  =\frac{2\pi(197.33\,\mathrm{MeV\cdot
+  fm})}{0.511\, \mathrm{MeV}}
+  =2\,430\,\mathrm{fm}
+\end{align}
+이고 양성자의 컴프턴 파장 $\lambda_p$는
+\begin{align}
+  \lambda_p=\frac{2\pi\hbar c}{m_p c^2}
+  =\frac{2\pi(197.33\,\mathrm{MeV\cdot
+  fm})}{938.27\, \mathrm{MeV}}
+  =1.3214\,\mathrm{fm}
+\end{align}
+과 같다. 광자의 에너지 $E$는 파장에 대해
+\begin{align}
+  E = \frac{hc}{\lambda}
+\end{align}
+와 같으므로 전자의 컴프턴 파장과 같으려면 
+\begin{align}
+  E_e = \frac{2\pi \hbar c}{\lambda_e} = m_ec^2 = 0.511\,\mathrm{MeV}
+\end{align}
+광자의 에너지가 $0.511\,\mathrm{MeV}$와 같아야 하고
+양성자의 컴프턴 파장과 같으려면
+\begin{align}
+  E_p = \frac{2\pi \hbar c}{\lambda_p} = m_pc^2 = 938.27\,\mathrm{MeV}
+\end{align}
+광자의 에너지가 $938.27\,\mathrm{MeV}$와 같아야 한다.
+\vspace{1cm}
+  
+
+
+\end{document}
+
