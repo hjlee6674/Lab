@@ -1,0 +1,21 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+
+# import csv
+folderPath = r'/home/sigma/Lab/data/1201' # 폴더 경로
+attributeTable = '1201 - Al Foil, 100.csv' # 파일 이름
+os.chdir(folderPath)
+df = pd.read_csv(attributeTable)
+dg = df[['Current(mA)', 'Voltage(mV)']]
+print(df)
+print(dg)
+#dg = df[['Current(mA)', 'Voltage(mV)']]
+# plot
+plt.figure(figsize=(15, 8))
+plt.rcParams.update({'font.size': 22})
+ax = dg.set_index('Current(mA)')['Voltage(mV)'].plot(kind='line', marker='d')
+ax.set_ylabel("Voltage(mV)")
+ax.set_xlabel("Current(mA)")
+plt.show()

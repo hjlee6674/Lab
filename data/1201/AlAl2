@@ -1,0 +1,69 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# import csv
+folderPath = r'/home/sigma/Lab/data/1201' # 폴더 경로
+attributeTable = 'AlAl2.csv' # 파일 이름
+os.chdir(folderPath)
+df = pd.read_csv(attributeTable)
+# x=df[['Current']]
+# y1=df[['Hall Voltage, 2mA']]
+# y2=df[['Hall Voltage, 4mA']]
+
+x=df[['Current(mA)']]
+y1=df[['Al Voltage, 25(mV)']]
+y2=df[['Al Voltage, 100(mV)']]
+
+
+
+
+# dg = df[['Current(mA)', 'Al Voltage, 25(mV)']]
+# dh = df[['Current(mA)', 'Al Voltage, 100(mV)']]
+
+
+#+df = df[['Angle', 'Intensity']]
+
+
+fig=plt.figure(figsize=(10,10))
+ax = fig.add_subplot(1,1,1)
+
+ax.plot(x,y1, marker='o',label='25 C$^\circ$')
+ax.plot(x,y2, marker='^',label='100 C$^\circ$')
+
+ax.set_ylabel('Voltage(mV)',fontsize=24)
+ax.set_xlabel('Current(mA)',fontsize=24)
+ax.legend(fontsize=20, loc='best')
+
+
+
+
+
+
+
+
+# plot
+# plt.figure(figsize=(15, 8))
+# plt.rcParams.update({'font.size': 22})
+# ax = dg.set_index('Current')['Hall Voltage, 2mA'].plot(kind='line', marker='d')
+# ax.set_ylabel("Hall Voltage, 2mA")
+# ax.set_xlabel("Current")
+
+# ay=ax.twinx()
+# ay = dh.set_index('Current')['Hall Voltage, 4mA'].plot(color='green', kind='line', marker='d')
+# ay.set_ylabel("Hall Voltage, 4mA")
+# ay.set_xlabel("Current")
+
+# az=ax.twinx()
+# az= di.set_index('Current')['Hall Voltage, 6mA'].plot(color='green', kind='line', marker='d')
+# az.set_ylabel("Hall Voltage, 6mA")
+# az.set_xlabel("Current")
+
+plt.show()
+
+#ax = df.set_index('Tempertature')['Capacity'].plot(kind='line', marker='d')
+#ay = df.set_index('Tempertature')['D'].plot(kind='line', marker='d')
+#ax.set_ylabel("Capacity")
+#ay.set_ylabel("D")
+#ax.set_xlabel("Temperature")
+#plt.show()
