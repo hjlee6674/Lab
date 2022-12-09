@@ -24,7 +24,8 @@ measurement}
 \date{\today}
 
 \begin{abstract}
-
+4  point probe 방법을 통해 Al Foil에서의 비저항이 Si sample의 비저항보다 낮다는
+사실과 온도가 높을 때 비저항이 더 높아진다는 사실을 확인할 수 있었다.
   \end{abstract}
 
  \maketitle
@@ -92,7 +93,7 @@ measurement}
       >{\centering}p{0.12\textwidth}
       >{\centering\arraybackslash}p{0.12\textwidth}}
         \toprule
-        Current (mA)& $\rho$ ($\Omega\cdot$m) & $\rho$ ($\Omega$) \\
+        Current (mA)& $\rho$ ($\Omega\cdot$m) & $\rho_s$ ($\Omega$) \\
         \midrule
         20 &2.9 $\times 10^{-8}$& 1.6 $\times 10^{-3}$\\
         40 &2.2 $\times 10^{-8}$& 1.2 $\times 10^{-3}$ \\
@@ -122,7 +123,7 @@ measurement}
       >{\centering}p{0.12\textwidth}
       >{\centering\arraybackslash}p{0.12\textwidth}}
         \toprule
-        Current (mA)& $\rho$ ($\Omega\cdot$m) & $\rho$ ($\Omega$) \\
+        Current (mA)& $\rho$ ($\Omega\cdot$m) & $\rho_s$ ($\Omega$) \\
         \midrule
         20 &2.4 $\times 10^{-8}$& 1.4 $\times 10^{-3}$\\
         40 &2.4 $\times 10^{-8}$& 1.4 $\times 10^{-3}$ \\
@@ -153,7 +154,7 @@ measurement}
       >{\centering}p{0.12\textwidth}
       >{\centering\arraybackslash}p{0.12\textwidth}}
         \toprule
-        Current (mA)& $\rho$ ($\Omega\cdot$m) & $\rho$ ($\Omega$) \\
+        Current (mA)& $\rho$ ($\Omega\cdot$m) & $\rho_s$ ($\Omega$) \\
         \midrule
         20 &8.5 $\times 10^{-3}$& 17  \\
         40 &4.5 $\times 10^{-3}$& 9.1  \\
@@ -163,12 +164,38 @@ measurement}
         \bottomrule
     \end{tabular}
     \caption{25 C$^\circ$ 조건에서 두께 0.50 mm Si sample의
-    비저항과 면저항}\label{table:2}
+    비저항과 면저항}\label{table:3}
   \end{table}
 
 \section{Analysis}
 \subsubsection{For matter}
+Al Foil과 Si sample에 대해 4 point probe 방법으로 전류에 따른 전압을
+측정한 결과, Si sample의 전압이 더 높게 관찰되었고 비저항과 면저항을 비교해보면 
+Si sample의 비저항과 면저항이 더 높았음을 확인할 수 있었다. 그래프 FIG.~\ref{AlSi}에서
+Si sample은 $\mu$A 스케일에서 측정이 이루어졌다. 이는 Al와 Si가 각각 도체와 반도체의
+성질을 가지고 있기 때문으로 해석할 수 있다.
+
+
 \begin{figure}[htbp]
+  \vspace{0.5cm}
+  \centering
+  \includegraphics[scale = 0.25]{AlSi.png}
+  \caption{두께 0.018 mm Al Foil와 두께 0.50 mm
+  n형 Si sample을 각각 25 C$^\circ$ 조건에서
+  측정한 그래프}
+  \label{AlSi}
+\end{figure}
+
+
+
+\subsubsection{For temperature}
+같은 Al Foil의 온도를 달리하여 4 point probe 방법으로 전류에 따른 전압을
+측정한 결과, 온도가 높은 경우에 전압이 더 크게 측정되었고 계산한 비저항과 
+면저항 또한 높게 확인되었다. 이는 온도가 높아지면서 분자들의 진동운동이 커지고
+전자의 흐름에 더 많은 영향을 주기 때문이다.
+
+  \begin{figure}[htbp]
+    \vspace{0.5cm}
     \centering
     \includegraphics[scale = 0.25]{AlAl2.png}
     \caption{두께 0.018 mm Al Foil을 25 C$^\circ$, 100 C$^\circ$ 조건에서
@@ -176,18 +203,17 @@ measurement}
     \label{AlAl2}
   \end{figure}
 
-\subsubsection{For temperature}
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[scale = 0.25]{AlSi.png}
-    \caption{두께 0.018 mm Al Foil와 두께 0.50 mm
-    n형 Si sample을 각각 25 C$^\circ$ 조건에서
-    측정한 그래프}
-    \label{AlSi}
-  \end{figure}
+
 
 \section{Conclusion}
-
+\begin{itemize}
+  \item[1. ]
+  Al Foil과 Si sample의 비교를 통해 도체가 반도체보다 4 point probe 방법에 의한
+  비저항, 면저항 측정치가 더 낮음을 확인할 수 있었다.
+  \item[2. ]
+  같은 Al Foil의 온도를 달리하여 측정한 실험의 비교를 통해 온도가 높을 때
+  비저항, 면저항 측정치가 더 높음을 확인할 수 있었다.
+\end{itemize}
 
 
 % \nocite{*} 
