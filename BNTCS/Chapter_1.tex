@@ -1,0 +1,363 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[tightenlines,floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{slashed}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large SU(2) NJL model: vacuum sector and meson properties}
+\author{Hui-Jae Lee} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+  \author{Ho-Yeon Won}
+  \affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+  \author{Yu-Son Jun}
+  \affiliation{Hadron Theory Group, Department of Physics,
+  Inha  University, Incheon 22212, Republic of Korea }
+\maketitle
+
+\section[2.4]{Mesonic Properties}
+The action $S$ in this process is
+\begin{align}\label{1-1}
+  S &= -N_c\mathrm{Tr}\left[\log D\right]+\int d^4x\,\frac{1}{2G}\left(\sigma^2+\vec{\pi}^2\right)  \\
+  &= -\frac{1}{2}N_c\mathrm{Tr}\left[\log D^\dagger D\right]
+  +\int d^4x\,\frac{1}{2G}\left(\sigma^2+\vec{\pi}^2\right)
+\end{align}
+where $D^\dagger D$ is
+\begin{align}\label{1-2}
+  &D^\dagger D = -\partial^2+\sigma^2+\vec{\pi}^2
+  -\left\{\slashed{\partial}(\sigma+i\vec{\pi}\cdot\vec{\tau}\gamma_5)\right\} 
+  =V^{-1}+A
+\end{align}
+and $V^{-1}= -\partial^2+M^2,\,\,\, A=\sigma^2+\vec{\pi}^2-M^2
+-\left\{\slashed{\partial}(\sigma+i\vec{\pi}\cdot\vec{\tau}\gamma_5)\right\}$.
+By the expansion for log,
+\begin{align}\label{1-3}
+  \begin{split}
+    &\mathrm{Tr}\left[\log\left(V^{-1}+A\right)\right] \approx 
+    \mathrm{Tr}\left[\log\left(V^{-1}\right)\right]
+    -\frac{1}{2}\mathrm{Tr}\left[VAVA\right]
+    +8I_1(M)\int d^4x\left(\sigma^2+\vec{\pi}^2-M^2\right) \\
+    &\Longrightarrow
+    S=-\frac{1}{2}N_c\left[\mathrm{Tr}
+    \left[\log\left(V^{-1}\right)\right]
+    -\frac{1}{2}\mathrm{Tr}\left[VAVA\right]
+    +8I_1(M)\int d^4x\left(\sigma^2+\vec{\pi}^2-M^2\right)\right]
+    +\int d^4x\,\frac{1}{2G}\left(\left(\sigma-\hat{m}\right)^2+\vec{\pi}^2\right)
+  \end{split}
+\end{align}
+We have to calculate $\mathrm{Tr}\left[VAVA\right]$ hand by hand.
+
+\subsection{Calculation of $\mathrm{Tr}\left[VAVA\right]$}
+\begin{align}\label{1-1-1}
+  \begin{split}
+    \mathrm{Tr}\left[VAVA\right]
+    &=\mathrm{Tr}\left[V\left(\sigma^2+\vec{\pi}^2-M^2
+  -\left\{\slashed{\partial}(\sigma+i\vec{\pi}\cdot\vec{\tau}\gamma_5)
+  \right\}\right)V\left(\sigma^2+\vec{\pi}^2-M^2
+  -\left\{\slashed{\partial}(\sigma+i\vec{\pi}\cdot\vec{\tau}\gamma_5)
+  \right\}\right)\right]  \\
+  &=\mathrm{Tr}\left[V\left(2\sigma_0\tilde{\sigma}+2\vec{\pi}_0\tilde{\vec{\pi}}
+  +\tilde{\sigma}^2+\tilde{\vec{\pi}}^2
+  -\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}\gamma_5)
+  \right\}\right)V\left(2\sigma_0\tilde{\sigma}+2\vec{\pi}_0\tilde{\vec{\pi}}
+  +\tilde{\sigma}^2+\tilde{\vec{\pi}}^2
+  -\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}\gamma_5)
+  \right\}\right)\right]  \\
+  &=\mathrm{Tr}\left[V\left(2\sigma_0\tilde{\sigma}+2\vec{\pi}_0\tilde{\vec{\pi}}
+  +\tilde{\sigma}^2+\tilde{\vec{\pi}}^2
+  -\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}\gamma_5)
+  \right\}\right)V\left(2\sigma_0\tilde{\sigma}+2\vec{\pi}_0\tilde{\vec{\pi}}
+  +\tilde{\sigma}^2+\tilde{\vec{\pi}}^2
+  -\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}\gamma_5)
+  \right\}\right)\right]  
+  \\
+  &=\mathrm{Tr}\left[{\color{red}4\sigma^2_0V\tilde{\sigma}V\tilde{\sigma}}
+  +2i\sigma_0V\tilde{\sigma}V\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}
+  \cdot\vec{\tau}\gamma_5)\right\}
+  +2i\sigma_0V\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}
+  \cdot\vec{\tau}\gamma_5)\right\}V\tilde{\sigma}
+  {\color{red}-V\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}\gamma_5)
+  \right\}}\right.  \\
+  &\left.\,\,\,\,\,{\color{red}\times V\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}
+  \gamma_5)\right\}
+  +2\sigma_0V\tilde{\sigma}V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)
+  +2\sigma_0V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)V\tilde{\sigma}}
+  +iV\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)V\left\{\slashed{\partial}
+  (\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}\gamma_5)\right\}\right.  \\
+  &\left.\,\,\,\,\,+iV\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}
+  \gamma_5)\right\}V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)
+  {\color{red}+V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)}
+  \right]  \\
+\end{split}
+\end{align}
+We can erase terms using relations tr$[\gamma^\mu]=0$ and tr$[\gamma^\mu\gamma_5]=0$ in the spin space. 
+\begin{align}\label{1-1-2}
+  \begin{split}
+    \mathrm{Tr}\left[VAVA\right]
+  &=\mathrm{Tr}\left[
+    4\sigma^2_0V\tilde{\sigma}V\tilde{\sigma}
+  -V\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}\gamma_5)
+  \right\}V\left\{\slashed{\partial}(\tilde{\sigma}+i\tilde{\vec{\pi}}\cdot\vec{\tau}
+  \gamma_5)\right\}+2\sigma_0\left\{V\tilde{\sigma},V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)
+  \right\}\right.\\
+  &\left.\,\,\,\,\,+V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)V\left(\tilde{\sigma}^2
+  +\tilde{\vec{\pi}}^2\right)\right].
+\end{split}
+\end{align}
+To treat second term, following relation is needed.
+\begin{align}\label{1-1-3}
+  \begin{split}
+    \gamma_5\slashed{\partial}(\tilde{\vec{\pi}}\cdot\vec{\tau})
+    \gamma_5\slashed{\partial}(\tilde{\vec{\pi}}\cdot\vec{\tau})
+    &=-\slashed{\partial}(\tilde{\vec{\pi}}\cdot\vec{\tau})\slashed{\partial}(\tilde{\vec{\pi}}\cdot\vec{\tau})
+    =-\partial_\mu\gamma^\mu\tilde{\pi}_i\tau_i\partial_\nu\gamma^\nu\tilde{\pi}_j\tau_j
+    =-\partial_\mu\gamma^\mu\tilde{\pi}_i\partial_\nu\gamma^\nu\tilde{\pi}_j(\delta_{ij}+i\epsilon_{ijk}\tau_k)  \\
+    &=-\partial_\mu\gamma^\mu\tilde{\pi}_i\partial_\nu\gamma^\nu\tilde{\pi}_i
+      -\epsilon_{ijk}\partial_\mu\gamma^\mu\tilde{\pi}_i\partial_\nu\gamma^\nu\tilde{\pi}_j\tau_k
+  \end{split}
+\end{align}
+Because this is in the trace and tr[$\tau_i$]=0, last term is a zero. Therefore
+\begin{align}\label{1-1-3-1}
+  \begin{split}
+    \gamma_5\slashed{\partial}(\tilde{\vec{\pi}}\cdot\vec{\tau})
+    \gamma_5\slashed{\partial}(\tilde{\vec{\pi}}\cdot\vec{\tau})
+    =-\slashed{\partial}\tilde{\vec{\pi}}\cdot
+    \slashed{\partial}\tilde{\vec{\pi}}
+  \end{split}
+\end{align}
+\begin{align}\label{1-1-4}
+  \begin{split}
+    \mathrm{Tr}\left[VAVA\right]
+    &=\mathrm{Tr}\left[4\sigma^2_0V\tilde{\sigma}V\tilde{\sigma}
+    -V\slashed{\partial}\tilde{\sigma}V\slashed{\partial}\tilde{\sigma}
+    -V\slashed{\partial}\tilde{\vec{\pi}}\cdot V\slashed{\partial}\tilde{\vec{\pi}}
+    -2i\gamma_5V\slashed{\partial}\tilde{\sigma}\cdot\slashed{\partial}\left(\tilde{\vec{\pi}}
+    \cdot\vec{\tau}\right)+2\sigma_0\left\{V\tilde{\sigma},V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)
+    \right\}\right.\\
+    &\left.\,\,\,\,\,+V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)V\left(\tilde{\sigma}^2
+    +\tilde{\vec{\pi}}^2\right)
+    \right].
+  \end{split}
+\end{align}
+Since tr$[\gamma_5]=0$,
+\begin{align}\label{1-1-5}
+  \begin{split}
+    \mathrm{Tr}\left[VAVA\right]
+    &=\mathrm{Tr}\left[4\sigma^2_0V\tilde{\sigma}V\tilde{\sigma}
+    -V\slashed{\partial}\tilde{\sigma}V\slashed{\partial}\tilde{\sigma}
+    -V\slashed{\partial}\tilde{\vec{\pi}}\cdot V\slashed{\partial}\tilde{\vec{\pi}}
+    +2\sigma_0\left\{V\tilde{\sigma},V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)
+    \right\}
+    \right.\\
+    &\left.\,\,\,\,\,
+    +V\left(\tilde{\sigma}^2+\tilde{\vec{\pi}}^2\right)V\left(\tilde{\sigma}^2
+    +\tilde{\vec{\pi}}^2\right)
+    \right].
+  \end{split}
+\end{align}
+From $\phi=(\sigma,\vec{\pi})$,
+\begin{align}\label{1-1-6}
+  \begin{split}
+    &\phi=\phi_0+\tilde{\phi}
+    =(\sigma_c=M,0)+(\tilde{\sigma},\tilde{\vec{\pi}}) \\
+    &\Longrightarrow \phi_0\tilde{\phi}=\sigma_0\tilde{\sigma},\,\,\,
+    \tilde{\phi}\tilde{\phi}=\tilde{\sigma}^2+\tilde{\vec{\pi}}^2
+  \end{split}
+\end{align}
+substituting Eq~\eqref{1-1-5},
+\begin{align}\label{1-1-7}
+  \begin{split}
+    \mathrm{Tr}\left[VAVA\right]
+    &=\mathrm{Tr}\left[
+    4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+    -V\slashed{\partial}\tilde{\phi} 
+     V\slashed{\partial}\tilde{\phi}
+    +2\left\{V\phi_0\tilde{\phi},V\tilde{\phi}\tilde{\phi}
+    \right\}
+    +V\tilde{\phi}\tilde{\phi}V\tilde{\phi}\tilde{\phi}
+    \right].
+  \end{split}
+\end{align}
+Therefore the action Eq~\eqref{1-3} is
+\begin{align}\label{1-1-8}
+  \begin{split}
+    S=-\frac{1}{2}N_c\left[\mathrm{Tr}
+    \left[\log\left(V^{-1}\right)\right]
+    -\frac{1}{2}\mathrm{Tr}\left[
+      4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+      -V\slashed{\partial}\tilde{\phi}
+       V\slashed{\partial}\tilde{\phi}
+      +2\left\{V\phi_0\tilde{\phi},V\tilde{\phi}\tilde{\phi}
+      \right\}
+      +V\tilde{\phi}\tilde{\phi}V\tilde{\phi}\tilde{\phi}
+      \right]\right.\\
+      \,\,\,\,\,\left.
+        +8I_1(M)\int d^4x\left(\sigma^2+\vec{\pi}^2-M^2\right)\right]
+        +\int d^4x\,\frac{1}{2G}\left(\left(\sigma-\hat{m}\right)^2+\vec{\pi}^2\right)
+      \end{split}
+\end{align}
+Since we use saddle-point approximation, the action can be expressed the expansion for $\phi$
+with a zero first derivative:
+\begin{align}\label{1-1-9}
+  \begin{split}
+    S[\phi] &\approx S[\phi_0]+\frac{\delta}{\delta\phi}S[\phi_0]\tilde{\phi}
+    +\frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2\\
+    &=S[\phi_0]+\frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2.
+  \end{split}
+\end{align}
+Comparing with Eq~\eqref{1-1-8}, we can find the second derivative term
+\begin{align}\label{1-1-10}
+  \begin{split}
+    \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
+    &=-\frac{1}{2}N_c\left[
+      -\frac{1}{2}\mathrm{Tr}\left[
+      4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+      -V\slashed{\partial}\tilde{\phi}
+       V\slashed{\partial}\tilde{\phi}
+      \right]
+    \right]=\frac{N_c}{4}\int\frac{d^4p}{(2\pi)^4}
+    \mathrm{tr}\left<p\left|4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+    -V\slashed{\partial}\tilde{\phi}
+     V\slashed{\partial}\tilde{\phi}\right|p\right> \\
+     &=2N_c\int\frac{d^4p}{(2\pi)^4}
+     \left<p\left|4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+     -V\slashed{\partial}\tilde{\phi}
+      V\slashed{\partial}\tilde{\phi}\right|p\right>.
+  \end{split}
+\end{align}
+Now we will use the completeness relation:
+\begin{align}\label{1-1-11}
+  &\mathbb{I} = \frac{d^4p'}{(2\pi)^4}|p'\left>\right<p'|\\
+  \begin{split}
+    &\Longrightarrow
+    \int\frac{d^4p}{(2\pi)^4}
+     \left<p\left|4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+     -V\slashed{\partial}\tilde{\phi}
+      V\slashed{\partial}\tilde{\phi}\right|p\right>
+      =\int\frac{d^4p}{(2\pi)^4}\int\frac{d^4p'}{(2\pi)^4}
+      \left(
+                \left<p
+                \left|4\phi_0^2V\tilde{\phi}
+                \right|p'
+                \right>
+              \left<p'
+              \left|V\tilde{\phi}
+              \right|
+              p\right>
+      \right.\\
+      &\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad
+      \qquad\qquad\qquad\qquad\qquad\qquad\qquad
+      -\left.
+                      \left<p
+                      \left|V\slashed{\partial}\tilde{\phi}
+                      \right|p'
+                      \right>
+              \left<p'
+              \left|V\slashed{\partial}\tilde{\phi}
+              \right|p
+              \right>
+        \right)
+  \end{split}
+\end{align}
+In the momentum space representation, $V = 1/(p^2+M^2)$. So
+\begin{align}\label{1-1-12}
+  \begin{split}
+    \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
+    &=2N_c\int\frac{d^4p}{(2\pi)^4}\int\frac{d^4p'}{(2\pi)^4}
+    \frac{1}{(p^2+M^2)(p'^2+M^2)}
+    \left(\left<p\left|4\phi_0^2\tilde{\phi}\right|p'\right>
+    \left<p'\left|\tilde{\phi}\right|p\right>
+    -\left<p\left|\slashed{\partial}\tilde{\phi}\right|p'\right>
+    \left<p'\left|\slashed{\partial}\tilde{\phi}\right|p\right>
+    \right)
+  \end{split}
+\end{align}
+Let us calculate term by term.
+\begin{align}\label{1-1-13}
+  \begin{split}
+    \left<p\left|4\phi_0^2\tilde{\phi}\right|p'\right>
+    &=4M^2\int d^4x\left<p\left|\tilde{\phi}
+    \right|x\right>\left<x\left| \right.p'\right>
+    =4M^2\int d^4x\,\tilde{\phi}(x)\left<p\left|
+    \right.x\right>\left<x\left| \right.p'\right>
+    =4M^2\int d^4x\,\tilde{\phi}(x)e^{ix(p-p')} \\
+    &= 4M^2\tilde{\phi}(p-p'), \\
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \left<p'\left|\tilde{\phi}\right|p\right>&=\tilde{\phi}(p'-p),  \\
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \left<p\left|\slashed{\partial}\tilde{\phi}\right|p'\right>&= 
+    \int d^4x\left<p\left|\slashed{\partial}\tilde{\phi}
+    \right|x\right>\left<x\left| \right.p'\right>
+    =\int d^4x\,\slashed{\partial}\tilde{\phi}(x)\left<p\left|
+    \right.x\right>\left<x\left| \right.p'\right>
+    =\int d^4x\,\slashed{\partial}\tilde{\phi}(x)e^{ix(p-p')} \\
+    &=\int d^4x\,\slashed{\partial}\left(\tilde{\phi}(x)e^{ix(p-p')}\right)
+    -\int d^4x\,\tilde{\phi}(x)\slashed{\partial}e^{ix(p-p')}
+    =-\int d^4x\,\tilde{\phi}(x)i(p-p')e^{ix(p-p')} \\
+    &=-i(p-p')\tilde{\phi}(p-p'),
+    % \int d^4x\left<p\right|\slashed{\partial}\left(\tilde{\phi}
+    % \left|x\right>\right)-\tilde{\phi}\slashed{\partial}
+    % \left|x\right>
+    \\
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \left<p'\left|\slashed{\partial}\tilde{\phi}\right|p\right>&=  
+    -i(p'-p)\tilde{\phi}(p'-p).
+  \end{split}
+\end{align}
+Then Eq~\eqref{1-1-12} is
+\begin{align}
+  \begin{split}
+    \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
+    &=2N_c\int\frac{d^4p}{(2\pi)^4}\int\frac{d^4p'}{(2\pi)^4}
+    \frac{4M^2\tilde{\phi}(p-p')
+    \tilde{\phi}(p'-p)
+  +(p-p')(p'-p)\tilde{\phi}(p-p')
+   \tilde{\phi}(p'-p)}{(p^2+M^2)(p'^2+M^2)}.
+  \end{split}
+\end{align}
+For convenience, let us introduce changing variable:
+\begin{align}
+  p'+p=2k,\,\,\,p'-p=q
+\end{align}
+and
+\begin{align}
+  p'=k+\frac{q}{2},\,\,\, p =k-\frac{q}{2}.
+\end{align}
+Since we change two variables $(p',p)$ to $(k,q)$, 4-integral variables becomes
+$d^4kd^4q$. Hence 
+\begin{align}
+  \begin{split}
+    \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
+    &=2N_c\int\frac{d^4k}{(2\pi)^4}\int\frac{d^4q}{(2\pi)^4}
+    \frac{4M^2\tilde{\phi}(-q)
+    \tilde{\phi}(q)
+  -q^2\tilde{\phi}(-q)
+   \tilde{\phi}(q)}{\left\{\left(k-\frac{q}{2}\right)^2+M^2\right\}
+   \left\{\left(k+\frac{q}{2}\right)^2+M^2\right\}} \\
+   &=2N_c\int\frac{d^4k}{(2\pi)^4}\int\frac{d^4q}{(2\pi)^4}
+    \frac{4M^2-q^2}{\left\{\left(k-\frac{q}{2}\right)^2+M^2\right\}
+   \left\{\left(k+\frac{q}{2}\right)^2+M^2\right\}}\tilde{\phi}(-q)
+   \tilde{\phi}(q)
+  \end{split}
+\end{align}
+\end{document}
+
