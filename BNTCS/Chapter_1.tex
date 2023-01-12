@@ -197,6 +197,7 @@ substituting Eq~\eqref{1-1-5},
     \right].
   \end{split}
 \end{align}
+\subsection{Action and Propagator}
 Therefore the action Eq~\eqref{1-3} is
 \begin{align}\label{1-1-8}
   \begin{split}
@@ -215,6 +216,70 @@ Therefore the action Eq~\eqref{1-3} is
         +\int d^4x\,\frac{1}{2G}\left(\left(\sigma-\hat{m}\right)^2+\vec{\pi}^2\right)
       \end{split}
 \end{align}
+We already know from the previous calculation in the paper that
+\begin{align}
+  \begin{split}
+    8\sigma_c G N_cI_1(\sigma_c)=\sigma_c-\hat{m}.
+  \end{split}
+\end{align}
+Then last two terms are
+\begin{align}
+  \begin{split}
+    &-4N_cI_1(M)\int d^4x\left(\sigma^2+\vec{\pi}^2-M^2\right)
+        +\int d^4x\,\frac{1}{2G}\left(\left(\sigma-\hat{m}\right)^2+\vec{\pi}^2\right)  \\
+    &=-\frac{M-\hat{m}}{2MG}\int d^4x\left(\phi^2-M^2\right)
+    +\int d^4x\,\frac{1}{2G}\left(\phi^2 -2\sigma\hat{m}+\hat{m}^2\right) \\
+    &=\left(\frac{\hat{m}}{2MG}-\frac{1}{2G}\right)\int d^4x\left(
+      \phi^2+2\phi\tilde{\phi}+\tilde{\phi}^2-M^2\right)
+    +\frac{1}{2G}\int d^4x\,\left(\phi^2 -2\sigma\hat{m}+\hat{m}^2\right) \\
+    &=\left(\frac{\hat{m}}{2MG}-\frac{1}{2G}\right)\int d^4x\left(
+      2M\tilde{\sigma}+\tilde{\phi}^2\right)
+    +\frac{1}{2G}\int d^4x\,\left(M^2+2M\tilde{\sigma}+\tilde{\phi}^2 
+    -2\sigma\hat{m}+\hat{m}^2\right) \\
+    &=\int d^4x\left(
+      \frac{\hat{m}\tilde{\sigma}}{G}+\frac{\hat{m}}{2MG}\tilde{\phi}^2\right)
+      -\int d^4x\left(\frac{M\tilde{\sigma}}{G}+\frac{1}{2G}\tilde{\phi}^2\right)
+    +\int d^4x\,\left(\frac{M^2}{2G}+\frac{M\tilde{\sigma}}{G}+\frac{1}{2G}\tilde{\phi}^2 
+    -\frac{M\hat{m}}{G}+\frac{\tilde{\sigma}\hat{m}}{G}+\frac{\hat{m}^2}{2G}\right) \\
+    &=\int d^4x\left(
+      \frac{2\hat{m}\tilde{\sigma}-M\hat{m}}{G}
+      +\frac{M^2+\hat{m}^2}{2G}\right)
+      +\int d^4x\frac{\hat{m}}{2MG}\tilde{\phi}^2.
+  \end{split}
+\end{align}
+We have to keep in mind the last term which will be included the second derivative of the action.
+Let us write the action one more time:
+\begin{align}
+  \begin{split}
+    S=-\frac{1}{2}N_c\left[\mathrm{Tr}
+    \left[\log\left(V^{-1}\right)\right]
+    -\frac{1}{2}\mathrm{Tr}\left[
+    4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+    -V\slashed{\partial}\tilde{\phi}
+     V\slashed{\partial}\tilde{\phi}
+    +2\left\{V\phi_0\tilde{\phi},V\tilde{\phi}\tilde{\phi}
+    \right\}
+    +V\tilde{\phi}\tilde{\phi}V\tilde{\phi}\tilde{\phi}
+    \right]\right]\\
+    \,\,\,\,\,
+    +\int d^4x\left(
+    \frac{2\hat{m}\tilde{\sigma}-M\hat{m}}{G}
+    +\frac{M^2+\hat{m}^2}{2G}\right)
+    +\int d^4x\frac{\hat{m}}{2MG}\tilde{\phi}^2,
+  \end{split}
+\end{align}
+\begin{align}\label{1-1-R}
+  S=-\frac{1}{2}N_c\left[\mathrm{Tr}
+  \left[\log\left(V^{-1}\right)\right]
+  -\frac{1}{2}\mathrm{Tr}\left[
+  4\phi_0^2V\tilde{\phi}V\tilde{\phi}
+  -V\slashed{\partial}\tilde{\phi}
+   V\slashed{\partial}\tilde{\phi}
+  +2\left\{V\phi_0\tilde{\phi},V\tilde{\phi}\tilde{\phi}
+  \right\}
+  +V\tilde{\phi}\tilde{\phi}V\tilde{\phi}\tilde{\phi}
+  \right]\right]+R_1+R_2\tilde{\phi}^2.
+\end{align}
 Since we use saddle-point approximation, the action can be expressed the expansion for $\phi$
 with a zero first derivative:
 \begin{align}\label{1-1-9}
@@ -224,7 +289,7 @@ with a zero first derivative:
     &=S[\phi_0]+\frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2.
   \end{split}
 \end{align}
-Comparing with Eq~\eqref{1-1-8}, we can find the second derivative term
+Comparing with Eq~\eqref{1-1-R}, we can find the second derivative term
 \begin{align}\label{1-1-10}
   \begin{split}
     \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
@@ -234,14 +299,15 @@ Comparing with Eq~\eqref{1-1-8}, we can find the second derivative term
       -V\slashed{\partial}\tilde{\phi}
        V\slashed{\partial}\tilde{\phi}
       \right]
-    \right]=\frac{N_c}{4}\int\frac{d^4p}{(2\pi)^4}
+    \right]+R_2\tilde{\phi}^2\\
+    &=\frac{N_c}{4}\int\frac{d^4p}{(2\pi)^4}
     \mathrm{tr}\left<p\left|4\phi_0^2V\tilde{\phi}V\tilde{\phi}
     -V\slashed{\partial}\tilde{\phi}
-     V\slashed{\partial}\tilde{\phi}\right|p\right> \\
+     V\slashed{\partial}\tilde{\phi}\right|p\right> +R_2\tilde{\phi}^2\\
      &=2N_c\int\frac{d^4p}{(2\pi)^4}
      \left<p\left|4\phi_0^2V\tilde{\phi}V\tilde{\phi}
      -V\slashed{\partial}\tilde{\phi}
-      V\slashed{\partial}\tilde{\phi}\right|p\right>.
+      V\slashed{\partial}\tilde{\phi}\right|p\right>+R_2\tilde{\phi}^2.
   \end{split}
 \end{align}
 Now we will use the completeness relation:
@@ -288,7 +354,7 @@ In the momentum space representation, $V = 1/(p^2+M^2)$. So
     \left<p'\left|\tilde{\phi}\right|p\right>
     -\left<p\left|\slashed{\partial}\tilde{\phi}\right|p'\right>
     \left<p'\left|\slashed{\partial}\tilde{\phi}\right|p\right>
-    \right)
+    \right)+R_2\tilde{\phi}^2
   \end{split}
 \end{align}
 Let us calculate term by term.
@@ -324,14 +390,14 @@ Let us calculate term by term.
   \end{split}
 \end{align}
 Then Eq~\eqref{1-1-12} is
-\begin{align}
+\begin{align}\label{1-1-14}
   \begin{split}
     \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
     &=2N_c\int\frac{d^4p}{(2\pi)^4}\int\frac{d^4p'}{(2\pi)^4}
     \frac{4M^2\tilde{\phi}(p-p')
     \tilde{\phi}(p'-p)
-  +(p-p')(p'-p)\tilde{\phi}(p-p')
-   \tilde{\phi}(p'-p)}{(p^2+M^2)(p'^2+M^2)}.
+  -(p-p')(p'-p)\tilde{\phi}(p-p')
+   \tilde{\phi}(p'-p)}{(p^2+M^2)(p'^2+M^2)}+R_2\tilde{\phi}^2.
   \end{split}
 \end{align}
 For convenience, let us introduce changing variable:
@@ -344,25 +410,241 @@ and
 \end{align}
 Since we change two variables $(p',p)$ to $(k,q)$, 4-integral variables becomes
 $d^4kd^4q$. Hence 
-\begin{align}
+\begin{align}\label{1-1-15}
   \begin{split}
     \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
     &=2N_c\int\frac{d^4k}{(2\pi)^4}\int\frac{d^4q}{(2\pi)^4}
     \frac{4M^2\tilde{\phi}(-q)
     \tilde{\phi}(q)
-  -q^2\tilde{\phi}(-q)
+  +q^2\tilde{\phi}(-q)
    \tilde{\phi}(q)}{\left\{\left(k-\frac{q}{2}\right)^2+M^2\right\}
-   \left\{\left(k+\frac{q}{2}\right)^2+M^2\right\}} \\
+   \left\{\left(k+\frac{q}{2}\right)^2+M^2\right\}}+R_2\tilde{\phi}^2 \\
    &=2N_c\int\frac{d^4k}{(2\pi)^4}\int\frac{d^4q}{(2\pi)^4}
-    \frac{4M^2-q^2}{\left\{\left(k-\frac{q}{2}\right)^2+M^2\right\}
+    \frac{4M^2+q^2}{\left\{\left(k-\frac{q}{2}\right)^2+M^2\right\}
    \left\{\left(k+\frac{q}{2}\right)^2+M^2\right\}}\tilde{\phi}(-q)
-   \tilde{\phi}(q)  \\
+   \tilde{\phi}(q)+R_2\tilde{\phi}^2  \\
    &= 2N_c\int\frac{d^4q}{(2\pi)^4}
-   (4M^2-q^2)f(q)\tilde{\phi}(-q)\tilde{\phi}(q),\,\,\,
+   (4M^2+q^2)f(q)\tilde{\phi}(-q)\tilde{\phi}(q)+R_2\tilde{\phi}^2,\,\,\,
    f(q) = \int\frac{d^4k}{(2\pi)^4}\frac{1}
    {\left\{\left(k-\frac{q}{2}\right)^2+M^2\right\}
    \left\{\left(k+\frac{q}{2}\right)^2+M^2\right\}}.
   \end{split}
 \end{align}
+$\tilde{\phi}(q)$ can be expressed into the Fourier transformation
+\begin{align}\label{1-1-16}
+  \begin{split}
+    &\tilde{\phi}(-q)\tilde{\phi}(q)
+    =\int d^4x\int d^4y\,
+    \tilde{\phi}(y)e^{iq(x-y)}\tilde{\phi}(x)  \\
+    &\Longrightarrow 
+    \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
+    =2N_c
+    \int d^4x\int d^4y
+    \int\frac{d^4q}{(2\pi)^4}(4M^2+q^2)f(q)
+    \tilde{\phi}(y)e^{iq(x-y)}\tilde{\phi}(x)\\
+    &\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad
+    +\int d^4x\int d^4y\frac{\hat{m}}{2MG}\delta^{(4)}(x-y)\tilde{\phi}(y)\tilde{\phi}(x).
+    \end{split}
+\end{align}
+Actually, the exact expression of the second derivative is
+\begin{align}\label{1-1-17}
+  \frac{1}{2}\frac{\delta^2}{\delta\phi^2}S[\phi_0]\tilde{\phi}^2
+  =\frac{1}{2}\int d^4x\int d^4y\left.\frac{\delta^2S}{\delta\phi(x)\delta\phi(y)}\right|_{\phi^0}
+  \tilde{\phi}(x)\tilde{\phi}(y) 
+\end{align}
+and this form is seem to be comparable with the LHS of Eq~\eqref{1-1-16}. Therefore
+\begin{align}
+  \begin{split}
+    \frac{1}{2}\left.\frac{\delta^2S}{\delta\phi(x)\delta\phi(y)}\right|_{\phi^0}
+    &=2N_c
+    \int\frac{d^4q}{(2\pi)^4}(4M^2+q^2)f(q)e^{iq(x-y)}
+    +\frac{\hat{m}}{2MG}\delta^{(4)}(x-y)\\
+    &=\frac{1}{2}\int\frac{d^4q}{(2\pi)^4}
+    \left[
+      4N_c(4M^2+q^2)f(q)
+      +\frac{\hat{m}}{MG}
+    \right]e^{iq(x-y)}.
+  \end{split}
+\end{align}
+Finally the meson propagator $K_\phi(q^2)$ is
+\begin{align}
+  \begin{split}
+  &\left.\frac{\delta^2S}{\delta\phi(x)\delta\phi(y)}\right|_{\phi^0}
+    =\int\frac{d^4q}{(2\pi)^4}K^{-1}(q^2)e^{iq(x-y)}
+    =\int\frac{d^4q}{(2\pi)^4}
+    \left[
+      4N_c(4M^2+q^2)f(q)
+      +\frac{\hat{m}}{MG}
+    \right]e^{iq(x-y)}  \\
+    &= K(q^2)=\frac{1}{ 4N_c(4M^2+q^2)f(q)
+    +\frac{\hat{m}}{MG}}
+    =\frac{1}{Z_q(q^2)}\frac{1}{4M^2+q^2
+    +\frac{\hat{m}}{MGZ_q(q^2)}},\,\,
+    Z_q(q^2)=4N_cf(q).
+  \end{split}
+\end{align}
+\subsection{$Z_q(q^2)$ Calculation}
+Now only one process is remain: calculating $Z_q(q^2)$.
+From Eq~\eqref{1-1-15},
+\begin{align}
+  \begin{split}
+    Z_q(q^2)&=4N_c\int\frac{d^4k}{(2\pi)^4}\frac{1}
+    {\left\{\left(k-\frac{q}{2}\right)^2+M^2\right\}
+    \left\{\left(k+\frac{q}{2}\right)^2+M^2\right\}}  \\
+    &=4N_c\int\frac{d^4k}{(2\pi)^4}\frac{1}
+    {\left(k^2+M^2+\frac{q^2}{4}-qk\right)
+     \left(k^2+M^2+\frac{q^2}{4}+qk\right)}.
+    \\
+  \end{split}
+\end{align}
+There are useful integral rules:
+\begin{align}
+  \frac{1}{AB}=\int^1_0dx\,\frac{1}{[xA+(1-x)B]^2},\,\,\,
+  \frac{1}{Q^2}=\int_0^\infty du\,ue^{-uQ}.
+\end{align}
+Let us $A = \left(k^2+M^2+\frac{q^2}{4}-qk\right)$
+and $B = \left(k^2+M^2+\frac{q^2}{4}+qk\right)$. substituting
+to the first rule,
+\begin{align}
+  \begin{split}
+    Z_q(q^2)
+    &=4N_c\int\frac{d^4k}{(2\pi)^4}
+    \int^1_0dx
+    \left[
+      x\left(k^2+M^2+\frac{q^2}{4}-qk\right)
+      +(1-x)\left(k^2+M^2+\frac{q^2}{4}+qk\right)
+      \right]^{-2}  \\
+      &=4N_c\int\frac{d^4k}{(2\pi)^4}
+    \int^1_0dx
+    \left[
+      -2qkx
+      +\left(k^2+M^2+\frac{q^2}{4}+qk\right)
+      \right]^{-2}  \\
+      &= 4N_c\int\frac{d^4k}{(2\pi)^4}
+      \int^1_0dx
+      \frac{1}{(Kx+B)^2}
+      = 4N_c\int\frac{d^4k}{(2\pi)^4}
+      \int^1_0dx
+      \frac{1}{(Kx+B)^2}
+  \end{split}
+\end{align}
+where $K = -2qk$ and $B = k^2+M^2+\frac{q^2}{4}+qk$. By the second rule,
+\begin{align}
+  \begin{split}
+    Z_q(q^2)
+    &= 4N_c\int\frac{d^4k}{(2\pi)^4}
+    \int^1_0dx
+    \int^\infty_0du\,u\exp\left[-u\left(-2qkx
+    +k^2+M^2+\frac{q^2}{4}+qk\right)\right]  \\
+    &= 4N_c
+    \int^1_0dx
+    \int^\infty_0du\,u
+    \exp\left[-\frac{u}{4}\left\{
+      1-(1-2x)^2
+    \right\}q^2-uM^2\right]
+    \int\frac{d^4k}{(2\pi)^4}
+    \exp\left[-u\left(k+\frac{1}{2}q(1-2x)\right)^2\right].
+  \end{split}
+\end{align}
+For convenience, let $1-2x=y$,  and $-2dx=dy$
+\begin{align}
+  \begin{split}
+    Z_q(q^2)
+    &= 4N_c
+    \int^1_0dx
+    \int^\infty_0du\,u
+    \exp\left[-\frac{u}{4}\left\{
+      1-(1-2x)^2
+    \right\}q^2-uM^2\right]
+    \int\frac{d^4k}{(2\pi)^4}
+    \exp\left[-u\left(k+\frac{1}{2}q(1-2x)\right)^2\right]  \\
+    &=-2N_c
+    \int^{-1}_1dy
+    \int^\infty_0du\,u
+    \exp\left[-\frac{u}{4}\left(
+      1-y^2
+      \right)q^2-uM^2\right]
+      \int\frac{d^4k}{(2\pi)^4}
+      \exp\left[-u\left(k+\frac{1}{2}qy\right)^2\right] \\
+    &= 2N_c
+    \int_{-1}^1dy
+    \int^\infty_0du\,u
+    \exp\left[-\frac{u}{4}\left(
+      1-y^2
+      \right)q^2-uM^2\right]
+      \int\frac{d^4k}{(2\pi)^4}
+      \exp\left[-u\left(k+\frac{1}{2}qy\right)^2\right].
+  \end{split}
+\end{align}
+The last integral is the 4-dimensional spherical integral.
+\begin{align}
+  \begin{split}
+    \int\frac{d^4k}{(2\pi)^4}
+      \exp\left[-u\left(k+\frac{1}{2}qy\right)^2\right]
+      &=\int^\infty_0\frac{dk}{(4\pi)^2}\,
+      k^3\exp\left[-u\left(k+\frac{1}{2}qy\right)^2\right]  \\
+      &=\int^\infty_0\frac{dk}{(4\pi)^2}\,
+      \left(k-\frac{1}{2}qy\right)^3e^{-uk^2}
+  \end{split}
+\end{align}
+Expanding quadratic, there are only gaussian integrals. But
+the terms which have the odd degree of $y$ are erase since of
+the integral for $y$ is symmetric.
+\begin{align}
+  \begin{split}
+    \int^\infty_0\frac{dk}{(4\pi)^2}\,
+    \left(k-\frac{1}{2}qy\right)^3e^{-uk^2}
+    &=\int^\infty_0\frac{dk}{(4\pi)^2}\left(
+    k^3-\frac{3}{2}qyk^2+\frac{3}{4}q^2y^2k-\frac{1}{8}q^3y^3
+    \right)e^{-uk^2}\\
+    &=\int^\infty_0\frac{dk}{(4\pi)^2}\left(
+    k^3+\frac{3}{4}q^2y^2k
+    \right)e^{-uk^2}  \\
+    & =\frac{1}{(4\pi)^2}\left(\frac{1}{2u^2}+\frac{3q^2y^2}{8u}\right).
+  \end{split}
+\end{align}
+Hence
+\begin{align}
+  \begin{split}
+    Z_q(q^2)&=\frac{2N_c}{(4\pi)^2}
+    \int_{-1}^1dy
+    \int^\infty_0du\,u
+    \exp\left[-\frac{u}{4}\left(
+      1-y^2
+      \right)q^2-uM^2\right]
+      \left(\frac{1}{2u^2}+\frac{3q^2y^2}{8u}\right)  \\
+      &=\frac{2N_c}{(4\pi)^2}
+      \int_{-1}^1dy
+      \int^\infty_0du\,
+        \left(\frac{1}{2u}e^{-u\left(\frac{q^2}{4}\left(
+          1-y^2
+          \right)+M^2\right)}
+        +\frac{3q^2y^2}{8}e^{-u\left(\frac{q^2}{4}\left(
+          1-y^2
+          \right)+M^2\right)}\right).
+  \end{split}
+\end{align}
+The last term diverges at $y^2 = \frac{M^2}{q^2}+1$. So we remain only first term
+and cut the integral interval for $u$(regularization). Finally 
+\begin{align}
+  \begin{split}
+    Z_q(q^2)&=\frac{2N_c}{(4\pi)^2}
+    \int_{-1}^1dy
+    \int^\infty_0du\,u
+    \exp\left[-\frac{u}{4}\left(
+      1-y^2
+      \right)q^2-uM^2\right]
+      \left(\frac{1}{2u^2}+\frac{3q^2y^2}{8u}\right)  \\
+      &=\frac{2N_c}{(4\pi)^2}
+      \int_{-1}^0dy
+      \int^\infty_{\Lambda^{-2}}du\,
+        \frac{1}{u}e^{-u\left(M^2+
+          \frac{q^2}{4}\left(1-y^2
+          \right)\right)}.
+  \end{split}
+\end{align}
+This is the Pauli-Vilars regularized expression.
+
+
 \end{document}
 
