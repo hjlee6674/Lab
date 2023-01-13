@@ -35,6 +35,7 @@
 \maketitle
 
 \section[2.4]{Mesonic Properties}
+
 The action $S$ in this process is
 \begin{align}\label{1-1}
   S &= -N_c\mathrm{Tr}\left[\log D\right]+\int d^4x\,\frac{1}{2G}\left(\sigma^2+\vec{\pi}^2\right)  \\
@@ -576,33 +577,20 @@ For convenience, let $1-2x=y$,  and $-2dx=dy$
       \exp\left[-u\left(k+\frac{1}{2}qy\right)^2\right].
   \end{split}
 \end{align}
-The last integral is the 4-dimensional spherical integral.
+The last integral is the 4-dimensional spherical integral. 
+Moving the center of the gaussian function to the zero-point,
 \begin{align}
   \begin{split}
     \int\frac{d^4k}{(2\pi)^4}
       \exp\left[-u\left(k+\frac{1}{2}qy\right)^2\right]
-      &=\int^\infty_0\frac{dk}{(4\pi)^2}\,
-      k^3\exp\left[-u\left(k+\frac{1}{2}qy\right)^2\right]  \\
-      &=\int^\infty_0\frac{dk}{(4\pi)^2}\,
-      \left(k-\frac{1}{2}qy\right)^3e^{-uk^2}
-  \end{split}
+      &=\int\frac{d^4k}{(2\pi)^4}
+      e^{-uk^2} 
+      = 2\pi^2\int^\infty_0\frac{dk}{(2\pi)^4}
+      k^3e^{-uk^2}
+      = \frac{2}{(4\pi)^2}\frac{1}{2u}.
+      \end{split}
 \end{align}
-Expanding quadratic, there are only gaussian integrals. But
-the terms which have the odd degree of $y$ are erase since of
-the integral for $y$ is symmetric.
-\begin{align}
-  \begin{split}
-    \int^\infty_0\frac{dk}{(4\pi)^2}\,
-    \left(k-\frac{1}{2}qy\right)^3e^{-uk^2}
-    &=\int^\infty_0\frac{dk}{(4\pi)^2}\left(
-    k^3-\frac{3}{2}qyk^2+\frac{3}{4}q^2y^2k-\frac{1}{8}q^3y^3
-    \right)e^{-uk^2}\\
-    &=\int^\infty_0\frac{dk}{(4\pi)^2}\left(
-    k^3+\frac{3}{4}q^2y^2k
-    \right)e^{-uk^2}  \\
-    & =\frac{1}{(4\pi)^2}\left(\frac{1}{2u^2}+\frac{3q^2y^2}{8u}\right).
-  \end{split}
-\end{align}
+
 Hence
 \begin{align}
   \begin{split}
@@ -612,38 +600,23 @@ Hence
     \exp\left[-\frac{u}{4}\left(
       1-y^2
       \right)q^2-uM^2\right]
-      \left(\frac{1}{2u^2}+\frac{3q^2y^2}{8u}\right)  \\
+      \frac{1}{(4\pi)^2}\frac{1}{u}  \\
       &=\frac{2N_c}{(4\pi)^2}
       \int_{-1}^1dy
       \int^\infty_0du\,
-        \left(\frac{1}{2u}e^{-u\left(\frac{q^2}{4}\left(
+        \left(\frac{1}{u}e^{-u\left(\frac{q^2}{4}\left(
           1-y^2
-          \right)+M^2\right)}
-        +\frac{3q^2y^2}{8}e^{-u\left(\frac{q^2}{4}\left(
-          1-y^2
-          \right)+M^2\right)}\right).
+          \right)+M^2\right)}\right)  \\
+          &=\frac{4N_c}{(4\pi)^2}
+          \int_{0}^1dy
+          \int^\infty_0du\,
+            \left(\frac{1}{u}e^{-u\left(\frac{q^2}{4}\left(
+              1-y^2
+              \right)+M^2\right)}\right).
   \end{split}
 \end{align}
-The last term diverges at $y^2 = \frac{M^2}{q^2}+1$. So we remain only first term
-and cut the integral interval for $u$(regularization). Finally 
-\begin{align}
-  \begin{split}
-    Z_q(q^2)&=\frac{2N_c}{(4\pi)^2}
-    \int_{-1}^1dy
-    \int^\infty_0du\,u
-    \exp\left[-\frac{u}{4}\left(
-      1-y^2
-      \right)q^2-uM^2\right]
-      \left(\frac{1}{2u^2}+\frac{3q^2y^2}{8u}\right)  \\
-      &=\frac{2N_c}{(4\pi)^2}
-      \int_{-1}^0dy
-      \int^\infty_{\Lambda^{-2}}du\,
-        \frac{1}{u}e^{-u\left(M^2+
-          \frac{q^2}{4}\left(1-y^2
-          \right)\right)}.
-  \end{split}
-\end{align}
-This is the Pauli-Vilars regularized expression.
+
+This is the proper-time expression.
 
 
 \end{document}

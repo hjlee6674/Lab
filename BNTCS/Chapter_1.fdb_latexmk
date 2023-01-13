@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex Chapter_1"] 1673544973 "Chapter_1.aux" "Chapter_1.bbl" "Chapter_1" 1673546586
+["bibtex Chapter_1"] 1673606501 "Chapter_1.aux" "Chapter_1.bbl" "Chapter_1" 1673606521
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Chapter_1.aux" 1673546585 1415 908ba1130d31f71817ee0e93ca9c0f26 "pdflatex"
-  "Chapter_1Notes.bib" 1673546585 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Chapter_1.aux" 1673606520 1415 0192bafa53b8dca8078761d635e2f5ed "pdflatex"
+  "Chapter_1Notes.bib" 1673606520 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Chapter_1.bbl"
   "Chapter_1.blg"
-["pdflatex"] 1673546585 "/home/sigma/Lab/BNTCS/Chapter_1.tex" "Chapter_1.pdf" "Chapter_1" 1673546586
+["pdflatex"] 1673606520 "/home/sigma/Lab/BNTCS/Chapter_1.tex" "Chapter_1.pdf" "Chapter_1" 1673606521
   "/etc/texmf/web2c/texmf.cnf" 1662518189 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/BNTCS/Chapter_1.tex" 1673546585 25600 d17ba9fad35df51c5fe0a23352b7b658 ""
+  "/home/sigma/Lab/BNTCS/Chapter_1.tex" 1673606520 24491 224974533a3da8ebf771fcd3daa051a0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -122,9 +122,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1662518562 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1662518639 2801457 2adfa82b789dffd69a81fd809669da30 ""
-  "Chapter_1.aux" 1673546585 1415 908ba1130d31f71817ee0e93ca9c0f26 "pdflatex"
-  "Chapter_1.bbl" 1673544973 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Chapter_1"
-  "Chapter_1.tex" 1673546585 25600 d17ba9fad35df51c5fe0a23352b7b658 ""
+  "Chapter_1.aux" 1673606520 1415 0192bafa53b8dca8078761d635e2f5ed "pdflatex"
+  "Chapter_1.bbl" 1673606501 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Chapter_1"
+  "Chapter_1.tex" 1673606520 24491 224974533a3da8ebf771fcd3daa051a0 ""
   (generated)
   "Chapter_1.aux"
   "Chapter_1.log"
